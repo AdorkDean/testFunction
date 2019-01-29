@@ -9,7 +9,7 @@
 #import "PostRoleSelectView.h"
 
 @interface PostRoleSelectItemView : UIView
-@property (nonatomic, strong) UILabel *nameLabel;
+@property (nonatomic, strong) UIButton *nameLabel;
 - (void)reLayout;
 @end
 
@@ -29,7 +29,7 @@
         self.layer.borderColor = [HTColorFromRGB(0xEAEAEA) CGColor];
         self.layer.borderWidth = 1;
         self.clipsToBounds = YES;
-//        [self addSubview:self.bgView];
+        //        [self addSubview:self.bgView];
         
         [self setupItems];
     }
@@ -41,7 +41,9 @@
     CGFloat height = 53;
     for (NSDictionary *dict in self.data) {
         PostRoleSelectItemView *itemView = [[PostRoleSelectItemView alloc] init];
-        itemView.nameLabel.text = dict[@"name"];
+        [itemView.nameLabel setTitle:dict[@"name"] forState:UIControlStateNormal];
+        [itemView.nameLabel setImage:[BundleTool imageNamed:dict[@"icon"]] forState:UIControlStateNormal];
+        
         [itemView reLayout];
         if (itemView.width > max) {
             max = itemView.width;
@@ -75,14 +77,14 @@
     if (!_data) {
         NSString *company = [PublicTool isNull:[WechatUserInfo shared].company]?@"":[WechatUserInfo shared].company;
         NSString *zhiwei = [PublicTool isNull:[WechatUserInfo shared].zhiwei]?@"":[WechatUserInfo shared].zhiwei;
-
+        
         NSString *name = [NSString stringWithFormat:@"实名：%@ %@ %@", [WechatUserInfo shared].nickname, company, zhiwei];
-        NSString *name2 = [NSString stringWithFormat:@"公司：%@员工",company];
-        NSString *role = [NSString stringWithFormat:@"身份：%@", [PublicTool roleTextWithRequestStr:[WechatUserInfo shared].person_role]];
+        NSString *name2 = [NSString stringWithFormat:@"公司：%@ %@员工",[WechatUserInfo shared].flower_name,company];
+        NSString *role = [NSString stringWithFormat:@"身份：%@ %@", [WechatUserInfo shared].flower_name,[PublicTool roleTextWithRequestStr:[WechatUserInfo shared].person_role]];
         _data = @[
-                  @{@"name": name, @"anonymous":@"0", @"degree":@""},
-                  @{@"name": name2, @"anonymous":@"1", @"degree":@"1"},
-                  @{@"name": role, @"anonymous":@"1", @"degree":@"2"},
+                  @{@"name": name, @"anonymous":@"0", @"degree":@"", @"icon":@"activity_comment_role1"},
+                  @{@"name": name2, @"anonymous":@"1", @"degree":@"1", @"icon":@"activity_comment_role2"},
+                  @{@"name": role, @"anonymous":@"1", @"degree":@"2", @"icon":@"activity_comment_role3"}
                   ];
     }
     return _data;
@@ -108,17 +110,18 @@
     CGFloat maxW = SCREENW - 26;
     CGFloat maxLabelW = maxW - 26;
     
-    [self.nameLabel sizeToFit];
-    self.nameLabel.frame = CGRectMake(13, (53-19)/2.0, MIN(self.nameLabel.width, maxLabelW), 20);
+    [self.nameLabel.titleLabel sizeToFit];
+    self.nameLabel.frame = CGRectMake(13, (53-19)/2.0, MIN(self.nameLabel.titleLabel.width+26, maxLabelW), 20);
     CGFloat w = self.nameLabel.width + 26;
     self.width = w;
+    [self.nameLabel setImageEdgeInsets:UIEdgeInsetsMake(0, -8, 0,5)];
 }
-- (UILabel *)nameLabel {
+- (UIButton *)nameLabel {
     if (!_nameLabel) {
-        UILabel *label = [[UILabel alloc] init];
+        UIButton *label = [[UIButton alloc] init];
         label.frame = CGRectMake(13, (53-19)/2.0, 0, 19);
-        label.font = [UIFont systemFontOfSize:15];
-        label.textColor = H3COLOR;
+        label.titleLabel.font = [UIFont systemFontOfSize:15];
+        [label setTitleColor:H3COLOR forState:UIControlStateNormal];
         _nameLabel = label;
     }
     return _nameLabel;

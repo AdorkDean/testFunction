@@ -312,10 +312,10 @@
     if (!_data) {
         NSString *company = [PublicTool isNull:[WechatUserInfo shared].company]?@"":[WechatUserInfo shared].company;
         NSString *zhiwei = [PublicTool isNull:[WechatUserInfo shared].zhiwei]?@"":[WechatUserInfo shared].zhiwei;
-
+        
         NSString *name = [NSString stringWithFormat:@"实名：%@ %@ %@", [WechatUserInfo shared].nickname, company, zhiwei];
-        NSString *name2 = [NSString stringWithFormat:@"公司：%@员工", company];
-        NSString *role = [NSString stringWithFormat:@"身份：%@", [PublicTool roleTextWithRequestStr:[WechatUserInfo shared].person_role]];
+        NSString *name2 = [NSString stringWithFormat:@"公司：%@ %@员工", [WechatUserInfo shared].flower_name,company];
+        NSString *role = [NSString stringWithFormat:@"身份：%@ %@", [WechatUserInfo shared].flower_name,[PublicTool roleTextWithRequestStr:[WechatUserInfo shared].person_role]];
         _data = @[
                   @{@"name": name, @"anonymous":@"0", @"degree":@"", @"icon":@"activity_comment_role1"},
                   @{@"name": name2, @"anonymous":@"1", @"degree":@"1", @"icon":@"activity_comment_role2"},
@@ -324,6 +324,7 @@
     }
     return _data;
 }
+
 
 - (UIImageView *)lineView {
     UIImageView *line = [[UIImageView alloc] init];
