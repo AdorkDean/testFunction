@@ -1,0 +1,30 @@
+platform :ios, '8.0'
+inhibit_all_warnings!
+
+target 'qmp_ios' do
+
+  pod 'AFNetworking', '~> 3.1.0'
+  pod 'MJRefresh', '~> 3.1.0'
+  pod 'SDWebImage'
+  pod 'UITableView+FDTemplateLayoutCell'
+  pod 'JSONModel'
+  pod 'HyphenateLite'
+  pod "MWPhotoBrowser"
+  pod 'MBProgressHUD'
+  pod 'WMPageController'
+  pod 'UICollectionViewLeftAlignedLayout'
+  pod 'FMDB'
+  pod 'IQKeyboardManager'
+  pod 'Bugly'
+  pod 'TFHpple'
+  pod 'TZImagePickerController'
+  pod 'ReactiveObjC'
+  pod 'UMengAnalytics'
+  pod 'Masonry'
+  pod 'TTTAttributedLabel'
+  pod 'JPush'
+  pod 'pop'
+  pod 'YYText'
+  pod 'MuPDF'
+
+end

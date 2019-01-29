@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="79" id="KGk-i7-Jjw" customClass="HotJigouListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="78.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4u0-0i-PtU">
+                        <rect key="frame" x="17" y="78" width="286" height="0.5"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="Wrm-2H-XoC"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jnf-FZ-rkA">
+                        <rect key="frame" x="14" y="20" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Tqu-6v-8D3"/>
+                            <constraint firstAttribute="width" constant="30" id="zvo-qg-YTP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="4">
+                            <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mzh-Cb-avp">
+                        <rect key="frame" x="55" y="15" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="JV5-2S-qO6"/>
+                            <constraint firstAttribute="height" constant="40" id="RTX-Rc-te0"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0M4-A7-PBc">
+                        <rect key="frame" x="250.5" y="29" width="39.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="7nq-pE-no2"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="qXj-IU-qf5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.91764705882352937" green="0.27843137254901962" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPm-kK-Vo7">
+                        <rect key="frame" x="107" y="26.5" width="133.5" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="MnD-kk-uc6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sPm-kK-Vo7" firstAttribute="centerY" secondItem="mzh-Cb-avp" secondAttribute="centerY" id="53e-8m-LN4"/>
+                    <constraint firstItem="sPm-kK-Vo7" firstAttribute="leading" secondItem="mzh-Cb-avp" secondAttribute="trailing" constant="12" id="8lj-le-Mjf"/>
+                    <constraint firstAttribute="bottom" secondItem="4u0-0i-PtU" secondAttribute="bottom" id="CEf-Nx-uM3"/>
+                    <constraint firstAttribute="trailing" secondItem="4u0-0i-PtU" secondAttribute="trailing" constant="17" id="FFf-I0-PHL"/>
+                    <constraint firstItem="Jnf-FZ-rkA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="P63-Re-noQ"/>
+                    <constraint firstItem="4u0-0i-PtU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17" id="PaY-Mw-UOF"/>
+                    <constraint firstItem="mzh-Cb-avp" firstAttribute="leading" secondItem="Jnf-FZ-rkA" secondAttribute="trailing" constant="11" id="etc-lB-GLI"/>
+                    <constraint firstAttribute="trailing" secondItem="0M4-A7-PBc" secondAttribute="trailing" constant="30" id="p1a-48-qUF"/>
+                    <constraint firstItem="Jnf-FZ-rkA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="p1v-97-tZb"/>
+                    <constraint firstItem="0M4-A7-PBc" firstAttribute="leading" secondItem="sPm-kK-Vo7" secondAttribute="trailing" constant="10" id="p4D-KM-Q8U"/>
+                    <constraint firstItem="0M4-A7-PBc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pkx-vX-UnV"/>
+                    <constraint firstItem="mzh-Cb-avp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="xbD-Jg-fMd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="countLab" destination="0M4-A7-PBc" id="9Jv-2I-IIo"/>
+                <outlet property="iconImgV" destination="mzh-Cb-avp" id="WdL-2q-uAR"/>
+                <outlet property="nameLab" destination="sPm-kK-Vo7" id="3Yq-X5-1u2"/>
+                <outlet property="orderLab" destination="Jnf-FZ-rkA" id="YjQ-GH-Kfj"/>
+            </connections>
+            <point key="canvasLocation" x="52" y="200.5"/>
+        </tableViewCell>
+    </objects>
+</document>

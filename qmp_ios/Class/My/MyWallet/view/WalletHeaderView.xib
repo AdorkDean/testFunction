@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="wft-bD-T6w" customClass="WalletHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="522" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me_wallet_bg" translatesAutoresizingMaskIntoConstraints="NO" id="5fl-q5-s0P">
+                    <rect key="frame" x="0.0" y="0.0" width="522" height="250"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me_wallet_logo" translatesAutoresizingMaskIntoConstraints="NO" id="CBa-cR-Mfd">
+                    <rect key="frame" x="221" y="107" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="c7A-v3-Ync"/>
+                        <constraint firstAttribute="height" constant="80" id="hWf-nl-vw6"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 币" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yo-cv-273">
+                    <rect key="frame" x="161" y="209" width="200" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="QHf-x5-Tzr"/>
+                        <constraint firstAttribute="height" constant="21" id="sUN-JZ-5ax"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5fl-q5-s0P" secondAttribute="bottom" id="7cJ-q1-MHu"/>
+                <constraint firstItem="8yo-cv-273" firstAttribute="centerX" secondItem="CBa-cR-Mfd" secondAttribute="centerX" id="9NW-6R-3WF"/>
+                <constraint firstItem="5fl-q5-s0P" firstAttribute="leading" secondItem="wft-bD-T6w" secondAttribute="leading" id="GuN-26-qvO"/>
+                <constraint firstItem="5fl-q5-s0P" firstAttribute="top" secondItem="wft-bD-T6w" secondAttribute="top" id="Qbc-wv-38X"/>
+                <constraint firstItem="8yo-cv-273" firstAttribute="top" secondItem="CBa-cR-Mfd" secondAttribute="bottom" constant="22" id="SFW-Mr-aX9"/>
+                <constraint firstAttribute="bottom" secondItem="CBa-cR-Mfd" secondAttribute="bottom" constant="63" id="Sky-mg-Fle"/>
+                <constraint firstAttribute="trailing" secondItem="5fl-q5-s0P" secondAttribute="trailing" id="cOl-M6-5wR"/>
+                <constraint firstItem="CBa-cR-Mfd" firstAttribute="centerX" secondItem="5fl-q5-s0P" secondAttribute="centerX" id="pwC-9P-iR1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="coinNumLab" destination="8yo-cv-273" id="Ta5-P1-pH8"/>
+            </connections>
+            <point key="canvasLocation" x="-28" y="-281"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="me_wallet_bg" width="1125" height="630"/>
+        <image name="me_wallet_logo" width="80" height="80"/>
+    </resources>
+</document>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AlbumCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="专辑名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoO-xJ-KsV">
+                        <rect key="frame" x="17" y="11" width="203" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="5ws-QZ-3Rg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTI-oL-QH6">
+                        <rect key="frame" x="17" y="43" width="286" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="tAJ-0c-pKL"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUU-sx-km8">
+                        <rect key="frame" x="258" y="0.0" width="46" height="43.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="JAQ-Uq-Y1z"/>
+                        </constraints>
+                        <state key="normal" image="select_workFlow"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zoO-xJ-KsV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17" id="8o7-9o-aoe"/>
+                    <constraint firstAttribute="trailing" secondItem="zoO-xJ-KsV" secondAttribute="trailing" constant="100" id="Qas-fB-QxS"/>
+                    <constraint firstAttribute="trailing" secondItem="dUU-sx-km8" secondAttribute="trailing" constant="16" id="Vob-fc-aIT"/>
+                    <constraint firstAttribute="trailing" secondItem="WTI-oL-QH6" secondAttribute="trailing" constant="17" id="b7P-OG-Am0"/>
+                    <constraint firstItem="zoO-xJ-KsV" firstAttribute="centerY" secondItem="dUU-sx-km8" secondAttribute="centerY" id="c6k-RM-ZxD"/>
+                    <constraint firstItem="WTI-oL-QH6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17" id="h9B-Sk-7Dt"/>
+                    <constraint firstAttribute="bottom" secondItem="dUU-sx-km8" secondAttribute="bottom" id="p7g-RQ-SZo"/>
+                    <constraint firstAttribute="bottom" secondItem="WTI-oL-QH6" secondAttribute="bottom" id="v3i-j6-qaQ"/>
+                    <constraint firstItem="dUU-sx-km8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ztG-VF-HRg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chooseBtn" destination="dUU-sx-km8" id="P01-7p-zvw"/>
+                <outlet property="line" destination="WTI-oL-QH6" id="3Ix-El-HKQ"/>
+                <outlet property="lineHeight" destination="tAJ-0c-pKL" id="UkQ-Gz-bma"/>
+                <outlet property="nameLabel" destination="zoO-xJ-KsV" id="q0a-e7-Vme"/>
+            </connections>
+            <point key="canvasLocation" x="37" y="114"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="select_workFlow" width="22" height="22"/>
+    </resources>
+</document>

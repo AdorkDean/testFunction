@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnlyContentController">
+            <connections>
+                <outlet property="contentLab" destination="3Oh-NK-5Ty" id="dM5-pa-TGS"/>
+                <outlet property="timeLab" destination="O0s-Fk-dXf" id="Ne4-F6-5gc"/>
+                <outlet property="timeTopHeight" destination="hHO-u3-ld4" id="xbh-Z8-VFI"/>
+                <outlet property="titleLab" destination="i6W-2B-dRf" id="7vg-Rd-pMp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="NjR-Zt-jfR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6W-2B-dRf">
+                    <rect key="frame" x="17" y="27" width="341" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0s-Fk-dXf">
+                    <rect key="frame" x="17" y="44" width="150" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="2Ha-sn-fy1"/>
+                        <constraint firstAttribute="height" constant="15" id="6k6-ND-1Vt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Oh-NK-5Ty">
+                    <rect key="frame" x="17" y="73" width="341" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3Oh-NK-5Ty" firstAttribute="leading" secondItem="O0s-Fk-dXf" secondAttribute="leading" id="FLj-ad-Brv"/>
+                <constraint firstItem="i6W-2B-dRf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="27" id="IzI-vb-Lw4"/>
+                <constraint firstAttribute="trailing" secondItem="3Oh-NK-5Ty" secondAttribute="trailing" constant="17" id="PsS-th-1dX"/>
+                <constraint firstAttribute="trailing" secondItem="i6W-2B-dRf" secondAttribute="trailing" constant="17" id="QEP-Gm-4fx"/>
+                <constraint firstItem="3Oh-NK-5Ty" firstAttribute="top" secondItem="O0s-Fk-dXf" secondAttribute="bottom" constant="14" id="YCm-Wu-wEq"/>
+                <constraint firstItem="i6W-2B-dRf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="17" id="aKV-qu-WKF"/>
+                <constraint firstItem="O0s-Fk-dXf" firstAttribute="top" secondItem="i6W-2B-dRf" secondAttribute="bottom" constant="17" id="hHO-u3-ld4"/>
+                <constraint firstItem="O0s-Fk-dXf" firstAttribute="leading" secondItem="i6W-2B-dRf" secondAttribute="leading" id="kxb-UK-3TN"/>
+            </constraints>
+            <point key="canvasLocation" x="44.5" y="123.5"/>
+        </view>
+    </objects>
+</document>

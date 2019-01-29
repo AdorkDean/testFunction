@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="TMX-mF-HpD" customClass="UpgradeVersionView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZOF-mu-m32">
+                    <rect key="frame" x="52.5" y="101" width="270" height="366"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="updateBgView.png" translatesAutoresizingMaskIntoConstraints="NO" id="3Dr-YJ-QBv">
+                            <rect key="frame" x="0.0" y="0.0" width="270" height="366"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wifi环境下更新更快捷哦" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLn-CF-bJi">
+                            <rect key="frame" x="0.0" y="338.5" width="270" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugA-su-EVR">
+                            <rect key="frame" x="34" y="290.5" width="201" height="39"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="39" id="gU7-NZ-GQs"/>
+                                <constraint firstAttribute="width" constant="201" id="oCI-Ka-str"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <state key="normal" title="立即更新"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="更新说明更新说明更新说明更新说明更新说明更新说明更新说明更新说明更新说明" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbh-qB-eVF">
+                            <rect key="frame" x="30" y="214" width="210" height="66.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3V8-pw-kFp">
+                            <rect key="frame" x="100" y="177" width="69" height="27"/>
+                            <color key="backgroundColor" red="0.15294117647058825" green="0.27450980392156865" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="69" id="Lq9-mQ-3oz"/>
+                                <constraint firstAttribute="height" constant="27" id="qBa-9Z-MzA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Vbh-qB-eVF" firstAttribute="top" secondItem="3V8-pw-kFp" secondAttribute="bottom" constant="10" id="1lC-JS-L3Q"/>
+                        <constraint firstAttribute="trailing" secondItem="Vbh-qB-eVF" secondAttribute="trailing" constant="30" id="6mw-7X-umX"/>
+                        <constraint firstItem="3V8-pw-kFp" firstAttribute="centerX" secondItem="3Dr-YJ-QBv" secondAttribute="centerX" id="7nB-NN-dna"/>
+                        <constraint firstAttribute="height" constant="366" id="8pT-v4-Mem"/>
+                        <constraint firstAttribute="trailing" secondItem="eLn-CF-bJi" secondAttribute="trailing" id="EHu-0x-cEO"/>
+                        <constraint firstItem="Vbh-qB-eVF" firstAttribute="leading" secondItem="ZOF-mu-m32" secondAttribute="leading" constant="30" id="JbW-iL-Sav"/>
+                        <constraint firstItem="ugA-su-EVR" firstAttribute="top" secondItem="Vbh-qB-eVF" secondAttribute="bottom" constant="10" id="LIU-Xl-9f9"/>
+                        <constraint firstAttribute="trailing" secondItem="3Dr-YJ-QBv" secondAttribute="trailing" id="Sb2-Bn-aXw"/>
+                        <constraint firstItem="eLn-CF-bJi" firstAttribute="leading" secondItem="ZOF-mu-m32" secondAttribute="leading" id="Vfs-dI-5qw"/>
+                        <constraint firstItem="eLn-CF-bJi" firstAttribute="top" secondItem="ugA-su-EVR" secondAttribute="bottom" constant="9" id="aBw-QA-Y1m"/>
+                        <constraint firstItem="3V8-pw-kFp" firstAttribute="top" secondItem="ZOF-mu-m32" secondAttribute="top" constant="177" id="gaG-PN-uC9"/>
+                        <constraint firstAttribute="width" constant="270" id="hhw-DZ-L3J"/>
+                        <constraint firstItem="3Dr-YJ-QBv" firstAttribute="leading" secondItem="ZOF-mu-m32" secondAttribute="leading" id="iCx-vg-jaP"/>
+                        <constraint firstAttribute="bottom" secondItem="eLn-CF-bJi" secondAttribute="bottom" constant="13" id="lr1-pk-Wig"/>
+                        <constraint firstItem="3Dr-YJ-QBv" firstAttribute="height" secondItem="ZOF-mu-m32" secondAttribute="height" id="pl3-8u-NC7"/>
+                        <constraint firstItem="3Dr-YJ-QBv" firstAttribute="top" secondItem="ZOF-mu-m32" secondAttribute="top" id="qWI-vC-GXS"/>
+                        <constraint firstItem="ugA-su-EVR" firstAttribute="centerX" secondItem="3Dr-YJ-QBv" secondAttribute="centerX" id="tu3-nH-d9u"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Uu-J0-hDT">
+                    <rect key="frame" x="30" y="467" width="315" height="90"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xtk-il-iER" userLabel="line">
+                            <rect key="frame" x="157" y="0.0" width="1" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="fYg-Vx-PUY"/>
+                                <constraint firstAttribute="width" constant="1" id="tgZ-cg-ARW"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7s-xB-8XY">
+                            <rect key="frame" x="134" y="20" width="46" height="46"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="8MD-Jd-mj5"/>
+                                <constraint firstAttribute="width" constant="46" id="g84-ZB-OT0"/>
+                            </constraints>
+                            <state key="normal" image="updateChaIcon"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.91764705879999997" green="0.2784313725" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Xtk-il-iER" firstAttribute="centerX" secondItem="8Uu-J0-hDT" secondAttribute="centerX" id="7cW-0X-RdZ"/>
+                        <constraint firstItem="W7s-xB-8XY" firstAttribute="centerX" secondItem="Xtk-il-iER" secondAttribute="centerX" id="96h-Jw-sHd"/>
+                        <constraint firstAttribute="height" constant="90" id="Ro4-Pi-gUz"/>
+                        <constraint firstItem="W7s-xB-8XY" firstAttribute="top" secondItem="Xtk-il-iER" secondAttribute="bottom" constant="-10" id="V0U-Uo-Iww"/>
+                        <constraint firstItem="Xtk-il-iER" firstAttribute="top" secondItem="8Uu-J0-hDT" secondAttribute="top" id="ggw-Q1-wGX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="8Uu-J0-hDT" firstAttribute="centerX" secondItem="ZOF-mu-m32" secondAttribute="centerX" id="Arg-BC-0sq"/>
+                <constraint firstItem="8Uu-J0-hDT" firstAttribute="leading" secondItem="TMX-mF-HpD" secondAttribute="leading" constant="30" id="D66-BH-lTw"/>
+                <constraint firstItem="8Uu-J0-hDT" firstAttribute="top" secondItem="ZOF-mu-m32" secondAttribute="bottom" id="YAq-wp-2Tu"/>
+                <constraint firstItem="ZOF-mu-m32" firstAttribute="centerY" secondItem="TMX-mF-HpD" secondAttribute="centerY" constant="-50" id="k3d-aL-vXD"/>
+                <constraint firstAttribute="trailing" secondItem="8Uu-J0-hDT" secondAttribute="trailing" constant="30" id="mcK-0d-1cd"/>
+            </constraints>
+            <connections>
+                <outlet property="bgWhiteV" destination="ZOF-mu-m32" id="SaS-ce-U8a"/>
+                <outlet property="closeBtn" destination="W7s-xB-8XY" id="kdJ-3G-pZy"/>
+                <outlet property="closeView" destination="8Uu-J0-hDT" id="IHj-7t-xhj"/>
+                <outlet property="contentLab" destination="Vbh-qB-eVF" id="jBH-7b-K0i"/>
+                <outlet property="updateBtn" destination="ugA-su-EVR" id="jUO-4c-7T9"/>
+                <outlet property="versionLab" destination="3V8-pw-kFp" id="UWh-WE-yu6"/>
+            </connections>
+            <point key="canvasLocation" x="-108.5" y="97.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="updateBgView.png" width="270" height="366"/>
+        <image name="updateChaIcon" width="32" height="32"/>
+    </resources>
+</document>

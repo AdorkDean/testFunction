@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>black</key>
+	<dict>
+		<key>导航消息</key>
+		<string>nabarMsg_black</string>
+		<key>导航消息红点</key>
+		<string>nabarMsg_black_red</string>
+		<key>导航添加</key>
+		<string>nabarAddIcon_black</string>
+		<key>全部</key>
+		<string>personalAllIcon_black</string>
+		<key>融资库</key>
+		<string>personalProduct_black</string>
+	</dict>
+	<key>white</key>
+	<dict>
+		<key>导航消息</key>
+		<string>nabarMsg_white</string>
+		<key>导航消息红点</key>
+		<string>nabarMsg_white_red</string>
+		<key>导航添加</key>
+		<string>nabarAddIcon_white</string>
+		<key>全部</key>
+		<string>personalAllIcon_white</string>
+	</dict>
+</dict>
+</plist>

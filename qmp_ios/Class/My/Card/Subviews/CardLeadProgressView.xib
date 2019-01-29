@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Y1z-K7-Hwz" customClass="CardLeadProgressView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UrH-nd-BB6">
+                    <rect key="frame" x="28" y="248.5" width="318" height="170"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提示" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxJ-zF-zbC">
+                            <rect key="frame" x="83.5" y="32" width="150" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="0di-dr-fRm"/>
+                                <constraint firstAttribute="height" constant="20" id="SZy-6E-c4b"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWB-vN-cEu">
+                            <rect key="frame" x="274" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="4Hh-77-vYH"/>
+                                <constraint firstAttribute="height" constant="44" id="rxq-z9-TC9"/>
+                            </constraints>
+                            <state key="normal" image="pushAlert_cha"/>
+                            <connections>
+                                <action selector="chaBtnClick:" destination="Y1z-K7-Hwz" eventType="touchUpInside" id="80m-QE-wnF"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUm-3g-jVr">
+                            <rect key="frame" x="48.5" y="60" width="220" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="220" id="rP6-H2-J5A"/>
+                                <constraint firstAttribute="height" constant="38" id="sEq-ES-Y02"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIK-gt-b3H">
+                            <rect key="frame" x="118.5" y="118" width="80" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="icm-mb-g49"/>
+                                <constraint firstAttribute="width" constant="80" id="pvS-zs-yGi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" red="0.40392156862745099" green="0.61176470588235299" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="mWB-vN-cEu" secondAttribute="trailing" id="A0R-U7-YDc"/>
+                        <constraint firstItem="VIK-gt-b3H" firstAttribute="centerX" secondItem="GxJ-zF-zbC" secondAttribute="centerX" id="BGb-Vu-FJ7"/>
+                        <constraint firstAttribute="width" constant="318" id="Eq0-CM-97s"/>
+                        <constraint firstAttribute="bottom" secondItem="VIK-gt-b3H" secondAttribute="bottom" constant="31" id="Jjk-qw-Ug4"/>
+                        <constraint firstItem="JUm-3g-jVr" firstAttribute="centerX" secondItem="GxJ-zF-zbC" secondAttribute="centerX" id="RV0-Md-Jxa"/>
+                        <constraint firstAttribute="height" constant="170" id="TkO-8S-nxS"/>
+                        <constraint firstItem="mWB-vN-cEu" firstAttribute="top" secondItem="UrH-nd-BB6" secondAttribute="top" id="a5U-9n-mEt"/>
+                        <constraint firstItem="GxJ-zF-zbC" firstAttribute="centerX" secondItem="UrH-nd-BB6" secondAttribute="centerX" id="mDT-w8-jZ4"/>
+                        <constraint firstItem="JUm-3g-jVr" firstAttribute="top" secondItem="GxJ-zF-zbC" secondAttribute="bottom" constant="8" id="vtA-OR-ml1"/>
+                        <constraint firstItem="GxJ-zF-zbC" firstAttribute="top" secondItem="UrH-nd-BB6" secondAttribute="top" constant="32" id="zlf-SK-gcG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="UrH-nd-BB6" firstAttribute="centerX" secondItem="Y1z-K7-Hwz" secondAttribute="centerX" id="Hff-HU-ag8"/>
+                <constraint firstItem="UrH-nd-BB6" firstAttribute="centerY" secondItem="Y1z-K7-Hwz" secondAttribute="centerY" id="lWc-Dw-o5o"/>
+            </constraints>
+            <connections>
+                <outlet property="alertTitle" destination="GxJ-zF-zbC" id="WiE-Sz-oRV"/>
+                <outlet property="progressLab" destination="VIK-gt-b3H" id="q2n-2V-4HI"/>
+                <outlet property="titleLab" destination="JUm-3g-jVr" id="4JS-jC-i8r"/>
+                <outlet property="whiteView" destination="UrH-nd-BB6" id="nn3-zN-bhl"/>
+            </connections>
+            <point key="canvasLocation" x="-75.5" y="69.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pushAlert_cha" width="15" height="15"/>
+    </resources>
+</document>

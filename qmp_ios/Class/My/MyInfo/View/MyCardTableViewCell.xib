@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="218" id="KGk-i7-Jjw" customClass="MyCardTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="127.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCq-IR-J7M">
+                        <rect key="frame" x="17" y="17" width="40" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="3Qv-cd-fTL"/>
+                            <constraint firstAttribute="height" constant="16" id="e2M-BX-yeK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SW5-I0-SsW">
+                        <rect key="frame" x="134" y="45" width="100" height="60"/>
+                        <state key="normal" image="card_back">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eux-DC-9HK">
+                        <rect key="frame" x="17" y="45" width="100" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="A59-S7-5ac"/>
+                            <constraint firstAttribute="width" constant="100" id="yvM-Tg-l75"/>
+                        </constraints>
+                        <state key="normal" image="card_zheng">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*确保你的名片真实有效" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Pb-Hr-G9x">
+                        <rect key="frame" x="57" y="15" width="130" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="5ZS-gS-kaH"/>
+                            <constraint firstAttribute="width" constant="130" id="YKY-sU-IMv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eux-DC-9HK" firstAttribute="top" secondItem="qCq-IR-J7M" secondAttribute="bottom" constant="12" id="4LP-2l-V2f"/>
+                    <constraint firstItem="7Pb-Hr-G9x" firstAttribute="leading" secondItem="qCq-IR-J7M" secondAttribute="trailing" id="HzQ-Nw-tB7"/>
+                    <constraint firstItem="SW5-I0-SsW" firstAttribute="height" secondItem="eux-DC-9HK" secondAttribute="height" id="Lgk-HK-Xej"/>
+                    <constraint firstItem="7Pb-Hr-G9x" firstAttribute="centerY" secondItem="qCq-IR-J7M" secondAttribute="centerY" id="Lub-Dv-vSR"/>
+                    <constraint firstItem="SW5-I0-SsW" firstAttribute="width" secondItem="eux-DC-9HK" secondAttribute="width" id="Obf-fw-tB8"/>
+                    <constraint firstItem="qCq-IR-J7M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17" id="Q7r-gO-z0I"/>
+                    <constraint firstItem="SW5-I0-SsW" firstAttribute="top" secondItem="eux-DC-9HK" secondAttribute="top" id="WXe-aI-ftr"/>
+                    <constraint firstItem="eux-DC-9HK" firstAttribute="leading" secondItem="qCq-IR-J7M" secondAttribute="leading" id="f2O-VN-9Lp"/>
+                    <constraint firstItem="SW5-I0-SsW" firstAttribute="leading" secondItem="eux-DC-9HK" secondAttribute="trailing" constant="17" id="joW-rE-K8D"/>
+                    <constraint firstItem="qCq-IR-J7M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="mgt-Rt-y8O"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backImgBtn" destination="SW5-I0-SsW" id="ErP-Nk-XB6"/>
+                <outlet property="imgBtn" destination="eux-DC-9HK" id="3AL-hx-D27"/>
+            </connections>
+            <point key="canvasLocation" x="-67" y="24"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="card_back" width="106" height="66"/>
+        <image name="card_zheng" width="106" height="66"/>
+    </resources>
+</document>

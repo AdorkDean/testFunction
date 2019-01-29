@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Xl8-F9-zHR" customClass="ScreenShareView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x7P-Df-J8Q">
+                    <rect key="frame" x="64" y="80" width="247" height="499"/>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f3U-t4-AmK">
+                    <rect key="frame" x="0.0" y="579" width="375" height="88"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f0U-pK-D7S">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="jsY-5q-dsZ"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yrz-d6-YcL">
+                            <rect key="frame" x="0.0" y="10" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="kxp-Q3-81B"/>
+                                <constraint firstAttribute="height" constant="44" id="l67-Gf-L6Q"/>
+                            </constraints>
+                            <state key="normal" image="left-arrow"/>
+                            <connections>
+                                <action selector="backBtnClick:" destination="Xl8-F9-zHR" eventType="touchUpInside" id="Afy-U2-4gJ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="f0U-pK-D7S" secondAttribute="trailing" id="18q-KC-pcn"/>
+                        <constraint firstItem="Yrz-d6-YcL" firstAttribute="leading" secondItem="f3U-t4-AmK" secondAttribute="leading" id="Abu-vI-XS9"/>
+                        <constraint firstItem="f0U-pK-D7S" firstAttribute="leading" secondItem="f3U-t4-AmK" secondAttribute="leading" id="L8f-la-KsK"/>
+                        <constraint firstItem="f0U-pK-D7S" firstAttribute="top" secondItem="f3U-t4-AmK" secondAttribute="top" id="Vft-HX-5bB"/>
+                        <constraint firstItem="Yrz-d6-YcL" firstAttribute="top" secondItem="f3U-t4-AmK" secondAttribute="top" constant="10" id="vhK-4Y-GrK"/>
+                        <constraint firstAttribute="height" constant="88" id="zpn-hQ-Qo8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="x7P-Df-J8Q" secondAttribute="trailing" constant="64" id="0sm-nP-5ej"/>
+                <constraint firstItem="x7P-Df-J8Q" firstAttribute="top" secondItem="Xl8-F9-zHR" secondAttribute="top" constant="80" id="66Q-DY-Pgt"/>
+                <constraint firstAttribute="bottom" secondItem="x7P-Df-J8Q" secondAttribute="bottom" constant="88" id="Hsh-nA-zfp"/>
+                <constraint firstAttribute="trailing" secondItem="f3U-t4-AmK" secondAttribute="trailing" id="QF2-Er-IYq"/>
+                <constraint firstItem="f3U-t4-AmK" firstAttribute="leading" secondItem="Xl8-F9-zHR" secondAttribute="leading" id="WUj-UA-qDk"/>
+                <constraint firstItem="x7P-Df-J8Q" firstAttribute="leading" secondItem="Xl8-F9-zHR" secondAttribute="leading" constant="64" id="oqc-7Q-8tQ"/>
+                <constraint firstAttribute="bottom" secondItem="f3U-t4-AmK" secondAttribute="bottom" id="xS4-Bt-1Gv"/>
+            </constraints>
+            <connections>
+                <outlet property="bottomV" destination="f3U-t4-AmK" id="zZa-YC-IDY"/>
+                <outlet property="scrollV" destination="x7P-Df-J8Q" id="dDO-Fa-chg"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="83.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="left-arrow" width="20" height="20"/>
+    </resources>
+</document>
