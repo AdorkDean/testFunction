@@ -83,7 +83,7 @@
             RACSignal *requestCommentSignal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
                 [self requestCommentList:^{
                     [subscriber sendNext:nil];
-                }]; //请求动态
+                }]; //请求用户分享
                 return nil;
             }];
             
@@ -608,7 +608,7 @@
     postVC.postFrom = PostFrom_Detail;
     @weakify(self);
     postVC.postSuccessBlock = ^{
-        //如果发布了动态 ,重新请求动态，则刷新 refreshCommentListSignal
+        //如果发布了用户分享 ,重新请求用户分享，则刷新 refreshCommentListSignal
         [self requestCommentList:^{
             @strongify(self);
             [self.refreshCommentSignal subscribeNext:^(id  _Nullable x) {
@@ -849,7 +849,7 @@
         }
     }else if([title isEqualToString:@"人物新闻"]){
         [self enterPersonNews];
-    }else if([title containsString:@"动态"]){
+    }else if([title containsString:@"用户分享"]){
         [self enterCommentList];
     }else if([title containsString:@"商业关系"]){
         [self enterAllCompanyList];
@@ -995,7 +995,7 @@
     [QMPEvent event:@"person_tacase_seeAll"];
 }
 
-// 跳动态列表
+// 跳用户分享列表
 - (void)enterCommentList{
     
     @weakify(self);

@@ -7,9 +7,9 @@
 //
 
 #import "Home6ViewController.h"
-#import <CommonLibrary/BingGouProModel.h>
+#import "BingGouProModel.h"
 
-#import <CommonLibrary/RzEventFilterView.h>
+#import "RzEventFilterView.h"
 #import "QMPRecentEventCell2.h"
 
 @interface Home6ViewController () <RzEventFilterViewDelegate> {

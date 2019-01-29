@@ -15,7 +15,6 @@
 #import "QMPActivityCellModel.h"
 #import "QMPCommunityActivityCell.h"
 #import "PostActivityViewController.h"
-#import "MainNavViewController.h"
 #import "CommunityClaimView.h"
 
 @interface QMPCommunityListController () <UITableViewDataSource, UITableViewDelegate>

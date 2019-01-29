@@ -7,7 +7,6 @@
 //
 
 #import "QMPPhoneBindController.h"
-#import <CommonLibrary/MainNavViewController.h>
 
 @interface QMPPhoneBindController ()
 {

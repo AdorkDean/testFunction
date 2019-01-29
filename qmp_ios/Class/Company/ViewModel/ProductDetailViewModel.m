@@ -589,7 +589,7 @@
         NSArray *list = @[];
         if (resultData && [resultData isKindOfClass:[NSDictionary class]]) {
             self.status_Info.comment_count = [resultData[@"count"] integerValue];
-            [self.sectionDataCountDic setValue:resultData[@"count"] forKey:@"最新动态"];
+            [self.sectionDataCountDic setValue:resultData[@"count"] forKey:@"用户分享"];
             list = resultData[@"list"];
             [self.commentLayouts removeAllObjects];
             for (NSDictionary *dict in list) {
@@ -814,7 +814,7 @@
         [self enterSimilarList];
     }else if ([typeTitle containsString:@"新闻"]){
         [self enterNewsList];
-    }else if ([typeTitle containsString:@"最新动态"]){
+    }else if ([typeTitle containsString:@"用户分享"]){
         [self enterCommentList];
     }else if ([typeTitle containsString:@"工商"]){
         [self enterRegister];

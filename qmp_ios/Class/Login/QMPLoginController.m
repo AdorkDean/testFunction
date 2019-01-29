@@ -8,9 +8,8 @@
 
 #import "QMPLoginController.h"
 #import "AppDelegate.h"
-#import <CommonLibrary/WechatUserInfo.h>
 #import "QMPPhoneLoginController.h"
-#import <CommonLibrary/PrivatePolicyView.h>
+#import "PrivatePolicyView.h"
 
 @interface QMPLoginController ()<UITextFieldDelegate>
 {

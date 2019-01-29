@@ -7,7 +7,6 @@
 //
 
 #import "NewerBindPhoneController.h"
-#import <CommonLibrary/MainNavViewController.h>
 
 @interface NewerBindPhoneController ()
 {

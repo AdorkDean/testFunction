@@ -7,9 +7,9 @@
 //
 
 #import "RecentEventController.h"
-#import <CommonLibrary/SPPageMenu.h>
-#import <CommonLibrary/MainSearchController.h>
-#import <CommonLibrary/HomeNavigationBar.h>
+#import "SPPageMenu.h"
+#import "MainSearchController.h"
+#import "HomeNavigationBar.h"
 #import "Home3ViewController.h"
 #import "Home5ViewController.h"
 #import "Home6ViewController.h"

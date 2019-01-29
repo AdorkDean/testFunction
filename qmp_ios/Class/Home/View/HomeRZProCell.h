@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-#import <CommonLibrary/RZNewsModel.h>
-#import <CommonLibrary/SearchCompanyModel.h>
+#import "RZNewsModel.h"
+#import "SearchCompanyModel.h"
 
 @interface HomeRZProCell : UITableViewCell
 

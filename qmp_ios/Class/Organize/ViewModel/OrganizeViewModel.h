@@ -36,7 +36,7 @@ RelateCompanyModel,WinExperienceModel,ZhaopinModel;
 @property (nonatomic, assign) CGFloat infoCellHeight;
 
 
-// 动态
+// 用户分享
 - (void)handleOrganizeActivityWithResponse:(NSDictionary *)resp;
 @property (nonatomic, assign) NSInteger countOfActivities;
 @property (nonatomic, strong) NSArray *activityData;

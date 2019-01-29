@@ -55,13 +55,13 @@ static dispatch_once_t onceToken = 0;
         [viewController.navigationController pushViewController:loginVC animated:YES ];
 
     }else{
-        [[ToLogin shared].delegate appPageSkipToLogin];
+        [[AppPageSkipTool shared] appPageSkipToLogin];
     }
             
 }
 
 + (void)enterAttentionPage{ //进入关注引导界面
-    [[ToLogin shared].delegate appPageSkipToInitFocus];
+//    [[AppPageSkipTool shared] appPageSkipToInitFocus];
 //
 //    LoginLeaderController *leaderVC = [[LoginLeaderController alloc]init];
 //    [[PublicTool topViewController].navigationController pushViewController:leaderVC animated:YES];
@@ -104,7 +104,7 @@ static dispatch_once_t onceToken = 0;
 }
 
 + (void)enterBindPhonePage:(UIViewController*)viewController{
-    [[ToLogin shared].delegate appPageSkipToBindPhone];
+    [[AppPageSkipTool shared] appPageSkipToBindPhone];
 //    PhoneViewController *vc = [[PhoneViewController alloc]init];
 //    [viewController.navigationController pushViewController:vc  animated:YES ];
 }
@@ -152,7 +152,7 @@ static dispatch_once_t onceToken = 0;
         [[PublicTool topViewController].navigationController popViewControllerAnimated:YES];
     
     }else{
-        [[ToLogin shared].delegate setRootController];
+        [[AppPageSkipTool shared] setRootController];
     }
 }
 

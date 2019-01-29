@@ -7,15 +7,14 @@
 //
 
 #import "QMPTabbarController.h"
-#import <CommonLibrary/UITabBar+badge.h>
-#import <CommonLibrary/MainNavViewController.h>
-#import <CommonLibrary/MyViewController.h>
-#import <CommonLibrary/VSTabBarFix.h>
+#import "UITabBar+badge.h"
+#import "MyViewController.h"
+#import "VSTabBarFix.h"
 #import <pop/POP.h>
-#import <CommonLibrary/QMPDisCoverController.h>
+#import "QMPDisCoverController.h"
 #import "HomeViewController.h"
 #import "TabbarActivityViewController.h"
-#import <CommonLibrary/QMPCommunityController.h>
+#import "QMPCommunityController.h"
 
 @interface QMPTabbarController (){
     NSInteger _oldSelectedIndex;

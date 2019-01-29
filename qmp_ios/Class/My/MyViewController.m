@@ -6,7 +6,6 @@
 //  Copyright © 2016年 qimingpian. All rights reserved.
 //
 #import "MyViewController.h"
-#import "MainNavViewController.h"
 #import "SettingTableViewCell.h"
 #import "QuitTableViewCell.h"
 #import "TagsManagerViewController.h"

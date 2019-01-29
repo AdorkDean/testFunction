@@ -4,7 +4,7 @@
 //
 //  Created by QMP on 2018/6/28.
 //  Copyright © 2018年 Molly. All rights reserved.
-//  项目、机构、人的最新动态
+//  项目、机构、人的用户分享
 
 #import <UIKit/UIKit.h>
 typedef NS_ENUM(NSInteger, DynamicRelateCellType) {

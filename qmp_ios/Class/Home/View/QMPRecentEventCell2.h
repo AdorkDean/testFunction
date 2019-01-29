@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <CommonLibrary/BingGouProModel.h>
-#import <CommonLibrary/SmarketEventModel.h>
+#import "BingGouProModel.h"
+#import "SmarketEventModel.h"
 
 @class QMPRecentEvent2;
 NS_ASSUME_NONNULL_BEGIN

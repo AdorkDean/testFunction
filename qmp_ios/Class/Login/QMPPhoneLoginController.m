@@ -8,7 +8,7 @@
 
 #import "QMPPhoneLoginController.h"
 #import "AppDelegate.h"
-#import <CommonLibrary/PrivatePolicyView.h>
+#import "PrivatePolicyView.h"
 #import "QMPLoginController.h"
 
 @interface QMPPhoneLoginController ()

@@ -504,7 +504,7 @@
     }
     
     NSString *secTitle =  self.secTitleArr[section];
-    if ([secTitle containsString:@"动态"]) {
+    if ([secTitle containsString:@"用户分享"]) {
         if (self.isMy) {
             return 1;
         }else{
@@ -529,7 +529,7 @@
     }
     
     NSString *secTitle =  self.secTitleArr[section];
-    if ([secTitle containsString:@"动态"]) {
+    if ([secTitle containsString:@"用户分享"]) {
         if (self.isMy) {
             return HEADERHEIGHT;
         }else{
@@ -553,7 +553,7 @@
     
     NSString *secTitle =  self.secTitleArr[section];
     NSString *rightTitle = @"";
-    if ([secTitle containsString:@"动态"]) {
+    if ([secTitle containsString:@"用户分享"]) {
         if (!self.isMy && self.commentCount.integerValue == 0) {
             UIView *head = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREENW, 0.1)];
             head.backgroundColor = [UIColor whiteColor];
@@ -563,7 +563,7 @@
         rightTitle = self.commentCount.integerValue > 0 ? [NSString stringWithFormat:@"全部(%@)",self.commentCount]:@"";
         __weak typeof(self) weakSelf = self;
         if (_isMy && self.commentCount.integerValue > 0) {
-            CommonTableVwSecHeadVw *commentHeader = [[CommonTableVwSecHeadVw alloc]initlbltitle:@"最新动态" leftBtnTitle:@"发布" btnTitle:rightTitle callBack:^(NSString *sectionTitle) {
+            CommonTableVwSecHeadVw *commentHeader = [[CommonTableVwSecHeadVw alloc]initlbltitle:@"用户分享" leftBtnTitle:@"发布" btnTitle:rightTitle callBack:^(NSString *sectionTitle) {
                 [weakSelf enterAllComment];
                 
             } leftBtnClick:^{
@@ -573,7 +573,7 @@
             return commentHeader;
         }
         
-        return [[CommonTableVwSecHeadVw alloc]initlbltitle:self.isMy ? @"最新动态" : @"最新动态" btnTitle:rightTitle callBack:^(NSString *sectionTitle) {
+        return [[CommonTableVwSecHeadVw alloc]initlbltitle:self.isMy ? @"用户分享" : @"用户分享" btnTitle:rightTitle callBack:^(NSString *sectionTitle) {
             [weakSelf enterAllComment];
         }];
         
@@ -614,7 +614,7 @@
         return 74;
     } else if ([sectionTitle isEqualToString:@"教育经历"]) {
         return 74;
-    }else if([sectionTitle containsString:@"动态"]){
+    }else if([sectionTitle containsString:@"用户分享"]){
         if (self.commentCount.integerValue) {
             return 94+15;
         }
@@ -670,13 +670,13 @@
         cell.addBtn.tag = 1005;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
-    }else if([sectionTitle containsString:@"动态"]){
+    }else if([sectionTitle containsString:@"用户分享"]){
         if (self.commentCount.integerValue == 0) {
             __weak typeof(self) weakSelf = self;
             NoCommontInfoCell *cell = [NoCommontInfoCell cellWithTableView:tableView clickAddBtn:^{
                 [weakSelf enterPublishComment];
             }];
-            cell.title = @"您还没有动态，点击发表～～";
+            cell.title = @"您还没有用户分享，点击发表～～";
             return cell;
             
         }
@@ -685,7 +685,7 @@
                 [weakSelf enterAllComment];
             }];
             cell.dataArr = self.commentList;
-            cell.totalCount = [NSString stringWithFormat:@"共%@条动态",self.commentCount];
+            cell.totalCount = [NSString stringWithFormat:@"共%@条用户分享",self.commentCount];
             cell.type = DynamicRelateCellTypeUser;
             cell.ID = self.unionid;
             return cell;
@@ -705,7 +705,7 @@
         
     } else if ([sectionTitle isEqualToString:@"教育经历"]) {
 //        [self toAuthenticationPerson];
-    }else if([sectionTitle containsString:@"动态"] && (self.commentCount.integerValue == 0) && self.isMy){
+    }else if([sectionTitle containsString:@"用户分享"] && (self.commentCount.integerValue == 0) && self.isMy){
         [self enterPublishComment];
     }
 }
@@ -773,9 +773,9 @@
 - (NSMutableArray *)secTitleArr{
     if (!_secTitleArr) {
         if (self.isMy) {
-            _secTitleArr = [NSMutableArray arrayWithObjects:@"我发布的动态",@"人物介绍",@"工作经历",@"教育经历", nil];
+            _secTitleArr = [NSMutableArray arrayWithObjects:@"我发布的用户分享",@"人物介绍",@"工作经历",@"教育经历", nil];
         }else{
-            _secTitleArr = [NSMutableArray arrayWithObjects:@"Ta发布的动态",nil];
+            _secTitleArr = [NSMutableArray arrayWithObjects:@"Ta发布的用户分享",nil];
         }
     }
     return _secTitleArr;

@@ -7,7 +7,6 @@
 //
 
 #import "NewsWebViewController.h"
-#import "MainNavViewController.h"
 #import "LrdOutputView.h"
 #import "DownloadView.h"
 #import "InsetsLabel.h"

@@ -15,7 +15,6 @@
 #import "AppDelegateTool.h"
 #import "UserActionStatistics.h"
 #import "QMPTabbarController.h"
-#import "MainNavViewController.h"
 #import "ChatHelper.h"
 #import "NotificationHandle.h"
 #import "UpgradeVersionView.h"

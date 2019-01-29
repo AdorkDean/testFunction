@@ -16,7 +16,6 @@
 #import "QMPActivityCellManager.h"
 #import "QMPActivityActionView.h"
 #import "QMPActivityDetialBarView.h"
-#import "MainNavViewController.h"
 #import "ClaimCell.h"
 
 

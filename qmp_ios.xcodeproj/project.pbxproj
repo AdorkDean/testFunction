@@ -2514,16 +2514,16 @@
 		AD802BE521FF22CA004911F9 /* NetworkEngine */ = {
 			isa = PBXGroup;
 			children = (
-				AD802BE621FF22CA004911F9 /* QMPWechatEvent.h */,
-				AD802BE721FF22CA004911F9 /* NetworkManager.h */,
-				AD802BE821FF22CA004911F9 /* NetConst.m */,
-				AD802BE921FF22CA004911F9 /* UserActionStatistics.m */,
-				AD802BEA21FF22CA004911F9 /* AppNetRequest.m */,
-				AD802BEB21FF22CA004911F9 /* QMPWechatEvent.m */,
-				AD802BEC21FF22CA004911F9 /* NetConst.h */,
-				AD802BED21FF22CA004911F9 /* NetworkManager.m */,
 				AD802BEE21FF22CA004911F9 /* AppNetRequest.h */,
+				AD802BEA21FF22CA004911F9 /* AppNetRequest.m */,
+				AD802BEC21FF22CA004911F9 /* NetConst.h */,
+				AD802BE821FF22CA004911F9 /* NetConst.m */,
+				AD802BE721FF22CA004911F9 /* NetworkManager.h */,
+				AD802BED21FF22CA004911F9 /* NetworkManager.m */,
+				AD802BE621FF22CA004911F9 /* QMPWechatEvent.h */,
+				AD802BEB21FF22CA004911F9 /* QMPWechatEvent.m */,
 				AD802BEF21FF22CA004911F9 /* UserActionStatistics.h */,
+				AD802BE921FF22CA004911F9 /* UserActionStatistics.m */,
 			);
 			path = NetworkEngine;
 			sourceTree = "<group>";
@@ -5578,8 +5578,8 @@
 				AD09F7EC2191AD33005CE5F8 /* qmp_ios.entitlements */,
 				AD41248D21916DF300DA1372 /* BundleFile */,
 				AD802BE521FF22CA004911F9 /* NetworkEngine */,
-				AD82A20D2192B3B900CBDE02 /* Helper */,
 				AD80336C2200320A004911F9 /* Class */,
+				AD82A20D2192B3B900CBDE02 /* Helper */,
 				ADD9FDC6218C3BEB00434AC6 /* AppDelegate.h */,
 				ADD9FDC7218C3BEB00434AC6 /* AppDelegate.m */,
 				AD658C1321901C4B00EA6B63 /* Other */,

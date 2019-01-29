@@ -6,7 +6,7 @@
 //  Copyright © 2018年 Molly. All rights reserved.
 //
 
-#import <CommonLibrary/BaseViewController.h>
+#import "BaseViewController.h"
 
 @interface HomeViewController : BaseViewController
 

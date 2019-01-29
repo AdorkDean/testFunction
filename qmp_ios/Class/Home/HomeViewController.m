@@ -7,27 +7,27 @@
 //  首页控制器
 
 #import "HomeViewController.h"
-#import <CommonLibrary/SPPageMenu.h>
+#import "SPPageMenu.h"
 #import "HomeHeaderView.h"
-#import <CommonLibrary/MainSearchController.h>
-#import <CommonLibrary/HomeNavigationBar.h>
+#import "MainSearchController.h"
+#import "HomeNavigationBar.h">"
 #import "HomeHeaderView.h"
 #import "Home3ViewController.h"
 #import "Home5ViewController.h"
 #import "Home6ViewController.h"
 #import "HomeIPOViewController.h"
-#import  <CommonLibrary/HomeAllViewController.h>
-#import <CommonLibrary/ReportController.h>
-#import  <CommonLibrary/InvestOpportunityViewController.h>
-#import  <CommonLibrary/QMPOrganizationLibraryViewController.h>
-#import  <CommonLibrary/QMPSecondaryMarketViewController.h>
-#import  <CommonLibrary/QMPDataGraphViewController.h>
-#import  <CommonLibrary/FinanceReportController.h>
-#import  <CommonLibrary/InvestorsListController.h>
-#import  <CommonLibrary/ProspectusListController.h>
-#import  <CommonLibrary/ProductAlbumController.h>
-#import  <CommonLibrary/FinanceReportController.h>
-#import <CommonLibrary/AppDelegateTool.h>
+#import "HomeAllViewController.h"
+#import "ReportController.h"
+#import  "InvestOpportunityViewController.h"
+#import  "QMPOrganizationLibraryViewController.h"
+#import  "QMPSecondaryMarketViewController.h"
+#import  "QMPDataGraphViewController.h"
+#import  "FinanceReportController.h"
+#import  "InvestorsListController.h"
+#import  "ProspectusListController.h"
+#import  "ProductAlbumController.h"
+#import  "FinanceReportController.h"
+#import "AppDelegateTool.h"
 
 #define TOPHEIGHT (kStatusBarHeight+47+45+78) //47是搜索按钮以上的高度,45搜索高度
 #define PageMenuH 40

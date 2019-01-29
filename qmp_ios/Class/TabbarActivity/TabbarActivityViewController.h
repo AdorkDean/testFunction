@@ -6,7 +6,7 @@
 //  Copyright © 2018 Molly. All rights reserved.
 //
 
-#import <CommonLibrary/BaseViewController.h>
+#import "BaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

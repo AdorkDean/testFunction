@@ -7,8 +7,8 @@
 //
 
 #import "TabbarActivityViewController.h"
-#import <CommonLibrary/HomeNavigationBar.h>
-#import <CommonLibrary/QMPActivityCategoryViewController.h>
+#import "HomeNavigationBar.h"
+#import "QMPActivityCategoryViewController.h"
 
 @interface TabbarActivityViewController () <SPPageMenuDelegate> {
     NSInteger _selectIndex;

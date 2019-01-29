@@ -8,7 +8,7 @@
 
 #import "HomeIPOViewController.h"
 #import "QMPRecentEventCell2.h"
-#import <CommonLibrary/SmarketEventModel.h>
+#import "SmarketEventModel.h"
 @interface HomeIPOViewController ()
 @property (nonatomic, strong) NSMutableArray *data;
 @end

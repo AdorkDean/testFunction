@@ -80,7 +80,7 @@
 }
 - (CGFloat)heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *title = [self titleOfSection:indexPath.section];
-    if ([title isEqualToString:@"最新动态"]) {
+    if ([title isEqualToString:@"用户分享"]) {
         if (self.countOfActivities == 0) {
             return 45.0;
         }
@@ -151,7 +151,7 @@
 //    }
 
     NSMutableArray *indexs = [NSMutableArray array];
-    NSArray *allSecctions = @[@"最新动态",@"机构概况",@"机构介绍",@"投资团队",@"在服项目",@"FA案例",@"投资案例", @"合投/参投机构", @"相关公司",@"获奖经历", @"相关新闻",@"招聘信息"];
+    NSArray *allSecctions = @[@"用户分享",@"机构概况",@"机构介绍",@"投资团队",@"在服项目",@"FA案例",@"投资案例", @"合投/参投机构", @"相关公司",@"获奖经历", @"相关新闻",@"招聘信息"];
     self.sectionTitles = [NSMutableArray arrayWithArray:allSecctions];
     NSInteger index = 0;
     for (NSString *title in allSecctions) {
@@ -211,7 +211,7 @@
         return @"";
     }
     NSString *title = [self.sectionTitles objectAtIndex:section];
-    if ([title isEqualToString:@"最新动态"]) {
+    if ([title isEqualToString:@"用户分享"]) {
         return self.countOfActivities > 0 ? [NSString stringWithFormat:@"全部(%zd)", self.countOfActivities] : @"";
     }
     if ([title isEqualToString:@"投资团队"]) {
@@ -248,7 +248,7 @@
 - (NSMutableArray *)sectionTitles {
     if (!_sectionTitles) {
         _sectionTitles = [NSMutableArray array];
-//        [_sectionTitles addObjectsFromArray:@[@"最新动态",@"机构概况",@"机构介绍",@"投资团队",@"在服项目",@"FA案例",@"投资案例", @"合投/参投机构", @"相关公司", @"相关新闻"]];
+//        [_sectionTitles addObjectsFromArray:@[@"用户分享",@"机构概况",@"机构介绍",@"投资团队",@"在服项目",@"FA案例",@"投资案例", @"合投/参投机构", @"相关公司", @"相关新闻"]];
     }
     return _sectionTitles;
 }
@@ -491,7 +491,7 @@
 - (NSMutableArray *)hasTitleArray {
     if (!_hasTitleArray) {
         _hasTitleArray = [NSMutableArray array];
-        [_hasTitleArray addObjectsFromArray:@[@"最新动态",@"机构介绍"]];
+        [_hasTitleArray addObjectsFromArray:@[@"用户分享",@"机构介绍"]];
     }
     return _hasTitleArray;
 }

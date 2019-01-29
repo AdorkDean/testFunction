@@ -218,7 +218,7 @@ UITableViewDataSource,LrdOutputViewDelegate,ShareDelegate,ManagerAlertDelegate,S
         return 1;
     }else if([sectionTitle isEqualToString:@"项目介绍"]){
         return self.basicInfoCellInfoArr.count;
-    }else if([sectionTitle isEqualToString:@"最新动态"]){
+    }else if([sectionTitle isEqualToString:@"用户分享"]){
         return 1;
         
     }else  if ([sectionTitle isEqualToString:@"招聘信息"]) {
@@ -299,7 +299,7 @@ UITableViewDataSource,LrdOutputViewDelegate,ShareDelegate,ManagerAlertDelegate,S
                 return 24;
             }
         }
-    }else if([sectionTitle isEqualToString:@"最新动态"]){
+    }else if([sectionTitle isEqualToString:@"用户分享"]){
         if (self.viewModel.commentLayouts.count == 0) {
             return 45;
         }
@@ -452,7 +452,7 @@ UITableViewDataSource,LrdOutputViewDelegate,ShareDelegate,ManagerAlertDelegate,S
             return cell;
         }
         
-    }else if([sectionTitle isEqualToString:@"最新动态"]){
+    }else if([sectionTitle isEqualToString:@"用户分享"]){
         if (self.viewModel.commentLayouts.count == 0) {
             __weak typeof(self) weakSelf = self;
             NoCommontInfoCell *cell = [NoCommontInfoCell cellWithTableView:tableView clickAddBtn:^{
@@ -463,10 +463,10 @@ UITableViewDataSource,LrdOutputViewDelegate,ShareDelegate,ManagerAlertDelegate,S
         }
         __weak typeof(self) weakSelf = self;
         DynamicRelateCell *cell = [DynamicRelateCell cellWithTableView:tableView clickSeeMore:^{
-            [weakSelf.viewModel.enterSecondPageCommand execute:@"最新动态"];
+            [weakSelf.viewModel.enterSecondPageCommand execute:@"用户分享"];
         }];
         cell.dataArr = self.viewModel.commentLayouts;
-        cell.totalCount = [NSString stringWithFormat:@"共%@条动态",self.viewModel.sectionDataCountDic[@"最新动态"]];
+        cell.totalCount = [NSString stringWithFormat:@"共%@条动态",self.viewModel.sectionDataCountDic[@"用户分享"]];
         cell.ID = self.viewModel.companyDetail.company_basic.product_id;
         cell.type = DynamicRelateCellTypeProduct;
         return cell;
@@ -550,7 +550,7 @@ UITableViewDataSource,LrdOutputViewDelegate,ShareDelegate,ManagerAlertDelegate,S
         ZhaopinDetailController *detailVC = [[ZhaopinDetailController alloc]init];
         detailVC.zhaopinM = self.viewModel.zhaopinArr[indexPath.row];
         [self.navigationController pushViewController:detailVC animated:YES];
-    }else if ([sectionTitle isEqualToString:@"最新动态"]) {
+    }else if ([sectionTitle isEqualToString:@"用户分享"]) {
         if (self.viewModel.commentLayouts.count == 0) {
             [self.viewModel.publishCommentCommand execute:nil];
         }
@@ -590,7 +590,7 @@ UITableViewDataSource,LrdOutputViewDelegate,ShareDelegate,ManagerAlertDelegate,S
     }
     NSString *title = self.sectionTitleArr[section];
 
-    if ([title containsString:@"最新动态"]) {
+    if ([title containsString:@"用户分享"]) {
         return 45;
     }else{
         if ([self.sectionTitleArr[section-1] containsString:@"融资历史"]) {
@@ -607,7 +607,7 @@ UITableViewDataSource,LrdOutputViewDelegate,ShareDelegate,ManagerAlertDelegate,S
     }
     __weak typeof(self) weakSelf = self;    
     NSString *title = self.sectionTitleArr[section];
-    if ([self.sectionTitleArr[section] isEqualToString:@"最新动态"] || [title isEqualToString:@"团队成员"] || [title isEqualToString:@"相关新闻"] || [title isEqualToString:@"招聘信息"] || [title isEqualToString:@"相似项目"] || [title isEqualToString:@"公司业务"] || [title isEqualToString:@"工商信息"] || [title isEqualToString:@"App数据"] || [title isEqualToString:@"投资人"] || [title isEqualToString:@"获奖经历"]) {
+    if ([self.sectionTitleArr[section] isEqualToString:@"用户分享"] || [title isEqualToString:@"团队成员"] || [title isEqualToString:@"相关新闻"] || [title isEqualToString:@"招聘信息"] || [title isEqualToString:@"相似项目"] || [title isEqualToString:@"公司业务"] || [title isEqualToString:@"工商信息"] || [title isEqualToString:@"App数据"] || [title isEqualToString:@"投资人"] || [title isEqualToString:@"获奖经历"]) {
         
         NSString *rightTitle;
         if ([title isEqualToString:@"团队成员"]) {
@@ -616,8 +616,8 @@ UITableViewDataSource,LrdOutputViewDelegate,ShareDelegate,ManagerAlertDelegate,S
             rightTitle  = self.viewModel.newsArr.count > 3 ? [NSString stringWithFormat:@"全部(%@)",self.viewModel.sectionDataCountDic[@"新闻"]]:@"";
         }else if ([title isEqualToString:@"招聘信息"]) {
             rightTitle  = self.viewModel.zhaopinArr.count > 3 ? [NSString stringWithFormat:@"全部(%@)",self.viewModel.sectionDataCountDic[@"招聘"]]:@"";
-        }else if([title isEqualToString:@"最新动态"]){
-           rightTitle = self.viewModel.status_Info.comment_count > 0 ? [NSString stringWithFormat:@"全部(%@)",self.viewModel.sectionDataCountDic[@"最新动态"]]:@"";
+        }else if([title isEqualToString:@"用户分享"]){
+           rightTitle = self.viewModel.status_Info.comment_count > 0 ? [NSString stringWithFormat:@"全部(%@)",self.viewModel.sectionDataCountDic[@"用户分享"]]:@"";
             if (self.viewModel.status_Info.comment_count > 0) {
                 CommonTableVwSecHeadVw *commentHeader = [[CommonTableVwSecHeadVw alloc]initlbltitle:title leftBtnTitle:@"发布" btnTitle:rightTitle callBack:^(NSString *sectionTitle) {
                     [weakSelf.viewModel.enterSecondPageCommand execute:sectionTitle];
@@ -861,7 +861,7 @@ UITableViewDataSource,LrdOutputViewDelegate,ShareDelegate,ManagerAlertDelegate,S
     
     self.sectionTitleArr = [NSMutableArray array];
     
-    [self.sectionTitleArr addObject:@"最新动态"];
+    [self.sectionTitleArr addObject:@"用户分享"];
     if (self.viewModel.companyDetail.company_basic.allipo.count > 0) {
         [self.sectionTitleArr addObject:@"证券信息"];
     }

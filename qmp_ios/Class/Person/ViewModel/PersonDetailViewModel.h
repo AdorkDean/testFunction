@@ -37,7 +37,7 @@
 
 
 @property(nonatomic,strong) TagsFrame *jtjdFrame; //投资阶段
-@property(nonatomic,strong)NSMutableArray *commentLayouts; //动态数组
+@property(nonatomic,strong)NSMutableArray *commentLayouts; //用户分享数组
 
 
 @property (strong, nonatomic)NSMutableDictionary *introduceInfoDic;
@@ -53,7 +53,7 @@
 //关注 btnEvent 和 刷新 signal
 @property (nonatomic ,readonly) RACCommand *updateAttentStatusCommand;
 
-//发布动态
+//发布用户分享
 @property (nonatomic ,readonly) RACCommand *publishCommentCommand;
 
 //分区头部 sectionHeaderBtnClick

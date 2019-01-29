@@ -731,8 +731,8 @@
     
     [self.secTitleArr removeAllObjects];
     
-    //动态
-    [self.secTitleArr addObject:@"最新动态"];
+    //用户分享
+    [self.secTitleArr addObject:@"用户分享"];
     
     //自我介绍
     [self.secTitleArr addObject:@"自我介绍"];
@@ -800,7 +800,7 @@
         return 1;
     }
     NSString *sectionTitle = self.secTitleArr[section];
-    if ([sectionTitle containsString:@"动态"]){
+    if ([sectionTitle containsString:@"用户分享"]){
         return self.isMy ? 1 : (self.viewModel.commentLayouts.count ? 1 : 1);
     }else if ([sectionTitle isEqualToString:@"自我介绍"]) {
         if (![PublicTool isNull:self.viewModel.person.jieshao]) {
@@ -868,9 +868,9 @@
         rightTitle = @"编辑";
     }    
     __weak typeof(self) weakSelf = self;
-    if ([title containsString:@"动态"] || [title containsString:@"投资案例"]|| [title containsString:@"服务案例"] || [title containsString:@"新闻"] || [title containsString:@"商业关系"]) {
+    if ([title containsString:@"用户分享"] || [title containsString:@"投资案例"]|| [title containsString:@"服务案例"] || [title containsString:@"新闻"] || [title containsString:@"商业关系"]) {
         if (!_isEditing) {
-            if ([title containsString:@"动态"]) {
+            if ([title containsString:@"用户分享"]) {
                 rightTitle = self.viewModel.status_Info.comment_count > 0 ? [NSString stringWithFormat:@"全部(%ld)",self.viewModel.status_Info.comment_count]:@"";
                 if (self.viewModel.status_Info.comment_count > 0) {
                     CommonTableVwSecHeadVw *commentHeader = [[CommonTableVwSecHeadVw alloc]initlbltitle:title leftBtnTitle:@"发布" btnTitle:rightTitle callBack:^(NSString *sectionTitle) {
@@ -996,7 +996,7 @@
     }
     NSString *sectionTitle = self.secTitleArr[indexPath.section];
     
-    if([sectionTitle containsString:@"动态"]){
+    if([sectionTitle containsString:@"用户分享"]){
         if (self.viewModel.commentLayouts.count == 0) {
             return 45;
         }
@@ -1101,24 +1101,24 @@
     }
     
     NSString *sectionTitle = self.secTitleArr[indexPath.section];
-    if([sectionTitle containsString:@"动态"]){
+    if([sectionTitle containsString:@"用户分享"]){
         if (self.viewModel.commentLayouts.count == 0) {
             __weak typeof(self) weakSelf = self;
             NoCommontInfoCell *cell = [NoCommontInfoCell cellWithTableView:tableView clickAddBtn:^{
                 [weakSelf.viewModel.publishCommentCommand execute:nil];
                 
             }];
-            cell.title = self.isMy ? @"您还没有动态，点击发表～～" : @"暂无动态，点击发表～～";
+            cell.title = self.isMy ? @"您还没有用户分享，点击发表～～" : @"暂无用户分享，点击发表～～";
             return cell;
             
         }
         __weak typeof(self) weakSelf = self;
         
         DynamicRelateCell *cell = [DynamicRelateCell cellWithTableView:tableView clickSeeMore:^{
-            [weakSelf.viewModel.sectionHeaderBtnCommand execute:@{@"title":@"动态",@"type":@"all"}];
+            [weakSelf.viewModel.sectionHeaderBtnCommand execute:@{@"title":@"用户分享",@"type":@"all"}];
         }];
         cell.dataArr = self.viewModel.commentLayouts;
-        cell.totalCount = [NSString stringWithFormat:@"共%ld条动态",self.viewModel.status_Info.comment_count];
+        cell.totalCount = [NSString stringWithFormat:@"共%ld条用户分享",self.viewModel.status_Info.comment_count];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.type = DynamicRelateCellTypePerson;
         cell.ID = self.viewModel.person.personId;
@@ -1491,7 +1491,7 @@
         return;
     }
     NSString *sectionTitle = self.secTitleArr[indexPath.section];
-    if ([sectionTitle containsString:@"动态"]) {
+    if ([sectionTitle containsString:@"用户分享"]) {
        
     }else if ([sectionTitle isEqualToString:@"投资案例"]) {
         if (self.viewModel.person.tzanli1.count == 0 || _isEditing) return;

@@ -22,8 +22,6 @@
 #import <Masonry.h>
 #import <UIImageView+WebCache.h>
 
-
-#import <CommonLibrary/CommonLibrary.h>
 #pragma mark --Model--
 
 #import "DownloadTool.h"
@@ -50,6 +48,7 @@
 
 
 #pragma mark --BaseView--
+#import "MainNavViewController.h"
 #import "BaseViewController.h"
 #import "BaseWebViewController.h"
 #import "QMPTabbarController.h"

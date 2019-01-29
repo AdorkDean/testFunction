@@ -7,8 +7,6 @@
 //
 #import "ShareTo.h"
 #import "TestNetWorkReached.h"
-// 在需要进行授权的UIViewController中加入如下代码
-#import "MainNavViewController.h"
 #import "WXApi.h"
 #import "ShareView.h"
 #import "ImageShareController.h"

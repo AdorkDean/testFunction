@@ -8,7 +8,6 @@
 
 #import "BaseViewController.h"
 #import "TestNetWorkReached.h"
-#import "MainNavViewController.h"
 #import "LoadingAnimator.h"
 
 @interface BaseViewController ()

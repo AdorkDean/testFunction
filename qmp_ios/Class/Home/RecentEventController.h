@@ -6,7 +6,7 @@
 //  Copyright © 2019 WSS. All rights reserved.
 //最近发生
 
-#import <CommonLibrary/BaseViewController.h>
+#import "BaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

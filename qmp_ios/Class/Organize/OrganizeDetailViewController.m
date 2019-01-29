@@ -305,7 +305,7 @@
     [self.navigationController pushViewController:jigouVC animated:YES];
 }
 - (void)gotoNextPageWithTitle:(NSString *)title {
-    if ([title isEqualToString:@"最新动态"]) {
+    if ([title isEqualToString:@"用户分享"]) {
         [self gotoPostActivityList];
     }else if ([title isEqualToString:@"投资团队"]) {
         [self gotoOrganizeTeamList];
@@ -447,12 +447,12 @@
     }
     NSString *title = [self.viewModel titleOfSection:indexPath.section];
     __weak typeof(self) weakSelf = self;
-    if ([title isEqualToString:@"最新动态"]) {
+    if ([title isEqualToString:@"用户分享"]) {
         if (self.viewModel.countOfActivities == 0) {
             NoCommontInfoCell *cell = [NoCommontInfoCell cellWithTableView:tableView clickAddBtn:^{
                 [weakSelf gotoPostActivity];
             }];
-            cell.title = @"暂无动态，点击发表～～";
+            cell.title = @"暂无用户分享，点击发表～～";
             return cell;
         }
         DynamicRelateCell * cell = [DynamicRelateCell cellWithTableView:tableView clickSeeMore:^{
@@ -461,7 +461,7 @@
         cell.dataArr = self.viewModel.activityData;
         cell.ID = self.viewModel.organizeInfo.ticket;
         cell.type = DynamicRelateCellTypeOrganize;
-        cell.totalCount = [NSString stringWithFormat:@"共%ld条动态",self.viewModel.countOfActivities];
+        cell.totalCount = [NSString stringWithFormat:@"共%ld条用户分享",self.viewModel.countOfActivities];
         return cell;
     }else if ([title isEqualToString:@"机构介绍"]) {
         if (indexPath.row == 0) {
@@ -610,7 +610,7 @@
     NSString *title = [self.viewModel titleOfSection:section];
     NSString *rightTitle = [self.viewModel rightTitleOfSection:section];
     __weak typeof(self) weakSelf = self;
-    if ([title isEqualToString:@"最新动态"] && self.viewModel.countOfActivities != 0) {
+    if ([title isEqualToString:@"用户分享"] && self.viewModel.countOfActivities != 0) {
         
         CommonTableVwSecHeadVw *headerView = [[CommonTableVwSecHeadVw alloc] initlbltitle:title leftBtnTitle:@"发布" btnTitle:rightTitle callBack:^(NSString *sectionTitle) {
             [weakSelf gotoNextPageWithTitle:sectionTitle];
@@ -622,7 +622,7 @@
                 [[PublicTool topViewController].navigationController pushViewController:postVC animated:YES];
             
                 postVC.postSuccessBlock = ^{
-                    //如果发布了动态 ,重新请求动态，则刷新 refreshCommentListSignal
+                    //如果发布了用户分享 ,重新请求用户分享，则刷新 refreshCommentListSignal
                     [weakSelf requestCommentListAgain];
                 };
         }];
@@ -995,7 +995,7 @@
                 complated();
                 return;
             }else{
-                [self requestActivityList]; // 动态列表
+                [self requestActivityList]; // 用户分享列表
                 [self requestCountOfOrganize];
                 complated();
             }
