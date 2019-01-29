@@ -120,7 +120,7 @@
 }
 - (UIBarButtonItem *)filterItem {
     if (!_filterItem) {
-        UIImage *image = [BundleTool imageNamed:@"nav_filter_gray"];
+        UIImage *image = [UIImage imageNamed:@"nav_filter_gray"];
         image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         _filterItem = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(filterItemClick)];
     }
@@ -128,7 +128,7 @@
 }
 - (UIBarButtonItem *)filterBlueItem {
     if (!_filterBlueItem) {
-        UIImage *image = [BundleTool imageNamed:@"nav_filter_blue"];
+        UIImage *image = [UIImage imageNamed:@"nav_filter_blue"];
         image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         _filterBlueItem = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(filterItemClick)];
     }
@@ -136,7 +136,7 @@
 }
 - (UIBarButtonItem *)searchItem {
     if (!_searchItem) {
-        UIImage *image = [BundleTool imageNamed:@"nav_search_icon"];
+        UIImage *image = [UIImage imageNamed:@"nav_search_icon"];
         image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         _searchItem = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(searchItemClick)];
     }

@@ -63,7 +63,7 @@
     
     //arrow
     UIImageView *arrow = [[UIImageView alloc]initWithFrame:CGRectMake(_topView.width-35, 0, 18, 18)];
-    arrow.image = [BundleTool imageNamed:@"cell_arrow"];
+    arrow.image = [UIImage imageNamed:@"cell_arrow"];
     [_topView addSubview:arrow];
     arrow.centerY = lab.centerY;
     
@@ -96,7 +96,7 @@
     _collectionView.delegate = self;
     _collectionView.contentInset = UIEdgeInsetsMake(0, 17, 0, 17);
     [self.contentView addSubview:_collectionView];
-    [_collectionView registerNib:[UINib nibWithNibName:@"FieldCollectionCell" bundle:[BundleTool commonBundle]] forCellWithReuseIdentifier:@"FieldCollectionCellID"];
+    [_collectionView registerNib:[UINib nibWithNibName:@"FieldCollectionCell" bundle:nil] forCellWithReuseIdentifier:@"FieldCollectionCellID"];
     _collectionView.backgroundColor = [UIColor whiteColor];
 
     

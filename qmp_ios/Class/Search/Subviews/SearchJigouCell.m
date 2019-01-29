@@ -87,7 +87,7 @@
     _jieduanLab.text = @"";
     
     if (![PublicTool isNull:model.icon]) {
-        [_iconImageV sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[BundleTool imageNamed:@"product_default"]];//loudou
+        [_iconImageV sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[UIImage imageNamed:@"product_default"]];//loudou
         
     }
     if (model.jigou_name&&[model.jigou_name isKindOfClass:[NSString class]]&&![PublicTool isNull:model.jigou_name]) {
@@ -120,7 +120,7 @@
     _jieduanLab.text = @"";
     
     if (![PublicTool isNull:dic[@"icon"]]) {
-        [_iconImageV sd_setImageWithURL:[NSURL URLWithString:dic[@"icon"]] placeholderImage:[BundleTool imageNamed:@"product_default"]];//loudou
+        [_iconImageV sd_setImageWithURL:[NSURL URLWithString:dic[@"icon"]] placeholderImage:[UIImage imageNamed:@"product_default"]];//loudou
     }
     if (dic[@"name"]&&[dic[@"name"] isKindOfClass:[NSString class]]&&![PublicTool isNull:dic[@"name"]]) {
         _jigou_nameLab.text = dic[@"name"];

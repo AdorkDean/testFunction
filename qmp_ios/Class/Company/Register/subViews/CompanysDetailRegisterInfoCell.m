@@ -42,7 +42,7 @@
     
     CGFloat searchW = 26.f;
     UIButton *searchBtn = [[UIButton alloc] initWithFrame:CGRectMake(SCREENW - 10.f - searchW, 10.f, searchW, searchW)];
-    [searchBtn setBackgroundImage:[BundleTool imageNamed:@"search-yellow"] forState:UIControlStateNormal];
+    [searchBtn setBackgroundImage:[UIImage imageNamed:@"search-yellow"] forState:UIControlStateNormal];
     [self.contentView addSubview:searchBtn];
     self.searchBtn = searchBtn;
 }

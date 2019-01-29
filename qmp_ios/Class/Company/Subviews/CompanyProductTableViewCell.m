@@ -86,7 +86,7 @@
 - (void)initData:(SearchCompanyModel *)model{
     _company = model;
     
-    [_iconImageV sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[BundleTool imageNamed:@"product_default"]];
+    [_iconImageV sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[UIImage imageNamed:@"product_default"]];
     _productLab.text = model.product;
     _yewuLab.text = [PublicTool isNull:model.yewu] ? model.desc : model.yewu;
 

@@ -88,7 +88,7 @@
     [addBtn setTitleColor:RGBa(100,99,105,1) forState:UIControlStateNormal];
     addBtn.titleLabel.font = [UIFont systemFontOfSize:15];
     [addBtn setTitle:@"添加" forState:UIControlStateNormal];
-    [addBtn setImage:[BundleTool imageNamed:@"add-yellow"] forState:UIControlStateNormal];
+    [addBtn setImage:[UIImage imageNamed:@"add-yellow"] forState:UIControlStateNormal];
     [addBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:5];
     [self.contentView addSubview:addBtn];
     _addBtn = addBtn;
@@ -109,9 +109,9 @@
     
     self.model = model;
     
-    [_iconImageV sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[BundleTool imageNamed:@"product_default"]];
+    [_iconImageV sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[UIImage imageNamed:@"product_default"]];
     
-//    [_iconImageV sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[BundleTool imageNamed:@"product_default"] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+//    [_iconImageV sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[UIImage imageNamed:@"product_default"] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
 //        _iconImageV.image = [PublicTool OriginImage:image scaleToSize:CGSizeMake(80, 80)];
 //    }];
     

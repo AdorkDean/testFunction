@@ -65,7 +65,7 @@
     [self.tableView registerClass:[EditCell class] forCellReuseIdentifier:@"EditCellID"];
     
     [self.tableView registerClass:[TextViewCell class] forCellReuseIdentifier:@"TextViewCellID"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"MyInfoTableViewCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"MyInfoTableViewCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"MyInfoTableViewCell" bundle:nil] forCellReuseIdentifier:@"MyInfoTableViewCellID"];
     
     if (@available(iOS 11.0, *)) {
         self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
@@ -214,7 +214,7 @@
         static NSString *infoCellIdentifier = @"MyInfoTableViewCell";
         MyInfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:infoCellIdentifier];
         if (!cell) {
-            cell = [[[BundleTool commonBundle] loadNibNamed:@"MyInfoTableViewCell" owner:nil options:nil] lastObject];
+            cell = [[nil loadNibNamed:@"MyInfoTableViewCell" owner:nil options:nil] lastObject];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
         cell.rightImgV.hidden = NO;

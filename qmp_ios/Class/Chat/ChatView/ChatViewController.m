@@ -669,7 +669,7 @@
 - (void)createBackButton{
     
     UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 60, 44)];
-    [leftButton setImage:[BundleTool imageNamed:@"left-arrow"] forState:UIControlStateNormal];
+    [leftButton setImage:[UIImage imageNamed:@"left-arrow"] forState:UIControlStateNormal];
     [leftButton addTarget:self action:@selector(popSelf) forControlEvents:UIControlEventTouchUpInside];
     
     UIBarButtonItem *leftButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];

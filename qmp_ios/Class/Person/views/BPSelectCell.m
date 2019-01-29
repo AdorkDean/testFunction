@@ -32,8 +32,8 @@
 
 - (void)setUI{
     _selecctBtn  = [[UIButton alloc]init];
-    [_selecctBtn setImage:[BundleTool imageNamed:@"bp_unSelected"] forState:UIControlStateNormal];
-    [_selecctBtn setImage:[BundleTool imageNamed:@"bp_selected"] forState:UIControlStateSelected];
+    [_selecctBtn setImage:[UIImage imageNamed:@"bp_unSelected"] forState:UIControlStateNormal];
+    [_selecctBtn setImage:[UIImage imageNamed:@"bp_selected"] forState:UIControlStateSelected];
     [self.contentView addSubview:_selecctBtn];
     
     _titleLabel = [[UILabel alloc]init];

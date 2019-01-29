@@ -58,7 +58,7 @@
         UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
         negativeSpacer.width = RIGHTNVSPACE;
         UIButton * moreBtn = [[UIButton alloc] initWithFrame:RIGHTBARBTNFRAME];
-        [moreBtn setImage:[BundleTool imageNamed:@"moreOptions"] forState:UIControlStateNormal];
+        [moreBtn setImage:[UIImage imageNamed:@"moreOptions"] forState:UIControlStateNormal];
         [moreBtn addTarget:self action:@selector(moreOptions:) forControlEvents:UIControlEventTouchUpInside];
         UIBarButtonItem * moreItem = [[UIBarButtonItem alloc]initWithCustomView:moreBtn];
         self.navigationItem.rightBarButtonItems = @[ negativeSpacer,moreItem];
@@ -77,7 +77,7 @@
         UIBarButtonItem * weekItem = [[UIBarButtonItem alloc] initWithCustomView:weekBtn];
         
         UIButton * moreBtn = [[UIButton alloc] initWithFrame:RIGHTBARBTNFRAME];
-        [moreBtn setImage:[BundleTool imageNamed:@"moreOptions"] forState:UIControlStateNormal];
+        [moreBtn setImage:[UIImage imageNamed:@"moreOptions"] forState:UIControlStateNormal];
         [moreBtn addTarget:self action:@selector(moreOptions:) forControlEvents:UIControlEventTouchUpInside];
         UIBarButtonItem * moreItem = [[UIBarButtonItem alloc]initWithCustomView:moreBtn];
         
@@ -242,7 +242,7 @@
     UIImage *pngImg = nil;
     CGFloat max, scale = 1.0;
     CGSize viewSize = [view bounds].size;
-    UIImage *image2 = [BundleTool imageNamed:@"QuickMark"];
+    UIImage *image2 = [UIImage imageNamed:@"QuickMark"];
     
     // 获取全屏的Size，包含可见部分和不可见部分(滚动部分)
     CGSize size = [view sizeThatFits:CGSizeZero];
@@ -571,7 +571,7 @@
                 NSString* titleTimelineStr = [shareDic objectForKey:@"titleTimelineStr"];
                 NSString *detailStr = [shareDic objectForKey:@"detailStr"];
                 
-                [self.shareToTool shareToOtherApp:detailStr aTitleSessionStr:titleSessionStr aTitleTimelineStr:titleTimelineStr aIcon:[BundleTool imageNamed:@"share_ribao"] aOpenUrl:_url onViewController:self shareResult:^(BOOL shareSuccess) {
+                [self.shareToTool shareToOtherApp:detailStr aTitleSessionStr:titleSessionStr aTitleTimelineStr:titleTimelineStr aIcon:[UIImage imageNamed:@"share_ribao"] aOpenUrl:_url onViewController:self shareResult:^(BOOL shareSuccess) {
                     if (shareSuccess) {
                         NSString *type = @"融资周报分享";
                         NSDictionary *dict = @{@"type" : type};

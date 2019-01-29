@@ -124,13 +124,13 @@
     
     UINavigationController *documentNav = [[UINavigationController alloc] initWithRootViewController:document];
 
-//    UIImageView *imgView = [[UIImageView alloc] initWithImage:[BundleTool imageNamed:@ "nav"]];
+//    UIImageView *imgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@ "nav"]];
 //    imgView.frame = CGRectMake(0, -20, SCREENW, 20.f);
 //    [documentNav.navigationBar addSubview:imgView];
     
     [documentNav.navigationBar setTintColor:[UIColor whiteColor]];
     [documentNav.navigationBar setTranslucent:NO];
-//    [documentNav.navigationBar setBackgroundImage:[BundleTool imageNamed:@ "nav"] forBarMetrics:UIBarMetricsDefault];
+//    [documentNav.navigationBar setBackgroundImage:[UIImage imageNamed:@ "nav"] forBarMetrics:UIBarMetricsDefault];
     [documentNav.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:HTColorFromRGB(0x1d1d1d),NSFontAttributeName:[UIFont boldSystemFontOfSize:10.0]}];
 
     if (document) {

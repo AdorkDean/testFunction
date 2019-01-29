@@ -98,7 +98,7 @@
         _mainView.contentInset = UIEdgeInsetsMake(0, 16, 5, 16);
         _mainView.decelerationRate = UIScrollViewDecelerationRateFast;
         _mainView.alwaysBounceHorizontal = YES;
-        [_mainView registerNib:[UINib nibWithNibName:@"DetailMemberCell" bundle:[BundleTool commonBundle]] forCellWithReuseIdentifier:@"DetailMemberCellID"];
+        [_mainView registerNib:[UINib nibWithNibName:@"DetailMemberCell" bundle:nil] forCellWithReuseIdentifier:@"DetailMemberCellID"];
         _mainView.scrollEnabled = NO;
         
     }

@@ -44,7 +44,7 @@
     [screenWindow.layer renderInContext:UIGraphicsGetCurrentContext()];
     image1 = UIGraphicsGetImageFromCurrentImageContext();
     
-    UIImage *image2 = [BundleTool imageNamed:@"QuickMark"];
+    UIImage *image2 = [UIImage imageNamed:@"QuickMark"];
     [image2 drawInRect:CGRectMake(0, SCREENH, SCREENW, imgH)];//100
     UIImage *togetherImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
@@ -81,8 +81,8 @@
 - (void)buildRightBarButtonItem{
 
     UIButton * captureScreenBtn = [[UIButton alloc] initWithFrame:RIGHTBARBTNFRAME];
-    [captureScreenBtn setImage:[BundleTool imageNamed:@"screen_capture_gray"] forState:UIControlStateNormal];
-    [captureScreenBtn setImage:[BundleTool imageNamed:@"screen_capture_gray"] forState:UIControlStateHighlighted];
+    [captureScreenBtn setImage:[UIImage imageNamed:@"screen_capture_gray"] forState:UIControlStateNormal];
+    [captureScreenBtn setImage:[UIImage imageNamed:@"screen_capture_gray"] forState:UIControlStateHighlighted];
     [captureScreenBtn addTarget:self action:@selector(imageWithShortScreenshot) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem * captureScreenItem = [[UIBarButtonItem alloc]initWithCustomView:captureScreenBtn];
 //    

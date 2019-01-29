@@ -26,7 +26,7 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    [self.tableView registerNib:[UINib nibWithNibName:@"PersonBusinessRoleCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"PersonBusinessRoleCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"PersonBusinessRoleCell" bundle:nil] forCellReuseIdentifier:@"PersonBusinessRoleCellID"];
     [self.view addSubview:self.tableView];
     self.tableView.contentInset = UIEdgeInsetsMake(2, 0, 0, 0);
     self.tableView.rowHeight = UITableViewAutomaticDimension;
@@ -85,7 +85,7 @@
     NSString *icon = ![PublicTool isNull:model.product] ? model.pro_icon:model.jg_icon;
     if (![PublicTool isNull:icon] && ![icon containsString:@"upload/default"]) {
         cell.avatarView.hidden = NO;
-        [cell.avatarView sd_setImageWithURL:[NSURL URLWithString:icon] placeholderImage:[BundleTool imageNamed:PROICON_DEFAULT]];
+        [cell.avatarView sd_setImageWithURL:[NSURL URLWithString:icon] placeholderImage:[UIImage imageNamed:PROICON_DEFAULT]];
     } else {
         cell.avatarLabel.hidden = NO;
         cell.avatarLabel.text = model.qy_name.length > 0 ? [model.qy_name substringToIndex:1]:@"";

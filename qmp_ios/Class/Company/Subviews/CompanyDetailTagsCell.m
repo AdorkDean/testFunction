@@ -58,7 +58,7 @@
         tagsBtn.frame = CGRectFromString(tagsFrame.tagsFrames[i]);
         if ([tagArr[i] isEqualToString:@"加画像"]) {
             [tagsBtn setTitle:@"画像" forState:UIControlStateNormal];
-            [tagsBtn setImage:[BundleTool imageNamed:@"company_addTag"] forState:UIControlStateNormal];
+            [tagsBtn setImage:[UIImage imageNamed:@"company_addTag"] forState:UIControlStateNormal];
             [tagsBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:2];
             tagsBtn.layer.borderColor = BLUE_TITLE_COLOR.CGColor;
             [tagsBtn setTitleColor:BLUE_TITLE_COLOR forState:UIControlStateNormal];
@@ -96,7 +96,7 @@
         tagsBtn.frame = CGRectFromString(tagsFrame.tagsFrames[i]);
         if ([tagArr[i] isEqualToString:@"加画像"]) {
             [tagsBtn setTitle:@"画像" forState:UIControlStateNormal];
-            [tagsBtn setImage:[BundleTool imageNamed:@"company_addTag"] forState:UIControlStateNormal];
+            [tagsBtn setImage:[UIImage imageNamed:@"company_addTag"] forState:UIControlStateNormal];
             [tagsBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:2];
             tagsBtn.layer.borderColor = BLUE_TITLE_COLOR.CGColor;
             [tagsBtn setTitleColor:BLUE_TITLE_COLOR forState:UIControlStateNormal];

@@ -37,7 +37,7 @@
 + (JigouTZCaseCell *)cellWithTableView:(UITableView *)tableView {
     JigouTZCaseCell *cell = [tableView dequeueReusableCellWithIdentifier:@"JigouTZCaseCellID"];
     if (cell == nil) {
-        cell = (JigouTZCaseCell *)[[[BundleTool commonBundle] loadNibNamed:@"JigouTZCaseCell" owner:self options:nil] lastObject];
+        cell = (JigouTZCaseCell *)[[nil loadNibNamed:@"JigouTZCaseCell" owner:self options:nil] lastObject];
     }
     return cell;
 }
@@ -67,7 +67,7 @@
     _model = model;
     [_lunciView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
-    [_iconImageV sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[BundleTool imageNamed:@"product_default"]];
+    [_iconImageV sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[UIImage imageNamed:@"product_default"]];
     
     _nameLabel.text = [PublicTool nilStringReturn:model.product];
     _hangyeLab.text = [PublicTool nilStringReturn:model.hangye1];
@@ -92,7 +92,7 @@
     _model = model;
     [_lunciView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
-    [_iconImageV sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[BundleTool imageNamed:@"product_default"]];
+    [_iconImageV sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[UIImage imageNamed:@"product_default"]];
 
     _nameLabel.text = [PublicTool nilStringReturn:model.product];
     _hangyeLab.text = [PublicTool nilStringReturn:model.hangye1];
@@ -120,7 +120,7 @@
             currentDic = model.finance_history[i];
         }
         BOOL isInvest = [currentDic[@"invest_flag"] integerValue] == 1;
-        UIImage *pointImg = isInvest ? [BundleTool imageNamed:@"lunci_point"]:[BundleTool imageNamed:@"lunci_point_gray"];
+        UIImage *pointImg = isInvest ? [UIImage imageNamed:@"lunci_point"]:[UIImage imageNamed:@"lunci_point_gray"];
         UIColor *textColor = isInvest ? YELLOW_COLOR : H999999;
         
         NSArray *textArr = [model.lunciStringArr[i] componentsSeparatedByString:@"  "];

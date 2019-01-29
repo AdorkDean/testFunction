@@ -119,7 +119,7 @@
     
     _report = report;
     
-    [_iconV sd_setImageWithURL:[NSURL URLWithString:report.icon] placeholderImage:[BundleTool imageNamed:PROICON_DEFAULT]];
+    [_iconV sd_setImageWithURL:[NSURL URLWithString:report.icon] placeholderImage:[UIImage imageNamed:PROICON_DEFAULT]];
     _productLab.text = report.product;
     
     NSString *title = [report.name containsString:@".pdf"]?[report.name substringToIndex:report.name.length - 4]:report.name;

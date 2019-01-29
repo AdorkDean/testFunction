@@ -46,7 +46,7 @@
     [self.contentView addSubview:_iconImageV];
     
     _starImgV = [[UIImageView alloc]initWithFrame:CGRectMake(_iconImageV.right + 10, _iconImageV.frame.origin.y - 2, 18, 18)];
-    _starImgV.image = [BundleTool imageNamed:@"star"];
+    _starImgV.image = [UIImage imageNamed:@"star"];
     [self.contentView addSubview:_starImgV];
     
     _statusLbl = [[UILabel alloc]initWithFrame:CGRectMake( 0, _iconImageV.frame.size.height - 18, _iconImageV.frame.size.width, 18)];
@@ -85,7 +85,7 @@
     CGFloat margin = 14.f;
     CGFloat lblH =18.f;
     
-    [_iconImageV sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[BundleTool imageNamed:@"product_default"]];
+    [_iconImageV sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[UIImage imageNamed:@"product_default"]];
 
     
     BOOL isStar = model.renzheng.integerValue == 1 ? YES:NO;

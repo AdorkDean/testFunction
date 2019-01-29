@@ -82,10 +82,10 @@
     [_platformView addSubview:label];
     
     NSArray *titles = @[@"微信朋友",@"朋友圈",@"微信收藏"];
-    NSArray *images = @[[BundleTool imageNamed:@"umsocial_wechat"],[BundleTool imageNamed:@"umsocial_wechat_timeline"],[BundleTool imageNamed:@"umsocial_wechat_favorite"]];
+    NSArray *images = @[[UIImage imageNamed:@"umsocial_wechat"],[UIImage imageNamed:@"umsocial_wechat_timeline"],[UIImage imageNamed:@"umsocial_wechat_favorite"]];
     if ([self.menuTitleArr containsObject:@"复制链接"]) {
         titles = @[@"微信朋友",@"朋友圈",@"微信收藏",@"复制链接"];
-        images = @[[BundleTool imageNamed:@"umsocial_wechat"],[BundleTool imageNamed:@"umsocial_wechat_timeline"],[BundleTool imageNamed:@"umsocial_wechat_favorite"],[BundleTool imageNamed:@"share_copyUrl"]];
+        images = @[[UIImage imageNamed:@"umsocial_wechat"],[UIImage imageNamed:@"umsocial_wechat_timeline"],[UIImage imageNamed:@"umsocial_wechat_favorite"],[UIImage imageNamed:@"share_copyUrl"]];
     }
     CGFloat width = 55;
     CGFloat height = 55;

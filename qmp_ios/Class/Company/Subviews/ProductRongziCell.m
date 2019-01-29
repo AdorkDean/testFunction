@@ -64,7 +64,7 @@
     [self.contentView addSubview:_verticalLine];
     
     _iconV = [[UIImageView alloc]initWithFrame:CGRectZero];
-    _iconV.image = [BundleTool imageNamed:@"blue_point"];
+    _iconV.image = [UIImage imageNamed:@"blue_point"];
     _iconV.contentMode = UIViewContentModeScaleAspectFit;
     [self.contentView addSubview:_iconV];
     

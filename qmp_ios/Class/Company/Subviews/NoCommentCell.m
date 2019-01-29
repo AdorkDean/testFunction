@@ -13,7 +13,7 @@
 + (NoCommentCell *)cellWithTableView:(UITableView *)tableView {
     NoCommentCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NoCommentCellID"];
     if (cell == nil) {
-        cell = (NoCommentCell *)[[[BundleTool commonBundle] loadNibNamed:@"NoCommentCell" owner:self options:nil] lastObject];
+        cell = (NoCommentCell *)[[nil loadNibNamed:@"NoCommentCell" owner:self options:nil] lastObject];
     }
     return cell;
 }

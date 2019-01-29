@@ -135,7 +135,7 @@
         iconView.tag = 789;
         [cell.contentView addSubview:iconView];
     }
-    iconView.image = [BundleTool imageNamed:flag?@"tag_down":@"tag_up"];
+    iconView.image = [UIImage imageNamed:flag?@"tag_down":@"tag_up"];
     iconView.left = rateLabel.right + 3;
     iconView.centerY = rateLabel.centerY;
     
@@ -179,7 +179,7 @@
             bView = [[UIImageView alloc] init];
             bView.frame = CGRectMake(SCREENW-16-10, (h-16)/2.0, 10, 16);
             bView.tag = 654;
-            bView.image = [BundleTool imageNamed:@"leftarrow_gray"];
+            bView.image = [UIImage imageNamed:@"leftarrow_gray"];
             [view addSubview:bView];
         }
         
@@ -231,7 +231,7 @@
             iconView.tag = 789;
             [view addSubview:iconView];
         }
-        iconView.image = [BundleTool imageNamed:flag?@"tag_down":@"tag_up"];
+        iconView.image = [UIImage imageNamed:flag?@"tag_down":@"tag_up"];
         iconView.left = rateLabel.right + 3;
         iconView.centerY = rateLabel.centerY;
         

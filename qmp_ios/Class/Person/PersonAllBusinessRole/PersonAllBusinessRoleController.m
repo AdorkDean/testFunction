@@ -256,7 +256,7 @@
             placeLabel.backgroundColor =  RANDOM_COLORARR[0];
             placeLabel.text = [self.personModel.name substringWithRange:NSMakeRange(0, 1)];
         }else if(![PublicTool isNull:self.personModel.icon]){
-            [avatarView sd_setImageWithURL:[NSURL URLWithString:self.personModel.icon] placeholderImage:[BundleTool imageNamed:@"heading"]];
+            [avatarView sd_setImageWithURL:[NSURL URLWithString:self.personModel.icon] placeholderImage:[UIImage imageNamed:@"heading"]];
         }
         nameLabel.text = self.personModel.name;
         

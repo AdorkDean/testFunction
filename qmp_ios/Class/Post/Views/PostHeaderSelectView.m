@@ -21,7 +21,7 @@ CGFloat const PostHeaderSelectViewHeight = 60.0;
     if (self) {
         
         UIImageView *deleteView = [[UIImageView alloc] init];
-        deleteView.image = [BundleTool imageNamed:@"cha_icon"];
+        deleteView.image = [UIImage imageNamed:@"cha_icon"];
         deleteView.bounds = CGRectMake(0, 0, 15, 15);
         [self addSubview:deleteView];
         self.deleteView = deleteView;
@@ -110,7 +110,7 @@ CGFloat const PostHeaderSelectViewHeight = 60.0;
     if (!_leftIconView) {
         _leftIconView = [[UIImageView alloc] init];
         _leftIconView.frame = CGRectMake(15, (PostHeaderSelectViewHeight-19)/2.0, 19, 19);
-        _leftIconView.image = [BundleTool imageNamed:@"post_select"];
+        _leftIconView.image = [UIImage imageNamed:@"post_select"];
     }
     return _leftIconView;
 }
@@ -128,7 +128,7 @@ CGFloat const PostHeaderSelectViewHeight = 60.0;
     if (!_arrowView) {
         _arrowView = [[UIImageView alloc] init];
         _arrowView.frame = CGRectMake(SCREENW-22-17, (PostHeaderSelectViewHeight-22)/2.0, 22, 22);
-        _arrowView.image = [BundleTool imageNamed:@"post_select_add"];
+        _arrowView.image = [UIImage imageNamed:@"post_select_add"];
     }
     return _arrowView;
 }

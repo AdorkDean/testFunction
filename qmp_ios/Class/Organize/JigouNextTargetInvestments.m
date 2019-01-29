@@ -204,7 +204,7 @@
     self.tableView.mj_header = self.mjHeader;
     
     [self.view addSubview:self.tableView];
-    [self.tableView registerNib:[UINib nibWithNibName:@"JigouTZCaseCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"JigouTZCaseCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"JigouTZCaseCell" bundle:nil] forCellReuseIdentifier:@"JigouTZCaseCellID"];
 
     [self.tableView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
 }
@@ -319,7 +319,7 @@
 -(JigouTZCaseCell *)caseCell{
     
     if (!_caseCell) {
-        _caseCell = [[BundleTool commonBundle]loadNibNamed:@"JigouTZCaseCell" owner:nil options:nil].lastObject;
+        _caseCell = [nilloadNibNamed:@"JigouTZCaseCell" owner:nil options:nil].lastObject;
     }
     return _caseCell;
 }

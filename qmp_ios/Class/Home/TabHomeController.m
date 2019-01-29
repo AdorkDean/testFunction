@@ -205,8 +205,8 @@ static CGFloat const kWMMenuViewHeight = 44.0;
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.frame = CGRectMake(0, 0, 42, 40);
-        [button setImage:[BundleTool imageNamed:@"category_setup"] forState:UIControlStateNormal];
-        [button setImage:[BundleTool imageNamed:@"category_setup"] forState:UIControlStateHighlighted];
+        [button setImage:[UIImage imageNamed:@"category_setup"] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:@"category_setup"] forState:UIControlStateHighlighted];
         [button addTarget:self action:@selector(setupButtonClick) forControlEvents:UIControlEventTouchUpInside];
         [_setupView addSubview:button];
     }

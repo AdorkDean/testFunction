@@ -131,17 +131,17 @@
         tagsBtn.frame = CGRectFromString(self.tagFrame.tagsFrames[i]);
         if ([self.tagFrame.tagsArray[i] isEqualToString:@"加画像"]) {
             [tagsBtn setTitle:@"画像" forState:UIControlStateNormal];
-            [tagsBtn setImage:[BundleTool imageNamed:@"company_addTag"] forState:UIControlStateNormal];
+            [tagsBtn setImage:[UIImage imageNamed:@"company_addTag"] forState:UIControlStateNormal];
             [tagsBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:2];
             tagsBtn.layer.borderColor = BLUE_TITLE_COLOR.CGColor;
             [tagsBtn setTitleColor:BLUE_TITLE_COLOR forState:UIControlStateNormal];
         }else if ([self.tagFrame.tagsArray[i] isEqualToString:@"加更多"] || [self.tagFrame.tagsArray[i] isEqualToString:@"加收起"]) {
             if ([self.tagFrame.tagsArray[i] isEqualToString:@"加更多"]) {
-                [tagsBtn setImage:[BundleTool imageNamed:@"tag_downIcon"] forState:UIControlStateNormal];
+                [tagsBtn setImage:[UIImage imageNamed:@"tag_downIcon"] forState:UIControlStateNormal];
                 [tagsBtn setTitle:@"更多" forState:UIControlStateNormal];
 
             }else{
-                [tagsBtn setImage:[BundleTool imageNamed:@"tag_upIcon"] forState:UIControlStateNormal];
+                [tagsBtn setImage:[UIImage imageNamed:@"tag_upIcon"] forState:UIControlStateNormal];
                 [tagsBtn setTitle:@"收起" forState:UIControlStateNormal];
             }
             [tagsBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleRight imageTitleSpace:2];

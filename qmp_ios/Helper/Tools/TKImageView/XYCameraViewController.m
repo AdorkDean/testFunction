@@ -49,7 +49,7 @@
 @implementation XYCameraViewController
 
 -(instancetype)init{
-    XYCameraViewController *vc = [[XYCameraViewController alloc]initWithNibName:@"XYCameraViewController" bundle:[BundleTool commonBundle]];
+    XYCameraViewController *vc = [[XYCameraViewController alloc]initWithNibName:@"XYCameraViewController" bundle:nil];
     return vc;
 }
 

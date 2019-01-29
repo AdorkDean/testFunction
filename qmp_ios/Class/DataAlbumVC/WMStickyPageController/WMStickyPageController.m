@@ -129,14 +129,14 @@
     if (!_gifHeader) {
         NSMutableArray *images = [NSMutableArray array];
         for (int i = 1; i <= 65; i++) {
-            [images addObject:[BundleTool imageNamed:[NSString stringWithFormat:@"loading%d",i]]];
+            [images addObject:[UIImage imageNamed:[NSString stringWithFormat:@"loading%d",i]]];
         }
         _gifHeader = [[MJRefreshGifHeader alloc] init];
         _gifHeader.lastUpdatedTimeLabel.hidden = YES;
         _gifHeader.stateLabel.hidden=YES;
         
-        [_gifHeader setImages:@[[BundleTool imageNamed:@"loading1"]] duration:1 forState:MJRefreshStateIdle];
-        [_gifHeader setImages:@[[BundleTool imageNamed:@"loading1"]] duration:1 forState:MJRefreshStatePulling];
+        [_gifHeader setImages:@[[UIImage imageNamed:@"loading1"]] duration:1 forState:MJRefreshStateIdle];
+        [_gifHeader setImages:@[[UIImage imageNamed:@"loading1"]] duration:1 forState:MJRefreshStatePulling];
         [_gifHeader setImages:images duration:1.3 forState:MJRefreshStateRefreshing];
     }
     return _gifHeader;

@@ -81,7 +81,7 @@
         [self.idButton setImage:[UIImage new] forState:UIControlStateNormal];
     } else {
         [self.idButton setTitle:@"" forState:UIControlStateNormal];
-        [self.idButton setImage:[BundleTool imageNamed:@"activity_cell_id"] forState:UIControlStateNormal];
+        [self.idButton setImage:[UIImage imageNamed:@"activity_cell_id"] forState:UIControlStateNormal];
     }
     if (self.companyLabel.hidden) {
         self.contentLabel.top = 40;
@@ -94,7 +94,7 @@
     self.lineView.frame = CGRectMake(0, comment.cellHeight-1, SCREENW, 1);
     NSString *imgName = comment.like_status?@"activity_comment_cell_diggb":@"activity_comment_cell_digg";
 
-    [self.likeButton setImage:[BundleTool imageNamed:imgName] forState:UIControlStateNormal];
+    [self.likeButton setImage:[UIImage imageNamed:imgName] forState:UIControlStateNormal];
     [self.likeButton setTitle:[self fixCountShow:comment.likeCount] forState:UIControlStateNormal];
     self.likeButton.centerY = self.nameLabel.centerY;
     
@@ -104,7 +104,7 @@
 - (void)updateDiggButtonShow {
     
     NSString *imgName = self.comment.like_status?@"activity_comment_cell_diggb":@"activity_comment_cell_digg";
-    [self.likeButton setImage:[BundleTool imageNamed:imgName] forState:UIControlStateNormal];
+    [self.likeButton setImage:[UIImage imageNamed:imgName] forState:UIControlStateNormal];
     [self.likeButton setTitle:[self fixCountShow:self.comment.likeCount] forState:UIControlStateNormal];
 }
 
@@ -200,7 +200,7 @@
         button.width = 150;
     } else {
         [button setTitle:@"" forState:UIControlStateNormal];
-        [button setImage:[BundleTool imageNamed:@"activity_cell_id"] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:@"activity_cell_id"] forState:UIControlStateNormal];
         button.width = 30;
     }
 }
@@ -210,7 +210,7 @@
         _idButton.frame = CGRectMake(0, 0, 31, 31);
         _idButton.titleLabel.font = [UIFont systemFontOfSize:12];
         [_idButton setTitleColor:H9COLOR forState:UIControlStateNormal];
-        [_idButton setImage:[BundleTool imageNamed:@"activity_cell_id"] forState:UIControlStateNormal];
+        [_idButton setImage:[UIImage imageNamed:@"activity_cell_id"] forState:UIControlStateNormal];
         _idButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         [_idButton addTarget:self action:@selector(idButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -263,7 +263,7 @@
         _likeButton.frame = CGRectMake(SCREENW-50, 11, 40, 35);
         _likeButton.titleLabel.font = [UIFont systemFontOfSize:11];
         [_likeButton setTitleColor:H999999 forState:UIControlStateNormal];
-        [_likeButton setImage:[BundleTool imageNamed:@"activity_delete"] forState:UIControlStateNormal];
+        [_likeButton setImage:[UIImage imageNamed:@"activity_delete"] forState:UIControlStateNormal];
         [_likeButton addTarget:self action:@selector(likeButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _likeButton;

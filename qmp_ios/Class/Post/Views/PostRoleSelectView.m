@@ -42,7 +42,7 @@
     for (NSDictionary *dict in self.data) {
         PostRoleSelectItemView *itemView = [[PostRoleSelectItemView alloc] init];
         [itemView.nameLabel setTitle:dict[@"name"] forState:UIControlStateNormal];
-        [itemView.nameLabel setImage:[BundleTool imageNamed:dict[@"icon"]] forState:UIControlStateNormal];
+        [itemView.nameLabel setImage:[UIImage imageNamed:dict[@"icon"]] forState:UIControlStateNormal];
         
         [itemView reLayout];
         if (itemView.width > max) {
@@ -66,8 +66,8 @@
 - (UIImageView *)bgView {
     if (!_bgView) {
         _bgView = [[UIImageView alloc] init];
-        //        _popView.image = [BundleTool imageNamed:@"activity_role_pop"];
-        UIImage *image = [BundleTool imageNamed:@"activity_role_pop"];
+        //        _popView.image = [UIImage imageNamed:@"activity_role_pop"];
+        UIImage *image = [UIImage imageNamed:@"activity_role_pop"];
         image = [image resizableImageWithCapInsets:UIEdgeInsetsMake(10, 10, 100, 90) resizingMode:UIImageResizingModeStretch];
         _bgView.image = image;
     }

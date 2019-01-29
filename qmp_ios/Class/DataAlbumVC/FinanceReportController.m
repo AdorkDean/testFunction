@@ -69,7 +69,7 @@
     UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
     negativeSpacer.width = RIGHTNVSPACE;
     UIButton * moreBtn = [[UIButton alloc] initWithFrame:RIGHTBARBTNFRAME];
-    [moreBtn setImage:[BundleTool imageNamed:@"nav_right_more"] forState:UIControlStateNormal];
+    [moreBtn setImage:[UIImage imageNamed:@"nav_right_more"] forState:UIControlStateNormal];
     if (iOS11_OR_HIGHER) {
         [moreBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
     }

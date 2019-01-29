@@ -31,7 +31,7 @@
 + (instancetype)cellWithTableView:(UITableView *)tableView{
     InvestorListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InvestorListCellID"];
     if (!cell) {
-        cell = [[BundleTool commonBundle]loadNibNamed:@"InvestorListCell" owner:nil options:nil].lastObject;
+        cell = [nilloadNibNamed:@"InvestorListCell" owner:nil options:nil].lastObject;
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
@@ -52,7 +52,7 @@
     _zhiweiLab.textColor = COLOR737782;
     _hangyeLab.textColor = COLOR737782;
     
-    [self.xibChatBtn setImage:[BundleTool imageNamed:@"member_chatIcon"] forState:UIControlStateNormal];
+    [self.xibChatBtn setImage:[UIImage imageNamed:@"member_chatIcon"] forState:UIControlStateNormal];
     self.xibChatBtn.hidden = YES;
 }
 
@@ -60,7 +60,7 @@
 - (void)setPerson:(PersonModel *)person{
     _person = person;
     
-    [_imgV sd_setImageWithURL:[NSURL URLWithString:person.icon] placeholderImage:[BundleTool imageNamed:@"heading"]];
+    [_imgV sd_setImageWithURL:[NSURL URLWithString:person.icon] placeholderImage:[UIImage imageNamed:@"heading"]];
     NSString *name = [PublicTool isNull:person.name] ? person.person_name:person.name;
     if ([PublicTool isNull:name] && ![PublicTool isNull:person.ename]) {
         name = person.ename;

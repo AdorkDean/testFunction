@@ -55,7 +55,7 @@
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"ActiveJigouCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"ActiveJigouCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"ActiveJigouCell" bundle:nil] forCellReuseIdentifier:@"ActiveJigouCellID"];
     self.tableView.mj_header = self.mjHeader;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 

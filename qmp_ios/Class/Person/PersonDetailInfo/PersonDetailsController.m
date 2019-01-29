@@ -192,14 +192,14 @@
         self.tableView.mj_header = self.mjHeader;
         self.mjHeader.gifView.hidden = YES;
     }
-    [self.tableView registerNib:[UINib nibWithNibName:@"InvestorTzCaseCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"InvestorTzCaseCellID"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"JobExpriencesCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"JobExpriencesCellID"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"JobExpriencesCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"EduExpriencesCellID"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"JobExpriencesCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"WinExpriencesCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"InvestorTzCaseCell" bundle:nil] forCellReuseIdentifier:@"InvestorTzCaseCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"JobExpriencesCell" bundle:nil] forCellReuseIdentifier:@"JobExpriencesCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"JobExpriencesCell" bundle:nil] forCellReuseIdentifier:@"EduExpriencesCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"JobExpriencesCell" bundle:nil] forCellReuseIdentifier:@"WinExpriencesCellID"];
     [self.tableView registerClass:[NewsTableViewCell class] forCellReuseIdentifier:@"NewsTableViewCellID"];
     [self.tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:@"headerView"];
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"NoCommentCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"noCommentCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"NoCommentCell" bundle:nil] forCellReuseIdentifier:@"noCommentCellID"];
     
     self.viewModel.scrollView = self.tableView;
     
@@ -232,7 +232,7 @@
         
         _kefuBtn = [[UIButton alloc]initWithFrame:CGRectMake(8, 0,(leftWidth - 16)/2.0, btnHeight)];
         [_kefuBtn setTitle:@"客服" forState:UIControlStateNormal];
-        [_kefuBtn setImage:[BundleTool imageNamed:@"detail_kefu_icon"] forState:UIControlStateNormal];
+        [_kefuBtn setImage:[UIImage imageNamed:@"detail_kefu_icon"] forState:UIControlStateNormal];
         [_kefuBtn setTitleColor:H6COLOR forState:UIControlStateNormal];
         _kefuBtn.titleLabel.font = [UIFont systemFontOfSize:9];
         [_kefuBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleTop imageTitleSpace:0];
@@ -241,7 +241,7 @@
         
         _feedbackBtn = [[UIButton alloc]initWithFrame:CGRectMake(_kefuBtn.right, 0, (leftWidth - 16)/2.0, btnHeight)];
         [_feedbackBtn setTitle:@"反馈" forState:UIControlStateNormal];
-        [_feedbackBtn setImage:[BundleTool imageNamed:@"detail_feedback_icon"] forState:UIControlStateNormal];
+        [_feedbackBtn setImage:[UIImage imageNamed:@"detail_feedback_icon"] forState:UIControlStateNormal];
         [_feedbackBtn setTitleColor:H6COLOR forState:UIControlStateNormal];
         _feedbackBtn.titleLabel.font = [UIFont systemFontOfSize:9];
         _feedbackBtn.backgroundColor = [UIColor whiteColor];
@@ -274,7 +274,7 @@
         } else {
             _attentionBtn.titleLabel.font = [UIFont systemFontOfSize:15];
         }        
-        [_attentionBtn setImage:[BundleTool imageNamed:@"workflow_have"] forState:UIControlStateSelected];
+        [_attentionBtn setImage:[UIImage imageNamed:@"workflow_have"] forState:UIControlStateSelected];
         _attentionBtn.rac_command = self.viewModel.updateAttentStatusCommand;
         [_bottomView addSubview:_attentionBtn];
         
@@ -1093,7 +1093,7 @@
         UIImageView *imgV = [imgCell.contentView viewWithTag:1000];
         if (!imgV) {
             imgV = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, SCREENW, SCREENW*3)];
-            imgV.image = [BundleTool imageNamed:@"detail_placeholder_bg"];
+            imgV.image = [UIImage imageNamed:@"detail_placeholder_bg"];
             imgV.tag = 1000;
             [imgCell.contentView addSubview:imgV];
         }

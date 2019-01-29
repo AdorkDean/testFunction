@@ -74,9 +74,9 @@
         _pageControl.pageIndicatorTintColor = HTColorFromRGB(0xE3E3E3) ;
         _pageControl.pointWidth = 6;
         _pageControl.pointMargin = 6;
-//        [_pageControl setValue:[BundleTool imageNamed:@"hot_icon"] forKeyPath:@"_pageImage"];
+//        [_pageControl setValue:[UIImage imageNamed:@"hot_icon"] forKeyPath:@"_pageImage"];
 //
-//        [_pageControl setValue:[BundleTool imageNamed:@"hot_icon"] forKeyPath:@"_currentPageImage"];
+//        [_pageControl setValue:[UIImage imageNamed:@"hot_icon"] forKeyPath:@"_currentPageImage"];
       
         _pageControl.hidden = YES;
     }

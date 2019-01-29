@@ -50,7 +50,7 @@
     [bgView addSubview:keyTitleLab];
     
     UIButton *chaBtn = [[UIButton alloc]initWithFrame:CGRectMake(bgView.width-40, 0, 40, 50)];
-    [chaBtn setImage:[BundleTool imageNamed:@"web_close"] forState:UIControlStateNormal];
+    [chaBtn setImage:[UIImage imageNamed:@"web_close"] forState:UIControlStateNormal];
     [chaBtn addTarget:self action:@selector(removeFromSuperview) forControlEvents:UIControlEventTouchUpInside];
     [bgView addSubview:chaBtn];
     

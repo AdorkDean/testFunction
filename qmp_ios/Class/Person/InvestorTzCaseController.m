@@ -67,7 +67,7 @@
     self.tableView.dataSource = self;
     self.tableView.backgroundColor = TABLEVIEW_COLOR;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    [self.tableView registerNib:[UINib nibWithNibName:@"InvestorTzCaseCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"InvestorTzCaseCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"InvestorTzCaseCell" bundle:nil] forCellReuseIdentifier:@"InvestorTzCaseCellID"];
     [self.view addSubview:self.tableView];
 }
 

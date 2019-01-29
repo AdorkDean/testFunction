@@ -173,8 +173,8 @@
         [expadingButton setTitleColor:H5COLOR forState:UIControlStateNormal];
         [expadingButton setTitle:@"展开" forState:UIControlStateNormal];
         [expadingButton setTitle:@"收起" forState:UIControlStateSelected];
-        [expadingButton setImage:[BundleTool imageNamed:@"arrow_down"] forState:UIControlStateNormal];
-        [expadingButton setImage:[BundleTool imageNamed:@"arrow_up"] forState:UIControlStateSelected];
+        [expadingButton setImage:[UIImage imageNamed:@"arrow_down"] forState:UIControlStateNormal];
+        [expadingButton setImage:[UIImage imageNamed:@"arrow_up"] forState:UIControlStateSelected];
         expadingButton.frame = CGRectMake(w-centerW, 0, centerW, h);
         expadingButton.tag = section;
         [expadingButton addTarget:self action:@selector(expadingButtonClick:) forControlEvents:UIControlEventTouchUpInside];

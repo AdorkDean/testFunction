@@ -61,10 +61,10 @@ const CGFloat QMPActivityActionItemHeight = 50;
         BOOL state = [self stateWithTitle:dict[@"title"]];
         if (state) {
             [button setTitle:dict[@"detitle"] forState:UIControlStateNormal];
-            [button setImage:[BundleTool imageNamed:dict[@"deicon"]] forState:UIControlStateNormal];
+            [button setImage:[UIImage imageNamed:dict[@"deicon"]] forState:UIControlStateNormal];
         } else {
             [button setTitle:dict[@"title"] forState:UIControlStateNormal];
-            [button setImage:[BundleTool imageNamed:dict[@"icon"]] forState:UIControlStateNormal];
+            [button setImage:[UIImage imageNamed:dict[@"icon"]] forState:UIControlStateNormal];
         }
         
         

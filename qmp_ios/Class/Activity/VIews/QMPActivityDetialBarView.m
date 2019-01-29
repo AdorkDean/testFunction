@@ -198,7 +198,7 @@
         
         UIImageView *arrowView = [[UIImageView alloc] init];
         arrowView.frame = CGRectMake(65, 12.5, 11, 6);
-        arrowView.image = [BundleTool imageNamed:@"activity_role_arrow"];
+        arrowView.image = [UIImage imageNamed:@"activity_role_arrow"];
         [_roleView addSubview:arrowView];
         self.arrowView = arrowView;
         
@@ -281,7 +281,7 @@
     for (NSDictionary *dict in self.data) {
         UIButton *button = [self button];
         [button setTitle:dict[@"name"] forState:UIControlStateNormal];
-        [button setImage:[BundleTool imageNamed:dict[@"icon"]] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:dict[@"icon"]] forState:UIControlStateNormal];
         button.frame = CGRectMake(0, height*i, max, height);
         button.tag = i;
         i++;
@@ -301,8 +301,8 @@
 - (UIImageView *)bgView {
     if (!_bgView) {
         _bgView = [[UIImageView alloc] init];
-        //        _popView.image = [BundleTool imageNamed:@"activity_role_pop"];
-        UIImage *image = [BundleTool imageNamed:@"activity_role_pop"];
+        //        _popView.image = [UIImage imageNamed:@"activity_role_pop"];
+        UIImage *image = [UIImage imageNamed:@"activity_role_pop"];
         image = [image resizableImageWithCapInsets:UIEdgeInsetsMake(10, 10, 100, 90) resizingMode:UIImageResizingModeStretch];
         _bgView.image = image;
     }

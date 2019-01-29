@@ -35,8 +35,8 @@
     
     _selectBtn = [[UIButton alloc]initWithFrame:CGRectMake(SCREENW - 50, 0, 55, 50)];
     [self.contentView addSubview:_selectBtn];
-    [_selectBtn setImage:[BundleTool imageNamed:@"noselect_workFlow"] forState:UIControlStateNormal];
-    [_selectBtn setImage:[BundleTool imageNamed:@"select_workFlow"] forState:UIControlStateSelected];
+    [_selectBtn setImage:[UIImage imageNamed:@"noselect_workFlow"] forState:UIControlStateNormal];
+    [_selectBtn setImage:[UIImage imageNamed:@"select_workFlow"] forState:UIControlStateSelected];
 
 }
 

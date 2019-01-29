@@ -27,7 +27,7 @@
     [self setupViews];
  
 //    UIButton *noteBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 53, 53)];
-//    [noteBtn setImage:[BundleTool imageNamed:@"me_activityEdit"] forState:UIControlStateNormal];
+//    [noteBtn setImage:[UIImage imageNamed:@"me_activityEdit"] forState:UIControlStateNormal];
 //    [noteBtn addTarget:self action:@selector(noteBtnClick) forControlEvents:UIControlEventTouchUpInside];
 //    //    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:noteBtn];
 //    

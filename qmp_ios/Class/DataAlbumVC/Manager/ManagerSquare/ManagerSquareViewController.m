@@ -496,10 +496,10 @@
     self.tableView.mj_header = self.mjHeader;
     self.tableView.mj_footer = self.mjFooter;
 
-    [self.tableView registerNib:[UINib nibWithNibName:@"AlbumsListCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"AlbumsListCellID"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"HotMgrListCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"HotMgrListCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"AlbumsListCell" bundle:nil] forCellReuseIdentifier:@"AlbumsListCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"HotMgrListCell" bundle:nil] forCellReuseIdentifier:@"HotMgrListCellID"];
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"AlbumMultiRowListCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"AlbumMultiRowListCellID"];//多行榜单
+    [self.tableView registerNib:[UINib nibWithNibName:@"AlbumMultiRowListCell" bundle:nil] forCellReuseIdentifier:@"AlbumMultiRowListCellID"];//多行榜单
 
     self.tableView.estimatedRowHeight = 0;
     self.tableView.estimatedSectionHeaderHeight = 0;
@@ -513,10 +513,10 @@
     
     _mySearchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(7, 0, SCREENW-14, height)];
     [_mySearchBar setBackgroundImage:[UIImage imageFromColor:TABLEVIEW_COLOR andSize:_mySearchBar.size]];
-//    _mySearchBar.backgroundImage = [BundleTool imageNamed:@"nav-lightgray"];
+//    _mySearchBar.backgroundImage = [UIImage imageNamed:@"nav-lightgray"];
     //设置背景色
     [_mySearchBar setBackgroundColor:TABLEVIEW_COLOR];
-    [_mySearchBar setSearchFieldBackgroundImage:[BundleTool imageNamed:@"search_borderTab"] forState:UIControlStateNormal];
+    [_mySearchBar setSearchFieldBackgroundImage:[UIImage imageNamed:@"search_borderTab"] forState:UIControlStateNormal];
     [_mySearchBar setSearchTextPositionAdjustment:UIOffsetMake(10, 0)];
     UITextField *tf = [_mySearchBar valueForKey:@"_searchField"];
     tf.font = [UIFont systemFontOfSize:14];

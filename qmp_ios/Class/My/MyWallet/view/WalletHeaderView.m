@@ -20,7 +20,7 @@
     self.userHeaderImgV.layer.masksToBounds = YES;
     self.userHeaderImgV.layer.borderColor = [UIColor whiteColor].CGColor;
     self.userHeaderImgV.layer.borderWidth = 0.5;
-    [self.userHeaderImgV sd_setImageWithURL:[NSURL URLWithString:[WechatUserInfo shared].headimgurl] placeholderImage:[BundleTool imageNamed:@"heading"]];
+    [self.userHeaderImgV sd_setImageWithURL:[NSURL URLWithString:[WechatUserInfo shared].headimgurl] placeholderImage:[UIImage imageNamed:@"heading"]];
     
 
 }

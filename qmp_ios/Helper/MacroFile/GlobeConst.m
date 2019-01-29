@@ -31,8 +31,8 @@ NSString * const APPKEY = @"2584608c485b84117618154c17cb5a28"; //版本>=2.2.3�
 #pragma mark --第三方配置参数
 
 //全局的宏定义
-NSString * const kWXAPP_ID = [BundleTool isQMP] ? @"wxdc126215fc09c859":@"wx6841af5650ffb835";
-NSString * const BUGLY_APP_ID = [BundleTool isQMP] ? @"i1400015713":@"5057c641d9";//腾讯bugly
+NSString * const kWXAPP_ID = @"wxdc126215fc09c859"
+NSString * const BUGLY_APP_ID = @"i1400015713";//腾讯bugly
 
 
 NSString * const UMENG_SHARE_APPKEY = @"571b71e9e0f55ae9e8000db6";
@@ -42,7 +42,7 @@ NSString * const EaseMobAppKey = @"1159171128178788#qmpapp"; //环信
 NSString * const JIGUANG_APPKEY = @"4d77430fcc5476bf0382ea7e";
 
 //AppStore URL
-NSString * const APPSTORE = [BundleTool isQMP] ? @"https://itunes.apple.com/cn/app/id1103060310?mt=8":@"https://itunes.apple.com/cn/app/id1438955110?mt=8";
+NSString * const APPSTORE = @"https://itunes.apple.com/cn/app/id1103060310?mt=8";
 
 //判断app需不需要更新
 NSString * const UPDATEAPP = @"http://ios1.api.qimingpian.com/d/iosversionupdate";

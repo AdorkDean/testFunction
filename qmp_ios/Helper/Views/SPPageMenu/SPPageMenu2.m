@@ -609,7 +609,7 @@
     if ([@[@"融资",@"国外",@"并购",@"投资机会"] containsObject:self.selectedButton.currentTitle]) {
 //        [self.selectedButton setImage:[UIImage imageNamed:@"small_filter_icon"] forState:UIControlStateNormal];
         CGFloat w = self.selectedButton.currentTitle.length * 16+2 + 12;
-        [self setTitle:self.selectedButton.currentTitle image:[BundleTool imageNamed:@"small_filter_icon"] imagePosition:SPItemImagePosition2Right imageRatio:12/w forItemIndex:_selectedItemIndex];
+        [self setTitle:self.selectedButton.currentTitle image:[UIImage imageNamed:@"small_filter_icon"] imagePosition:SPItemImagePosition2Right imageRatio:12/w forItemIndex:_selectedItemIndex];
         
         [self setWidth:w forItemAtIndex:_selectedItemIndex];
         [self setNeedsLayout];
@@ -662,7 +662,7 @@
     
     if ([@[@"融资",@"国外",@"并购",@"投资机会"] containsObject:self.selectedButton.currentTitle] && fromIndex != toIndex) {
         CGFloat w = self.selectedButton.currentTitle.length * 16+2 + 12;
-        [self setTitle:self.selectedButton.currentTitle image:[BundleTool imageNamed:@"small_filter_icon"] imagePosition:SPItemImagePosition2Right imageRatio:12/w forItemIndex:_selectedItemIndex];
+        [self setTitle:self.selectedButton.currentTitle image:[UIImage imageNamed:@"small_filter_icon"] imagePosition:SPItemImagePosition2Right imageRatio:12/w forItemIndex:_selectedItemIndex];
         
         [self setWidth:w forItemAtIndex:_selectedItemIndex];
         [self setNeedsLayout];

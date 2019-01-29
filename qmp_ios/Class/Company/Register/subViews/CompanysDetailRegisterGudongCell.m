@@ -81,7 +81,7 @@
             icon = model.agency_icon;
         }
     }
-    [_iconImg sd_setImageWithURL:[NSURL URLWithString:icon] placeholderImage:[personArr containsObject:model.gd_type]?[BundleTool imageNamed:@"heading"]:[BundleTool imageNamed:@"logo_default"]];
+    [_iconImg sd_setImageWithURL:[NSURL URLWithString:icon] placeholderImage:[personArr containsObject:model.gd_type]?[UIImage imageNamed:@"heading"]:[UIImage imageNamed:@"logo_default"]];
 
     _imgBtn.hidden = YES;
 //    if (![PublicTool isNull:model.agency_name] && ![PublicTool isNull:model.agency_detail]) {

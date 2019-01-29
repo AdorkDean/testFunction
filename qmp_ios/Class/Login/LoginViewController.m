@@ -172,7 +172,7 @@
     
     UIImageView *iconImgV = [[UIImageView alloc]initWithFrame:CGRectMake((SCREENW-90)/2, 20*ratioHeight, 90, 90)];
     [self.view addSubview:iconImgV];
-    iconImgV.image = [BundleTool imageNamed:@"qmp"];
+    iconImgV.image = [UIImage imageNamed:@"qmp"];
     
     UILabel *iconDescLab = [[UILabel alloc]initWithFrame:CGRectMake(30, iconImgV.bottom + 25*ratioHeight , SCREENW-60, 25)];
     iconDescLab.text = @"企名片  商业信息服务平台";
@@ -186,10 +186,10 @@
     [self.view addSubview:_accountView];
     
     UIImageView *mapImgV = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, SCREENW, 193*ratioHeight)];
-    mapImgV.image = [BundleTool imageNamed:@"login_map"];
+    mapImgV.image = [UIImage imageNamed:@"login_map"];
     
     UIImageView *loginNameImgV = [[UIImageView alloc]initWithFrame:CGRectMake(30, 0, 30, 29)];
-    loginNameImgV.image = [BundleTool imageNamed:@"loginPhone"];
+    loginNameImgV.image = [UIImage imageNamed:@"loginPhone"];
     
     _nameTextF = [[UITextField alloc]initWithFrame:CGRectMake(loginNameImgV.frame.origin.x+loginNameImgV.frame.size.width+5, loginNameImgV.frame.origin.y, _accountView.frame.size.width-5-(loginNameImgV.frame.size.width+loginNameImgV.frame.origin.x)-60, loginNameImgV.frame.size.height)];
     _nameTextF.delegate = self;
@@ -205,7 +205,7 @@
     
     UIImageView *loginPassImgV = [[UIImageView alloc]initWithFrame:CGRectMake(loginNameImgV.frame.origin.x, loginNameImgV.frame.origin.y+loginNameImgV.frame.size.height+10, 30, 29)];
     
-    loginPassImgV.image = [BundleTool imageNamed:@"loginPass"];
+    loginPassImgV.image = [UIImage imageNamed:@"loginPass"];
     
     _passwdTextF = [[UITextField alloc]initWithFrame:CGRectMake(_nameTextF.frame.origin.x, loginPassImgV.frame.origin.y, _nameTextF.frame.size.width, _nameTextF.frame.size.height)];
     _passwdTextF.secureTextEntry = YES;

@@ -288,7 +288,7 @@
 - (void)buildRightBarButtonItem{
     
     self.shareBtn = [[UIButton alloc] initWithFrame:RIGHTBARBTNFRAME];
-    [_shareBtn setImage:[BundleTool imageNamed:@"card_share"] forState:UIControlStateNormal];
+    [_shareBtn setImage:[UIImage imageNamed:@"card_share"] forState:UIControlStateNormal];
     [_shareBtn addTarget:self action:@selector(shareURL) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem* shareItem = [[UIBarButtonItem alloc]initWithCustomView:_shareBtn];
     
@@ -339,7 +339,7 @@
     [screenWindow.layer renderInContext:UIGraphicsGetCurrentContext()];
     image1 = UIGraphicsGetImageFromCurrentImageContext();
     
-    UIImage *image2 = [BundleTool imageNamed:@"QuickMark"];
+    UIImage *image2 = [UIImage imageNamed:@"QuickMark"];
     [image2 drawInRect:CGRectMake(0, SCREENH, SCREENW, imgH)];//100
     UIImage *togetherImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
@@ -363,7 +363,7 @@
         url = [NSString stringWithFormat:@"%@%@",@"http://wx.qimingpian.com/zuhe/filesshare.html?tag=",self.groupModel.name];
     }
     
-    [self.shareTool shareToOtherApp:detailStr aTitleSessionStr:titleStr aTitleTimelineStr:titleStr aIcon:[BundleTool imageNamed:@"share_group.jpg"] aOpenUrl:url onViewController:self shareResult:^(BOOL shareSuccess) {
+    [self.shareTool shareToOtherApp:detailStr aTitleSessionStr:titleStr aTitleTimelineStr:titleStr aIcon:[UIImage imageNamed:@"share_group.jpg"] aOpenUrl:url onViewController:self shareResult:^(BOOL shareSuccess) {
         if (shareSuccess) {
             if ([self.action isEqualToString:@"ManagerSquare"]) {
             }else if([self.action isEqualToString:@"FollowGroup"]){
@@ -399,7 +399,7 @@
     //去掉多余的线条
     self.tableView.tableFooterView = [[UIView alloc]init];
     self.tableView.backgroundColor = TABLEVIEW_COLOR;
-    [self.tableView registerNib:[UINib nibWithNibName:@"ProductListCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"ProductListCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"ProductListCell" bundle:nil] forCellReuseIdentifier:@"ProductListCellID"];
 
 }
 
@@ -456,7 +456,7 @@
     CGFloat collectY = 1;
     
     _feedbackToolBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, collectY,btnW , _toolView.height - collectY)];
-    [_feedbackToolBtn setImage:[BundleTool imageNamed:@"feedback-group"] forState:UIControlStateNormal];
+    [_feedbackToolBtn setImage:[UIImage imageNamed:@"feedback-group"] forState:UIControlStateNormal];
     [_feedbackToolBtn setTitle:@"反馈" forState:UIControlStateNormal];
     [_feedbackToolBtn setTitleColor:H5COLOR forState:UIControlStateNormal];
     _feedbackToolBtn.titleLabel.font = [UIFont systemFontOfSize:14];

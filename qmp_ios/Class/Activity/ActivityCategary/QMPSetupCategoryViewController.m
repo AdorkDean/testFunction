@@ -170,8 +170,8 @@
 - (void)setupViews {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(SCREENW-40-9, kScreenTopHeight-40-2, 40, 40);
-    [button setImage:[BundleTool imageNamed:@"category_close"] forState:UIControlStateNormal];
-    [button setImage:[BundleTool imageNamed:@"category_close"] forState:UIControlStateHighlighted];
+    [button setImage:[UIImage imageNamed:@"category_close"] forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:@"category_close"] forState:UIControlStateHighlighted];
     [button addTarget:self action:@selector(closeButtonClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     

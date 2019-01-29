@@ -368,7 +368,7 @@
         static NSString *infoCellIdentifier = @"MyInfoTableViewCell";
         MyInfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:infoCellIdentifier];
         if (!cell) {
-            cell = [[[BundleTool commonBundle] loadNibNamed:@"MyInfoTableViewCell" owner:nil options:nil] lastObject];
+            cell = [[nil loadNibNamed:@"MyInfoTableViewCell" owner:nil options:nil] lastObject];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
         

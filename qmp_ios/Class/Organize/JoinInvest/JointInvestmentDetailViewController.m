@@ -116,7 +116,7 @@
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"JigouTZCaseCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"JigouTZCaseCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"JigouTZCaseCell" bundle:nil] forCellReuseIdentifier:@"JigouTZCaseCellID"];
     [self addTableHeaderView];
     
     self.tableView.mj_header = self.mjHeader;
@@ -481,7 +481,7 @@
 
 - (JigouTZCaseCell *)caseCell {
     if (!_caseCell) {
-        _caseCell = [[BundleTool commonBundle]loadNibNamed:@"JigouTZCaseCell" owner:nil options:nil].lastObject;
+        _caseCell = [nilloadNibNamed:@"JigouTZCaseCell" owner:nil options:nil].lastObject;
     }
     return _caseCell;
 }

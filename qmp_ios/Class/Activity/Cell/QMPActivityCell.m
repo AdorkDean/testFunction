@@ -211,7 +211,7 @@
         self.authIcon.frame = CGRectMake(self.avatarView.right - 10, self.avatarView.bottom - 11, 12, 12);
         if (headerRelate.isAuthor && ([headerRelate.claim_type integerValue] == 2) && !activity.isAnonymous) {
             self.authIcon.hidden = NO;
-            self.authIcon.image = [BundleTool imageNamed:@"activity_person_claim"];
+            self.authIcon.image = [UIImage imageNamed:@"activity_person_claim"];
         }
         //不显示发布身份
 //        NSString *name = headerRelate.name;
@@ -257,7 +257,7 @@
         [self.idButton setImage:[UIImage new] forState:UIControlStateNormal];
     } else {
         [self.idButton setTitle:@"" forState:UIControlStateNormal];
-        [self.idButton setImage:[BundleTool imageNamed:@"activity_cell_id"] forState:UIControlStateNormal];
+        [self.idButton setImage:[UIImage imageNamed:@"activity_cell_id"] forState:UIControlStateNormal];
     }
     
     if (self.cellModel.detail) {
@@ -414,7 +414,7 @@
         button.width = 150;
     } else {
         [button setTitle:@"" forState:UIControlStateNormal];
-        [button setImage:[BundleTool imageNamed:@"activity_cell_id"] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:@"activity_cell_id"] forState:UIControlStateNormal];
         button.width = 30;
     }
 }
@@ -554,7 +554,7 @@
         [_followButton setTitle:@"已关注" forState:UIControlStateSelected];
         [_followButton setTitleColor:H999999 forState:UIControlStateNormal];
         [_followButton setTitleColor:H999999 forState:UIControlStateSelected];
-        [_followButton setImage:[BundleTool imageNamed:@"activity_cell_follow"] forState:UIControlStateNormal];
+        [_followButton setImage:[UIImage imageNamed:@"activity_cell_follow"] forState:UIControlStateNormal];
         [_followButton setImage:[UIImage new] forState:UIControlStateSelected];
         [_followButton addTarget:self action:@selector(followButtonClick:) forControlEvents:UIControlEventTouchUpInside];
         _followButton.imageEdgeInsets = UIEdgeInsetsMake(0, -2, 0, 2);
@@ -567,7 +567,7 @@
     if (!_deleteButton) {
         _deleteButton = [[UIButton alloc] init];
         _deleteButton.frame = CGRectMake(SCREENW-57-13, 15, 57, 24);
-        [_deleteButton setImage:[BundleTool imageNamed:@"activity_delete"] forState:UIControlStateNormal];
+        [_deleteButton setImage:[UIImage imageNamed:@"activity_delete"] forState:UIControlStateNormal];
         [_deleteButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
 
         [_deleteButton addTarget:self action:@selector(deleteButtonClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -652,7 +652,7 @@
         _idButton.frame = CGRectMake(0, 0, 31, 31);
         _idButton.titleLabel.font = [UIFont systemFontOfSize:12];
         [_idButton setTitleColor:H9COLOR forState:UIControlStateNormal];
-        [_idButton setImage:[BundleTool imageNamed:@"activity_cell_id"] forState:UIControlStateNormal];
+        [_idButton setImage:[UIImage imageNamed:@"activity_cell_id"] forState:UIControlStateNormal];
         _idButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         [_idButton addTarget:self action:@selector(idButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -665,8 +665,8 @@
         _diggButton.titleLabel.font = [UIFont systemFontOfSize:12];
         [_diggButton setTitle:@" " forState:UIControlStateNormal];
         [_diggButton setTitleColor:H999999 forState:UIControlStateNormal];
-        [_diggButton setImage:[BundleTool imageNamed:@"activity_cell_digg"] forState:UIControlStateNormal];
-        [_diggButton setImage:[BundleTool imageNamed:@"activity_cell_diggb"] forState:UIControlStateSelected];
+        [_diggButton setImage:[UIImage imageNamed:@"activity_cell_digg"] forState:UIControlStateNormal];
+        [_diggButton setImage:[UIImage imageNamed:@"activity_cell_diggb"] forState:UIControlStateSelected];
         [_diggButton addTarget:self action:@selector(diggButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     
@@ -680,7 +680,7 @@
         [_commentButton setTitle:@" " forState:UIControlStateNormal];
         _commentButton.titleLabel.font = [UIFont systemFontOfSize:12];
         [_commentButton setTitleColor:H999999 forState:UIControlStateNormal];
-        [_commentButton setImage:[BundleTool imageNamed:@"activity_cell_comment"] forState:UIControlStateNormal];
+        [_commentButton setImage:[UIImage imageNamed:@"activity_cell_comment"] forState:UIControlStateNormal];
         [_commentButton addTarget:self action:@selector(commentButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _commentButton;
@@ -693,7 +693,7 @@
         _shareButton.titleLabel.font = [UIFont systemFontOfSize:8];
         [_shareButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_shareButton setImageEdgeInsets:UIEdgeInsetsMake(0, 4, 0, -4)];
-        [_shareButton setImage:[BundleTool imageNamed:@"activity_cell_share"] forState:UIControlStateNormal];
+        [_shareButton setImage:[UIImage imageNamed:@"activity_cell_share"] forState:UIControlStateNormal];
         [_shareButton addTarget:self action:@selector(shareButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _shareButton;
@@ -704,7 +704,7 @@
         _moreButton.frame = CGRectMake(SCREENW - 35, 0, 35, 37);
         _moreButton.backgroundColor = [UIColor whiteColor];
         _moreButton.imageEdgeInsets = UIEdgeInsetsMake(0, -5, 0, 5);
-        [_moreButton setImage:[BundleTool imageNamed:@"activity_cell_more2"] forState:UIControlStateNormal];
+        [_moreButton setImage:[UIImage imageNamed:@"activity_cell_more2"] forState:UIControlStateNormal];
         [_moreButton addTarget:self action:@selector(moreButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _moreButton;
@@ -737,7 +737,7 @@
     _relate = relate;
     
     [self setTitle:relate.name forState:UIControlStateNormal];
-    [self setImage:[BundleTool imageNamed:relate.qmpIcon] forState:UIControlStateNormal];
+    [self setImage:[UIImage imageNamed:relate.qmpIcon] forState:UIControlStateNormal];
     self.followView.hidden = !relate.isFollowed;
     
     self.nameLabel.hidden = YES;
@@ -768,14 +768,14 @@
 - (UIImageView *)followView {
     if (!_followView) {
         _followView = [[UIImageView alloc] init];
-        _followView.image = [BundleTool imageNamed:@"activity_relate_follow"];
+        _followView.image = [UIImage imageNamed:@"activity_relate_follow"];
     }
     return _followView;
 }
 - (UIImageView *)deleteView {
     if (!_deleteView) {
         _deleteView = [[UIImageView alloc] init];
-        _deleteView.image = [BundleTool imageNamed:@"activity_relate_delete"];
+        _deleteView.image = [UIImage imageNamed:@"activity_relate_delete"];
         _deleteView.hidden = YES;
     }
     return _deleteView;

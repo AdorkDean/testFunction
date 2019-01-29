@@ -36,7 +36,7 @@
     self.centerView.center = CGPointMake(vW/2, vH/2);
     
     self.imgView.frame = CGRectMake(0, (centerH - imgSize.height ) / 2, imgSize.width, imgSize.height);
-    [self.imgView setImage:[BundleTool imageNamed:imgName]];
+    [self.imgView setImage:[UIImage imageNamed:imgName]];
     self.imgView.userInteractionEnabled = YES;
     
     self.titleLbl.font = [UIFont systemFontOfSize:font];
@@ -66,13 +66,13 @@
     self.titleLbl.textColor = titleColor;
 
     self.imgView.frame = CGRectMake(self.titleLbl.left + titleW, (centerH - imgSize.height ) / 2, imgSize.width, imgSize.height);
-    [self.imgView setImage:[BundleTool imageNamed:imgName]];
+    [self.imgView setImage:[UIImage imageNamed:imgName]];
 
 }
 
 - (void)changeImageWithName:(NSString *)imgName{
 
-    [self.imgView setImage:[BundleTool imageNamed:imgName]];
+    [self.imgView setImage:[UIImage imageNamed:imgName]];
 }
 - (UIView *)centerView{
 

@@ -78,7 +78,7 @@
         NSString *groupCellIdentifier = @"AlbumsTableViewCell";
         AlbumCell *cell = [tableView dequeueReusableCellWithIdentifier:groupCellIdentifier];
         if (!cell) {
-            cell = [[[BundleTool commonBundle] loadNibNamed:@"AlbumCell" owner:nil options:nil] lastObject];
+            cell = [[nil loadNibNamed:@"AlbumCell" owner:nil options:nil] lastObject];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
         
@@ -282,7 +282,7 @@
     addBtn.titleLabel.font = [UIFont systemFontOfSize:16];
     [addBtn setTitleColor:NV_TITLE_COLOR forState:UIControlStateNormal];
     [addBtn setTitle:@"新建专辑" forState:UIControlStateNormal];
-    [addBtn setImage:[BundleTool imageNamed:@"onework_add"] forState:UIControlStateNormal];
+    [addBtn setImage:[UIImage imageNamed:@"onework_add"] forState:UIControlStateNormal];
     [addBtn setTitleColor:HTColorFromRGB(0x1d1d1d) forState:UIControlStateNormal];
     [addBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:10];
     [addBtn addTarget:self action:@selector(addAlbumClick) forControlEvents:UIControlEventTouchUpInside];

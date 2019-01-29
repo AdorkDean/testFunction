@@ -132,7 +132,7 @@
         self.projectHangyeLabel.hidden = NO;
         
         SearchCompanyModel *product = model.product_info;
-        [self.projectAvatarView sd_setImageWithURL:[NSURL URLWithString:product.icon] placeholderImage:[BundleTool imageNamed:@"product_default"]];
+        [self.projectAvatarView sd_setImageWithURL:[NSURL URLWithString:product.icon] placeholderImage:[UIImage imageNamed:@"product_default"]];
         
         self.projectNameLabel.text = product.product.length > 0 ? product.product : @"-";
         self.projectHangyeLabel.text = product.hangye1.length > 0 ?  product.hangye1 : @"-";
@@ -183,7 +183,7 @@
     UIButton *downBtn = [self.optionalView viewWithTag:1001];
 
     NSArray *imgArr = @[@"bp_favor",@"bp_mark",@"bp_favor_selected"];
-    [self.favorButton setImage:[BundleTool imageNamed:imgArr[model.interest_flag]] forState:UIControlStateNormal];
+    [self.favorButton setImage:[UIImage imageNamed:imgArr[model.interest_flag]] forState:UIControlStateNormal];
 
     switch (model.interest_flag) {  // 1 未标记   0 不感兴趣  2 感兴趣
         case 1:{
@@ -431,8 +431,8 @@
     if (!_favorButton) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
 //        button.frame = CGRectMake(SCREENW-40-5, 0, 40, 38);
-        [button setImage:[BundleTool imageNamed:@"bp_mark"] forState:UIControlStateNormal];
-//        [button setImage:[BundleTool imageNamed:@"bp_favor_selected"] forState:UIControlStateSelected];
+        [button setImage:[UIImage imageNamed:@"bp_mark"] forState:UIControlStateNormal];
+//        [button setImage:[UIImage imageNamed:@"bp_favor_selected"] forState:UIControlStateSelected];
 //        [button addTarget:self action:@selector(favorButtonClick:) forControlEvents:UIControlEventTouchUpInside];
         _favorButton = button;
     }

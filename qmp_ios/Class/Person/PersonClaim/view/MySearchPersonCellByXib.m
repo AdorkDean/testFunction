@@ -36,7 +36,7 @@
 -(void)setSearchPerson:(SearchPerson *)searchPerson{
     _searchPerson = searchPerson;
     
-    [_iconImgV sd_setImageWithURL:[NSURL URLWithString:searchPerson.icon] placeholderImage:[BundleTool imageNamed:@"heading"]];
+    [_iconImgV sd_setImageWithURL:[NSURL URLWithString:searchPerson.icon] placeholderImage:[UIImage imageNamed:@"heading"]];
     _nameLab.text = searchPerson.name;
     
     NSString *company;
@@ -63,7 +63,7 @@
     
     _person = person;
     
-    [_iconImgV sd_setImageWithURL:[NSURL URLWithString:person.icon] placeholderImage:[BundleTool imageNamed:@"heading"]];
+    [_iconImgV sd_setImageWithURL:[NSURL URLWithString:person.icon] placeholderImage:[UIImage imageNamed:@"heading"]];
     _nameLab.text = person.name;
     
     NSString *company;

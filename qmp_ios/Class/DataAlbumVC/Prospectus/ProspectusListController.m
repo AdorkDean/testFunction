@@ -108,7 +108,7 @@
     }
     
     self.filterBtn = [[UIButton alloc] initWithFrame:RIGHTBARBTNFRAME];
-    [self.filterBtn setImage:[BundleTool imageNamed:btnImg] forState:UIControlStateNormal];
+    [self.filterBtn setImage:[UIImage imageNamed:btnImg] forState:UIControlStateNormal];
     [self.filterBtn setImageEdgeInsets:UIEdgeInsetsMake(3, 0, -3, 0)];
     [self.filterBtn addTarget:self action:@selector(pressNotStoreFilterBtn:) forControlEvents:UIControlEventTouchUpInside];
     self.filterBtn.enabled = YES;
@@ -725,7 +725,7 @@
     [_mySearchBar setBackgroundImage:[UIImage imageFromColor:TABLEVIEW_COLOR andSize:_mySearchBar.bounds.size]];
     //设置背景色
     [_mySearchBar setBackgroundColor:TABLEVIEW_COLOR];
-    [_mySearchBar setSearchFieldBackgroundImage:[BundleTool imageNamed:@"search_borderTab"] forState:UIControlStateNormal];
+    [_mySearchBar setSearchFieldBackgroundImage:[UIImage imageNamed:@"search_borderTab"] forState:UIControlStateNormal];
     [_mySearchBar setSearchTextPositionAdjustment:UIOffsetMake(10, 0)];
     UITextField *tf = [_mySearchBar valueForKey:@"_searchField"];
     NSString *str = @"搜索股票代码、简称、公司名";

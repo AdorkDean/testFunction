@@ -88,7 +88,7 @@ static NSString *const APPGroupId = @"group.mofang.Qimingpian";
     NSString *title = self.tableDataArr[indexPath.row][@"title"];
     cell.titleLab.text = title;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    [cell.leftImageV setImage:[BundleTool imageNamed:self.tableDataArr[indexPath.row][@"image"]]];
+    [cell.leftImageV setImage:[UIImage imageNamed:self.tableDataArr[indexPath.row][@"image"]]];
     cell.redPointView.hidden = YES;
     if ([title isEqualToString:@"清理缓存"]) {
         cell.rightImageV.hidden = YES;

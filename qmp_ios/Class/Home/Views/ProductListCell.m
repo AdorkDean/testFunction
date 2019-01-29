@@ -45,7 +45,7 @@
 -(void)setProductM:(StarProductsModel *)productM{
     
     _productM = productM;
-    [_imgV sd_setImageWithURL:[NSURL URLWithString:productM.icon] placeholderImage:[BundleTool imageNamed:PROICON_DEFAULT]];
+    [_imgV sd_setImageWithURL:[NSURL URLWithString:productM.icon] placeholderImage:[UIImage imageNamed:PROICON_DEFAULT]];
     
 //    [_imgV sd_setImageWithURL:[NSURL URLWithString:productM.icon] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
 //        _imgV.image = [PublicTool OriginImage:image scaleToSize:CGSizeMake(80, 80)];

@@ -105,17 +105,17 @@
 
 
     if ([key isEqualToString:@"电话"]) {
-        _leftIconImgV.image = [BundleTool imageNamed:@"contactInfo_phone"];
+        _leftIconImgV.image = [UIImage imageNamed:@"contactInfo_phone"];
         _leftIconImgV.tag = 10001;
     }else if ([key isEqualToString:@"邮箱"]) {
-        _leftIconImgV.image = [BundleTool imageNamed:@"contactInfo_email"];
+        _leftIconImgV.image = [UIImage imageNamed:@"contactInfo_email"];
         _leftIconImgV.tag = 10002;
     }else if ([key isEqualToString:@"地址"]) {
-        _leftIconImgV.image = [BundleTool imageNamed:@"contactInfo_address"];
+        _leftIconImgV.image = [UIImage imageNamed:@"contactInfo_address"];
         _leftIconImgV.tag = 10003;
         
     }else if ([key isEqualToString:@"其他"]) {
-        _leftIconImgV.image = [BundleTool imageNamed:@"contactInfo_address"];
+        _leftIconImgV.image = [UIImage imageNamed:@"contactInfo_address"];
         _leftIconImgV.tag = 10004;
         
     }
@@ -135,20 +135,20 @@
 - (void)dataWithKey:(NSString*)key lianxiModel:(CompanyDetailLianxiModel*)lianxiModel{
     NSString *value;
     if ([key isEqualToString:@"电话"]) {
-        _leftIconImgV.image = [BundleTool imageNamed:@"contactInfo_phone"];
+        _leftIconImgV.image = [UIImage imageNamed:@"contactInfo_phone"];
         _leftIconImgV.tag = 10001;
         value = lianxiModel.phone;
     }else if ([key isEqualToString:@"邮箱"]) {
-        _leftIconImgV.image = [BundleTool imageNamed:@"contactInfo_email"];
+        _leftIconImgV.image = [UIImage imageNamed:@"contactInfo_email"];
         _leftIconImgV.tag = 10002;
         value = lianxiModel.email;
     }else if ([key isEqualToString:@"地址"]) {
-        _leftIconImgV.image = [BundleTool imageNamed:@"contactInfo_address"];
+        _leftIconImgV.image = [UIImage imageNamed:@"contactInfo_address"];
         value = lianxiModel.address;
         _leftIconImgV.tag = 10003;
 
     }else if ([key isEqualToString:@"其他"]) {
-        _leftIconImgV.image = [BundleTool imageNamed:@"contactInfo_address"];
+        _leftIconImgV.image = [UIImage imageNamed:@"contactInfo_address"];
         value = lianxiModel.other;
         _leftIconImgV.tag = 10004;
 

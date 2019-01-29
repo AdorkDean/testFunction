@@ -119,7 +119,7 @@ const CGFloat QMPCommunityActivityCellActionHeight = 37;
             [self.idButton setImage:[UIImage new] forState:UIControlStateNormal];
         } else {
             [self.idButton setTitle:@"" forState:UIControlStateNormal];
-            [self.idButton setImage:[BundleTool imageNamed:@"activity_cell_id"] forState:UIControlStateNormal];
+            [self.idButton setImage:[UIImage imageNamed:@"activity_cell_id"] forState:UIControlStateNormal];
         }
         if (self.companyLabel.hidden) {
             self.contentLabel.top = 61 - 17;
@@ -291,7 +291,7 @@ const CGFloat QMPCommunityActivityCellActionHeight = 37;
         button.width = 150;
     } else {
         [button setTitle:@"" forState:UIControlStateNormal];
-        [button setImage:[BundleTool imageNamed:@"activity_cell_id"] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:@"activity_cell_id"] forState:UIControlStateNormal];
         button.width = 30;
     }
 }
@@ -401,7 +401,7 @@ const CGFloat QMPCommunityActivityCellActionHeight = 37;
         _idButton.hidden = YES;
         _idButton.titleLabel.font = [UIFont systemFontOfSize:12];
         [_idButton setTitleColor:H9COLOR forState:UIControlStateNormal];
-        [_idButton setImage:[BundleTool imageNamed:@"activity_cell_id"] forState:UIControlStateNormal];
+        [_idButton setImage:[UIImage imageNamed:@"activity_cell_id"] forState:UIControlStateNormal];
         _idButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         [_idButton addTarget:self action:@selector(idButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -420,7 +420,7 @@ const CGFloat QMPCommunityActivityCellActionHeight = 37;
     if (!_deleteButton) {
         _deleteButton = [[UIButton alloc] init];
         _deleteButton.frame = CGRectMake(SCREENW-36-4, 3, 36, 36);
-        [_deleteButton setImage:[BundleTool imageNamed:@"activity_delete"] forState:UIControlStateNormal];
+        [_deleteButton setImage:[UIImage imageNamed:@"activity_delete"] forState:UIControlStateNormal];
         [_deleteButton addTarget:self action:@selector(deleteButtonClick) forControlEvents:UIControlEventTouchUpInside];
     }
     return _deleteButton;
@@ -498,8 +498,8 @@ const CGFloat QMPCommunityActivityCellActionHeight = 37;
         _diggButton.titleLabel.font = [UIFont systemFontOfSize:12];
         [_diggButton setTitle:@"1" forState:UIControlStateNormal];
         [_diggButton setTitleColor:H999999 forState:UIControlStateNormal];
-        [_diggButton setImage:[BundleTool imageNamed:@"activity_cell_digg"] forState:UIControlStateNormal];
-        [_diggButton setImage:[BundleTool imageNamed:@"activity_cell_diggb"] forState:UIControlStateSelected];
+        [_diggButton setImage:[UIImage imageNamed:@"activity_cell_digg"] forState:UIControlStateNormal];
+        [_diggButton setImage:[UIImage imageNamed:@"activity_cell_diggb"] forState:UIControlStateSelected];
         [_diggButton addTarget:self action:@selector(diggButtonClick:) forControlEvents:UIControlEventTouchUpInside];
 //        [_diggButton setImageEdgeInsets:UIEdgeInsetsMake(0, -6, 0, 6)];
     }
@@ -512,7 +512,7 @@ const CGFloat QMPCommunityActivityCellActionHeight = 37;
         _commentButton.frame = CGRectMake(SCREENW-58, 0, 50, QMPCommunityActivityCellActionHeight);
         _commentButton.titleLabel.font = [UIFont systemFontOfSize:12];
         [_commentButton setTitleColor:H999999 forState:UIControlStateNormal];
-        [_commentButton setImage:[BundleTool imageNamed:@"activity_cell_comment"] forState:UIControlStateNormal];
+        [_commentButton setImage:[UIImage imageNamed:@"activity_cell_comment"] forState:UIControlStateNormal];
         [_commentButton addTarget:self action:@selector(commentButtonClick:) forControlEvents:UIControlEventTouchUpInside];
 //        [_commentButton setImageEdgeInsets:UIEdgeInsetsMake(0, -6, 0, 6)];
     }
@@ -526,7 +526,7 @@ const CGFloat QMPCommunityActivityCellActionHeight = 37;
                                         36, QMPCommunityActivityCellActionHeight);
         _shareButton.titleLabel.font = [UIFont systemFontOfSize:8];
         [_shareButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [_shareButton setImage:[BundleTool imageNamed:@"activity_cell_share"] forState:UIControlStateNormal];
+        [_shareButton setImage:[UIImage imageNamed:@"activity_cell_share"] forState:UIControlStateNormal];
         [_shareButton addTarget:self action:@selector(shareButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _shareButton;
@@ -537,7 +537,7 @@ const CGFloat QMPCommunityActivityCellActionHeight = 37;
         _moreButton.frame = CGRectMake(SCREENW - 35, 0, 35, QMPCommunityActivityCellActionHeight);
         _moreButton.backgroundColor = [UIColor whiteColor];
         _moreButton.imageEdgeInsets = UIEdgeInsetsMake(0, -5, 0, 5);
-        [_moreButton setImage:[BundleTool imageNamed:@"activity_cell_more2"] forState:UIControlStateNormal];
+        [_moreButton setImage:[UIImage imageNamed:@"activity_cell_more2"] forState:UIControlStateNormal];
         [_moreButton addTarget:self action:@selector(moreButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _moreButton;
@@ -580,7 +580,7 @@ const CGFloat QMPCommunityActivityCellActionHeight = 37;
     if (!_backgroundView) {
         _backgroundView = [[UIImageView alloc] init];
         _backgroundView.frame = CGRectMake(0, 0, 166, 35);
-        _backgroundView.image = [BundleTool imageNamed:@"activity_cell_menu_bg"];
+        _backgroundView.image = [UIImage imageNamed:@"activity_cell_menu_bg"];
     }
     return _backgroundView;
 }
@@ -592,7 +592,7 @@ const CGFloat QMPCommunityActivityCellActionHeight = 37;
         [_collectButton setTitle:@"收藏" forState:UIControlStateNormal];
         [_collectButton setTitle:@"已收藏" forState:UIControlStateSelected];
         [_collectButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [_collectButton setImage:[BundleTool imageNamed:@"activity_cell_collect"] forState:UIControlStateNormal];
+        [_collectButton setImage:[UIImage imageNamed:@"activity_cell_collect"] forState:UIControlStateNormal];
         _collectButton.imageEdgeInsets = UIEdgeInsetsMake(0, -1.5, 0, 1.5);
         _collectButton.titleEdgeInsets = UIEdgeInsetsMake(0, 1.5, 0, -1.5);
         [_collectButton addTarget:self action:@selector(collectButtonClick) forControlEvents:UIControlEventTouchUpInside];
@@ -607,7 +607,7 @@ const CGFloat QMPCommunityActivityCellActionHeight = 37;
         [_reportButton setTitle:@"举报" forState:UIControlStateNormal];
         [_reportButton setTitle:@"已举报" forState:UIControlStateSelected];
         [_reportButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [_reportButton setImage:[BundleTool imageNamed:@"activity_cell_report"] forState:UIControlStateNormal];
+        [_reportButton setImage:[UIImage imageNamed:@"activity_cell_report"] forState:UIControlStateNormal];
         _reportButton.imageEdgeInsets = UIEdgeInsetsMake(0, -1.5, 0, 1.5);
         _reportButton.titleEdgeInsets = UIEdgeInsetsMake(0, 1.5, 0, -1.5);
         [_reportButton addTarget:self action:@selector(reportButtonClick) forControlEvents:UIControlEventTouchUpInside];

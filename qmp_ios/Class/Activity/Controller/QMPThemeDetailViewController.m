@@ -83,7 +83,7 @@
 }
 - (void)setupViews {
     UIImageView *bgImagV = [[UIImageView alloc]initWithFrame:CGRectMake(0, -kStatusBarHeight, SCREENW,kScreenTopHeight + 399)];
-    bgImagV.image = [BundleTool imageNamed:@"detail_bgImg"];
+    bgImagV.image = [UIImage imageNamed:@"detail_bgImg"];
     [self.view addSubview:bgImagV];
     
     CGRect rect = CGRectMake(0, 0, SCREENW, SCREENH);

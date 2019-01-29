@@ -108,8 +108,8 @@
 
 - (void)rightBarbutton{
     UIButton *rightBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 47.f, 20.f)];
-    [rightBtn setImage:[BundleTool imageNamed:@"bar_setgray"] forState:UIControlStateNormal];
-    [rightBtn setImage:[BundleTool imageNamed:@"bar_setBlue"] forState:UIControlStateSelected];
+    [rightBtn setImage:[UIImage imageNamed:@"bar_setgray"] forState:UIControlStateNormal];
+    [rightBtn setImage:[UIImage imageNamed:@"bar_setBlue"] forState:UIControlStateSelected];
     rightBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
     rightBtn.titleLabel.font = [UIFont systemFontOfSize:15.f];
     [rightBtn setTitleColor:NV_OTHERTITLE_COLOR forState:UIControlStateNormal];
@@ -664,7 +664,7 @@
     [_mySearchBar setBackgroundImage:[UIImage imageFromColor:TABLEVIEW_COLOR andSize:_mySearchBar.bounds.size]];
     //设置背景色
     [_mySearchBar setBackgroundColor:TABLEVIEW_COLOR];
-    [_mySearchBar setSearchFieldBackgroundImage:[BundleTool imageNamed:@"search_borderTab"] forState:UIControlStateNormal];
+    [_mySearchBar setSearchFieldBackgroundImage:[UIImage imageNamed:@"search_borderTab"] forState:UIControlStateNormal];
     [_mySearchBar setSearchTextPositionAdjustment:UIOffsetMake(10, 0)];
     UITextField *tf = [_mySearchBar valueForKey:@"_searchField"];
     NSString *str = @"搜索报告";

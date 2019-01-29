@@ -150,7 +150,7 @@
     [imgScrollView addSubview:imgV];
     _imgView = imgV;
     
-    [imgV sd_setImageWithURL:[NSURL URLWithString:_value]  placeholderImage:[BundleTool imageNamed:@"headimg"]];
+    [imgV sd_setImageWithURL:[NSURL URLWithString:_value]  placeholderImage:[UIImage imageNamed:@"headimg"]];
     
     UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTapImg:)];
     doubleTap.numberOfTapsRequired = 2;

@@ -98,8 +98,8 @@
         _righBtn.frame = CGRectMake(SCREENW - 19 - 91, 0, 90, 44);
         _righBtn.titleLabel.font = [UIFont systemFontOfSize:15];
         [_righBtn setTitleColor:COLOR737782 forState:UIControlStateNormal];
-        [_righBtn setImage:[BundleTool imageNamed:@"detail_moreArrow"] forState:UIControlStateNormal];
-        [_righBtn setImage:[BundleTool imageNamed:@"detail_moreArrow"] forState:UIControlStateHighlighted];
+        [_righBtn setImage:[UIImage imageNamed:@"detail_moreArrow"] forState:UIControlStateNormal];
+        [_righBtn setImage:[UIImage imageNamed:@"detail_moreArrow"] forState:UIControlStateHighlighted];
     }
     return _righBtn;
 }
@@ -139,8 +139,8 @@
         if ([btnTitle containsString:@"添加"]) {
             _righBtn.titleLabel.font = [UIFont systemFontOfSize:12];
             [_righBtn setTitleColor:BLUE_TITLE_COLOR forState:UIControlStateNormal];
-            [_righBtn setImage:[BundleTool imageNamed:@"company_addTag"] forState:UIControlStateNormal];
-            [_righBtn setImage:[BundleTool imageNamed:@"company_addTag"] forState:UIControlStateHighlighted];
+            [_righBtn setImage:[UIImage imageNamed:@"company_addTag"] forState:UIControlStateNormal];
+            [_righBtn setImage:[UIImage imageNamed:@"company_addTag"] forState:UIControlStateHighlighted];
             [self.righBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:4];
             [_righBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
 
@@ -157,8 +157,8 @@
             
             _righBtn.titleLabel.font = [UIFont systemFontOfSize:14];
             [_righBtn setTitleColor:COLOR737782 forState:UIControlStateNormal];
-            [_righBtn setImage:[BundleTool imageNamed:@"detail_moreArrow"] forState:UIControlStateNormal];
-            [_righBtn setImage:[BundleTool imageNamed:@"detail_moreArrow"] forState:UIControlStateHighlighted];
+            [_righBtn setImage:[UIImage imageNamed:@"detail_moreArrow"] forState:UIControlStateNormal];
+            [_righBtn setImage:[UIImage imageNamed:@"detail_moreArrow"] forState:UIControlStateHighlighted];
             [_righBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleRight imageTitleSpace:4];
             [_righBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
 
@@ -173,8 +173,8 @@
     
     _btnImgStr = btnImgStr;
     
-    [self.righBtn setImage:[BundleTool imageNamed:_btnImgStr] forState:UIControlStateNormal];
-    [self.righBtn setImage:[BundleTool imageNamed:_btnImgStr] forState:UIControlStateHighlighted];
+    [self.righBtn setImage:[UIImage imageNamed:_btnImgStr] forState:UIControlStateNormal];
+    [self.righBtn setImage:[UIImage imageNamed:_btnImgStr] forState:UIControlStateHighlighted];
     if ([PublicTool isNull:_btnImgStr]) {
         [self.righBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:0];
     }else{

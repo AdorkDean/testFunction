@@ -58,8 +58,8 @@
 - (void)setupNavBar {
     self.navigationItem.title = @"工商信息";
     UIButton * captureScreenBtn = [[UIButton alloc] initWithFrame:RIGHTBARBTNFRAME];
-    [captureScreenBtn setImage:[BundleTool imageNamed:@"screen_capture_gray"] forState:UIControlStateNormal];
-    [captureScreenBtn setImage:[BundleTool imageNamed:@"screen_capture_gray"] forState:UIControlStateHighlighted];
+    [captureScreenBtn setImage:[UIImage imageNamed:@"screen_capture_gray"] forState:UIControlStateNormal];
+    [captureScreenBtn setImage:[UIImage imageNamed:@"screen_capture_gray"] forState:UIControlStateHighlighted];
     [captureScreenBtn addTarget:self action:@selector(getCapture) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem * captureScreenItem = [[UIBarButtonItem alloc]initWithCustomView:captureScreenBtn];
     UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
@@ -490,7 +490,7 @@
     _printscreenImage = nil;
     UIImage* viewImage = nil;
     UITableView *scrollView = self.tableView;
-    UIImage *image2 = [BundleTool imageNamed:@"QuickMark"];
+    UIImage *image2 = [UIImage imageNamed:@"QuickMark"];
     CGFloat imgH = scrollView.contentSize.width/1125 *591;
     UIGraphicsBeginImageContextWithOptions(CGSizeMake(scrollView.contentSize.width, scrollView.contentSize.height+ imgH), scrollView.opaque, 0.0);
     {

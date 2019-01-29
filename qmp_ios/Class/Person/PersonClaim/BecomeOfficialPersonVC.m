@@ -18,7 +18,7 @@
 @implementation BecomeOfficialPersonVC
 
 -(instancetype)init{
-    BecomeOfficialPersonVC *vc = [[BecomeOfficialPersonVC alloc]initWithNibName:@"BecomeOfficialPersonVC" bundle:[BundleTool commonBundle]];
+    BecomeOfficialPersonVC *vc = [[BecomeOfficialPersonVC alloc]initWithNibName:@"BecomeOfficialPersonVC" bundle:nil];
     return vc;
 }
 

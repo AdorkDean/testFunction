@@ -77,7 +77,7 @@
  
     //叉号
     UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
-    [btn setImage:[BundleTool imageNamed:@"teamAlert_cha"] forState:UIControlStateNormal];
+    [btn setImage:[UIImage imageNamed:@"teamAlert_cha"] forState:UIControlStateNormal];
     [self addSubview:btn];
     btn.centerX = self.width/2.0;
     btn.bottom = self.height - 61*ratioHeight;

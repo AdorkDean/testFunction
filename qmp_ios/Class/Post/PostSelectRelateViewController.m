@@ -61,7 +61,7 @@
     
     //设置背景色
     [_mySearchBar setBackgroundColor:TABLEVIEW_COLOR];
-    [_mySearchBar setSearchFieldBackgroundImage:[BundleTool imageNamed:@"search_borderTab"] forState:UIControlStateNormal];
+    [_mySearchBar setSearchFieldBackgroundImage:[UIImage imageNamed:@"search_borderTab"] forState:UIControlStateNormal];
     [_mySearchBar setSearchTextPositionAdjustment:UIOffsetMake(10, 0)];
     UITextField *tf = [_mySearchBar valueForKey:@"_searchField"];
     NSString *str = @"输入关键词搜索";
@@ -321,7 +321,7 @@
         
         SearchPersonCell *cell =  [tableView dequeueReusableCellWithIdentifier:ID2];
         if (!cell) {
-            cell = (SearchPersonCell *)[[BundleTool commonBundle]loadNibNamed:@"SearchPersonCell" owner:nil options:nil].lastObject;
+            cell = (SearchPersonCell *)[nilloadNibNamed:@"SearchPersonCell" owner:nil options:nil].lastObject;
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
         SearchPerson * model = self.personData[indexPath.row];

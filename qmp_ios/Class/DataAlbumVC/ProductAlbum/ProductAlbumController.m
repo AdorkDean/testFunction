@@ -52,7 +52,7 @@
     
     self.navigationItem.titleView = self.pageMenu;
     
-    UIImage *image = [BundleTool imageNamed:@"nav_search_icon"];
+    UIImage *image = [UIImage imageNamed:@"nav_search_icon"];
     image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UIBarButtonItem *searchItem = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(searchItemClick)];
     self.navigationItem.rightBarButtonItem = searchItem;

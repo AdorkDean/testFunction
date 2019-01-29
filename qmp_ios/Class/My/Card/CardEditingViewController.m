@@ -116,7 +116,7 @@
     self.tableView.showsVerticalScrollIndicator = NO;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 //    self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
-    [self.tableView registerNib:[UINib nibWithNibName:@"CardEditingTableViewCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"CardEditingTableViewCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"CardEditingTableViewCell" bundle:nil] forCellReuseIdentifier:@"CardEditingTableViewCellID"];
     [self.view addSubview:self.tableView];
     self.tableView.backgroundColor = [UIColor whiteColor];
     
@@ -488,7 +488,7 @@
 - (NSArray*)createBackButton{
     
     UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 60, 44)];
-    [leftButton setImage:[BundleTool imageNamed:@"left-arrow"] forState:UIControlStateNormal];
+    [leftButton setImage:[UIImage imageNamed:@"left-arrow"] forState:UIControlStateNormal];
     //    [leftButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
     [leftButton addTarget:self action:@selector(popSelf) forControlEvents:UIControlEventTouchUpInside];
     
@@ -917,7 +917,7 @@
     
     if (!_backAddBtn) {
         _backAddBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 106, 66)];
-        [_backAddBtn setImage:[BundleTool imageNamed:@"card_back"] forState:UIControlStateNormal];
+        [_backAddBtn setImage:[UIImage imageNamed:@"card_back"] forState:UIControlStateNormal];
         [_backAddBtn addTarget:self action:@selector(handerBtnClick) forControlEvents:UIControlEventTouchUpInside];
     }
     return _backAddBtn;

@@ -32,7 +32,7 @@
 + (instancetype)cellWithTableView:(UITableView*)tableView{
     PersonRoleCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PersonRoleCellID"];
     if (!cell) {
-        cell = [[BundleTool commonBundle]loadNibNamed:@"PersonRoleCell" owner:nil options:nil].lastObject;
+        cell = [nilloadNibNamed:@"PersonRoleCell" owner:nil options:nil].lastObject;
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;

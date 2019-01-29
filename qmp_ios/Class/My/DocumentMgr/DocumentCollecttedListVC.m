@@ -767,10 +767,10 @@
     
     _mySearchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(7, 0, SCREENW-14, height)];
     [_mySearchBar setBackgroundImage:[UIImage imageFromColor:TABLEVIEW_COLOR andSize:_mySearchBar.size]];
-    //    _mySearchBar.backgroundImage = [BundleTool imageNamed:@"nav-lightgray"];
+    //    _mySearchBar.backgroundImage = [UIImage imageNamed:@"nav-lightgray"];
     //设置背景色
     [_mySearchBar setBackgroundColor:TABLEVIEW_COLOR];
-    [_mySearchBar setSearchFieldBackgroundImage:[BundleTool imageNamed:@"search_borderTab"] forState:UIControlStateNormal];
+    [_mySearchBar setSearchFieldBackgroundImage:[UIImage imageNamed:@"search_borderTab"] forState:UIControlStateNormal];
     [_mySearchBar setSearchTextPositionAdjustment:UIOffsetMake(10, 0)];
     UITextField *tf = [_mySearchBar valueForKey:@"_searchField"];
     tf.font = [UIFont systemFontOfSize:14];

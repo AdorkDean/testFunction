@@ -98,7 +98,7 @@
     [addBtn setTitleColor:RGBa(100,99,105,1) forState:UIControlStateNormal];
     addBtn.titleLabel.font = [UIFont systemFontOfSize:15];
     [addBtn setTitle:@"添加" forState:UIControlStateNormal];
-    [addBtn setImage:[BundleTool imageNamed:@"add-yellow"] forState:UIControlStateNormal];
+    [addBtn setImage:[UIImage imageNamed:@"add-yellow"] forState:UIControlStateNormal];
     [addBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:5];
     [self.contentView addSubview:addBtn];
     _addBtn = addBtn;
@@ -119,7 +119,7 @@
 
     self.model = model;
     
-    [_iconImageV sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[BundleTool imageNamed:@"product_default"]];
+    [_iconImageV sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[UIImage imageNamed:@"product_default"]];
 
     //轮次size
     

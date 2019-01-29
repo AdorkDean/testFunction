@@ -157,7 +157,7 @@
     self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;
     self.tableView.mj_header = self.mjHeader;
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"CompanyPersonCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"CompanyPersonCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"CompanyPersonCell" bundle:nil] forCellReuseIdentifier:@"CompanyPersonCellID"];
     
     [self.view addSubview:self.tableView];
 }

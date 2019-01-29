@@ -23,7 +23,7 @@
 
 @implementation PhotoEditViewController
 -(instancetype)init{
-    PhotoEditViewController *vc = [[PhotoEditViewController alloc]initWithNibName:@"PhotoEditViewController" bundle:[BundleTool commonBundle]];
+    PhotoEditViewController *vc = [[PhotoEditViewController alloc]initWithNibName:@"PhotoEditViewController" bundle:nil];
     return vc;
 }
 - (void)viewDidLoad {

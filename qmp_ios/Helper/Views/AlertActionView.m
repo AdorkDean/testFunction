@@ -29,7 +29,7 @@
 
 -(instancetype)initWithMessage:(NSString*)message tipInfo:(NSString*)tipInfo sureBtnAction:(SureBtnActin)sureBtnAcion{
     
-    AlertActionView *alertV = [[BundleTool commonBundle]loadNibNamed:@"AlertActionView" owner:nil options:nil].lastObject;
+    AlertActionView *alertV = [nilloadNibNamed:@"AlertActionView" owner:nil options:nil].lastObject;
     alertV.frame = [UIScreen mainScreen].bounds;
     alertV.backgroundColor = [[UIColor blackColor]colorWithAlphaComponent:0.3];
     alertV.bgView.layer.masksToBounds = YES;
@@ -44,7 +44,7 @@
 
 -(instancetype)initWithMessage:(NSString*)message tipInfo:(NSString*)tipInfo cancelTitle:(NSString*)cancelTitle  sureBtnTitle:(NSString*)sureBtnTitle  cancelBtnAction:(CancelBtnActin)cancelBtnAction sureBtnAction:(SureBtnActin)sureBtnAcion{
     
-    AlertActionView *alertV = [[BundleTool commonBundle]loadNibNamed:@"AlertActionView" owner:nil options:nil].lastObject;
+    AlertActionView *alertV = [nilloadNibNamed:@"AlertActionView" owner:nil options:nil].lastObject;
     alertV.frame = [UIScreen mainScreen].bounds;
     alertV.backgroundColor = [[UIColor blackColor]colorWithAlphaComponent:0.3];
     alertV.bgView.layer.masksToBounds = YES;
@@ -77,7 +77,7 @@
 + (void)alertViewWithMessage:(NSAttributedString*)message tipInfo:(NSAttributedString*)tipInfo sureBtnAction:(SureBtnActin)sureBtnAcion sureBtnEnabled:(BOOL)sureBtnEnabled{
     
     
-    AlertActionView *alertV = [[BundleTool commonBundle]loadNibNamed:@"AlertActionView" owner:nil options:nil].lastObject;
+    AlertActionView *alertV = [nilloadNibNamed:@"AlertActionView" owner:nil options:nil].lastObject;
     alertV.frame = [UIScreen mainScreen].bounds;
     alertV.backgroundColor = [[UIColor blackColor]colorWithAlphaComponent:0.3];
     alertV.bgView.layer.masksToBounds = YES;
@@ -102,7 +102,7 @@
 //投递BP
 + (void)alertViewWithMessage:(NSAttributedString*)message tipInfo:(NSAttributedString*)tipInfo  cancelBtnAction:(CancelBtnActin)cancelBtnAction sureBtnAction:(SureBtnActin)sureBtnAcion sureBtnEnabled:(BOOL)sureBtnEnabled{
     
-    AlertActionView *alertV = [[BundleTool commonBundle]loadNibNamed:@"AlertActionView" owner:nil options:nil].lastObject;
+    AlertActionView *alertV = [nilloadNibNamed:@"AlertActionView" owner:nil options:nil].lastObject;
     alertV.frame = [UIScreen mainScreen].bounds;
     alertV.backgroundColor = [[UIColor blackColor]colorWithAlphaComponent:0.3];
     alertV.bgView.layer.masksToBounds = YES;

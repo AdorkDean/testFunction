@@ -46,7 +46,7 @@
     self.tableView.dataSource = self;
     self.tableView.showsVerticalScrollIndicator = NO;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    [self.tableView registerNib:[UINib nibWithNibName:@"CardEditingTableViewCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"CardEditingTableViewCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"CardEditingTableViewCell" bundle:nil] forCellReuseIdentifier:@"CardEditingTableViewCellID"];
     [self.view addSubview:self.tableView];
     self.tableView.backgroundColor = [UIColor whiteColor];
     

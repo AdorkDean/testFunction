@@ -92,7 +92,7 @@
 
     _basicModel = basicModel;
     
-    [iconImgV sd_setImageWithURL:[NSURL URLWithString:_basicModel.icon] placeholderImage:[BundleTool imageNamed:@"product_default"]];
+    [iconImgV sd_setImageWithURL:[NSURL URLWithString:_basicModel.icon] placeholderImage:[UIImage imageNamed:@"product_default"]];
     _productName.text = _basicModel.product.length ? _basicModel.product:_basicModel.company;
     _statusLbl.hidden = _basicModel.need_flag.integerValue == 0;
    

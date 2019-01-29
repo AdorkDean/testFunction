@@ -86,12 +86,12 @@
     
     //设置图片
     if (imageName && imageName.length) {
-        [button setImage:[BundleTool imageNamed:[NSString stringWithFormat:@"%@", imageName]] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@", imageName]] forState:UIControlStateNormal];
 
     }
     if (backgroundImageName && backgroundImageName.length) {
         //设置背景图片
-        [button setBackgroundImage:[BundleTool imageNamed:[NSString stringWithFormat:@"%@", backgroundImageName]] forState:UIControlStateNormal];
+        [button setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@", backgroundImageName]] forState:UIControlStateNormal];
 
     }
 
@@ -103,7 +103,7 @@
 +(UIImageView *)createImageViewWithFrame:(CGRect)frame imageName:(NSString *)imageName
 {
     UIImageView * imageView = [[UIImageView alloc]initWithFrame:frame];
-    imageView.image = [BundleTool imageNamed:[NSString stringWithFormat:@"%@", imageName]];
+    imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", imageName]];
     return imageView;
 }
 //UITextField

@@ -159,7 +159,7 @@
             } else {
                 _focusBtn.titleLabel.font = [UIFont systemFontOfSize:15];
             }
-            [_focusBtn setImage:[BundleTool imageNamed:@"workflow_have"] forState:UIControlStateSelected];
+            [_focusBtn setImage:[UIImage imageNamed:@"workflow_have"] forState:UIControlStateSelected];
             [_focusBtn addTarget:self action:@selector(focusBtnClick) forControlEvents:UIControlEventTouchUpInside];
             [_bottomView addSubview:_focusBtn];
             
@@ -291,11 +291,11 @@
     if ([self.userInfoDic[@"is_focus"] integerValue] == 1) {
         //已关注
         [_focusBtn setTitle:@"已关注" forState:UIControlStateNormal];
-        [_focusBtn setImage:[BundleTool imageNamed:@"workflow_have"] forState:UIControlStateNormal];
+        [_focusBtn setImage:[UIImage imageNamed:@"workflow_have"] forState:UIControlStateNormal];
     }else{
         //没关注
         [_focusBtn setTitle:@"关注" forState:UIControlStateNormal];
-        [_focusBtn setImage:[BundleTool imageNamed:@"workflow_add"] forState:UIControlStateNormal];
+        [_focusBtn setImage:[UIImage imageNamed:@"workflow_add"] forState:UIControlStateNormal];
     }
    
 }

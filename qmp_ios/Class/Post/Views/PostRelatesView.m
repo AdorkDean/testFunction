@@ -107,7 +107,7 @@
     _relate = relate;
 
     [self setTitle:relate.name forState:UIControlStateNormal];
-    [self setImage:[BundleTool imageNamed:relate.qmpIcon] forState:UIControlStateNormal];
+    [self setImage:[UIImage imageNamed:relate.qmpIcon] forState:UIControlStateNormal];
 }
 - (CGRect)imageRectForContentRect:(CGRect)contentRect {
     return CGRectMake(7, 5, contentRect.size.height-10, contentRect.size.height-10);
@@ -128,7 +128,7 @@
     if (!_deleteView) {
         _deleteView = [[UIButton alloc] init];
         _deleteView.frame = CGRectMake(0, 0, 20, 20);
-        [_deleteView setImage:[BundleTool imageNamed:@"post_activity_delete"] forState:UIControlStateNormal];
+        [_deleteView setImage:[UIImage imageNamed:@"post_activity_delete"] forState:UIControlStateNormal];
         [_deleteView addTarget:self action:@selector(deleteViewClick) forControlEvents:UIControlEventTouchUpInside];
     }
     return _deleteView;

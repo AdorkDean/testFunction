@@ -23,8 +23,8 @@
     if (self) {
         
         self.readBtn = [[UIButton alloc] initWithFrame:CGRectMake(17, 12, 15, 15)];
-        [self.readBtn setImage:[BundleTool imageNamed:@"read-normal"] forState:UIControlStateNormal];
-        [self.readBtn setImage:[BundleTool imageNamed:@"read-selected"] forState:UIControlStateSelected];
+        [self.readBtn setImage:[UIImage imageNamed:@"read-normal"] forState:UIControlStateNormal];
+        [self.readBtn setImage:[UIImage imageNamed:@"read-selected"] forState:UIControlStateSelected];
         [self.contentView addSubview:self.readBtn];
         
         self.titleLbl = [[UILabel alloc] init];

@@ -36,7 +36,7 @@
 + (instancetype)defaultInitCellWithTableView:(UITableView *)tableview{
     BPDeliverStatusCell * cell =  [tableview dequeueReusableCellWithIdentifier:@"BPDeliverStatusCellID"];
     if (cell == nil) {
-        cell = [[BundleTool commonBundle] loadNibNamed:@"BPDeliverStatusCell" owner:self options:nil].lastObject;
+        cell = [nil loadNibNamed:@"BPDeliverStatusCell" owner:self options:nil].lastObject;
     }
     return cell;
 }
@@ -49,7 +49,7 @@
 - (void)setBpstatusModel:(BPDeliverStatusModel *)bpstatusModel{
     _bpstatusModel = bpstatusModel;
     
-    [self.headImgVw sd_setImageWithURL:[NSURL URLWithString:_bpstatusModel.icon] placeholderImage:[BundleTool imageNamed:@"heading"]];
+    [self.headImgVw sd_setImageWithURL:[NSURL URLWithString:_bpstatusModel.icon] placeholderImage:[UIImage imageNamed:@"heading"]];
     self.nameLbl.text = _bpstatusModel.name;
     self.statusLbl.text = [_bpstatusModel.claim_type isEqualToString:@"2"]?@"":@" 未入驻 ";
     if ([PublicTool isNull:_bpstatusModel.company]) {

@@ -17,7 +17,7 @@
     // Initialization code
     self.keyLbl.textColor = NV_TITLE_COLOR;
     self.valueLbl.textColor = COLOR737782;
-    self.rightImgV.image = [BundleTool imageNamed:@"me_headRightArrow"];
+    self.rightImgV.image = [UIImage imageNamed:@"me_headRightArrow"];
     [self.contentView addSubview:self.lineV];
 }
 

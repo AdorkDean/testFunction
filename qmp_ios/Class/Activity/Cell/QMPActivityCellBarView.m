@@ -84,8 +84,8 @@ const CGFloat ActionBarHeight = 48;
         _coinButton.titleEdgeInsets = UIEdgeInsetsMake(0, 2, 0, -2);
         [_coinButton setTitleColor:H9COLOR forState:UIControlStateNormal];
         [_coinButton setTitleColor:HTColorFromRGB(0x006EDA) forState:UIControlStateSelected];
-        [_coinButton setImage:[BundleTool imageNamed:@"activity_cell_digg"] forState:UIControlStateNormal];
-        [_coinButton setImage:[BundleTool imageNamed:@"activity_cell_diggb"] forState:UIControlStateSelected];
+        [_coinButton setImage:[UIImage imageNamed:@"activity_cell_digg"] forState:UIControlStateNormal];
+        [_coinButton setImage:[UIImage imageNamed:@"activity_cell_diggb"] forState:UIControlStateSelected];
         [_coinButton addTarget:self action:@selector(coinButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _coinButton;
@@ -101,7 +101,7 @@ const CGFloat ActionBarHeight = 48;
         _commentButton.titleEdgeInsets = UIEdgeInsetsMake(0, 2, 0, -2);
         [_commentButton setTitle:@"评论" forState:UIControlStateNormal];
         [_commentButton setTitleColor:H9COLOR forState:UIControlStateNormal];
-        [_commentButton setImage:[BundleTool imageNamed:@"activity_cell_comment"] forState:UIControlStateNormal];
+        [_commentButton setImage:[UIImage imageNamed:@"activity_cell_comment"] forState:UIControlStateNormal];
         [_commentButton addTarget:self action:@selector(commentButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _commentButton;
@@ -116,7 +116,7 @@ const CGFloat ActionBarHeight = 48;
         _shareButton.titleEdgeInsets = UIEdgeInsetsMake(0, 2, 0, -2);
         [_shareButton setTitle:@"分享" forState:UIControlStateNormal];
         [_shareButton setTitleColor:H9COLOR forState:UIControlStateNormal];
-        [_shareButton setImage:[BundleTool imageNamed:@"activity_cell_share"] forState:UIControlStateNormal];
+        [_shareButton setImage:[UIImage imageNamed:@"activity_cell_share"] forState:UIControlStateNormal];
         [_shareButton addTarget:self action:@selector(shareButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _shareButton;

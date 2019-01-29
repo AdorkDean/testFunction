@@ -64,7 +64,7 @@
     [self.bgView addSubview:_iconImageV];
     
     _starImgV = [[UIImageView alloc]initWithFrame:CGRectMake(_iconImageV.right + 10, 25, 20, 20)];
-    _starImgV.image = [BundleTool imageNamed:@"star"];
+    _starImgV.image = [UIImage imageNamed:@"star"];
     [self.bgView addSubview:_starImgV];
     
     _statusLbl = [[UILabel alloc]initWithFrame:CGRectMake( 0, _iconImageV.frame.size.height - 20, _iconImageV.frame.size.width, 20)];
@@ -117,10 +117,10 @@
 //    _timeLbl.textColor = H9COLOR;
 //    [self.bgView addSubview:_timeLbl];
 //
-//    _firstLineV = [[UIImageView alloc]initWithImage:[BundleTool imageNamed:@"line_xie"]];
+//    _firstLineV = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"line_xie"]];
 //    [self.bgView addSubview:_firstLineV];
 //
-//    _secondLineV = [[UIImageView alloc]initWithImage:[BundleTool imageNamed:@"line_xie"]];
+//    _secondLineV = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"line_xie"]];
 //    [self.bgView addSubview:_secondLineV];
 //
 ////    self.timeLabel = [[UILabel alloc]init];
@@ -141,8 +141,8 @@
     [self.contentView addSubview:self.bottomLine];
     
     self.chooseBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 30, self.contentView.height)];
-    [self.chooseBtn setImage:[BundleTool imageNamed:@"noselect_workFlow"] forState:UIControlStateNormal];
-    [self.chooseBtn setImage:[BundleTool imageNamed:@"select_workFlow"] forState:UIControlStateSelected];
+    [self.chooseBtn setImage:[UIImage imageNamed:@"noselect_workFlow"] forState:UIControlStateNormal];
+    [self.chooseBtn setImage:[UIImage imageNamed:@"select_workFlow"] forState:UIControlStateSelected];
     [self.contentView addSubview:self.chooseBtn];
     self.chooseBtn.userInteractionEnabled = NO;
     [self.chooseBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
@@ -228,7 +228,7 @@
 
 -(void)refreshUI:(StarProductsModel *)model{
 
-    [_iconImageV sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[BundleTool imageNamed:@"product_default"]];
+    [_iconImageV sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[UIImage imageNamed:@"product_default"]];
     
 //    [_iconImageV sd_setImageWithURL:[NSURL URLWithString:model.icon] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
 //        _iconImageV.image = [PublicTool OriginImage:image scaleToSize:CGSizeMake(80, 80)];

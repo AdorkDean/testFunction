@@ -40,7 +40,7 @@
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     self.tableView.mj_header = self.mjHeader;
-    [self.tableView registerNib:[UINib nibWithNibName:@"ProductListCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"ProductListCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"ProductListCell" bundle:nil] forCellReuseIdentifier:@"ProductListCellID"];
 }
 
 - (BOOL)requestData{

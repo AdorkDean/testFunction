@@ -13,7 +13,7 @@
 + (instancetype)cellWithTableView:(UITableView*)tableView{
     PersonBusinessRoleCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PersonBusinessRoleCellID"];
     if (!cell) {
-        cell = [[BundleTool commonBundle] loadNibNamed:@"PersonBusinessRoleCell" owner:nil options:nil].lastObject;
+        cell = [nil loadNibNamed:@"PersonBusinessRoleCell" owner:nil options:nil].lastObject;
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
@@ -76,10 +76,10 @@
     self.avatarView.hidden = YES;
     if (![PublicTool isNull:model.pro_icon] && ![model.pro_icon containsString:@"product_default"]) {
         self.avatarView.hidden = NO;
-        [self.avatarView sd_setImageWithURL:[NSURL URLWithString:model.pro_icon] placeholderImage:[BundleTool imageNamed:PROICON_DEFAULT]];
+        [self.avatarView sd_setImageWithURL:[NSURL URLWithString:model.pro_icon] placeholderImage:[UIImage imageNamed:PROICON_DEFAULT]];
     }else if (![PublicTool isNull:model.jg_icon] && ![model.jg_icon containsString:@"product_default"]) {
         self.avatarView.hidden = NO;
-        [self.avatarView sd_setImageWithURL:[NSURL URLWithString:model.pro_icon] placeholderImage:[BundleTool imageNamed:PROICON_DEFAULT]];
+        [self.avatarView sd_setImageWithURL:[NSURL URLWithString:model.pro_icon] placeholderImage:[UIImage imageNamed:PROICON_DEFAULT]];
     } else {
         self.avatarLabel.hidden = NO;
         self.avatarLabel.text = model.company.length > 0 ? [model.company substringToIndex:1]:@"";

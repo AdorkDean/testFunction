@@ -119,7 +119,7 @@
     self.tableView.estimatedRowHeight = 0;
     self.tableView.estimatedSectionHeaderHeight = 0;
     self.tableView.estimatedSectionFooterHeight = 0;
-    [self.tableView registerNib:[UINib nibWithNibName:@"CompanyZhaopinCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"CompanyZhaopinCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"CompanyZhaopinCell" bundle:nil] forCellReuseIdentifier:@"CompanyZhaopinCellID"];
 
     [self.view addSubview:self.tableView];
     
@@ -438,7 +438,7 @@
         UIImageView *imgV = [imgCell.contentView viewWithTag:1000];
         if (!imgV) {
             imgV = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, SCREENW, SCREENW*3)];
-            imgV.image = [BundleTool imageNamed:@"detail_placeholder_bg"];
+            imgV.image = [UIImage imageNamed:@"detail_placeholder_bg"];
             imgV.tag = 1000;
             [imgCell.contentView addSubview:imgV];
             imgV.contentMode = UIViewContentModeScaleToFill;
@@ -753,7 +753,7 @@
             
             //tableFooterV
             UIImageView *footerImg = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, SCREENW, SCREENW)];
-            footerImg.image = [BundleTool imageNamed:@"detail_placeholder_second"];
+            footerImg.image = [UIImage imageNamed:@"detail_placeholder_second"];
             self.tableView.tableFooterView = footerImg;
             
 //            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -925,7 +925,7 @@
         //  客服
         UIButton *kefuBtn = [[UIButton alloc]initWithFrame:CGRectMake(8, 0,(leftWidth - 16)/2.0, btnHeight)];
         [kefuBtn setTitle:@"客服" forState:UIControlStateNormal];
-        [kefuBtn setImage:[BundleTool imageNamed:@"detail_kefu_icon"] forState:UIControlStateNormal];
+        [kefuBtn setImage:[UIImage imageNamed:@"detail_kefu_icon"] forState:UIControlStateNormal];
         [kefuBtn setTitleColor:H6COLOR forState:UIControlStateNormal];
         kefuBtn.titleLabel.font = [UIFont systemFontOfSize:9];
         [kefuBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleTop imageTitleSpace:5];
@@ -936,7 +936,7 @@
         UIButton *feedBackButton = [[UIButton alloc] initWithFrame:CGRectMake(kefuBtn.right, 0, (leftWidth - 16)/2.0, btnHeight)];
         [feedBackButton setTitle:@"反馈" forState:UIControlStateNormal];
         [feedBackButton setTitleColor:COLOR737782 forState:UIControlStateNormal];
-        [feedBackButton setImage:[BundleTool imageNamed:@"detail_feedback_icon"] forState:UIControlStateNormal];
+        [feedBackButton setImage:[UIImage imageNamed:@"detail_feedback_icon"] forState:UIControlStateNormal];
         feedBackButton.titleLabel.font = [UIFont systemFontOfSize:9];
         [feedBackButton layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleTop imageTitleSpace:2];
         [feedBackButton addTarget:self action:@selector(toolViewFeedbackButtonClick) forControlEvents:UIControlEventTouchUpInside];
@@ -978,7 +978,7 @@
 - (void)toolViewFollowButtonStatusResfresh {
     NSString *imageName = self.viewModel.followed ? @"workflow_have" : @"workflow_add";
     NSString *titleStr = self.viewModel.followed ? @"已关注":@"关注";
-    [self.toolFollowButton setImage:[BundleTool imageNamed:imageName] forState:UIControlStateNormal];
+    [self.toolFollowButton setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     [self.toolFollowButton setTitle:titleStr forState:UIControlStateNormal];
     [self.toolFollowButton layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:5];
 }

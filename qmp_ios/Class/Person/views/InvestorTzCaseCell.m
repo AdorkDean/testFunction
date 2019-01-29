@@ -54,7 +54,7 @@
 
     _tzCaseM = tzCaseM;
     
-    [_iconImgV sd_setImageWithURL:[NSURL URLWithString:tzCaseM.icon] placeholderImage:[BundleTool imageNamed:PROICON_DEFAULT]];
+    [_iconImgV sd_setImageWithURL:[NSURL URLWithString:tzCaseM.icon] placeholderImage:[UIImage imageNamed:PROICON_DEFAULT]];
    
     _curLunciLab.hidden = [PublicTool isNull:tzCaseM.lunci];
     _curLunciLab.text = tzCaseM.lunci;

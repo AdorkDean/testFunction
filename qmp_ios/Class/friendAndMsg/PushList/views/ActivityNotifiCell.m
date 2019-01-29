@@ -140,7 +140,7 @@
     self.descLab.centerY = self.nameLab.centerY;
     
     self.coinBtn = [[UIButton alloc]initWithFrame:CGRectMake(self.descLab.right+10, 0, 60, 18)];
-    [self.coinBtn setImage:[BundleTool imageNamed:@"coinIcon_small"] forState:UIControlStateNormal];
+    [self.coinBtn setImage:[UIImage imageNamed:@"coinIcon_small"] forState:UIControlStateNormal];
     [self.coinBtn setTitleColor:BLUE_TITLE_COLOR forState:UIControlStateNormal];
     self.coinBtn.titleLabel.font = [UIFont systemFontOfSize:13];
     [self.contentView addSubview:self.coinBtn];
@@ -173,9 +173,9 @@
 - (void)setActivityNofiModel:(ActivityNotifiModel *)activityNofiModel{
     _activityNofiModel = activityNofiModel;
     if (activityNofiModel.anonymous.integerValue == 1) {
-        self.headerIcon.image = [BundleTool imageNamed:@"anonymous"];
+        self.headerIcon.image = [UIImage imageNamed:@"anonymous"];
     }else{
-        [self.headerIcon sd_setImageWithURL:[NSURL URLWithString:activityNofiModel.user_info[@"icon"]] placeholderImage:[BundleTool imageNamed:@"heading"]];
+        [self.headerIcon sd_setImageWithURL:[NSURL URLWithString:activityNofiModel.user_info[@"icon"]] placeholderImage:[UIImage imageNamed:@"heading"]];
     }
     self.nameLab.text = activityNofiModel.user_info[@"nickname"];
     

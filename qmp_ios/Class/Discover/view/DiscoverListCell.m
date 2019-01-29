@@ -50,7 +50,7 @@
 + (DiscoverListCell*)cellWithTableView:(UITableView*)tableView recommendType:(AttentType)recommendType dataDic:(NSDictionary*)dataDic{
     DiscoverListCell *cell = [tableView dequeueReusableCellWithIdentifier:[NSString stringWithFormat:@"RecommendCell_%ld",recommendType]];
     if (!cell) {
-        cell = [[BundleTool commonBundle]loadNibNamed:@"DiscoverListCell" owner:nil options:nil].lastObject;
+        cell = [nilloadNibNamed:@"DiscoverListCell" owner:nil options:nil].lastObject;
     }
 
     cell.iconV.hidden = NO;
@@ -69,7 +69,7 @@
     _dataDic = dataDic;
     self.centerYLab.hidden = YES;
     
-    [self.iconV sd_setImageWithURL:[NSURL URLWithString:dataDic[@"icon"]] placeholderImage:[BundleTool imageNamed:PROICON_DEFAULT]];
+    [self.iconV sd_setImageWithURL:[NSURL URLWithString:dataDic[@"icon"]] placeholderImage:[UIImage imageNamed:PROICON_DEFAULT]];
     self.nameLab.text = dataDic[@"name"];
     
     if ([dataDic[@"project_type"] containsString:@"person"]) {
@@ -105,7 +105,7 @@
 + (DiscoverListCell*)cellWithTableView:(UITableView*)tableView recommendType:(AttentType)recommendType attentionModel:(MeTopItemModel*)attentionM{
     DiscoverListCell *cell = [tableView dequeueReusableCellWithIdentifier:[NSString stringWithFormat:@"RecommendCell_%ld",recommendType]];
     if (!cell) {
-        cell = [[BundleTool commonBundle]loadNibNamed:@"DiscoverListCell" owner:nil options:nil].lastObject;
+        cell = [nilloadNibNamed:@"DiscoverListCell" owner:nil options:nil].lastObject;
     }
     
     cell.iconV.hidden = NO;
@@ -134,7 +134,7 @@
     }else{
         self.detailLab.text = attentionM.miaoshu;
     }
-    [self.iconV sd_setImageWithURL:[NSURL URLWithString:attentionM.icon] placeholderImage:[BundleTool imageNamed:defaultImg]];
+    [self.iconV sd_setImageWithURL:[NSURL URLWithString:attentionM.icon] placeholderImage:[UIImage imageNamed:defaultImg]];
     self.nameLab.text = [PublicTool isNull:attentionM.project]?attentionM.nickname:attentionM.project;
     
    

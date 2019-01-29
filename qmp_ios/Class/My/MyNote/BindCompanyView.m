@@ -33,7 +33,7 @@
 - (void)addView{
     
     UIButton *bindBtn = [[UIButton alloc]initWithFrame:CGRectMake(15, 0, 18, 18)];
-    [bindBtn setImage:[BundleTool imageNamed:@"note_bindIcon"] forState:UIControlStateNormal];
+    [bindBtn setImage:[UIImage imageNamed:@"note_bindIcon"] forState:UIControlStateNormal];
     [self addSubview:bindBtn];
     bindBtn.centerY = self.height/2.0;
     
@@ -48,7 +48,7 @@
     [self addGestureRecognizer:tap];
     
     UIImageView *imgV = [[UIImageView alloc]initWithFrame:CGRectMake(SCREENW - 44, 0, 44, 45)];
-    imgV.image = [BundleTool imageNamed:@"leftarrow_gray"];
+    imgV.image = [UIImage imageNamed:@"leftarrow_gray"];
     imgV.contentMode = UIViewContentModeCenter;
     [self addSubview:imgV];
     imgV.tag = 900;
@@ -62,7 +62,7 @@
    
     _collectView = [[UICollectionView alloc]initWithFrame:CGRectMake(_bindLabel.right, 5, self.width - _bindLabel.right - 55, self.height-10) collectionViewLayout:layout];
     _collectView.backgroundColor = [UIColor whiteColor];
-    [_collectView registerNib:[UINib nibWithNibName:@"BindCompanyItem" bundle:[BundleTool commonBundle]] forCellWithReuseIdentifier:@"BindCompanyItemID"];
+    [_collectView registerNib:[UINib nibWithNibName:@"BindCompanyItem" bundle:nil] forCellWithReuseIdentifier:@"BindCompanyItemID"];
     _collectView.delegate = self;
     _collectView.dataSource = self;
     [self addSubview:_collectView];
@@ -158,7 +158,7 @@
     NSString *productName = self.selectedCompArr[indexPath.item];
     for (SearchCompanyModel *model in self.totalCompanyArr) {
         if ([productName isEqualToString:model.product]) {
-            [companyItem.loginView sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[BundleTool imageNamed:PROICON_DEFAULT]];
+            [companyItem.loginView sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[UIImage imageNamed:PROICON_DEFAULT]];
         }
         
     }

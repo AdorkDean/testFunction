@@ -14,7 +14,7 @@
 + (instancetype)searchOrganizeCellWithTableView:(UITableView *)tableView {
     SearchOrganizeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SearchOrganizeCellID"];
     if (!cell) {
-        cell = [[[BundleTool commonBundle] loadNibNamed:@"SearchOrganizeCell" owner:nil options:nil] firstObject];
+        cell = [[nil loadNibNamed:@"SearchOrganizeCell" owner:nil options:nil] firstObject];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     return cell;

@@ -88,7 +88,7 @@
     if (_isSearch) {
         UIButton *contactBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];
         [contactBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
-        [contactBtn setImage:[BundleTool imageNamed:@"contact_nabar"] forState:UIControlStateNormal];
+        [contactBtn setImage:[UIImage imageNamed:@"contact_nabar"] forState:UIControlStateNormal];
         [contactBtn addTarget:self action:@selector(enterMyContact) forControlEvents:UIControlEventTouchUpInside];
         UIBarButtonItem *contactBarItem = [[UIBarButtonItem alloc]initWithCustomView:contactBtn];
         
@@ -110,14 +110,14 @@
     
     self.filterBtn = [[UIButton alloc] initWithFrame:RIGHTBARBTNFRAME];
     [self.filterBtn setTitleColor:HTColorFromRGB(0x555555) forState:UIControlStateNormal];
-    [self.filterBtn setImage:[BundleTool imageNamed:btnImg] forState:UIControlStateNormal];
+    [self.filterBtn setImage:[UIImage imageNamed:btnImg] forState:UIControlStateNormal];
     [self.filterBtn addTarget:self action:@selector(pressNotStoreFilterBtn:) forControlEvents:UIControlEventTouchUpInside];
     self.filterBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
     self.filterBtn.enabled = YES;
     
     UIButton *contactBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];
     [contactBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
-    [contactBtn setImage:[BundleTool imageNamed:@"contact_nabar"] forState:UIControlStateNormal];
+    [contactBtn setImage:[UIImage imageNamed:@"contact_nabar"] forState:UIControlStateNormal];
     [contactBtn addTarget:self action:@selector(enterMyContact) forControlEvents:UIControlEventTouchUpInside];
 
     UIView *rightV = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 84, 44)];
@@ -164,7 +164,7 @@
     self.tableView.estimatedSectionHeaderHeight = 0;
     self.tableView.estimatedSectionFooterHeight = 0;
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"InvestorListCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"InvestorListCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"InvestorListCell" bundle:nil] forCellReuseIdentifier:@"InvestorListCellID"];
 
     CGFloat height = 44;
     
@@ -177,7 +177,7 @@
     
     //设置背景色
     [_mySearchBar setBackgroundColor:TABLEVIEW_COLOR];
-    [_mySearchBar setSearchFieldBackgroundImage:[BundleTool imageNamed:@"search_borderTab"] forState:UIControlStateNormal];
+    [_mySearchBar setSearchFieldBackgroundImage:[UIImage imageNamed:@"search_borderTab"] forState:UIControlStateNormal];
     [_mySearchBar setSearchTextPositionAdjustment:UIOffsetMake(10, 0)];
     UITextField *tf = [_mySearchBar valueForKey:@"_searchField"];
     NSString *str = @"搜索姓名、项目、公司、机构";

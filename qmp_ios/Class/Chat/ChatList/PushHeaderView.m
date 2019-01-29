@@ -21,16 +21,16 @@
 -(void)awakeFromNib{
     [super awakeFromNib];
     
-    _sysMsgImgV.image = [BundleTool imageNamed:@"sysmsg_notification"];
+    _sysMsgImgV.image = [UIImage imageNamed:@"sysmsg_notification"];
     self.systemMsgRedV.layer.masksToBounds = YES;
     self.systemMsgRedV.layer.cornerRadius = 5.5;
     
     self.userActivityRedV.layer.masksToBounds = YES;
     self.userActivityRedV.layer.cornerRadius = 5.5;
-    _userActiImgV.image = [BundleTool imageNamed:@"sysmsg_interaction"];
+    _userActiImgV.image = [UIImage imageNamed:@"sysmsg_interaction"];
 //    self.applyRedV.layer.cornerRadius = 5.5;
 //    self.applyRedV.clipsToBounds = YES;
-    _applyImgV.image = [BundleTool imageNamed:@"sysmsg_exchangcard"];
+    _applyImgV.image = [UIImage imageNamed:@"sysmsg_exchangcard"];
 
     self.systemMsgRedV.hidden = YES;
     self.userActivityRedV.hidden = YES;

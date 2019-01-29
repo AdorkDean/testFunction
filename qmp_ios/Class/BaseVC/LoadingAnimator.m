@@ -43,17 +43,17 @@
     self.backgroundColor = [UIColor whiteColor];
     
     self.iconImg = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 131, 65)];
-    self.iconImg.image = [BundleTool imageNamed:@"loadingBgIcon"];
+    self.iconImg.image = [UIImage imageNamed:@"loadingBgIcon"];
     [self addSubview:self.iconImg];
     self.iconImg.center = self.center;
     
     self.sliderView = [[UIImageView alloc]initWithFrame:ORIGINALFRAME];
-    self.sliderView.image = [BundleTool imageNamed:@"loadingSlider"];
+    self.sliderView.image = [UIImage imageNamed:@"loadingSlider"];
     [self addSubview:self.sliderView];
     [self.sliderView setContentMode:UIViewContentModeCenter];
     
     self.sliderView1 = [[UIImageView alloc]initWithFrame:ORIGINALFRAME];
-    self.sliderView1.image = [BundleTool imageNamed:@"loadingSlider"];
+    self.sliderView1.image = [UIImage imageNamed:@"loadingSlider"];
     [self.sliderView1 setContentMode:UIViewContentModeCenter];
 
     [self addSubview:self.sliderView1];

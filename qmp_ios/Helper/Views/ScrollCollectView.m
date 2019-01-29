@@ -91,7 +91,7 @@
     [self addSubview:_collectionV];
     
     _collectionV.backgroundColor = [UIColor whiteColor];
-    [_collectionV registerNib:[UINib nibWithNibName:@"TableHeadMenuCell" bundle:[BundleTool commonBundle]] forCellWithReuseIdentifier:@"TableHeadMenuCellID"];
+    [_collectionV registerNib:[UINib nibWithNibName:@"TableHeadMenuCell" bundle:nil] forCellWithReuseIdentifier:@"TableHeadMenuCellID"];
     _collectionV.contentInset = UIEdgeInsetsMake(0, 10, 0, 10);
     _collectionV.showsHorizontalScrollIndicator = NO;
     [_collectionV reloadData];
@@ -118,20 +118,20 @@
     if (self.selectImageArr.count) {
         if(_selectedItem == indexPath.item){
             cell.title.textColor = _selectTitleColor;
-            cell.icon.image = [BundleTool imageNamed:self.selectImageArr[indexPath.item]];
+            cell.icon.image = [UIImage imageNamed:self.selectImageArr[indexPath.item]];
         }else{
             cell.title.textColor = _unSelectTitleColor;
-            cell.icon.image = [BundleTool imageNamed:self.imageArr[indexPath.item]];
+            cell.icon.image = [UIImage imageNamed:self.imageArr[indexPath.item]];
             
         }
     }else{ //写死的 用于项目页的那个
         
         if(_selectedItem == indexPath.item){
             cell.title.textColor = _selectTitleColor;
-            cell.icon.image = [BundleTool imageNamed:imageName];
+            cell.icon.image = [UIImage imageNamed:imageName];
         }else{
             cell.title.textColor = _unSelectTitleColor;
-            cell.icon.image = [BundleTool imageNamed:[NSString stringWithFormat:@"%@_gray",imageName]];
+            cell.icon.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_gray",imageName]];
             
         }
         

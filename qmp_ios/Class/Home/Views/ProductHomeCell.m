@@ -50,7 +50,7 @@
     
     _productM = productM;
     
-    [_iconImgV sd_setImageWithURL:[NSURL URLWithString:productM.icon] placeholderImage:[BundleTool imageNamed:PROICON_DEFAULT]];
+    [_iconImgV sd_setImageWithURL:[NSURL URLWithString:productM.icon] placeholderImage:[UIImage imageNamed:PROICON_DEFAULT]];
     
     
     //产品

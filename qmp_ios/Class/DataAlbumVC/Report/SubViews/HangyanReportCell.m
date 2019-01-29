@@ -38,7 +38,7 @@
     [self.contentView addSubview:_titleLabel];
     
     _downIcon = [[UIImageView alloc]init];
-    _downIcon.image = [BundleTool imageNamed:@"report_downIcon"];
+    _downIcon.image = [UIImage imageNamed:@"report_downIcon"];
     [self.contentView addSubview:_downIcon];
     
     _sourceLabel = [[UILabel alloc]init];
@@ -58,7 +58,7 @@
 //    _timeLabel.textAlignment = NSTextAlignmentRight;
     
     _scanCountBtn = [[UIButton alloc]initWithFrame:CGRectZero];
-    [_scanCountBtn setImage:[BundleTool imageNamed:@"hangyanreport_yan"] forState:UIControlStateNormal];
+    [_scanCountBtn setImage:[UIImage imageNamed:@"hangyanreport_yan"] forState:UIControlStateNormal];
     [_scanCountBtn setTitle:@"300" forState:UIControlStateNormal];
     _scanCountBtn.titleLabel.font = [UIFont systemFontOfSize:13];
     [_scanCountBtn setTitleColor:H9COLOR forState:UIControlStateNormal];

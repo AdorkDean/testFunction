@@ -630,7 +630,7 @@
         [_searchBar setBackgroundImage:[UIImage imageFromColor:TABLEVIEW_COLOR andSize:_searchBar.bounds.size]];
         //设置背景色
         [_searchBar setBackgroundColor:TABLEVIEW_COLOR];
-        [_searchBar setSearchFieldBackgroundImage:[BundleTool imageNamed:@"search_borderBg"] forState:UIControlStateNormal];
+        [_searchBar setSearchFieldBackgroundImage:[UIImage imageNamed:@"search_borderBg"] forState:UIControlStateNormal];
         [_searchBar setSearchTextPositionAdjustment:UIOffsetMake(10, 0)];
         UITextField *tf = [_searchBar valueForKey:@"_searchField"];
         NSString *str = @"搜索姓名、公司、职务等";

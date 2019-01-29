@@ -36,7 +36,7 @@
 - (UIImageView *)deleteView {
     if (!_deleteView) {
         _deleteView = [UIImageView new];
-        _deleteView.image = [BundleTool imageNamed:@"category_delete"];
+        _deleteView.image = [UIImage imageNamed:@"category_delete"];
         _deleteView.bounds = CGRectMake(0, 0, 15, 15);
         _deleteView.hidden = YES;
     }

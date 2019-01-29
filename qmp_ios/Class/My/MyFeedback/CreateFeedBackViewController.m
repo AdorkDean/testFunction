@@ -206,7 +206,7 @@
             imageView.hidden = NO;
             btn.hidden = YES;
             imageView.tag = _pickPhotoViewTag;
-            [imageView.photoView setImage:[BundleTool imageNamed:@"pick_photos"]];
+            [imageView.photoView setImage:[UIImage imageNamed:@"pick_photos"]];
             height = imageView.bottom;
         } else {
             imageView.hidden = NO;
@@ -268,7 +268,7 @@
             if (i == 0) {
                 imageView.hidden = NO;
                 imageView.tag = _pickPhotoViewTag;
-                [imageView.photoView setImage:[BundleTool imageNamed:@"pick_photos"]];
+                [imageView.photoView setImage:[UIImage imageNamed:@"pick_photos"]];
             }
         }
     }

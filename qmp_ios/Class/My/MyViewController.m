@@ -251,7 +251,7 @@ SetTableViewControllerDelegate, AllFeedbackViewDelegate> {
 
 - (void)buildNavigationItem{
 //    UIButton *walletBtn = [[UIButton alloc]initWithFrame:LEFTBUTTONFRAME];
-//    [walletBtn setImage:[BundleTool imageNamed:@"me_walletIcon"] forState:UIControlStateNormal];
+//    [walletBtn setImage:[UIImage imageNamed:@"me_walletIcon"] forState:UIControlStateNormal];
 //    [walletBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
     @weakify(self);
 //    [[walletBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
@@ -261,7 +261,7 @@ SetTableViewControllerDelegate, AllFeedbackViewDelegate> {
 //    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:walletBtn];
     
     UIButton *setBtn = [[UIButton alloc]initWithFrame:RIGHTBARBTNFRAME];
-    [setBtn setImage:[BundleTool imageNamed:@"me_seting"] forState:UIControlStateNormal];
+    [setBtn setImage:[UIImage imageNamed:@"me_seting"] forState:UIControlStateNormal];
     [setBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
     [[setBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
         @strongify(self);
@@ -380,7 +380,7 @@ SetTableViewControllerDelegate, AllFeedbackViewDelegate> {
         [self showheadTxtSytle];
         
         _headerView.nameLbl.text = [WechatUserInfo shared].nickname;
-        [_headerView.iconButton sd_setBackgroundImageWithURL:[NSURL URLWithString:[WechatUserInfo shared].headimgurl] forState:UIControlStateNormal placeholderImage:[BundleTool imageNamed:@"heading"] ];
+        [_headerView.iconButton sd_setBackgroundImageWithURL:[NSURL URLWithString:[WechatUserInfo shared].headimgurl] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"heading"] ];
     }
 }
 
@@ -392,7 +392,7 @@ SetTableViewControllerDelegate, AllFeedbackViewDelegate> {
     _headerView.bindPhoneLab.hidden = YES;
     _headerView.homePageLab.hidden = YES;
     _headerView.rzStatusLbl.hidden = YES;
-    [_headerView.iconButton setBackgroundImage:[BundleTool imageNamed:@"heading"] forState:UIControlStateNormal];
+    [_headerView.iconButton setBackgroundImage:[UIImage imageNamed:@"heading"] forState:UIControlStateNormal];
     [self changeTopItemNumber];
 }
 /**
@@ -425,7 +425,7 @@ SetTableViewControllerDelegate, AllFeedbackViewDelegate> {
     NSDictionary *rowDict = rows[indexPath.row];
     
     cell.titleLab.text = rowDict[@"title"];
-    cell.leftImageV.image = [BundleTool imageNamed:rowDict[@"icon"]];
+    cell.leftImageV.image = [UIImage imageNamed:rowDict[@"icon"]];
     
     cell.lineView.hidden = (indexPath.row+1 == rows.count);
     
@@ -645,7 +645,7 @@ SetTableViewControllerDelegate, AllFeedbackViewDelegate> {
         NSString *titleSessionStr = [NSString stringWithFormat:@"企名片App·商业信息服务平台"];
         NSString *titleTimelineStr = [NSString stringWithFormat:@"企名片App·商业信息服务平台"];
         NSString *detailStr = [NSString stringWithFormat:@"百万创业者十万投资人都在用的App"];
-        [self.shareToTool shareToOtherApp:detailStr aTitleSessionStr:titleSessionStr aTitleTimelineStr:titleTimelineStr aIcon:[BundleTool imageNamed:@"87"] aOpenUrl:@"http://wx.qimingpian.com/cb/download.html"  onViewController:self shareResult:^(BOOL shareSuccess) {
+        [self.shareToTool shareToOtherApp:detailStr aTitleSessionStr:titleSessionStr aTitleTimelineStr:titleTimelineStr aIcon:[UIImage imageNamed:@"87"] aOpenUrl:@"http://wx.qimingpian.com/cb/download.html"  onViewController:self shareResult:^(BOOL shareSuccess) {
             if (shareSuccess) {//
             }
         }];
@@ -697,7 +697,7 @@ SetTableViewControllerDelegate, AllFeedbackViewDelegate> {
 #pragma  mark - 懒加载
 - (MyTabHeaderView *)headerView{
     if (_headerView == nil) {
-        _headerView = [[[BundleTool commonBundle]loadNibNamed:@"MyTabHeaderView" owner:nil options:nil] lastObject];
+        _headerView = [[nilloadNibNamed:@"MyTabHeaderView" owner:nil options:nil] lastObject];
         _headerView.backgroundColor = [UIColor whiteColor];
         _headerView.frame = CGRectMake(0, 12, SCREENW, 92);
         _headerView.iconButton.layer.cornerRadius = 30.0f;
@@ -711,7 +711,7 @@ SetTableViewControllerDelegate, AllFeedbackViewDelegate> {
 }
 - (MYHeaderItemVwbyXib *)belowItemVw{
     if (_belowItemVw == nil) {
-        _belowItemVw = [[[BundleTool commonBundle] loadNibNamed:@"MYHeaderItemVwbyXib" owner:self options:nil] lastObject];
+        _belowItemVw = [[nil loadNibNamed:@"MYHeaderItemVwbyXib" owner:self options:nil] lastObject];
         _belowItemVw.frame = CGRectMake(0, 116, SCREENW, 74);
         _belowItemVw.backgroundColor = [UIColor whiteColor];
         [_belowItemVw.personBtn addTarget:self action:@selector(eterPersonListVc) forControlEvents:UIControlEventTouchUpInside];
@@ -728,7 +728,7 @@ SetTableViewControllerDelegate, AllFeedbackViewDelegate> {
         
         UIButton * clickCancelBtn= [UIButton buttonWithType:UIButtonTypeCustom];
         clickCancelBtn.frame = CGRectMake(7, 0, 40, 35);
-        [clickCancelBtn setImage:[BundleTool imageNamed:@"my_close"] forState:UIControlStateNormal];
+        [clickCancelBtn setImage:[UIImage imageNamed:@"my_close"] forState:UIControlStateNormal];
         [clickCancelBtn addTarget:self action:@selector(clickCancelTarget:) forControlEvents:UIControlEventTouchUpInside];
         [_showAlertMessageBgVw addSubview:clickCancelBtn];
         
@@ -740,8 +740,8 @@ SetTableViewControllerDelegate, AllFeedbackViewDelegate> {
         [msgLbl addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(enterMyInfo)]];
         
         UIButton * nextBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [nextBtn setImage:[BundleTool imageNamed:@"rightarrow_quan"] forState:UIControlStateNormal];
-        [nextBtn setImage:[BundleTool imageNamed:@"rightarrow_quan"] forState:UIControlStateHighlighted];
+        [nextBtn setImage:[UIImage imageNamed:@"rightarrow_quan"] forState:UIControlStateNormal];
+        [nextBtn setImage:[UIImage imageNamed:@"rightarrow_quan"] forState:UIControlStateHighlighted];
         
         nextBtn.frame = CGRectMake(SCREENW - 50-17, 0, 50, 35);
         [nextBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];

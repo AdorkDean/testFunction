@@ -46,7 +46,7 @@
 
 - (instancetype)initWithCompanyDetailModel:(CompanyDetailModel*)detailM  financeNeedModel:(FinanicalNeedModel*)needModel{
     
-    ProductTableHeadView *headerV = [[BundleTool commonBundle]loadNibNamed:@"ProductTableHeadView" owner:nil options:nil].lastObject;
+    ProductTableHeadView *headerV = [nilloadNibNamed:@"ProductTableHeadView" owner:nil options:nil].lastObject;
     headerV.height = 150;
     [headerV addView];
     [headerV addCopyGesture];
@@ -117,7 +117,7 @@
         UIImageView *bgImgV = [[UIImageView alloc]initWithFrame:self.bounds];
         [self addSubview:bgImgV];
         bgImgV.tag = 3000;
-        bgImgV.image = [BundleTool imageNamed:@"detail_placeholder_card"];
+        bgImgV.image = [UIImage imageNamed:@"detail_placeholder_card"];
         bgImgV.backgroundColor = [UIColor whiteColor];
         bgImgV.contentMode = UIViewContentModeScaleToFill;
         basicInfoHeight = 150;
@@ -142,7 +142,7 @@
     CompanyDetailBasicModel *basicModel = _detailM.company_basic;
     _productNameLab.text = basicModel.product.length ? basicModel.product:basicModel.company;
     
-    [_iconImgV sd_setImageWithURL:[NSURL URLWithString:basicModel.icon] placeholderImage:[BundleTool imageNamed:@"product_default"]];
+    [_iconImgV sd_setImageWithURL:[NSURL URLWithString:basicModel.icon] placeholderImage:[UIImage imageNamed:@"product_default"]];
     if(([PublicTool isNull:basicModel.icon] || [basicModel.icon containsString:@"default"]) && [PublicTool isNull:_iconLab.text]){
         _iconLab.hidden = NO;
         _iconLab.backgroundColor = RANDOM_COLORARR[arc4random() % 6];

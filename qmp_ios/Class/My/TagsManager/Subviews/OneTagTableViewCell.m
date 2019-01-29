@@ -61,7 +61,7 @@
     [self.contentView addSubview:_iconImageV];
     
     _starImgV = [[UIImageView alloc]initWithFrame:CGRectMake(_iconImageV.frame.origin.x + _iconImageV.frame.size.width + margin, _iconImageV.frame.origin.y - 2, 20, 20)];
-    _starImgV.image = [BundleTool imageNamed:@"star"];
+    _starImgV.image = [UIImage imageNamed:@"star"];
     [self.contentView addSubview:_starImgV];
     
     _statusLbl = [[UILabel alloc]initWithFrame:CGRectMake( 0, _iconImageV.frame.size.height - 18, _iconImageV.frame.size.width, 18)];
@@ -116,7 +116,7 @@
     CGFloat margin = 10.f;
     CGFloat lblH =20.f;
     
-    [_iconImageV sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[BundleTool imageNamed:@"product_default"]];
+    [_iconImageV sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[UIImage imageNamed:@"product_default"]];
     
     BOOL isStar = NO;
     _starImgV.hidden = !isStar;

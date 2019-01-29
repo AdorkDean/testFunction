@@ -32,7 +32,7 @@
     
     [_imgView sd_setImageWithURL:[NSURL URLWithString:groupModel.img_url] placeholderImage:[UIImage imageFromColor:TABLEVIEW_COLOR andSize:_imgView.size]];
     
-//    [_imgView sd_setImageWithURL:[NSURL URLWithString:groupModel.img_url] placeholderImage:[BundleTool imageNamed:@"product_default"] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+//    [_imgView sd_setImageWithURL:[NSURL URLWithString:groupModel.img_url] placeholderImage:[UIImage imageNamed:@"product_default"] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
 //        _imgView.image = [PublicTool OriginImage:image scaleToSize:CGSizeMake(105, 75)];
 //    }];
     

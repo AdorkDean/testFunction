@@ -221,7 +221,7 @@
     // 添加按钮
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(0, 0, 40, 40);
-    [button setBackgroundImage:[BundleTool imageNamed:@"backback"] forState:UIControlStateNormal];
+    [button setBackgroundImage:[UIImage imageNamed:@"backback"] forState:UIControlStateNormal];
     [button setTitleColor:[UIColor colorWithRed:249 / 255.0 green:102 / 255.0 blue:129 / 255.0 alpha:1.0] forState:UIControlStateNormal];
     [button setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
     [button setTitleColor:[UIColor lightGrayColor] forState:UIControlStateDisabled];

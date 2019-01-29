@@ -205,7 +205,7 @@
         uploadBtn.layer.masksToBounds = YES;
         uploadBtn.backgroundColor = BLUE_BG_COLOR;
         [uploadBtn.titleLabel labelWithFontSize:16 textColor:[UIColor whiteColor]];
-        [uploadBtn setImage:[BundleTool imageNamed:@"card_cell_upload"] forState:UIControlStateNormal];
+        [uploadBtn setImage:[UIImage imageNamed:@"card_cell_upload"] forState:UIControlStateNormal];
         [uploadBtn setTitle:@"上传名片" forState:UIControlStateNormal];
         [uploadBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:6];
         uploadBtn.tag = 1000;
@@ -871,7 +871,7 @@
     UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];
     btn.titleLabel.font = [UIFont systemFontOfSize:14];
     [btn setTitleColor:BLUE_TITLE_COLOR forState:UIControlStateNormal];
-    [btn setImage:[BundleTool imageNamed:@"card_add"] forState:UIControlStateNormal];
+    [btn setImage:[UIImage imageNamed:@"card_add"] forState:UIControlStateNormal];
     [btn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
     [btn addTarget:self action:@selector(pressAddCardBtn) forControlEvents:UIControlEventTouchUpInside];
     
@@ -992,7 +992,7 @@
         [_searchBar setBackgroundImage:[UIImage imageFromColor:[UIColor whiteColor] andSize:_searchBar.size]];
         //设置背景色
         [_searchBar setBackgroundColor:[UIColor whiteColor]];
-        [_searchBar setSearchFieldBackgroundImage:[BundleTool imageNamed:@"card_search_bg"] forState:UIControlStateNormal];
+        [_searchBar setSearchFieldBackgroundImage:[UIImage imageNamed:@"card_search_bg"] forState:UIControlStateNormal];
         [_searchBar setSearchTextPositionAdjustment:UIOffsetMake(10, 0)];
         UITextField *tf = [_searchBar valueForKey:@"_searchField"];
         tf.font = [UIFont systemFontOfSize:14];
@@ -1101,7 +1101,7 @@
         
         UIButton *delBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, SCREENW/2.0, kShortBottomHeight)];
         [delBtn setTitle:@"删除" forState:UIControlStateNormal];
-        [delBtn setImage:[BundleTool imageNamed:@"workFlowDel"] forState:UIControlStateNormal];
+        [delBtn setImage:[UIImage imageNamed:@"workFlowDel"] forState:UIControlStateNormal];
         [delBtn setTitleColor:H5COLOR forState:UIControlStateNormal];
         delBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         [delBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:7];
@@ -1110,7 +1110,7 @@
         
         
         UIButton *leadBtn = [[UIButton alloc]initWithFrame:CGRectMake(SCREENW/2.0, 0, SCREENW/2.0, kShortBottomHeight)];
-        [leadBtn setImage:[BundleTool imageNamed:@"leadToAlbumIcon"] forState:UIControlStateNormal];
+        [leadBtn setImage:[UIImage imageNamed:@"leadToAlbumIcon"] forState:UIControlStateNormal];
         [leadBtn setTitle:@"导出至手机通讯录" forState:UIControlStateNormal];
         [leadBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:7];
         [leadBtn setTitleColor:H5COLOR forState:UIControlStateNormal];

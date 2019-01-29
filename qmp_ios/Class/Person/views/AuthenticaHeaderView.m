@@ -30,7 +30,7 @@
     
     _person = person;
     
-    [_iconHeader sd_setImageWithURL:[NSURL URLWithString:person.icon] placeholderImage:[BundleTool imageNamed:@"heading"]];
+    [_iconHeader sd_setImageWithURL:[NSURL URLWithString:person.icon] placeholderImage:[UIImage imageNamed:@"heading"]];
     NSString *name = [PublicTool isNull:person.name] ? @"-":person.name;
     
     if (person.ename.length && ![person.name containsString:@"("] && ![person.name containsString:@"（"]) {

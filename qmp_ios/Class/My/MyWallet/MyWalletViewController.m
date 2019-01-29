@@ -50,13 +50,13 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     
-    WalletHeaderView *headerV = [[BundleTool commonBundle]loadNibNamed:@"WalletHeaderView" owner:nil options:nil].lastObject;
+    WalletHeaderView *headerV = [nilloadNibNamed:@"WalletHeaderView" owner:nil options:nil].lastObject;
     headerV.height = isiPhoneX ? 230:210;
     [headerV.backBtn addTarget:self action:@selector(popViewControllerAnimated:) forControlEvents:UIControlEventTouchUpInside];
     self.tableView.tableHeaderView = headerV;
     
     self.topStatusView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, SCREENW, 1)];
-    self.topStatusView.image = [BundleTool imageNamed:@"me_wallet_topbg"];
+    self.topStatusView.image = [UIImage imageNamed:@"me_wallet_topbg"];
     [self.view addSubview:self.topStatusView];
     
     [self navigaitonView];
@@ -101,7 +101,7 @@
 - (UIButton*)createBackButton{
     
     UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(17,kStatusBarHeight, 60, kNavigationBarHeight)];
-    [leftButton setImage:[BundleTool imageNamed:@"left_arrow_white"] forState:UIControlStateNormal];
+    [leftButton setImage:[UIImage imageNamed:@"left_arrow_white"] forState:UIControlStateNormal];
     [leftButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
     [leftButton addTarget:self action:@selector(popSelf) forControlEvents:UIControlEventTouchUpInside];
     
@@ -118,7 +118,7 @@
     
    
     UIImageView *userIcon = [[UIImageView alloc]initWithFrame:CGRectMake(2, 2, 28, 28)];
-    [userIcon sd_setImageWithURL:[NSURL URLWithString:[WechatUserInfo shared].headimgurl] placeholderImage:[BundleTool imageNamed:@"heading"]];
+    [userIcon sd_setImageWithURL:[NSURL URLWithString:[WechatUserInfo shared].headimgurl] placeholderImage:[UIImage imageNamed:@"heading"]];
     userIcon.layer.cornerRadius = 14;
     userIcon.layer.masksToBounds = YES;
     userIcon.layer.borderColor = [UIColor whiteColor].CGColor;

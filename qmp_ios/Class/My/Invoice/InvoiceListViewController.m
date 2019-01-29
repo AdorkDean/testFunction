@@ -257,7 +257,7 @@
     [self.view addSubview:self.firstView];
     UIImageView *imageView = [[UIImageView alloc]init];
     imageView.frame = CGRectMake((SCREENW-150)/2, 100, 150, 150);
-    imageView.image = [BundleTool imageNamed:@"logol"];
+    imageView.image = [UIImage imageNamed:@"logol"];
     [self.firstView addSubview:imageView];
     imageView.userInteractionEnabled = YES;
     

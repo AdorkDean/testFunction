@@ -72,7 +72,7 @@
     //三张图片
     for (int i = 0; i<3; i++) {
         UIImageView *imgV = [[UIImageView alloc]initWithFrame:CGRectMake(i*self.scrollV.width, 1, self.scrollV.width, self.scrollV.height-1)];
-        imgV.image = [BundleTool imageNamed:[NSString stringWithFormat:@"bp%d",i+1]];
+        imgV.image = [UIImage imageNamed:[NSString stringWithFormat:@"bp%d",i+1]];
         [self.scrollV addSubview:imgV];
         imgV.contentMode = UIViewContentModeScaleAspectFit;
     }

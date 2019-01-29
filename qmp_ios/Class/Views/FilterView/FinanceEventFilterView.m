@@ -392,8 +392,8 @@ NSString *const FinanceEventFilterRoundTableName = @"FinanceEventFilter_round"; 
         CGFloat centerW = 80.f;
 
         UIButton *expadingButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [expadingButton setImage:[BundleTool imageNamed:@"arrow_down"] forState:UIControlStateNormal];
-        [expadingButton setImage:[BundleTool imageNamed:@"arrow_up"] forState:UIControlStateSelected];
+        [expadingButton setImage:[UIImage imageNamed:@"arrow_down"] forState:UIControlStateNormal];
+        [expadingButton setImage:[UIImage imageNamed:@"arrow_up"] forState:UIControlStateSelected];
         expadingButton.frame = CGRectMake(w-centerW, 0, centerW, h);
         expadingButton.tag = section;
         [expadingButton addTarget:self action:@selector(expadingButtonClick:) forControlEvents:UIControlEventTouchUpInside];

@@ -39,7 +39,7 @@
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    [self.tableView registerNib:[UINib nibWithNibName:@"CompanyZhaopinCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"CompanyZhaopinCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"CompanyZhaopinCell" bundle:nil] forCellReuseIdentifier:@"CompanyZhaopinCellID"];
     self.tableView.mj_header = self.mjHeader;
     self.tableView.mj_footer = self.mjFooter;
 

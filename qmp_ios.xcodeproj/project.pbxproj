@@ -173,7 +173,6 @@
 		AD80328521FF2324004911F9 /* NotificationHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80315F21FF2318004911F9 /* NotificationHandle.m */; };
 		AD80328621FF2324004911F9 /* ToLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80316121FF2318004911F9 /* ToLogin.m */; };
 		AD80328721FF2324004911F9 /* ThirdConfigTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80316221FF2318004911F9 /* ThirdConfigTool.m */; };
-		AD80328821FF2324004911F9 /* BundleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80316321FF2318004911F9 /* BundleTool.m */; };
 		AD80328921FF2324004911F9 /* PublicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80316421FF2318004911F9 /* PublicTool.m */; };
 		AD80328A21FF2324004911F9 /* AppPageSkipTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80316821FF2318004911F9 /* AppPageSkipTool.m */; };
 		AD80328B21FF2324004911F9 /* ShowInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80316921FF2318004911F9 /* ShowInfo.m */; };
@@ -812,9 +811,7 @@
 		AD80589F2192C6BB0020634B /* logol.png in Resources */ = {isa = PBXBuildFile; fileRef = AD80586A2192C6BB0020634B /* logol.png */; };
 		AD8058C82192C6BB0020634B /* testIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD8058942192C6BB0020634B /* testIcon@3x.png */; };
 		AD8058CF2192C6BB0020634B /* updateBgView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD80589B2192C6BB0020634B /* updateBgView@2x.png */; };
-		AD82A2112192B3DE00CBDE02 /* QMPPageSkipTools.m in Sources */ = {isa = PBXBuildFile; fileRef = AD82A2102192B3DE00CBDE02 /* QMPPageSkipTools.m */; };
 		AD87236921A549D3006DD1FC /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = AD87236821A549D3006DD1FC /* NullSafe.m */; };
-		ADBEEB37219136B6009BB127 /* QMPimgBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ADBEEB36219136B6009BB127 /* QMPimgBundle.bundle */; };
 		ADBEEB6F2191485B009BB127 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADBEEB6E2191485B009BB127 /* Assets.xcassets */; };
 		ADC77466218C541900C856DF /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC77464218C541900C856DF /* Contacts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		ADC77467218C541900C856DF /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC77465218C541900C856DF /* ContactsUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -837,7 +834,6 @@
 		ADC7751E218FFECB00C856DF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC7751D218FFECB00C856DF /* WebKit.framework */; };
 		ADC77521218FFFB700C856DF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC7751F218FFFB700C856DF /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		ADC77522218FFFB700C856DF /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC77520218FFFB700C856DF /* Messages.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		ADCB9CEA21AF84CF0021D553 /* MJPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ADCB9CE921AF84CF0021D553 /* MJPhotoBrowser.bundle */; };
 		ADD9FDC8218C3BEB00434AC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9FDC7218C3BEB00434AC6 /* AppDelegate.m */; };
 		ADD9FDD1218C3BEB00434AC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD9FDCF218C3BEB00434AC6 /* Main.storyboard */; };
 		ADD9FDD6218C3BEC00434AC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD9FDD4218C3BEC00434AC6 /* LaunchScreen.storyboard */; };
@@ -1169,13 +1165,11 @@
 		AD80315921FF2318004911F9 /* NSString+urlToFileName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+urlToFileName.m"; sourceTree = "<group>"; };
 		AD80315A21FF2318004911F9 /* ManagerHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerHud.m; sourceTree = "<group>"; };
 		AD80315B21FF2318004911F9 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		AD80315D21FF2318004911F9 /* BundleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BundleTool.h; sourceTree = "<group>"; };
 		AD80315E21FF2318004911F9 /* PublicTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicTool.h; sourceTree = "<group>"; };
 		AD80315F21FF2318004911F9 /* NotificationHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationHandle.m; sourceTree = "<group>"; };
 		AD80316021FF2318004911F9 /* AppPageSkipTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppPageSkipTool.h; sourceTree = "<group>"; };
 		AD80316121FF2318004911F9 /* ToLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToLogin.m; sourceTree = "<group>"; };
 		AD80316221FF2318004911F9 /* ThirdConfigTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdConfigTool.m; sourceTree = "<group>"; };
-		AD80316321FF2318004911F9 /* BundleTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BundleTool.m; sourceTree = "<group>"; };
 		AD80316421FF2318004911F9 /* PublicTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicTool.m; sourceTree = "<group>"; };
 		AD80316521FF2318004911F9 /* NotificationHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationHandle.h; sourceTree = "<group>"; };
 		AD80316621FF2318004911F9 /* ThirdConfigTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdConfigTool.h; sourceTree = "<group>"; };
@@ -2369,10 +2363,7 @@
 		AD80586A2192C6BB0020634B /* logol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logol.png; sourceTree = "<group>"; };
 		AD8058942192C6BB0020634B /* testIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testIcon@3x.png"; sourceTree = "<group>"; };
 		AD80589B2192C6BB0020634B /* updateBgView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "updateBgView@2x.png"; sourceTree = "<group>"; };
-		AD82A20F2192B3DE00CBDE02 /* QMPPageSkipTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QMPPageSkipTools.h; sourceTree = "<group>"; };
-		AD82A2102192B3DE00CBDE02 /* QMPPageSkipTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QMPPageSkipTools.m; sourceTree = "<group>"; };
 		AD87236821A549D3006DD1FC /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
-		ADBEEB36219136B6009BB127 /* QMPimgBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = QMPimgBundle.bundle; sourceTree = "<group>"; };
 		ADBEEB6E2191485B009BB127 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADC77464218C541900C856DF /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 		ADC77465218C541900C856DF /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
@@ -2400,7 +2391,6 @@
 		ADC7751D218FFECB00C856DF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		ADC7751F218FFFB700C856DF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		ADC77520218FFFB700C856DF /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
-		ADCB9CE921AF84CF0021D553 /* MJPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJPhotoBrowser.bundle; sourceTree = "<group>"; };
 		ADD9FDC3218C3BEB00434AC6 /* qmp_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qmp_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD9FDC6218C3BEB00434AC6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ADD9FDC7218C3BEB00434AC6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -2501,9 +2491,7 @@
 		AD41248D21916DF300DA1372 /* BundleFile */ = {
 			isa = PBXGroup;
 			children = (
-				ADCB9CE921AF84CF0021D553 /* MJPhotoBrowser.bundle */,
 				AD41248B21916DA800DA1372 /* EaseUIResource.bundle */,
-				ADBEEB36219136B6009BB127 /* QMPimgBundle.bundle */,
 			);
 			path = BundleFile;
 			sourceTree = "<group>";
@@ -2784,9 +2772,9 @@
 			isa = PBXGroup;
 			children = (
 				AD80306F21FF2314004911F9 /* EaseUI.h */,
+				AD80312B21FF2315004911F9 /* EaseUI.m */,
 				AD80307021FF2314004911F9 /* EMUIKit */,
 				AD80310921FF2315004911F9 /* resources */,
-				AD80312B21FF2315004911F9 /* EaseUI.m */,
 			);
 			path = EaseUI;
 			sourceTree = "<group>";
@@ -3180,42 +3168,42 @@
 		AD80313221FF2318004911F9 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				AD80313321FF2318004911F9 /* ShowInfo.h */,
-				AD80313421FF2318004911F9 /* Reachability.m */,
-				AD80313521FF2318004911F9 /* ManagerHud.h */,
 				AD80313621FF2318004911F9 /* 3des */,
-				AD80313C21FF2318004911F9 /* ExceptionHandle */,
-				AD80313E21FF2318004911F9 /* AlertInfo.m */,
-				AD80313F21FF2318004911F9 /* GetMd5Str.m */,
-				AD80314021FF2318004911F9 /* TestNetWorkReached.m */,
-				AD80314121FF2318004911F9 /* DataHandle.h */,
-				AD80314221FF2318004911F9 /* TagsFrame.m */,
-				AD80314321FF2318004911F9 /* GetNowTime.m */,
-				AD80314421FF2318004911F9 /* ShareTo.h */,
-				AD80314521FF2318004911F9 /* DBHelper.m */,
-				AD80314621FF2318004911F9 /* TKImageView */,
-				AD80314F21FF2318004911F9 /* TakeImageTool.m */,
-				AD80315021FF2318004911F9 /* ProgressHUD.h */,
-				AD80315121FF2318004911F9 /* UIViewAdditions.h */,
-				AD80315221FF2318004911F9 /* GetSizeWithText.m */,
-				AD80315321FF2318004911F9 /* DownloadTool */,
-				AD80315A21FF2318004911F9 /* ManagerHud.m */,
-				AD80315B21FF2318004911F9 /* Reachability.h */,
-				AD80315C21FF2318004911F9 /* MainTool */,
-				AD80316921FF2318004911F9 /* ShowInfo.m */,
-				AD80316A21FF2318004911F9 /* TestNetWorkReached.h */,
 				AD80316B21FF2318004911F9 /* AlertInfo.h */,
-				AD80316C21FF2318004911F9 /* GetMd5Str.h */,
-				AD80316D21FF2318004911F9 /* OpenDocument */,
+				AD80313E21FF2318004911F9 /* AlertInfo.m */,
+				AD80314121FF2318004911F9 /* DataHandle.h */,
 				AD80317221FF2318004911F9 /* DataHandle.m */,
-				AD80317321FF2318004911F9 /* GetSizeWithText.h */,
-				AD80317421FF2318004911F9 /* UIViewAdditions.m */,
-				AD80317521FF2318004911F9 /* ProgressHUD.m */,
-				AD80317621FF2318004911F9 /* TakeImageTool.h */,
 				AD80317721FF2318004911F9 /* DBHelper.h */,
-				AD80317821FF2318004911F9 /* ShareTo.m */,
-				AD80317921FF2318004911F9 /* TagsFrame.h */,
+				AD80314521FF2318004911F9 /* DBHelper.m */,
+				AD80315321FF2318004911F9 /* DownloadTool */,
+				AD80313C21FF2318004911F9 /* ExceptionHandle */,
+				AD80316C21FF2318004911F9 /* GetMd5Str.h */,
+				AD80313F21FF2318004911F9 /* GetMd5Str.m */,
 				AD80317A21FF2318004911F9 /* GetNowTime.h */,
+				AD80314321FF2318004911F9 /* GetNowTime.m */,
+				AD80317321FF2318004911F9 /* GetSizeWithText.h */,
+				AD80315221FF2318004911F9 /* GetSizeWithText.m */,
+				AD80315C21FF2318004911F9 /* MainTool */,
+				AD80313521FF2318004911F9 /* ManagerHud.h */,
+				AD80315A21FF2318004911F9 /* ManagerHud.m */,
+				AD80316D21FF2318004911F9 /* OpenDocument */,
+				AD80315021FF2318004911F9 /* ProgressHUD.h */,
+				AD80317521FF2318004911F9 /* ProgressHUD.m */,
+				AD80315B21FF2318004911F9 /* Reachability.h */,
+				AD80313421FF2318004911F9 /* Reachability.m */,
+				AD80314421FF2318004911F9 /* ShareTo.h */,
+				AD80317821FF2318004911F9 /* ShareTo.m */,
+				AD80313321FF2318004911F9 /* ShowInfo.h */,
+				AD80316921FF2318004911F9 /* ShowInfo.m */,
+				AD80317921FF2318004911F9 /* TagsFrame.h */,
+				AD80314221FF2318004911F9 /* TagsFrame.m */,
+				AD80317621FF2318004911F9 /* TakeImageTool.h */,
+				AD80314F21FF2318004911F9 /* TakeImageTool.m */,
+				AD80316A21FF2318004911F9 /* TestNetWorkReached.h */,
+				AD80314021FF2318004911F9 /* TestNetWorkReached.m */,
+				AD80314621FF2318004911F9 /* TKImageView */,
+				AD80315121FF2318004911F9 /* UIViewAdditions.h */,
+				AD80317421FF2318004911F9 /* UIViewAdditions.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -3271,18 +3259,16 @@
 		AD80315C21FF2318004911F9 /* MainTool */ = {
 			isa = PBXGroup;
 			children = (
-				AD80315D21FF2318004911F9 /* BundleTool.h */,
-				AD80315E21FF2318004911F9 /* PublicTool.h */,
-				AD80315F21FF2318004911F9 /* NotificationHandle.m */,
 				AD80316021FF2318004911F9 /* AppPageSkipTool.h */,
-				AD80316121FF2318004911F9 /* ToLogin.m */,
-				AD80316221FF2318004911F9 /* ThirdConfigTool.m */,
-				AD80316321FF2318004911F9 /* BundleTool.m */,
-				AD80316421FF2318004911F9 /* PublicTool.m */,
-				AD80316521FF2318004911F9 /* NotificationHandle.h */,
-				AD80316621FF2318004911F9 /* ThirdConfigTool.h */,
-				AD80316721FF2318004911F9 /* ToLogin.h */,
 				AD80316821FF2318004911F9 /* AppPageSkipTool.m */,
+				AD80316521FF2318004911F9 /* NotificationHandle.h */,
+				AD80315F21FF2318004911F9 /* NotificationHandle.m */,
+				AD80315E21FF2318004911F9 /* PublicTool.h */,
+				AD80316421FF2318004911F9 /* PublicTool.m */,
+				AD80316621FF2318004911F9 /* ThirdConfigTool.h */,
+				AD80316221FF2318004911F9 /* ThirdConfigTool.m */,
+				AD80316721FF2318004911F9 /* ToLogin.h */,
+				AD80316121FF2318004911F9 /* ToLogin.m */,
 			);
 			path = MainTool;
 			sourceTree = "<group>";
@@ -3301,26 +3287,26 @@
 		AD80317B21FF231B004911F9 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				AD80317C21FF231B004911F9 /* UIViewController+captureImg.h */,
-				AD80317D21FF231B004911F9 /* NSString+AttributedString.h */,
-				AD80317E21FF231B004911F9 /* UIImageView+HeadImage.m */,
-				AD80317F21FF231B004911F9 /* NSDate+HY.m */,
-				AD80318021FF231B004911F9 /* UIView+BSHelper.h */,
-				AD80318121FF231B004911F9 /* NSDictionary+NilSafe.m */,
-				AD80318221FF231B004911F9 /* UIButton+Extension.h */,
-				AD80318321FF231B004911F9 /* UIImage+Rotate.h */,
-				AD80318421FF231B004911F9 /* UIButton+Indicator.h */,
-				AD80318521FF231B004911F9 /* UILabel+Style.m */,
-				AD80318621FF231B004911F9 /* UIImageView+HeadImage.h */,
-				AD80318721FF231B004911F9 /* NSString+AttributedString.m */,
-				AD80318821FF231B004911F9 /* UIViewController+captureImg.m */,
-				AD80318921FF231B004911F9 /* NSDictionary+NilSafe.h */,
-				AD80318A21FF231B004911F9 /* UIView+BSHelper.m */,
 				AD80318B21FF231B004911F9 /* NSDate+HY.h */,
-				AD80318C21FF231B004911F9 /* UIButton+Indicator.m */,
-				AD80318D21FF231B004911F9 /* UIImage+Rotate.m */,
+				AD80317F21FF231B004911F9 /* NSDate+HY.m */,
+				AD80318921FF231B004911F9 /* NSDictionary+NilSafe.h */,
+				AD80318121FF231B004911F9 /* NSDictionary+NilSafe.m */,
+				AD80317D21FF231B004911F9 /* NSString+AttributedString.h */,
+				AD80318721FF231B004911F9 /* NSString+AttributedString.m */,
+				AD80318221FF231B004911F9 /* UIButton+Extension.h */,
 				AD80318E21FF231B004911F9 /* UIButton+Extension.m */,
+				AD80318421FF231B004911F9 /* UIButton+Indicator.h */,
+				AD80318C21FF231B004911F9 /* UIButton+Indicator.m */,
+				AD80318321FF231B004911F9 /* UIImage+Rotate.h */,
+				AD80318D21FF231B004911F9 /* UIImage+Rotate.m */,
+				AD80318621FF231B004911F9 /* UIImageView+HeadImage.h */,
+				AD80317E21FF231B004911F9 /* UIImageView+HeadImage.m */,
 				AD80318F21FF231B004911F9 /* UILabel+Style.h */,
+				AD80318521FF231B004911F9 /* UILabel+Style.m */,
+				AD80318021FF231B004911F9 /* UIView+BSHelper.h */,
+				AD80318A21FF231B004911F9 /* UIView+BSHelper.m */,
+				AD80317C21FF231B004911F9 /* UIViewController+captureImg.h */,
+				AD80318821FF231B004911F9 /* UIViewController+captureImg.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -3338,12 +3324,12 @@
 		AD80319421FF2321004911F9 /* AlertView */ = {
 			isa = PBXGroup;
 			children = (
-				AD80319521FF2321004911F9 /* InfoAlertView.m */,
-				AD80319621FF2321004911F9 /* ManagerAlertView.h */,
-				AD80319721FF2321004911F9 /* InfoWithoutConfirmAlertView.m */,
 				AD80319821FF2321004911F9 /* InfoAlertView.h */,
-				AD80319921FF2321004911F9 /* ManagerAlertView.m */,
+				AD80319521FF2321004911F9 /* InfoAlertView.m */,
 				AD80319A21FF2321004911F9 /* InfoWithoutConfirmAlertView.h */,
+				AD80319721FF2321004911F9 /* InfoWithoutConfirmAlertView.m */,
+				AD80319621FF2321004911F9 /* ManagerAlertView.h */,
+				AD80319921FF2321004911F9 /* ManagerAlertView.m */,
 			);
 			path = AlertView;
 			sourceTree = "<group>";
@@ -3351,52 +3337,52 @@
 		AD80319B21FF2323004911F9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AD80319C21FF2323004911F9 /* NewUserLeadView.m */,
 				AD80319D21FF2323004911F9 /* AlertActionView.h */,
-				AD80319E21FF2323004911F9 /* VerticalToplabel.m */,
-				AD80319F21FF2323004911F9 /* InputTextview.h */,
-				AD8031A021FF2323004911F9 /* JYEqualCellSpaceFlowLayout.m */,
-				AD8031A121FF2323004911F9 /* HYNoticeView.m */,
-				AD8031A221FF2323004911F9 /* SearchButton.m */,
-				AD8031A321FF2323004911F9 /* NoInterestView.m */,
-				AD8031A421FF2323004911F9 /* MultiSelectView */,
-				AD8031A921FF2323004911F9 /* HMTextView.m */,
-				AD8031AA21FF2323004911F9 /* DrawerViewCollectionViewCell.h */,
-				AD8031AB21FF2323004911F9 /* SKTag */,
-				AD8031B221FF2323004911F9 /* UploadView.m */,
-				AD8031B321FF2323004911F9 /* ShareView.m */,
-				AD8031B421FF2323004911F9 /* PickerView */,
-				AD8031BC21FF2323004911F9 /* CopyLabel.m */,
-				AD8031BD21FF2323004911F9 /* CustomAlertView.m */,
-				AD8031BE21FF2323004911F9 /* SMPagerTabView.m */,
-				AD8031BF21FF2323004911F9 /* ScrollCollectView.h */,
-				AD8031C021FF2323004911F9 /* FactoryUI.h */,
-				AD8031C121FF2323004911F9 /* InsetsLabel.h */,
-				AD8031C221FF2323004911F9 /* CopyButton.m */,
-				AD8031C321FF2323004911F9 /* AlertActionView.xib */,
-				AD8031C421FF2323004911F9 /* SearchButton.h */,
-				AD8031C521FF2323004911F9 /* HYNoticeView.h */,
-				AD8031C621FF2323004911F9 /* InputTextview.m */,
-				AD8031C721FF2323004911F9 /* JYEqualCellSpaceFlowLayout.h */,
 				AD8031C821FF2323004911F9 /* AlertActionView.m */,
-				AD8031C921FF2323004911F9 /* VerticalToplabel.h */,
-				AD8031CA21FF2323004911F9 /* NewUserLeadView.h */,
-				AD8031CB21FF2323004911F9 /* ShareView.h */,
-				AD8031CC21FF2323004911F9 /* UploadView.h */,
-				AD8031CD21FF2323004911F9 /* DrawerViewCollectionViewCell.m */,
+				AD8031C321FF2323004911F9 /* AlertActionView.xib */,
 				AD8031CE21FF2323004911F9 /* CenterBtn */,
-				AD8031D121FF2323004911F9 /* HMTextView.h */,
-				AD8031D221FF2323004911F9 /* NoInterestView.h */,
-				AD8031D321FF2323004911F9 /* CopyLabel.h */,
-				AD8031D421FF2323004911F9 /* DownloadView */,
-				AD8031D721FF2323004911F9 /* SPPageMenu */,
 				AD8031DC21FF2323004911F9 /* CopyButton.h */,
-				AD8031DD21FF2323004911F9 /* InsetsLabel.m */,
-				AD8031DE21FF2323004911F9 /* FactoryUI.m */,
-				AD8031DF21FF2323004911F9 /* ScrollCollectView.m */,
-				AD8031E021FF2323004911F9 /* SMPagerTabView.h */,
+				AD8031C221FF2323004911F9 /* CopyButton.m */,
+				AD8031D321FF2323004911F9 /* CopyLabel.h */,
+				AD8031BC21FF2323004911F9 /* CopyLabel.m */,
 				AD8031E121FF2323004911F9 /* CustomAlertView.h */,
+				AD8031BD21FF2323004911F9 /* CustomAlertView.m */,
+				AD8031D421FF2323004911F9 /* DownloadView */,
+				AD8031AA21FF2323004911F9 /* DrawerViewCollectionViewCell.h */,
+				AD8031CD21FF2323004911F9 /* DrawerViewCollectionViewCell.m */,
+				AD8031C021FF2323004911F9 /* FactoryUI.h */,
+				AD8031DE21FF2323004911F9 /* FactoryUI.m */,
+				AD8031D121FF2323004911F9 /* HMTextView.h */,
+				AD8031A921FF2323004911F9 /* HMTextView.m */,
+				AD8031C521FF2323004911F9 /* HYNoticeView.h */,
+				AD8031A121FF2323004911F9 /* HYNoticeView.m */,
+				AD80319F21FF2323004911F9 /* InputTextview.h */,
+				AD8031C621FF2323004911F9 /* InputTextview.m */,
+				AD8031C121FF2323004911F9 /* InsetsLabel.h */,
+				AD8031DD21FF2323004911F9 /* InsetsLabel.m */,
+				AD8031C721FF2323004911F9 /* JYEqualCellSpaceFlowLayout.h */,
+				AD8031A021FF2323004911F9 /* JYEqualCellSpaceFlowLayout.m */,
 				AD8031E221FF2324004911F9 /* LrdOutputView */,
+				AD8031A421FF2323004911F9 /* MultiSelectView */,
+				AD8031CA21FF2323004911F9 /* NewUserLeadView.h */,
+				AD80319C21FF2323004911F9 /* NewUserLeadView.m */,
+				AD8031D221FF2323004911F9 /* NoInterestView.h */,
+				AD8031A321FF2323004911F9 /* NoInterestView.m */,
+				AD8031B421FF2323004911F9 /* PickerView */,
+				AD8031BF21FF2323004911F9 /* ScrollCollectView.h */,
+				AD8031DF21FF2323004911F9 /* ScrollCollectView.m */,
+				AD8031C421FF2323004911F9 /* SearchButton.h */,
+				AD8031A221FF2323004911F9 /* SearchButton.m */,
+				AD8031CB21FF2323004911F9 /* ShareView.h */,
+				AD8031B321FF2323004911F9 /* ShareView.m */,
+				AD8031AB21FF2323004911F9 /* SKTag */,
+				AD8031E021FF2323004911F9 /* SMPagerTabView.h */,
+				AD8031BE21FF2323004911F9 /* SMPagerTabView.m */,
+				AD8031D721FF2323004911F9 /* SPPageMenu */,
+				AD8031CC21FF2323004911F9 /* UploadView.h */,
+				AD8031B221FF2323004911F9 /* UploadView.m */,
+				AD8031C921FF2323004911F9 /* VerticalToplabel.h */,
+				AD80319E21FF2323004911F9 /* VerticalToplabel.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -5209,21 +5195,21 @@
 		AD8037392200320D004911F9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AD80373A2200320D004911F9 /* UploadReportView.m */,
-				AD80373B2200320D004911F9 /* TitleAndBtnBottomView.h */,
+				AD8037522200320D004911F9 /* Cell */,
 				AD80373C2200320D004911F9 /* FilterView */,
 				AD80374E2200320D004911F9 /* GestureScrollView.h */,
-				AD80374F2200320D004911F9 /* UpgradeVersionView.xib */,
-				AD8037502200320D004911F9 /* UpgradeVersionView.m */,
-				AD8037512200320D004911F9 /* ScreenShareView.m */,
-				AD8037522200320D004911F9 /* Cell */,
-				AD8037612200320D004911F9 /* TitleAndBtnBottomView.m */,
-				AD8037622200320D004911F9 /* ScreenShareView.xib */,
-				AD8037632200320D004911F9 /* UploadReportView.h */,
 				AD8037642200320D004911F9 /* GestureScrollView.m */,
-				AD8037652200320D004911F9 /* ThreeDetailCommonViews */,
 				AD8037782200320D004911F9 /* ScreenShareView.h */,
+				AD8037512200320D004911F9 /* ScreenShareView.m */,
+				AD8037622200320D004911F9 /* ScreenShareView.xib */,
+				AD8037652200320D004911F9 /* ThreeDetailCommonViews */,
+				AD80373B2200320D004911F9 /* TitleAndBtnBottomView.h */,
+				AD8037612200320D004911F9 /* TitleAndBtnBottomView.m */,
 				AD8037792200320D004911F9 /* UpgradeVersionView.h */,
+				AD8037502200320D004911F9 /* UpgradeVersionView.m */,
+				AD80374F2200320D004911F9 /* UpgradeVersionView.xib */,
+				AD8037632200320D004911F9 /* UploadReportView.h */,
+				AD80373A2200320D004911F9 /* UploadReportView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -5231,17 +5217,17 @@
 		AD80373C2200320D004911F9 /* FilterView */ = {
 			isa = PBXGroup;
 			children = (
-				AD80373D2200320D004911F9 /* PersonsFilterView.h */,
-				AD80373E2200320D004911F9 /* RzfilterView */,
-				AD8037452200320D004911F9 /* FinanceEventFilterView.m */,
 				AD8037462200320D004911F9 /* BPfilterView.h */,
-				AD8037472200320D004911F9 /* InvestementFilterView.h */,
-				AD8037482200320D004911F9 /* ProspectusFilterView.h */,
-				AD8037492200320D004911F9 /* PersonsFilterView.m */,
-				AD80374A2200320D004911F9 /* InvestementFilterView.m */,
 				AD80374B2200320D004911F9 /* BPfilterView.m */,
 				AD80374C2200320D004911F9 /* FinanceEventFilterView.h */,
+				AD8037452200320D004911F9 /* FinanceEventFilterView.m */,
+				AD8037472200320D004911F9 /* InvestementFilterView.h */,
+				AD80374A2200320D004911F9 /* InvestementFilterView.m */,
+				AD80373D2200320D004911F9 /* PersonsFilterView.h */,
+				AD8037492200320D004911F9 /* PersonsFilterView.m */,
+				AD8037482200320D004911F9 /* ProspectusFilterView.h */,
 				AD80374D2200320D004911F9 /* ProspectusFilterView.m */,
+				AD80373E2200320D004911F9 /* RzfilterView */,
 			);
 			path = FilterView;
 			sourceTree = "<group>";
@@ -5262,20 +5248,20 @@
 		AD8037522200320D004911F9 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				AD80375E2200320D004911F9 /* AreaCollCell.h */,
+				AD8037582200320D004911F9 /* AreaCollCell.m */,
+				AD80375D2200320D004911F9 /* ClaimCell.h */,
+				AD8037592200320D004911F9 /* ClaimCell.m */,
 				AD8037532200320D004911F9 /* HomeInfoTableViewCell.h */,
+				AD80375B2200320D004911F9 /* HomeInfoTableViewCell.m */,
+				AD8037562200320D004911F9 /* HomeInfoTableViewCell.xib */,
+				AD80375C2200320D004911F9 /* IPOCompanyCell.h */,
 				AD8037542200320D004911F9 /* IPOCompanyCell.m */,
 				AD8037552200320D004911F9 /* MyInfoTableViewCell.h */,
-				AD8037562200320D004911F9 /* HomeInfoTableViewCell.xib */,
-				AD8037572200320D004911F9 /* ReportListNewCell.h */,
-				AD8037582200320D004911F9 /* AreaCollCell.m */,
-				AD8037592200320D004911F9 /* ClaimCell.m */,
-				AD80375A2200320D004911F9 /* MyInfoTableViewCell.xib */,
-				AD80375B2200320D004911F9 /* HomeInfoTableViewCell.m */,
-				AD80375C2200320D004911F9 /* IPOCompanyCell.h */,
-				AD80375D2200320D004911F9 /* ClaimCell.h */,
-				AD80375E2200320D004911F9 /* AreaCollCell.h */,
-				AD80375F2200320D004911F9 /* ReportListNewCell.m */,
 				AD8037602200320D004911F9 /* MyInfoTableViewCell.m */,
+				AD80375A2200320D004911F9 /* MyInfoTableViewCell.xib */,
+				AD8037572200320D004911F9 /* ReportListNewCell.h */,
+				AD80375F2200320D004911F9 /* ReportListNewCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -5283,24 +5269,24 @@
 		AD8037652200320D004911F9 /* ThreeDetailCommonViews */ = {
 			isa = PBXGroup;
 			children = (
-				AD8037662200320D004911F9 /* IntroduceCellLayout.h */,
-				AD8037672200320D004911F9 /* CommonIntroduceCell.m */,
-				AD8037682200320D004911F9 /* DetailLayout.h */,
-				AD8037692200320D004911F9 /* DetailTagsCell.m */,
-				AD80376A2200320D004911F9 /* CommonTableVwSecHeadVw.m */,
-				AD80376B2200320D004911F9 /* NoCommontInfoCell.h */,
-				AD80376C2200320D004911F9 /* DynamicRelateCell.h */,
-				AD80376D2200320D004911F9 /* NewsTableViewCell.h */,
-				AD80376E2200320D004911F9 /* DetailNavigationBar.h */,
-				AD80376F2200320D004911F9 /* DetailLayout.m */,
 				AD8037702200320D004911F9 /* CommonIntroduceCell.h */,
-				AD8037712200320D004911F9 /* IntroduceCellLayout.m */,
-				AD8037722200320D004911F9 /* DetailTagsCell.h */,
-				AD8037732200320D004911F9 /* NewsTableViewCell.m */,
-				AD8037742200320D004911F9 /* DynamicRelateCell.m */,
-				AD8037752200320D004911F9 /* NoCommontInfoCell.m */,
+				AD8037672200320D004911F9 /* CommonIntroduceCell.m */,
 				AD8037762200320D004911F9 /* CommonTableVwSecHeadVw.h */,
+				AD80376A2200320D004911F9 /* CommonTableVwSecHeadVw.m */,
+				AD8037682200320D004911F9 /* DetailLayout.h */,
+				AD80376F2200320D004911F9 /* DetailLayout.m */,
+				AD80376E2200320D004911F9 /* DetailNavigationBar.h */,
 				AD8037772200320D004911F9 /* DetailNavigationBar.m */,
+				AD8037722200320D004911F9 /* DetailTagsCell.h */,
+				AD8037692200320D004911F9 /* DetailTagsCell.m */,
+				AD80376C2200320D004911F9 /* DynamicRelateCell.h */,
+				AD8037742200320D004911F9 /* DynamicRelateCell.m */,
+				AD8037662200320D004911F9 /* IntroduceCellLayout.h */,
+				AD8037712200320D004911F9 /* IntroduceCellLayout.m */,
+				AD80376D2200320D004911F9 /* NewsTableViewCell.h */,
+				AD8037732200320D004911F9 /* NewsTableViewCell.m */,
+				AD80376B2200320D004911F9 /* NoCommontInfoCell.h */,
+				AD8037752200320D004911F9 /* NoCommontInfoCell.m */,
 			);
 			path = ThreeDetailCommonViews;
 			sourceTree = "<group>";
@@ -5561,18 +5547,8 @@
 				AD80300321FF2310004911F9 /* Other */,
 				AD80313221FF2318004911F9 /* Tools */,
 				AD80319B21FF2323004911F9 /* Views */,
-				AD82A20E2192B3C500CBDE02 /* Tool */,
 			);
 			path = Helper;
-			sourceTree = "<group>";
-		};
-		AD82A20E2192B3C500CBDE02 /* Tool */ = {
-			isa = PBXGroup;
-			children = (
-				AD82A20F2192B3DE00CBDE02 /* QMPPageSkipTools.h */,
-				AD82A2102192B3DE00CBDE02 /* QMPPageSkipTools.m */,
-			);
-			path = Tool;
 			sourceTree = "<group>";
 		};
 		ADD9FDBA218C3BEB00434AC6 = {
@@ -5795,13 +5771,11 @@
 				AD803A2022003210004911F9 /* CompanyHeaderView.xib in Resources */,
 				AD803A2222003210004911F9 /* ProductValueActivityCell.xib in Resources */,
 				AD8038DD2200320E004911F9 /* ImageShareController.xib in Resources */,
-				ADBEEB37219136B6009BB127 /* QMPimgBundle.bundle in Resources */,
 				AD80327C21FF2324004911F9 /* XYCameraViewController.xib in Resources */,
 				AD8038842200320E004911F9 /* BecomeOfficialPersonVC.xib in Resources */,
 				AD80391C2200320F004911F9 /* CardLeadProgressView.xib in Resources */,
 				AD8038E42200320E004911F9 /* ScreenShareController.xib in Resources */,
 				AD8039F52200320F004911F9 /* MyInfoTableViewCell.xib in Resources */,
-				ADCB9CEA21AF84CF0021D553 /* MJPhotoBrowser.bundle in Resources */,
 				AD80320D21FF2324004911F9 /* MJPhotoBrowser.bundle in Resources */,
 				AD8039282200320F004911F9 /* CollectionListTableViewCell.xib in Resources */,
 				AD80326021FF2324004911F9 /* icon_019_cover.png in Resources */,
@@ -6558,7 +6532,6 @@
 				AD8038732200320E004911F9 /* PersonInvestCaseCollectionViewCell.m in Sources */,
 				AD80396A2200320F004911F9 /* CompanysDetailRegisterPeoplesModel.m in Sources */,
 				AD80395F2200320F004911F9 /* WinExperienceModel.m in Sources */,
-				AD82A2112192B3DE00CBDE02 /* QMPPageSkipTools.m in Sources */,
 				AD80327D21FF2324004911F9 /* TKImageView.m in Sources */,
 				AD80381D2200320E004911F9 /* HomeRZProCell.m in Sources */,
 				AD8031EF21FF2324004911F9 /* UIColor+Zirkfied.m in Sources */,
@@ -6641,7 +6614,6 @@
 				AD8038862200320E004911F9 /* InvestorNewsController.m in Sources */,
 				AD803A3A22003210004911F9 /* TableHeadMenuCell.m in Sources */,
 				AD803A0422003210004911F9 /* DetailNavigationBar.m in Sources */,
-				AD80328821FF2324004911F9 /* BundleTool.m in Sources */,
 				AD8039232200320F004911F9 /* DeleteCardController.m in Sources */,
 				AD80322E21FF2324004911F9 /* EaseLocationViewController.m in Sources */,
 			);

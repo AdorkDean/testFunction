@@ -65,7 +65,7 @@
     self.tableView.mj_footer = self.mjFooter;
     
     [self.view addSubview:self.tableView];
-    [self.tableView registerNib:[UINib nibWithNibName:@"ProductHomeCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"ProductHomeCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"ProductHomeCell" bundle:nil] forCellReuseIdentifier:@"ProductHomeCellID"];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.contentInset = UIEdgeInsetsMake(self.filterHeaderView.height, 0, self.filterHeaderView.height, 0);
 

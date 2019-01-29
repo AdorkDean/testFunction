@@ -45,7 +45,7 @@
 
 - (void)setJigouModel:(ActiveJigouModel *)jigouModel{
     _jigouModel = jigouModel;
-    [iconImgV sd_setImageWithURL:[NSURL URLWithString:jigouModel.icon] placeholderImage:[BundleTool imageNamed:@"product_default"]];
+    [iconImgV sd_setImageWithURL:[NSURL URLWithString:jigouModel.icon] placeholderImage:[UIImage imageNamed:@"product_default"]];
    
 //    [iconImgV sd_setImageWithURL:[NSURL URLWithString:jigouModel.icon] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
 //        iconImgV.image = [PublicTool OriginImage:image scaleToSize:CGSizeMake(80, 80)];

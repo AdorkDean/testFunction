@@ -22,7 +22,7 @@
 - (UIButton *)deleteBtn{
     if (!_deleteBtn) {
         _deleteBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 50, 35)];
-        UIImage *img = [BundleTool imageNamed:@"tag_delete"];
+        UIImage *img = [UIImage imageNamed:@"tag_delete"];
         _deleteBtn.size = img.size;
         [_deleteBtn setImage:img forState:UIControlStateNormal];
         [_deleteBtn addTarget:self action:@selector(deleteBtnClick) forControlEvents:UIControlEventTouchUpInside];

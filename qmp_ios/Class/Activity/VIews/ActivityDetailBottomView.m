@@ -134,7 +134,7 @@
     if (!_shareButton) {
         _shareButton = [[UIButton alloc] init];
         _shareButton.frame = CGRectMake(SCREENW-45, 1, 45, 45);
-        [_shareButton setImage:[BundleTool imageNamed:@"activity_cell_share"] forState:UIControlStateNormal];
+        [_shareButton setImage:[UIImage imageNamed:@"activity_cell_share"] forState:UIControlStateNormal];
         [_shareButton addTarget:self action:@selector(shareButtonClick) forControlEvents:UIControlEventTouchUpInside];
         _shareButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         _shareButton.imageEdgeInsets = UIEdgeInsetsMake(0, 9, 0, 0);
@@ -152,8 +152,8 @@
         _upvoteButton.titleLabel.font = [UIFont systemFontOfSize:10];
         _upvoteButton.titleLabel.backgroundColor = [UIColor whiteColor];
         [_upvoteButton setTitleColor:BLUE_TITLE_COLOR forState:UIControlStateNormal];
-        [_upvoteButton setImage:[BundleTool imageNamed:@"activity_bottom_diggb"] forState:UIControlStateSelected];
-        [_upvoteButton setImage:[BundleTool imageNamed:@"activity_cell_digg"] forState:UIControlStateNormal];
+        [_upvoteButton setImage:[UIImage imageNamed:@"activity_bottom_diggb"] forState:UIControlStateSelected];
+        [_upvoteButton setImage:[UIImage imageNamed:@"activity_cell_digg"] forState:UIControlStateNormal];
         [_upvoteButton addTarget:self action:@selector(diggButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _upvoteButton;
@@ -364,8 +364,8 @@
         [anonymousButton setTitle:@"匿名" forState:UIControlStateNormal];
         [anonymousButton setTitleColor:BLUE_TITLE_COLOR forState:UIControlStateSelected];
         [anonymousButton setTitleColor:COLOR737782 forState:UIControlStateNormal];
-        [anonymousButton setImage:[BundleTool imageNamed:@"post_bar_anonymous"] forState:UIControlStateNormal];
-        [anonymousButton setImage:[BundleTool imageNamed:@"post_bar_anonymousb"] forState:UIControlStateSelected];
+        [anonymousButton setImage:[UIImage imageNamed:@"post_bar_anonymous"] forState:UIControlStateNormal];
+        [anonymousButton setImage:[UIImage imageNamed:@"post_bar_anonymousb"] forState:UIControlStateSelected];
         anonymousButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         anonymousButton.titleEdgeInsets = UIEdgeInsetsMake(0, 6, 0, -6);
         [anonymousButton addTarget:self action:@selector(anonymousButtonClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -389,7 +389,7 @@
         [self.iconView sd_setImageWithURL:[NSURL URLWithString:[WechatUserInfo shared].headimgurl]];
     } else {
         self.nameLabel.text = [WechatUserInfo shared].flower_name;
-        self.iconView.image = [BundleTool imageNamed:@"activity_post_flower2"];
+        self.iconView.image = [UIImage imageNamed:@"activity_post_flower2"];
     }
     
     CGFloat maxW = SCREENW - self.postCommentButton.width - 34;
@@ -423,7 +423,7 @@
         
         UIImageView *arrowView = [[UIImageView alloc] init];
         arrowView.frame = CGRectMake(79, 10, 13, 8);
-        arrowView.image = [BundleTool imageNamed:@"activity_role_arrow"];
+        arrowView.image = [UIImage imageNamed:@"activity_role_arrow"];
         [_roleView addSubview:arrowView];
         self.arrowView = arrowView;
         
@@ -454,8 +454,8 @@
         _popView.frame = CGRectMake(SCREENW-135-17, -94, 135, 107);
         _popView.backgroundColor = [UIColor clearColor];
         _popView.userInteractionEnabled = YES;
-        //        _popView.image = [BundleTool imageNamed:@"activity_role_pop"];
-        UIImage *image = [BundleTool imageNamed:@"activity_role_pop_left"];
+        //        _popView.image = [UIImage imageNamed:@"activity_role_pop"];
+        UIImage *image = [UIImage imageNamed:@"activity_role_pop_left"];
         image = [image resizableImageWithCapInsets:UIEdgeInsetsMake(10, 10, 100, 90) resizingMode:UIImageResizingModeStretch];
         _popView.image = image;
         
@@ -488,7 +488,7 @@
         
         UIImageView *selectView1 = [[UIImageView alloc] init];
         selectView1.frame = CGRectMake(label1.right+8, 17, 15, 10);
-        selectView1.image = [BundleTool imageNamed:@"activity_post_select"];
+        selectView1.image = [UIImage imageNamed:@"activity_post_select"];
         [item1 addSubview:selectView1];
         self.selectView1 = selectView1;
         
@@ -506,7 +506,7 @@
         icon2.frame = CGRectMake(15, 11, 24, 24);
         icon2.layer.cornerRadius = 12;
         icon2.clipsToBounds = YES;
-        icon2.image = [BundleTool imageNamed:@"activity_post_flower"];
+        icon2.image = [UIImage imageNamed:@"activity_post_flower"];
         [item2 addSubview:icon2];
         
         UILabel *label2 = [[UILabel alloc] init];
@@ -521,7 +521,7 @@
         
         UIImageView *selectView2 = [[UIImageView alloc] init];
         selectView2.frame = CGRectMake(105, 17, 15, 10);
-        selectView2.image = [BundleTool imageNamed:@"activity_post_select"];
+        selectView2.image = [UIImage imageNamed:@"activity_post_select"];
         selectView2.hidden = YES;
         [item2 addSubview:selectView2];
         self.selectView2 = selectView2;

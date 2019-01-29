@@ -71,11 +71,11 @@
     [self.contentView addSubview:_majorLab];
     
     _lineVertical = [[UIImageView alloc]initWithFrame:CGRectZero];
-    _lineVertical.image = [BundleTool imageNamed:@"line_shu"];
+    _lineVertical.image = [UIImage imageNamed:@"line_shu"];
     [self.contentView addSubview:_lineVertical];
     
     _lineVertical2 = [[UIImageView alloc]initWithFrame:CGRectZero];
-    _lineVertical2.image = [BundleTool imageNamed:@"line_shu"];
+    _lineVertical2.image = [UIImage imageNamed:@"line_shu"];
     [self.contentView addSubview:_lineVertical2];
     
     _degreeLabel = [[UILabel alloc]initWithFrame:CGRectZero];
@@ -86,7 +86,7 @@
     
     self.editBtn = [[UIButton alloc]initWithFrame:CGRectZero];
     [self.editBtn setTitleColor:BLUE_TITLE_COLOR forState:UIControlStateNormal];
-    [self.editBtn setImage:[BundleTool imageNamed:@"cell_arrow"] forState:UIControlStateNormal];
+    [self.editBtn setImage:[UIImage imageNamed:@"cell_arrow"] forState:UIControlStateNormal];
     [self.editBtn setTitle:@"编辑" forState:UIControlStateNormal];
     self.editBtn.titleLabel.font = [UIFont systemFontOfSize:14];
     [self.editBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleRight imageTitleSpace:5];
@@ -260,7 +260,7 @@
 - (void)setExprienceM:(ZhiWeiModel *)exprienceM{
     _exprienceM = exprienceM;
     _iconImg.hidden = NO;
-    [_iconImg sd_setImageWithURL:[NSURL URLWithString:exprienceM.icon] placeholderImage:[BundleTool imageNamed:PROICON_DEFAULT]];
+    [_iconImg sd_setImageWithURL:[NSURL URLWithString:exprienceM.icon] placeholderImage:[UIImage imageNamed:PROICON_DEFAULT]];
     _schoolLabel.text = [PublicTool nilStringReturn:exprienceM.name];
     _timeLab.text = exprienceM.zhiwu;
     _lineVertical.hidden = YES;

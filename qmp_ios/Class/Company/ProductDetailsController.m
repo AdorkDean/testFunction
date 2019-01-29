@@ -342,7 +342,7 @@ UITableViewDataSource,LrdOutputViewDelegate,ShareDelegate,ManagerAlertDelegate,S
         UIImageView *imgV = [imgCell.contentView viewWithTag:1000];
         if (!imgV) {
             imgV = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, SCREENW, SCREENW*3)];
-            imgV.image = [BundleTool imageNamed:@"detail_placeholder_bg"];
+            imgV.image = [UIImage imageNamed:@"detail_placeholder_bg"];
             imgV.tag = 1000;
             [imgCell.contentView addSubview:imgV];
         }
@@ -824,7 +824,7 @@ UITableViewDataSource,LrdOutputViewDelegate,ShareDelegate,ManagerAlertDelegate,S
         
         //tableFooterV
         UIImageView *footerImg = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, SCREENW, SCREENW)];
-        footerImg.image = [BundleTool imageNamed:@"detail_placeholder_second"];
+        footerImg.image = [UIImage imageNamed:@"detail_placeholder_second"];
         self.tableView.tableFooterView = footerImg;
 
         [self.viewModel.requestFinishTwoSignal subscribeNext:^(id  _Nullable x) {
@@ -1117,7 +1117,7 @@ UITableViewDataSource,LrdOutputViewDelegate,ShareDelegate,ManagerAlertDelegate,S
     [self.tableView registerClass:[NewsTableViewCell class] forCellReuseIdentifier:@"NewsTableViewCellID"];
     [self.tableView registerClass:[IpoInfoCell  class] forCellReuseIdentifier:@"IpoInfoCellID"];
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"CompanyZhaopinCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"CompanyZhaopinCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"CompanyZhaopinCell" bundle:nil] forCellReuseIdentifier:@"CompanyZhaopinCellID"];
     
     [self.tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:@"headerView"];
     
@@ -1207,7 +1207,7 @@ UITableViewDataSource,LrdOutputViewDelegate,ShareDelegate,ManagerAlertDelegate,S
 //  客服
     UIButton *kefuBtn = [[UIButton alloc]initWithFrame:CGRectMake(8, 0,(leftWidth - 16)/2.0, btnHeight)];
     [kefuBtn setTitle:@"客服" forState:UIControlStateNormal];
-    [kefuBtn setImage:[BundleTool imageNamed:@"detail_kefu_icon"] forState:UIControlStateNormal];
+    [kefuBtn setImage:[UIImage imageNamed:@"detail_kefu_icon"] forState:UIControlStateNormal];
     [kefuBtn setTitleColor:H6COLOR forState:UIControlStateNormal];
     kefuBtn.titleLabel.font = [UIFont systemFontOfSize:9];
     [kefuBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleTop imageTitleSpace:5];
@@ -1216,7 +1216,7 @@ UITableViewDataSource,LrdOutputViewDelegate,ShareDelegate,ManagerAlertDelegate,S
     
     _toolFeedbackBtn = [[UIButton alloc]initWithFrame:CGRectMake(kefuBtn.right, 0, (leftWidth - 16)/2.0, btnHeight)];
     [_toolFeedbackBtn setTitle:@"反馈" forState:UIControlStateNormal];
-    [_toolFeedbackBtn setImage:[BundleTool imageNamed:@"detail_feedback_icon"] forState:UIControlStateNormal];
+    [_toolFeedbackBtn setImage:[UIImage imageNamed:@"detail_feedback_icon"] forState:UIControlStateNormal];
     [_toolFeedbackBtn setTitleColor:H6COLOR forState:UIControlStateNormal];
     _toolFeedbackBtn.titleLabel.font = [UIFont systemFontOfSize:9];
     _toolFeedbackBtn.backgroundColor = [UIColor whiteColor];
@@ -1271,7 +1271,7 @@ UITableViewDataSource,LrdOutputViewDelegate,ShareDelegate,ManagerAlertDelegate,S
     
     NSString *imageName = inWorkFlow ? @"workflow_have" : @"workflow_add";
     NSString *titleStr = inWorkFlow ? @"已关注":@"关注";
-    [_flowToolBtn setImage:[BundleTool imageNamed:imageName] forState:UIControlStateNormal];
+    [_flowToolBtn setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     [_flowToolBtn setTitle:titleStr forState:UIControlStateNormal];
     [_flowToolBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:5];
 }
@@ -1449,7 +1449,7 @@ UITableViewDataSource,LrdOutputViewDelegate,ShareDelegate,ManagerAlertDelegate,S
     cell.contentView.backgroundColor = [UIColor whiteColor];
     UIImageView *bgImgV = [cell.contentView viewWithTag:1000];
     if (!bgImgV) {
-        UIImage *img = [BundleTool imageNamed:@"company_investorclaimbg"];
+        UIImage *img = [UIImage imageNamed:@"company_investorclaimbg"];
         bgImgV = [[UIImageView alloc]initWithFrame:CGRectMake(16, 15, img.size.width*180/img.size.height, 180)];
         bgImgV.image = img;
         bgImgV.tag = 1000;

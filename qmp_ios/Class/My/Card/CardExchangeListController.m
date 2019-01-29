@@ -99,7 +99,7 @@
     [_mySearchBar setBackgroundImage:[UIImage imageFromColor:[UIColor whiteColor] andSize:_mySearchBar.size]];
     //设置背景色
     [_mySearchBar setBackgroundColor:[UIColor whiteColor]];
-    [_mySearchBar setSearchFieldBackgroundImage:[BundleTool imageNamed:@"card_search_bg"] forState:UIControlStateNormal];
+    [_mySearchBar setSearchFieldBackgroundImage:[UIImage imageNamed:@"card_search_bg"] forState:UIControlStateNormal];
     [_mySearchBar setSearchTextPositionAdjustment:UIOffsetMake(10, 0)];
     UITextField *tf = [_mySearchBar valueForKey:@"_searchField"];
     tf.font = [UIFont systemFontOfSize:14];
@@ -505,7 +505,7 @@
         [_bottomView addSubview:line];
         
         UIButton *leadBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, SCREENW, kShortBottomHeight)];
-        [leadBtn setImage:[BundleTool imageNamed:@"leadToAlbumIcon"] forState:UIControlStateNormal];
+        [leadBtn setImage:[UIImage imageNamed:@"leadToAlbumIcon"] forState:UIControlStateNormal];
         [leadBtn setTitle:@"导出至手机通讯录" forState:UIControlStateNormal];
         [leadBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:7];
         [leadBtn setTitleColor:H5COLOR forState:UIControlStateNormal];

@@ -88,15 +88,15 @@
     if ([feedbackM.complete isEqualToString:@"处理中"]) {
         resultLab.text = @"正在处理";
         resultLab.textColor = HTColorFromRGB(0xFFB154);
-        resultIcon.image = [BundleTool imageNamed:@"feedback_ing"];
+        resultIcon.image = [UIImage imageNamed:@"feedback_ing"];
     } else if ([feedbackM.complete isEqualToString:@"处理成功"]) {
         resultLab.text = @"处理成功";
         resultLab.textColor = HTColorFromRGB(0x197CD8);
-        resultIcon.image = [BundleTool imageNamed:@"feedback_success"];
+        resultIcon.image = [UIImage imageNamed:@"feedback_success"];
     } else {
         resultLab.text = @"处理失败";
         resultLab.textColor = HTColorFromRGB(0x197CD8);
-        resultIcon.image = [BundleTool imageNamed:@"feedback_fail"];
+        resultIcon.image = [UIImage imageNamed:@"feedback_fail"];
     }
     
     

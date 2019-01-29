@@ -69,7 +69,7 @@
     
     //叉号
     UIButton *dispearBtn = [[UIButton alloc]initWithFrame:CGRectMake(selfImage.width - 14-50, 2, 45, 45)];
-    [dispearBtn setImage:[BundleTool imageNamed:@"feedback_del"] forState:UIControlStateNormal];
+    [dispearBtn setImage:[UIImage imageNamed:@"feedback_del"] forState:UIControlStateNormal];
     [dispearBtn addTarget:self action:@selector(dispAppear:) forControlEvents:UIControlEventTouchUpInside];
     [dispearBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
     [selfImage addSubview:dispearBtn];

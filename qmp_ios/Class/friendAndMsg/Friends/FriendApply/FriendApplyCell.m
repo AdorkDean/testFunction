@@ -20,7 +20,7 @@
 
     
     
-    [self.rightButton setImage:[[BundleTool imageNamed:@"area_add"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+    [self.rightButton setImage:[[UIImage imageNamed:@"area_add"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
     [self.rightButton setTitle:@"好友" forState:UIControlStateNormal];
     [self.rightButton setTitleColor:NV_TITLE_COLOR forState:UIControlStateNormal];
     [self.rightButton layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:5];
@@ -36,9 +36,9 @@
     
     _dic = dic;
     if (![PublicTool isNull:dic[@"img_url"]]) {
-        [self.iconImgV sd_setImageWithURL:[NSURL URLWithString:dic[@"img_url"]] placeholderImage:[BundleTool imageNamed:@"heading"]];
+        [self.iconImgV sd_setImageWithURL:[NSURL URLWithString:dic[@"img_url"]] placeholderImage:[UIImage imageNamed:@"heading"]];
     }else{
-        [self.iconImgV sd_setImageWithURL:[NSURL URLWithString:dic[@"headimgurl"]] placeholderImage:[BundleTool imageNamed:@"heading"]];
+        [self.iconImgV sd_setImageWithURL:[NSURL URLWithString:dic[@"headimgurl"]] placeholderImage:[UIImage imageNamed:@"heading"]];
 
     }
     self.nameLab.text = dic[@"nickname"];
@@ -51,7 +51,7 @@
 
 - (void)setFriendM:(FriendModel *)friendM{
     
-    [self.iconImgV sd_setImageWithURL:[NSURL URLWithString:friendM.headimgurl] placeholderImage:[BundleTool imageNamed:@"heading"]];
+    [self.iconImgV sd_setImageWithURL:[NSURL URLWithString:friendM.headimgurl] placeholderImage:[UIImage imageNamed:@"heading"]];
 
     self.nameLab.text = friendM.name;
     self.comZhiLab.text = [PublicTool nilStringReturn:friendM.company];

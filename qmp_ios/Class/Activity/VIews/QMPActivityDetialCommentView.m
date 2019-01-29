@@ -212,7 +212,7 @@
         
         UIImageView *arrowView = [[UIImageView alloc] init];
         arrowView.frame = CGRectMake(65, 12.5, 11, 6);
-        arrowView.image = [BundleTool imageNamed:@"activity_role_arrow"];
+        arrowView.image = [UIImage imageNamed:@"activity_role_arrow"];
         [_roleView addSubview:arrowView];
         self.arrowView = arrowView;
         

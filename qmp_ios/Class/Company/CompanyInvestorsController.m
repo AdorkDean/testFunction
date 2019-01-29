@@ -124,7 +124,7 @@
     self.tableView.estimatedSectionHeaderHeight = 0;
     self.tableView.estimatedSectionFooterHeight = 0;
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"ProInvestorCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"ProInvestorCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"ProInvestorCell" bundle:nil] forCellReuseIdentifier:@"ProInvestorCellID"];
 //    [self.tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:@"headerView"];
 
     

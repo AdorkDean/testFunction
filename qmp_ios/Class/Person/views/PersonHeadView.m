@@ -53,7 +53,7 @@
     [cardView addSubview:_iconImgV];
     
     _renzhengImg = [[UIImageView alloc]init];
-    _renzhengImg.image = [BundleTool imageNamed:@"activity_person_claim"];
+    _renzhengImg.image = [UIImage imageNamed:@"activity_person_claim"];
     [_cardView addSubview:_renzhengImg];
     
     _iconLab = [[UILabel alloc]init];
@@ -94,27 +94,27 @@
     //contact
     _phoneLab = [[UIButton alloc]init];
     [_phoneLab setTitleColor:COLOR737782 forState:UIControlStateNormal];
-    [_phoneLab setImage:[BundleTool imageNamed:@"contactInfo_phone"] forState:UIControlStateNormal];
+    [_phoneLab setImage:[UIImage imageNamed:@"contactInfo_phone"] forState:UIControlStateNormal];
     [_phoneLab setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
     _phoneLab.titleLabel.font = [UIFont systemFontOfSize:13];
     [cardView addSubview:_phoneLab];
     _wechatLab = [[UIButton alloc]init];
     [_wechatLab setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
     [_wechatLab setTitleColor:COLOR737782 forState:UIControlStateNormal];
-    [_wechatLab setImage:[BundleTool imageNamed:@"contactInfo_wechat"] forState:UIControlStateNormal];
+    [_wechatLab setImage:[UIImage imageNamed:@"contactInfo_wechat"] forState:UIControlStateNormal];
     _wechatLab.titleLabel.font = [UIFont systemFontOfSize:13];
     [cardView addSubview:_wechatLab];
     _emailLab = [[UIButton alloc]init];
     [_emailLab setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
     [_emailLab setTitleColor:COLOR737782 forState:UIControlStateNormal];
     _emailLab.titleLabel.font = [UIFont systemFontOfSize:13];
-    [_emailLab setImage:[BundleTool imageNamed:@"contactInfo_email"] forState:UIControlStateNormal];
+    [_emailLab setImage:[UIImage imageNamed:@"contactInfo_email"] forState:UIControlStateNormal];
     [cardView addSubview:_emailLab];
 
     _tipInfoLab = [[UIButton alloc]init];
     [_tipInfoLab setTitleColor:COLOR737782 forState:UIControlStateNormal];
     [_tipInfoLab setTitle:@"交换联系方式后可见" forState:UIControlStateNormal];
-    [_tipInfoLab setImage:[BundleTool imageNamed:@"contactInfo_phone"] forState:UIControlStateNormal];
+    [_tipInfoLab setImage:[UIImage imageNamed:@"contactInfo_phone"] forState:UIControlStateNormal];
     [_tipInfoLab layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:10];
     _tipInfoLab.titleLabel.font = [UIFont systemFontOfSize:13];
     [_tipInfoLab setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
@@ -124,7 +124,7 @@
     _cardImgV = [[UIImageView alloc]init];
     _cardImgV.backgroundColor = [UIColor whiteColor];
     _cardImgV.contentMode = UIViewContentModeScaleToFill;
-    _cardImgV.image = [BundleTool imageNamed:@"person_card"];
+    _cardImgV.image = [UIImage imageNamed:@"person_card"];
     [cardView addSubview:_cardImgV];
     _cardImgV.hidden = YES;
     
@@ -140,7 +140,7 @@
     imgV.tag = 1000;
     imgV.backgroundColor = [UIColor whiteColor];
     imgV.contentMode = UIViewContentModeScaleAspectFill;
-    imgV.image = [BundleTool imageNamed:@"detail_placeholder_card"];
+    imgV.image = [UIImage imageNamed:@"detail_placeholder_card"];
     [self.cardView addSubview:imgV];
 }
 
@@ -312,7 +312,7 @@
     }else{
         _iconLab.hidden = YES;
         _iconImgV.hidden = NO;
-        [_iconImgV sd_setImageWithURL:[NSURL URLWithString:_person.icon] placeholderImage:[BundleTool imageNamed:@"heading"]];
+        [_iconImgV sd_setImageWithURL:[NSURL URLWithString:_person.icon] placeholderImage:[UIImage imageNamed:@"heading"]];
     }
     
     NSString *name = [PublicTool isNull:person.name] ? @"-":person.name;
@@ -398,7 +398,7 @@
     if (self.isMy) {
         self.cardImgV.hidden = NO;
         if (![PublicTool isNull:person.cardurl]) {
-            [self.cardImgV sd_setImageWithURL:[NSURL URLWithString:person.cardurl] placeholderImage:[BundleTool imageNamed:@"person_card"]];
+            [self.cardImgV sd_setImageWithURL:[NSURL URLWithString:person.cardurl] placeholderImage:[UIImage imageNamed:@"person_card"]];
         }
     }else{
         self.cardImgV.hidden = YES;
@@ -438,7 +438,7 @@
     }else{
         _iconLab.hidden = YES;
         _iconImgV.hidden = NO;
-        [_iconImgV sd_setImageWithURL:[NSURL URLWithString:self.infoDic[@"headimgurl"]] placeholderImage:[BundleTool imageNamed:@"heading"]];
+        [_iconImgV sd_setImageWithURL:[NSURL URLWithString:self.infoDic[@"headimgurl"]] placeholderImage:[UIImage imageNamed:@"heading"]];
     }
     
     _nameLab.text = self.infoDic[@"nickname"];

@@ -60,7 +60,7 @@
     if (self.isMy) {
         self.addBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         [self.addBtn setTitleColor:BLUE_TITLE_COLOR forState:UIControlStateNormal];
-        [self.addBtn setImage:[BundleTool imageNamed:@"homePage_add"] forState:UIControlStateNormal];
+        [self.addBtn setImage:[UIImage imageNamed:@"homePage_add"] forState:UIControlStateNormal];
         self.addBtn.layer.masksToBounds = YES;
         self.addBtn.layer.cornerRadius = 17.0;
         self.addBtn.layer.borderColor = BLUE_TITLE_COLOR.CGColor;

@@ -567,7 +567,7 @@
 
             SearchPersonCell *cell =  [tableView dequeueReusableCellWithIdentifier:ID2];
             if (!cell) {
-                cell = (SearchPersonCell*)[[BundleTool commonBundle]loadNibNamed:@"SearchPersonCell" owner:nil options:nil].lastObject;
+                cell = (SearchPersonCell*)[nilloadNibNamed:@"SearchPersonCell" owner:nil options:nil].lastObject;
                 cell.selectionStyle = UITableViewCellSelectionStyleNone;
             }
 //            PersonModel * model = self.personModelMArr[indexPath.row];
@@ -708,7 +708,7 @@
 }
 
 - (void)initTableView {
-    [self.tableView registerNib:[UINib nibWithNibName:@"SearchRegistCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"SearchRegistCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"SearchRegistCell" bundle:nil] forCellReuseIdentifier:@"SearchRegistCellID"];
     [self.tableView registerClass:[SearchNewsCell class] forCellReuseIdentifier:@"SearchNewsCellID"];
 
 }

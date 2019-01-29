@@ -40,7 +40,7 @@
     self.contactNoSeeView.hidden = YES;
     
     [self.noseeContactBtn setTitleColor:H9COLOR forState:UIControlStateNormal];
-    [self.noseeContactBtn setImage:[BundleTool imageNamed:@"cell_arrow"] forState:UIControlStateNormal];
+    [self.noseeContactBtn setImage:[UIImage imageNamed:@"cell_arrow"] forState:UIControlStateNormal];
     [self.noseeContactBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleRight imageTitleSpace:5];
     
     [self.companyBtn addTarget:self action:@selector(companyBtnClick) forControlEvents:UIControlEventTouchUpInside];
@@ -63,7 +63,7 @@
     
     _person = person;
     
-    [_headerIcon sd_setImageWithURL:[NSURL URLWithString:person.icon] placeholderImage:[BundleTool imageNamed:@"heading"]];
+    [_headerIcon sd_setImageWithURL:[NSURL URLWithString:person.icon] placeholderImage:[UIImage imageNamed:@"heading"]];
     NSString *name = [PublicTool isNull:person.name] ? @"-":person.name;
     
     if (person.name && [name containsString:@"("]) {

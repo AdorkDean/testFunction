@@ -58,7 +58,7 @@
     
     //消息icon
     UIButton *msgBtn = [[UIButton alloc]initWithFrame:CGRectMake(SCREENW-42, 0, 42, 44)];
-    [msgBtn setImage:[BundleTool imageNamed:@"nabar_msgicon"] forState:UIControlStateNormal];
+    [msgBtn setImage:[UIImage imageNamed:@"nabar_msgicon"] forState:UIControlStateNormal];
     msgBtn.centerY = self.searchBtn.centerY;
     [msgBtn addTarget:self action:@selector(msgBtnClick) forControlEvents:UIControlEventTouchUpInside];
     self.msgBtn = msgBtn;
@@ -114,8 +114,8 @@
         self.searchBtn.width = SCREENW - 13 - 82;
         //笔记icon
         self.addBtn = [[UIButton alloc]initWithFrame:CGRectMake(SCREENW-34-6, 0, 34, 44)];
-        [self.addBtn setImage:[BundleTool imageNamed:@"nabar_add"] forState:UIControlStateNormal];
-        [self.addBtn setImage:[BundleTool imageNamed:@"nabar_add"] forState:UIControlStateHighlighted];
+        [self.addBtn setImage:[UIImage imageNamed:@"nabar_add"] forState:UIControlStateNormal];
+        [self.addBtn setImage:[UIImage imageNamed:@"nabar_add"] forState:UIControlStateHighlighted];
         [self addSubview:self.addBtn];
         self.addBtn.centerY = self.searchBtn.centerY;
         [self.addBtn addTarget:self action:@selector(addBtnClick) forControlEvents:UIControlEventTouchUpInside];
@@ -196,7 +196,7 @@
     UIColor *bgColor = self.barStyle == BarStyle_Blue ? HTColorFromRGB(0x0F3068):(self.barStyle == BarStyle_Clear ? [[UIColor whiteColor] colorWithAlphaComponent:0.0] : [UIColor whiteColor]);
     self.backgroundColor = bgColor;
 
-    [self.msgBtn setImage:[BundleTool imageNamed:@"nabar_msgicon"] forState:UIControlStateNormal];
+    [self.msgBtn setImage:[UIImage imageNamed:@"nabar_msgicon"] forState:UIControlStateNormal];
    
     if (![ToLogin isLogin]) { //登录状态才有消息
         return;
@@ -227,14 +227,14 @@
     }
     //红点
     if ([WechatUserInfo shared].apply_count.integerValue|| [WechatUserInfo shared].system_notification_count.integerValue|| [WechatUserInfo shared].activity_notifi_count.integerValue) {
-        [self.msgBtn setImage:[BundleTool imageNamed:@"nabar_msgicon_red"] forState:UIControlStateNormal];
+        [self.msgBtn setImage:[UIImage imageNamed:@"nabar_msgicon_red"] forState:UIControlStateNormal];
         return;
     }
     
     //红点
     NSString *kefuWel = [[NSUserDefaults standardUserDefaults] valueForKey:@"FIRST_CHATSDK"];
     if (kefuWel == nil) {
-        [self.msgBtn setImage:[BundleTool imageNamed:@"nabar_msgicon_red"] forState:UIControlStateNormal];
+        [self.msgBtn setImage:[UIImage imageNamed:@"nabar_msgicon_red"] forState:UIControlStateNormal];
         return;
     }
 }
@@ -298,7 +298,7 @@
 - (NSDictionary*)iconDict{
     
     if (!_iconDict) {
-        _iconDict = [NSDictionary dictionaryWithContentsOfFile:[[BundleTool commonBundle]pathForResource:@"HomeMenuFile" ofType:@"plist"]];
+        _iconDict = [NSDictionary dictionaryWithContentsOfFile:[nilpathForResource:@"HomeMenuFile" ofType:@"plist"]];
     }
     return _iconDict;
 }

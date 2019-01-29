@@ -84,7 +84,7 @@
         _mainView.contentInset = UIEdgeInsetsMake(6, 16, 2, 16);
         _mainView.decelerationRate = UIScrollViewDecelerationRateFast;
         _mainView.alwaysBounceHorizontal = YES;
-        [_mainView registerNib:[UINib nibWithNibName:@"SimilarCell" bundle:[BundleTool commonBundle]] forCellWithReuseIdentifier:@"SimilarCellID"];
+        [_mainView registerNib:[UINib nibWithNibName:@"SimilarCell" bundle:nil] forCellWithReuseIdentifier:@"SimilarCellID"];
         _mainView.scrollEnabled = NO;
         
     }

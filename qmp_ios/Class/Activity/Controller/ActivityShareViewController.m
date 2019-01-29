@@ -150,7 +150,7 @@
     self.authIcon.hidden = YES;
     self.avatarView.layer.cornerRadius = self.avatarView.width / 2.0;
     if (self.relateModel) {
-        [self.avatarView sd_setImageWithURL:[NSURL URLWithString:self.relateModel.image] placeholderImage:[BundleTool imageNamed:@"share_user_holder"]];
+        [self.avatarView sd_setImageWithURL:[NSURL URLWithString:self.relateModel.image] placeholderImage:[UIImage imageNamed:@"share_user_holder"]];
         self.nameLabel.text = self.relateModel.name;
         self.descLabel.text = self.relateModel.desc;
         if ([self.relateModel.type isEqualToString:@"product"] || [self.relateModel.type isEqualToString:@"jigou"]) {
@@ -160,7 +160,7 @@
             self.authIcon.hidden = NO;
         }
     } else {
-        [self.avatarView sd_setImageWithURL:[NSURL URLWithString:activity.user.avatar] placeholderImage:[BundleTool imageNamed:@"share_user_holder"]];
+        [self.avatarView sd_setImageWithURL:[NSURL URLWithString:activity.user.avatar] placeholderImage:[UIImage imageNamed:@"share_user_holder"]];
         self.nameLabel.text = activity.user.name;
         
         if (activity.isAnonymous) {
@@ -330,7 +330,7 @@
         _authIcon = [[UIImageView alloc] init];
         CGFloat w = 12;
         _authIcon.frame = CGRectMake(self.avatarView.right-w, self.avatarView.bottom-w, w, w);
-        _authIcon.image = [BundleTool imageNamed:@"activity_person_claim"];
+        _authIcon.image = [UIImage imageNamed:@"activity_person_claim"];
     }
     return _authIcon;
 }
@@ -372,7 +372,7 @@
         _topLogoView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREENW, 115)];
         
         UIImageView *logo  = [[UIImageView alloc] init];
-        logo.image = [BundleTool imageNamed:@"qmp_logo_white"];
+        logo.image = [UIImage imageNamed:@"qmp_logo_white"];
         logo.frame = CGRectMake(0, 38, 200, 30);
         logo.contentMode = UIViewContentModeScaleAspectFit;
         [_topLogoView addSubview:logo];
@@ -448,7 +448,7 @@
     if (!_QRCodeView) {
         _QRCodeView = [[UIImageView alloc] init];
         _QRCodeView.frame = CGRectMake((SCREENW - 14)/2.0, 0, 65, 65);
-        _QRCodeView.image = [BundleTool imageNamed:@"app_share_QR"];
+        _QRCodeView.image = [UIImage imageNamed:@"app_share_QR"];
     }
     return _QRCodeView;
 }
@@ -489,7 +489,7 @@
 }
 
 - (NSMutableAttributedString *)linkAttrImage {
-    UIImage *image = [BundleTool imageNamed:@"activity_cell_textlink"];
+    UIImage *image = [UIImage imageNamed:@"activity_cell_textlink"];
     NSMutableAttributedString *attr = [NSMutableAttributedString yy_attachmentStringWithContent:image contentMode:UIViewContentModeCenter attachmentSize:image.size alignToFont:[UIFont systemFontOfSize:18] alignment:YYTextVerticalAlignmentCenter];
     return attr;
 }
@@ -546,7 +546,7 @@
         shareButton.titleLabel.font = [UIFont systemFontOfSize:15];
         [shareButton setTitle:@"分享" forState:UIControlStateNormal];
         [shareButton setTitleColor:BLUE_TITLE_COLOR forState:UIControlStateNormal];
-        [shareButton setImage:[BundleTool imageNamed:@"activity_card_share"] forState:UIControlStateNormal];
+        [shareButton setImage:[UIImage imageNamed:@"activity_card_share"] forState:UIControlStateNormal];
         [shareButton addTarget:self action:@selector(shareButtonClick) forControlEvents:UIControlEventTouchUpInside];
         shareButton.imageEdgeInsets = UIEdgeInsetsMake(0, -2, 0, 2);
         shareButton.titleEdgeInsets = UIEdgeInsetsMake(0, 2, 0, -2);
@@ -558,7 +558,7 @@
         [saveButton setTitle:@"保存" forState:UIControlStateNormal];
         [saveButton setTitleColor:BLUE_TITLE_COLOR forState:UIControlStateNormal];
         [saveButton setTitleColor:HTColorFromRGB(0xB4D0F7) forState:UIControlStateDisabled];
-        [saveButton setImage:[BundleTool imageNamed:@"activity_card_save"] forState:UIControlStateNormal];
+        [saveButton setImage:[UIImage imageNamed:@"activity_card_save"] forState:UIControlStateNormal];
         [saveButton addTarget:self action:@selector(saveButtonClick) forControlEvents:UIControlEventTouchUpInside];
         saveButton.imageEdgeInsets = UIEdgeInsetsMake(0, -2, 0, 2);
         saveButton.titleEdgeInsets = UIEdgeInsetsMake(0, 2, 0, -2);

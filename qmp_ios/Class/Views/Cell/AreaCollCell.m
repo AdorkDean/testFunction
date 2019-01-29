@@ -42,7 +42,7 @@
     self.chaIcon = [[UIImageView alloc]initWithFrame:CGRectMake(self.contentView.width - 11, -2, 15, 15)];
     self.chaIcon.bounds = CGRectMake(0, 0, 30, 30);
     self.chaIcon.center = CGPointMake(self.contentView.width, 0);
-    self.chaIcon.image = [BundleTool imageNamed:@"cha_icon"];
+    self.chaIcon.image = [UIImage imageNamed:@"cha_icon"];
     self.chaIcon.contentMode = UIViewContentModeCenter;
     [self.contentView addSubview:self.chaIcon];
     self.chaIcon.userInteractionEnabled = NO;
@@ -60,7 +60,7 @@
     
     if (show) {
         [self.titleLab setTitle:text forState:UIControlStateDisabled];;
-        [self.titleLab setImage:[BundleTool imageNamed:@"area_add"] forState:UIControlStateDisabled];
+        [self.titleLab setImage:[UIImage imageNamed:@"area_add"] forState:UIControlStateDisabled];
         [self.titleLab layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:2];
 
     }else{

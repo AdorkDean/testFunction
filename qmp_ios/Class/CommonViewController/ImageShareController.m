@@ -24,7 +24,7 @@
 
 @implementation ImageShareController
 -(instancetype)init{
-    ImageShareController *vc = [[ImageShareController alloc]initWithNibName:@"ImageShareController" bundle:[BundleTool commonBundle]];
+    ImageShareController *vc = [[ImageShareController alloc]initWithNibName:@"ImageShareController" bundle:nil];
     return vc;
 }
 - (void)viewDidLoad {
@@ -61,7 +61,7 @@
     [_btnArr removeAllObjects];
     
     NSArray *titles = @[@"微信朋友",@"微信朋友圈",@"微信收藏",@"存入本地"];
-    NSArray *images = @[[BundleTool imageNamed:@"share_friend"],[BundleTool imageNamed:@"share_friendQuan"],[BundleTool imageNamed:@"share_collect"],[BundleTool imageNamed:@"share_down"]];
+    NSArray *images = @[[UIImage imageNamed:@"share_friend"],[UIImage imageNamed:@"share_friendQuan"],[UIImage imageNamed:@"share_collect"],[UIImage imageNamed:@"share_down"]];
     CGFloat width = 44;
     CGFloat height = 44;
     CGFloat imgTop = 10;

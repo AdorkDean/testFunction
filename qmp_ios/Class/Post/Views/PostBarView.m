@@ -114,9 +114,9 @@
     if (!_addRelateButton) {
         UIButton *addRelateButton = [UIButton buttonWithType:UIButtonTypeCustom];
         addRelateButton.frame = CGRectMake(8, 0, 78, 50);
-        [addRelateButton setImage:[BundleTool imageNamed:@"post_bar_add_relate"] forState:UIControlStateNormal];
-        [addRelateButton setImage:[BundleTool imageNamed:@"post_bar_add_relate"] forState:UIControlStateHighlighted];
-        [addRelateButton setImage:[BundleTool imageNamed:@"post_bar_add_relate_n"] forState:UIControlStateDisabled];
+        [addRelateButton setImage:[UIImage imageNamed:@"post_bar_add_relate"] forState:UIControlStateNormal];
+        [addRelateButton setImage:[UIImage imageNamed:@"post_bar_add_relate"] forState:UIControlStateHighlighted];
+        [addRelateButton setImage:[UIImage imageNamed:@"post_bar_add_relate_n"] forState:UIControlStateDisabled];
         [addRelateButton setTitle:@"关联" forState:UIControlStateNormal];
         addRelateButton.titleLabel.font = [UIFont systemFontOfSize:14];
         [addRelateButton setTitleColor:HTColorFromRGB(0x197CD8) forState:UIControlStateNormal];
@@ -132,9 +132,9 @@
     if (!_addImageButton) {
         UIButton *addImageButton = [UIButton buttonWithType:UIButtonTypeCustom];
         addImageButton.frame = CGRectMake(self.addRelateButton.right, 0, 78, 50);
-        [addImageButton setImage:[BundleTool imageNamed:@"post_bar_add_photo"] forState:UIControlStateNormal];
-        [addImageButton setImage:[BundleTool imageNamed:@"post_bar_add_photo"] forState:UIControlStateHighlighted];
-        [addImageButton setImage:[BundleTool imageNamed:@"post_bar_add_photo_n"] forState:UIControlStateDisabled];
+        [addImageButton setImage:[UIImage imageNamed:@"post_bar_add_photo"] forState:UIControlStateNormal];
+        [addImageButton setImage:[UIImage imageNamed:@"post_bar_add_photo"] forState:UIControlStateHighlighted];
+        [addImageButton setImage:[UIImage imageNamed:@"post_bar_add_photo_n"] forState:UIControlStateDisabled];
         [addImageButton setTitle:@"图片" forState:UIControlStateNormal];
         addImageButton.titleLabel.font = [UIFont systemFontOfSize:14];
         [addImageButton setTitleColor:HTColorFromRGB(0x197CD8) forState:UIControlStateNormal];
@@ -149,9 +149,9 @@
     if (!_addLinkButton) {
         UIButton *addLinkButton = [UIButton buttonWithType:UIButtonTypeCustom];
         addLinkButton.frame = CGRectMake(self.addImageButton.right, 0, 78, 50);
-        [addLinkButton setImage:[BundleTool imageNamed:@"post_bar_add_link"] forState:UIControlStateNormal];
-        [addLinkButton setImage:[BundleTool imageNamed:@"post_bar_add_link"] forState:UIControlStateHighlighted];
-        [addLinkButton setImage:[BundleTool imageNamed:@"post_bar_add_link_n"] forState:UIControlStateDisabled];
+        [addLinkButton setImage:[UIImage imageNamed:@"post_bar_add_link"] forState:UIControlStateNormal];
+        [addLinkButton setImage:[UIImage imageNamed:@"post_bar_add_link"] forState:UIControlStateHighlighted];
+        [addLinkButton setImage:[UIImage imageNamed:@"post_bar_add_link_n"] forState:UIControlStateDisabled];
         [addLinkButton setTitle:@"链接" forState:UIControlStateNormal];
         addLinkButton.titleLabel.font = [UIFont systemFontOfSize:14];
         [addLinkButton setTitleColor:HTColorFromRGB(0x197CD8) forState:UIControlStateNormal];
@@ -170,8 +170,8 @@
         [_anonymousButton setTitle:@"匿名" forState:UIControlStateNormal];
         [_anonymousButton setTitleColor:H9COLOR forState:UIControlStateNormal];
         [_anonymousButton setTitleColor:BLUE_TITLE_COLOR forState:UIControlStateSelected];
-        [_anonymousButton setImage:[BundleTool imageNamed:@"post_bar_anonymous"] forState:UIControlStateNormal];
-        [_anonymousButton setImage:[BundleTool imageNamed:@"post_bar_anonymousb"] forState:UIControlStateSelected];
+        [_anonymousButton setImage:[UIImage imageNamed:@"post_bar_anonymous"] forState:UIControlStateNormal];
+        [_anonymousButton setImage:[UIImage imageNamed:@"post_bar_anonymousb"] forState:UIControlStateSelected];
         [_anonymousButton addTarget:self action:@selector(anonymousButtonClick:) forControlEvents:UIControlEventTouchUpInside];
         [_anonymousButton setImageEdgeInsets:UIEdgeInsetsMake(0, -2, 0, 2)];
         [_anonymousButton setTitleEdgeInsets:UIEdgeInsetsMake(0, 2, 0, -2)];
@@ -198,7 +198,7 @@
         
         UIImageView *arrowView = [[UIImageView alloc] init];
         arrowView.frame = CGRectMake(65, 12.5, 11, 6);
-        arrowView.image = [BundleTool imageNamed:@"activity_role_arrow"];
+        arrowView.image = [UIImage imageNamed:@"activity_role_arrow"];
         [_roleView addSubview:arrowView];
         self.arrowView = arrowView;
         

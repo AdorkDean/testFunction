@@ -248,7 +248,7 @@ static void saveDoc(const char *current_path, fz_document *doc)
     //    else
     {
         UIButton *button = [[UIButton alloc]initWithFrame:LEFTBUTTONFRAME];
-        [button setImage:[BundleTool imageNamed:resource] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:resource] forState:UIControlStateNormal];
         [button addTarget:self action:selector forControlEvents:UIControlEventTouchUpInside];
         
         if (iOS11_OR_HIGHER) {
@@ -268,15 +268,15 @@ static void saveDoc(const char *current_path, fz_document *doc)
 - (UIBarButtonItem *)newResourceBasedButton:(NSString *)resource withAction:(SEL)selector ofWidth:(CGFloat)width atIndex:(NSInteger)index{
     
     UIButton  *button = [[UIButton alloc] initWithFrame:CGRectMake(0, index * 36 + 8, 36, 36)];
-    [button setBackgroundImage:[BundleTool imageNamed:resource] forState:UIControlStateNormal];
+    [button setBackgroundImage:[UIImage imageNamed:resource] forState:UIControlStateNormal];
     [button addTarget:self action:selector forControlEvents:UIControlEventTouchUpInside];
     return [[UIBarButtonItem alloc] initWithCustomView:button];
 }
 - (UIButton *)newResourceBasedButton:(NSString *)resource withAction:(SEL)selector atIndex:(NSInteger)index ofMargin:(CGFloat)margin{
     
     UIButton *button  = [[UIButton alloc] initWithFrame:CGRectMake(margin + (margin + 36) * index,4, 36, 36)];
-    [button setBackgroundImage:[BundleTool imageNamed:resource] forState:UIControlStateNormal];
-    //    [button setImage:[BundleTool imageNamed:resource] forState:UIControlStateNormal];
+    [button setBackgroundImage:[UIImage imageNamed:resource] forState:UIControlStateNormal];
+    //    [button setImage:[UIImage imageNamed:resource] forState:UIControlStateNormal];
     
     [button addTarget:self action:selector forControlEvents:UIControlEventTouchUpInside];
     return button;
@@ -295,8 +295,8 @@ static void saveDoc(const char *current_path, fz_document *doc)
 
 - (UIButton *)newResourceBasedButton:(NSString *)resource selectedResource:(NSString *)selectedResource withAction:(SEL)selector atIndex:(NSInteger)index ofMargin:(CGFloat)margin{
     UIButton *button  = [[UIButton alloc] initWithFrame:CGRectMake(margin + (margin + 36) * index, 4, 36, 36)];
-    [button setBackgroundImage:[BundleTool imageNamed:resource] forState:UIControlStateNormal];
-    [button setBackgroundImage:[BundleTool imageNamed:selectedResource] forState:UIControlStateSelected];
+    [button setBackgroundImage:[UIImage imageNamed:resource] forState:UIControlStateNormal];
+    [button setBackgroundImage:[UIImage imageNamed:selectedResource] forState:UIControlStateSelected];
     [button addTarget:self action:selector forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
@@ -383,7 +383,7 @@ static void saveDoc(const char *current_path, fz_document *doc)
     CGFloat margin = (SCREENW - 4 * 36 ) / 5;
     //    changePageButton = [self newResourceBasedButton:@"change-page" withAction:@selector(onChangePage:) atIndex:0 ofMargin:margin];
     outlineButton = [self newResourceBasedButton:@"list" withAction:@selector(onShowOutline:) atIndex:0 ofMargin:margin];
-    [outlineButton setBackgroundImage:[BundleTool imageNamed:@"list-disable"] forState:UIControlStateDisabled];
+    [outlineButton setBackgroundImage:[UIImage imageNamed:@"list-disable"] forState:UIControlStateDisabled];
     
     
     if (outline) {
@@ -397,7 +397,7 @@ static void saveDoc(const char *current_path, fz_document *doc)
     shareButton = [self newResourceBasedButton:@"share-other" withAction:@selector(onShare:) atIndex:1 ofMargin:margin];
     searchButton = [self newResourceBasedButton:@"search-pdf" withAction:@selector(onShowSearch:) atIndex:2 ofMargin:margin];
     collectPdfButton = [self newResourceBasedButton:@"collect-pdf" selectedResource:@"collect-selected" withAction:@selector(onCollect:) atIndex:3 ofMargin:margin];
-    //    [collectPdfButton setImage:[BundleTool imageNamed:@"collect-disable"] forState:UIControlStateDisabled];
+    //    [collectPdfButton setImage:[UIImage imageNamed:@"collect-disable"] forState:UIControlStateDisabled];
     collectPdfButton.selected = self.pdfModel.collectFlag.integerValue;
     tabbarView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENW,44)];
     [tabbarView addSubview:outlineButton];
@@ -435,7 +435,7 @@ static void saveDoc(const char *current_path, fz_document *doc)
     backButton = [self newResourceBasedButton:@"left-arrow" withAction:@selector(onBack:)];
     
     UIButton *shareUrlBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 25, 25)];
-    [shareUrlBtn setImage:[BundleTool imageNamed:@"card_share"] forState:UIControlStateNormal];
+    [shareUrlBtn setImage:[UIImage imageNamed:@"card_share"] forState:UIControlStateNormal];
     [shareUrlBtn addTarget:self action:@selector(presssShareUrl:) forControlEvents:UIControlEventTouchUpInside];
     rightBarBtnItem = [[UIBarButtonItem alloc] initWithCustomView:shareUrlBtn];
     
@@ -462,7 +462,7 @@ static void saveDoc(const char *current_path, fz_document *doc)
     searchBar = [[UISearchBar alloc] initWithFrame: CGRectMake(0,0,searchW,32)];
     [searchBar setPlaceholder: @"搜索关键字"];
     [searchBar setDelegate: self];
-    [searchBar setSearchFieldBackgroundImage:[BundleTool imageNamed:@"searchBarBg"] forState:UIControlStateNormal];
+    [searchBar setSearchFieldBackgroundImage:[UIImage imageNamed:@"searchBarBg"] forState:UIControlStateNormal];
     [searchBar setSearchTextPositionAdjustment:UIOffsetMake(10, 0)];
     
     UITextField *tf = [searchBar valueForKey:@"_searchField"];
@@ -760,7 +760,7 @@ static void saveDoc(const char *current_path, fz_document *doc)
             NSString *urlStr = self.pdfModel.pdfUrl;
             NSString *copyString = [NSString stringWithFormat:@"%@%@来自@企名片",self.pdfModel.name,urlStr];
 
-            [self.shareToTool shareWithDetailStr:detailStr sessionTitle:titleSessionStr timelineTitle:titleTimelineStr copyString:copyString aIcon:[BundleTool imageNamed:@"share_pdf.jpg"] aOpenUrl:urlStr onViewController:self shareResult:^(BOOL shareSuccess) {
+            [self.shareToTool shareWithDetailStr:detailStr sessionTitle:titleSessionStr timelineTitle:titleTimelineStr copyString:copyString aIcon:[UIImage imageNamed:@"share_pdf.jpg"] aOpenUrl:urlStr onViewController:self shareResult:^(BOOL shareSuccess) {
                 
             }];
         }
@@ -802,7 +802,7 @@ static void saveDoc(const char *current_path, fz_document *doc)
     NSString *_filePathUtf = _filePath;
     NSURL *localFileUrl = [NSURL fileURLWithPath:_filePathUtf];
     //    NSURL *fileUrl = [NSURL URLWithString:self.pdfModel.pdfUrl];
-    //    NSArray *shareItems = @[fileUrl,self.pdfModel.name,[BundleTool imageNamed:@"open-pdf.png"]];
+    //    NSArray *shareItems = @[fileUrl,self.pdfModel.name,[UIImage imageNamed:@"open-pdf.png"]];
     NSArray *shareItems = @[localFileUrl];
     UIActivityViewController *cont = [[UIActivityViewController alloc] initWithActivityItems:shareItems applicationActivities:nil];
     cont.excludedActivityTypes = @[UIActivityTypePrint,UIActivityTypeCopyToPasteboard,UIActivityTypeSaveToCameraRoll];

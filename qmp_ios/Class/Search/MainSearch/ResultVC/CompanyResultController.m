@@ -35,7 +35,7 @@
 
 - (void)initTableView{
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"SearchRegistCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"SearchRegistCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"SearchRegistCell" bundle:nil] forCellReuseIdentifier:@"SearchRegistCellID"];
 }
 
 

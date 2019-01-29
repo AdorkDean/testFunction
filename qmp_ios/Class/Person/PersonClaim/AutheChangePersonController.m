@@ -108,7 +108,7 @@
         self.tableView.dataSource = self;
         [self.view addSubview:self.tableView];
         [self.tableView registerClass:[CompanyBasicInfoTableViewCell class] forCellReuseIdentifier:@"jianjieCellID"];
-        [self.tableView registerNib:[UINib nibWithNibName:@"InvestorTzCaseCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"InvestorTzCaseCellID"];
+        [self.tableView registerNib:[UINib nibWithNibName:@"InvestorTzCaseCell" bundle:nil] forCellReuseIdentifier:@"InvestorTzCaseCellID"];
         [self.tableView registerClass:[NewsTableViewCell class] forCellReuseIdentifier:@"NewsTableViewCellID"];
         [self.tableView registerClass:[EducationCell class] forCellReuseIdentifier:@"JobExpriencesCellID"];
         [self.tableView registerClass:[EducationCell class] forCellReuseIdentifier:@"EducationCellID"];
@@ -145,7 +145,7 @@
         
     }
     
-    PersonHeaderView *headerView = [[BundleTool commonBundle]loadNibNamed:@"PersonHeaderView" owner:nil options:nil].lastObject;
+    PersonHeaderView *headerView = [nilloadNibNamed:@"PersonHeaderView" owner:nil options:nil].lastObject;
     headerView.height = 222;
     headerView.person = self.person;
     headerView.editBtn.hidden = YES;
@@ -1144,7 +1144,7 @@
         
         UIButton * clickCancelBtn= [UIButton buttonWithType:UIButtonTypeCustom];
         clickCancelBtn.frame = CGRectMake(SCREENW - 40 - 10, 0, 40, 35);
-        [clickCancelBtn setImage:[BundleTool imageNamed:@"my_close"] forState:UIControlStateNormal];
+        [clickCancelBtn setImage:[UIImage imageNamed:@"my_close"] forState:UIControlStateNormal];
         [clickCancelBtn addTarget:self action:@selector(clickCloseTarget) forControlEvents:UIControlEventTouchUpInside];
         [_showAlertMessageBgVw addSubview:clickCancelBtn];
     }

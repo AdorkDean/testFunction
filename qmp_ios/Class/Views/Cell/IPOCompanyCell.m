@@ -63,7 +63,7 @@
     [self.contentView addSubview:self.iconNameLab];
     
 //    _starImgV = [[UIImageView alloc]initWithFrame:CGRectMake(_iconImageV.right + 10, 25, 20, 20)];
-//    _starImgV.image = [BundleTool imageNamed:@"star"];
+//    _starImgV.image = [UIImage imageNamed:@"star"];
 //    [self.contentView addSubview:_starImgV];
     
     _statusLbl = [[UILabel alloc]initWithFrame:CGRectMake( 0, _iconImageV.frame.size.height - 20, _iconImageV.frame.size.width, 20)];
@@ -171,7 +171,7 @@
     
     _companyModel = model;
     
-    [_iconImageV sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[BundleTool imageNamed:@"product_default"]];
+    [_iconImageV sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[UIImage imageNamed:@"product_default"]];
 
     _statusLbl.hidden = model.need_flag.integerValue == 0;
     

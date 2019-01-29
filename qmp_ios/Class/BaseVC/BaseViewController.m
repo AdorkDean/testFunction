@@ -255,11 +255,11 @@
 - (HomeInfoTableViewCell*)nodataCellWithInfo:(NSString*)title subInfo:(NSString*)subTitle tableView:(UITableView*)tableview{
     HomeInfoTableViewCell *infoCell = [tableview dequeueReusableCellWithIdentifier:@"HomeInfoTableViewCellID"];
     if (!infoCell) {
-        infoCell = [[[BundleTool commonBundle] loadNibNamed:@"HomeInfoTableViewCell" owner:nil options:nil] lastObject];
+        infoCell = [[nil loadNibNamed:@"HomeInfoTableViewCell" owner:nil options:nil] lastObject];
         infoCell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
-    [infoCell.iconImgView setImage:[BundleTool imageNamed:IMAGE_DATA_NULL]];
+    [infoCell.iconImgView setImage:[UIImage imageNamed:IMAGE_DATA_NULL]];
     infoCell.infoLbl.text = [TestNetWorkReached networkIsReachedNoAlert] ? title:@"网络连接不可用";
     infoCell.subInfoLab.text = subTitle;
     infoCell.subInfoLab.hidden = NO;
@@ -272,10 +272,10 @@
     
     HomeInfoTableViewCell *infoCell = [tableview dequeueReusableCellWithIdentifier:@"HomeInfoTableViewCellID"];
     if (!infoCell) {
-        infoCell = [[[BundleTool commonBundle] loadNibNamed:@"HomeInfoTableViewCell" owner:nil options:nil] lastObject];
+        infoCell = [[nil loadNibNamed:@"HomeInfoTableViewCell" owner:nil options:nil] lastObject];
     }
     
-    [infoCell.iconImgView setImage:[BundleTool imageNamed:IMAGE_DATA_NULL]];
+    [infoCell.iconImgView setImage:[UIImage imageNamed:IMAGE_DATA_NULL]];
     if ([title isKindOfClass:[NSAttributedString class]] || [title isKindOfClass:[NSMutableAttributedString class]]) {
         infoCell.infoLbl.attributedText = (NSAttributedString*)title;
     }else{
@@ -312,7 +312,7 @@
         
         _headerAnimatorImgs = [NSMutableArray array];
         for (int i=1; i<=65; i++) {
-            [_headerAnimatorImgs addObject:[BundleTool imageNamed:[NSString stringWithFormat:@"loading%d",i]]];
+            [_headerAnimatorImgs addObject:[UIImage imageNamed:[NSString stringWithFormat:@"loading%d",i]]];
             
         }
         __weak typeof(self) weakSelf = self;
@@ -323,8 +323,8 @@
         header.lastUpdatedTimeLabel.hidden = YES;
         header.stateLabel.hidden=YES;
         
-        [header setImages:@[[BundleTool imageNamed:@"loading1"]] duration:1 forState:MJRefreshStateIdle];
-        [header setImages:@[[BundleTool imageNamed:@"loading1"]] duration:1 forState:MJRefreshStatePulling];
+        [header setImages:@[[UIImage imageNamed:@"loading1"]] duration:1 forState:MJRefreshStateIdle];
+        [header setImages:@[[UIImage imageNamed:@"loading1"]] duration:1 forState:MJRefreshStatePulling];
         [header setImages:_headerAnimatorImgs duration:0.8 forState:MJRefreshStateRefreshing];
         
         _mjHeader = header;
@@ -378,7 +378,7 @@
         _netFailedView = fristView;
         UIImageView *imageView = [[UIImageView alloc]init];
         imageView.frame = CGRectMake((SCREENW-150)/2, kScreenTopHeight+86, 145, 145);
-        imageView.image = [BundleTool imageNamed:IMAGE_NONETWORK];
+        imageView.image = [UIImage imageNamed:IMAGE_NONETWORK];
         [_netFailedView addSubview:imageView];
         imageView.userInteractionEnabled = YES;
         
@@ -406,7 +406,7 @@
         
         UIImageView *imageView = [[UIImageView alloc]init];
         imageView.frame = CGRectMake((SCREENW-100)/2, fristView.height/2.0-120, 100, 100);
-        imageView.image = [BundleTool imageNamed:IMAGE_DATA_NULL];
+        imageView.image = [UIImage imageNamed:IMAGE_DATA_NULL];
         [_noDataView addSubview:imageView];
         imageView.userInteractionEnabled = YES;
         

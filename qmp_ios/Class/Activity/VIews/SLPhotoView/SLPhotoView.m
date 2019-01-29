@@ -20,7 +20,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // 添加一个GIF小图片
-//        UIImage *image = [BundleTool imageNamed:@"timeline_image_gif"];
+//        UIImage *image = [UIImage imageNamed:@"timeline_image_gif"];
         UIImageView *tipView = [[UIImageView alloc] init];
         tipView.bounds = CGRectMake(0, 0, 24, 14);
         [self addSubview:tipView];

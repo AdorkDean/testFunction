@@ -20,7 +20,7 @@
     
     self.chooseBtn.userInteractionEnabled = NO;
     [self.chooseBtn setImage:nil forState:UIControlStateNormal];
-    [self.chooseBtn setImage:[BundleTool imageNamed:@"selected_album"] forState:UIControlStateSelected];
+    [self.chooseBtn setImage:[UIImage imageNamed:@"selected_album"] forState:UIControlStateSelected];
 }
 
 -(void)setItem:(TagsItem *)item{

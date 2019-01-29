@@ -203,7 +203,7 @@
         MoreTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MoreTableViewCell"];
         
         if (!cell) {
-            cell = [[[BundleTool commonBundle] loadNibNamed:@"MoreTableViewCell" owner:nil options:nil] lastObject];
+            cell = [[nil loadNibNamed:@"MoreTableViewCell" owner:nil options:nil] lastObject];
         }
         cell.txtLbl.textColor = HTColorFromRGB(0x555555);
         cell.txtLbl.font = [UIFont systemFontOfSize:15];
@@ -211,7 +211,7 @@
         //取出模型
         LrdCellModel *model = [self.dataArray objectAtIndex:indexPath.row];
         cell.txtLbl.text = model.title;
-        cell.imgView.image = [BundleTool imageNamed:model.imageName];
+        cell.imgView.image = [UIImage imageNamed:model.imageName];
         cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];
         cell.selectedBackgroundView.backgroundColor = LIST_LINE_COLOR;
 

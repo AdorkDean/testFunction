@@ -147,7 +147,7 @@ const CGFloat ActivityCellLinkInfoT = 10;
                                                                                            NSFontAttributeName: [UIFont systemFontOfSize:ActivityCellTextFontSize]
                                                                                            }];
     
-    UIImage *image = [BundleTool imageNamed:@"activity_cell_textlink"];
+    UIImage *image = [UIImage imageNamed:@"activity_cell_textlink"];
     
     
     NSMutableAttributedString *atr = [NSMutableAttributedString yy_attachmentStringWithContent:image contentMode:UIViewContentModeCenter attachmentSize:image.size alignToFont:[UIFont systemFontOfSize:ActivityCellTextFontSize] alignment:YYTextVerticalAlignmentCenter];
@@ -444,7 +444,7 @@ const CGFloat ActivityCellLinkInfoT = 10;
 }
 
 - (NSMutableAttributedString *)linkAttrImage {
-    UIImage *image = [BundleTool imageNamed:@"activity_cell_textlink"];
+    UIImage *image = [UIImage imageNamed:@"activity_cell_textlink"];
     NSMutableAttributedString *attr = [NSMutableAttributedString yy_attachmentStringWithContent:image contentMode:UIViewContentModeCenter attachmentSize:image.size alignToFont:[UIFont systemFontOfSize:14] alignment:YYTextVerticalAlignmentCenter];
     return attr;
 }

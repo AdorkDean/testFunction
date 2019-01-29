@@ -104,7 +104,7 @@
     //设置umeng统计
     UMConfigInstance.appKey = UMENG_SHARE_APPKEY;
     
-    UMConfigInstance.channelId = [BundleTool isQMP] ? @"https://itunes.apple.com/cn/app/qi-ming-pian/id1103060310":@"https://itunes.apple.com/cn/app/qi-ming-pian/id1438955110";
+    UMConfigInstance.channelId = @"https://itunes.apple.com/cn/app/qi-ming-pian/id1103060310";
     
     //取version标识
     NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
@@ -156,7 +156,7 @@
     //设置umeng统计
     UMConfigInstance.appKey = UMENG_SHARE_APPKEY;
     
-    UMConfigInstance.channelId = [BundleTool isQMP] ? @"https://itunes.apple.com/cn/app/qi-ming-pian/id1103060310":@"https://itunes.apple.com/cn/app/qi-ming-pian/id1438955110";
+    UMConfigInstance.channelId = @"https://itunes.apple.com/cn/app/qi-ming-pian/id1103060310";
     
     //取version标识
     NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];

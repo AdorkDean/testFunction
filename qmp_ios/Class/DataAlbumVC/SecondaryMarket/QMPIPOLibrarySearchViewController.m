@@ -281,7 +281,7 @@
     self.searchTf = [[UITextField alloc]initWithFrame:CGRectMake(0, 0, view.width, 27)];
     self.searchTf.backgroundColor = HTColorFromRGB(0xf5f5f5);
     UIImageView *leftImg = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 35, self.searchTf.frame.size.height)];
-    leftImg.image = [BundleTool imageNamed:@"search"];
+    leftImg.image = [UIImage imageNamed:@"search"];
     leftImg.contentMode = UIViewContentModeCenter;
     _searchTf.returnKeyType = UIReturnKeySearch;
     _searchTf.leftView = leftImg;

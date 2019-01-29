@@ -22,7 +22,7 @@
     
     self.title = @"3步完成手机上传BP";
     
-    UIImage *image = [BundleTool imageNamed:@"bp"];
+    UIImage *image = [UIImage imageNamed:@"bp"];
     CGFloat height = image.size.height / [UIScreen mainScreen].scale;
     CGFloat width = image.size.width / [UIScreen mainScreen].scale;
 

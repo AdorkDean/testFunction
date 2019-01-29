@@ -260,7 +260,7 @@ WKNavigationDelegate, DownloadViewDelegate, OpenDocumentDelegate> {
     CGFloat btnW = 36.f;
 
     UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 60, 44)];
-    [leftButton setImage:[BundleTool imageNamed:@"left-arrow"] forState:UIControlStateNormal];
+    [leftButton setImage:[UIImage imageNamed:@"left-arrow"] forState:UIControlStateNormal];
     [leftButton addTarget:self action:@selector(pressLeftButtonItem:) forControlEvents:UIControlEventTouchUpInside];
     
     UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
@@ -270,7 +270,7 @@ WKNavigationDelegate, DownloadViewDelegate, OpenDocumentDelegate> {
     if (_hasClose) {
         
         UIButton *closeBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0,btnW, 44)];
-        [closeBtn setImage:[BundleTool imageNamed:@"web_close"] forState:UIControlStateNormal];
+        [closeBtn setImage:[UIImage imageNamed:@"web_close"] forState:UIControlStateNormal];
         closeBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         
         [closeBtn addTarget:self action:@selector(pressCloseBtn:) forControlEvents:
@@ -368,12 +368,12 @@ WKNavigationDelegate, DownloadViewDelegate, OpenDocumentDelegate> {
 - (void)buildRightBarButtonItem{
     
     UIButton * moreBtn = [[UIButton alloc] initWithFrame:RIGHTBARBTNFRAME];
-    [moreBtn setImage:[BundleTool imageNamed:@"moreOptions"] forState:UIControlStateNormal];
+    [moreBtn setImage:[UIImage imageNamed:@"moreOptions"] forState:UIControlStateNormal];
     [moreBtn addTarget:self action:@selector(moreOptions:) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem * moreItem = [[UIBarButtonItem alloc]initWithCustomView:moreBtn];
     
     UIButton * shareBtn = [[UIButton alloc] initWithFrame:RIGHTBARBTNFRAME];
-    [shareBtn setImage:[BundleTool imageNamed:@"detail_share"] forState:UIControlStateNormal];
+    [shareBtn setImage:[UIImage imageNamed:@"detail_share"] forState:UIControlStateNormal];
     [shareBtn addTarget:self action:@selector(shareBtnClick) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem * shareItem = [[UIBarButtonItem alloc]initWithCustomView:shareBtn];
     
@@ -438,7 +438,7 @@ WKNavigationDelegate, DownloadViewDelegate, OpenDocumentDelegate> {
         detailStr = self.companyDic[@"yewu"];
     }
     NSString *copyString = [NSString stringWithFormat:@"%@%@来自@企名片",detailStr,self.urlModel.url];
-    [self.shareToTool shareWithDetailStr:detailStr sessionTitle:titleStr timelineTitle:titleStr copyString:copyString aIcon:[BundleTool imageNamed:@"87"] aOpenUrl:self.urlModel.url onViewController:self shareResult:^(BOOL shareSuccess) {
+    [self.shareToTool shareWithDetailStr:detailStr sessionTitle:titleStr timelineTitle:titleStr copyString:copyString aIcon:[UIImage imageNamed:@"87"] aOpenUrl:self.urlModel.url onViewController:self shareResult:^(BOOL shareSuccess) {
         
     }];
 }
@@ -536,7 +536,7 @@ WKNavigationDelegate, DownloadViewDelegate, OpenDocumentDelegate> {
     _companyView = companyView;
     
     UIImageView *imgV = [[UIImageView alloc]initWithFrame:CGRectMake(17, 12, 40, 40)];
-    [imgV sd_setImageWithURL:[NSURL URLWithString:self.companyDic[@"icon"]] placeholderImage:[BundleTool imageNamed:PROICON_DEFAULT]];
+    [imgV sd_setImageWithURL:[NSURL URLWithString:self.companyDic[@"icon"]] placeholderImage:[UIImage imageNamed:PROICON_DEFAULT]];
     [companyView addSubview:imgV];
     imgV.layer.masksToBounds = YES;
     imgV.layer.cornerRadius = 3;

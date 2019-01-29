@@ -64,7 +64,7 @@ UITextViewDelegate, FormEditTableViewCellDelegate> {
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREENW, SCREENH - kScreenTopHeight) style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    [self.tableView registerNib:[UINib nibWithNibName:@"MyInfoTableViewCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"MyInfoTableViewCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"MyInfoTableViewCell" bundle:nil] forCellReuseIdentifier:@"MyInfoTableViewCellID"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCellID"];
     [self.tableView registerClass:[EditCell class] forCellReuseIdentifier:@"EditCellID"];
     [self.tableView registerClass:[TextViewTableViewCell class] forCellReuseIdentifier:@"TextViewTableViewCellID"];
@@ -219,15 +219,15 @@ UITextViewDelegate, FormEditTableViewCellDelegate> {
         cell.keyLbl.attributedText = attText;
         cell.valueLbl.text = self.cellValueDic[key];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        [cell.rightImgV setImage:[BundleTool imageNamed:@"leftarrow_gray"]];
+        [cell.rightImgV setImage:[UIImage imageNamed:@"leftarrow_gray"]];
 
         if ([title isEqualToString:@"商业计划书"]) {
             if (self.report) {
-                [cell.rightImgV setImage:[BundleTool imageNamed:@"cha_icon"]];
+                [cell.rightImgV setImage:[UIImage imageNamed:@"cha_icon"]];
                 cell.valueLbl.text = self.report.name;
                 cell.rightImgV.userInteractionEnabled = YES;
             } else {
-                [cell.rightImgV setImage:[BundleTool imageNamed:@"leftarrow_gray"]];
+                [cell.rightImgV setImage:[UIImage imageNamed:@"leftarrow_gray"]];
                 cell.valueLbl.text = @"仅自己可见和投递使用";
                 cell.rightImgV.userInteractionEnabled = NO;
             }
@@ -483,7 +483,7 @@ UITextViewDelegate, FormEditTableViewCellDelegate> {
 - (NSMutableArray *)provinces {
     if (!_provinces) {
         _provinces = [NSMutableArray array];
-        NSArray *provinceArr = [NSArray arrayWithContentsOfFile:[[BundleTool commonBundle]pathForResource:@"ProvinceFilter" ofType:@"plist"]];
+        NSArray *provinceArr = [NSArray arrayWithContentsOfFile:[nilpathForResource:@"ProvinceFilter" ofType:@"plist"]];
         for (NSDictionary *dic in provinceArr) {
             [_provinces addObject:dic[@"name"]];
         }
@@ -514,7 +514,7 @@ UITextViewDelegate, FormEditTableViewCellDelegate> {
         logoView.layer.cornerRadius = 5;
         logoView.layer.borderWidth = 0.5;
         logoView.layer.borderColor = BORDER_LINE_COLOR.CGColor;
-        logoView.image = [BundleTool imageNamed:PROICON_DEFAULT];
+        logoView.image = [UIImage imageNamed:PROICON_DEFAULT];
         [headerView addSubview:logoView];
         logoView.userInteractionEnabled = YES;
         [logoView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(logoClick)]];

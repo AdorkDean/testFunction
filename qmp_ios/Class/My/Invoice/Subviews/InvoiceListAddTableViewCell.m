@@ -26,7 +26,7 @@
 
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         UIImageView *imgV = [[UIImageView alloc] initWithFrame:CGRectMake(16, 15, 20, 20)];
-        [imgV setImage:[BundleTool imageNamed:@"company_addToTag"]];
+        [imgV setImage:[UIImage imageNamed:@"company_addToTag"]];
         [self.contentView addSubview:imgV];
         
         UILabel *lbl = [FactoryUI createLabelWithFrame:CGRectMake(imgV.left + imgV.width , 15, 100, 20) text:@"添加发票抬头" textColor:[UIColor blackColor] fontNum:15.f textAlignment:NSTextAlignmentRight];

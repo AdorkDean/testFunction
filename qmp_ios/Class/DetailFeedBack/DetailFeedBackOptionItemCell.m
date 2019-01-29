@@ -113,11 +113,11 @@
 }
 - (UIButton *)customBtn{
     UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setImage:[BundleTool imageNamed:@"detail_feedback_normal"] forState:UIControlStateNormal];
+    [btn setImage:[UIImage imageNamed:@"detail_feedback_normal"] forState:UIControlStateNormal];
     btn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
     [btn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:6];
     btn.titleLabel.font = [UIFont systemFontOfSize:14];
-    [btn setImage:[BundleTool imageNamed:@"detail_feedback_selected"] forState:UIControlStateSelected];
+    [btn setImage:[UIImage imageNamed:@"detail_feedback_selected"] forState:UIControlStateSelected];
     [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(clickItemTarget:) forControlEvents:UIControlEventTouchUpInside];
     return btn;

@@ -195,11 +195,11 @@
         [headView addSubview:self.filterBtn];
         if (self.selectedMArr.count) {
             _filterLabel.text = [NSString stringWithFormat:@"已选：%@",self.hangyeTitle];
-            [self.filterBtn setImage:[BundleTool imageNamed:@"setBlue"] forState:UIControlStateNormal];
+            [self.filterBtn setImage:[UIImage imageNamed:@"setBlue"] forState:UIControlStateNormal];
             
         }else{
             _filterLabel.text = [NSString stringWithFormat:@"投资案例%@个",self.organizeItem.tzcount];
-            [self.filterBtn setImage:[BundleTool imageNamed:@"setgray2"] forState:UIControlStateNormal];
+            [self.filterBtn setImage:[UIImage imageNamed:@"setgray2"] forState:UIControlStateNormal];
             
         }
         
@@ -217,7 +217,7 @@
     self.tableView.backgroundColor = TABLEVIEW_COLOR;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.mj_header = self.mjHeader;
-    [self.tableView registerNib:[UINib nibWithNibName:@"JigouTZCaseCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"JigouTZCaseCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"JigouTZCaseCell" bundle:nil] forCellReuseIdentifier:@"JigouTZCaseCellID"];
     [self.view addSubview:self.tableView];
 }
 
@@ -248,11 +248,11 @@
         }else{
             _filterLabel.text = [NSString stringWithFormat:@"已选：%@",self.hangyeTitle];
         }
-        [self.filterBtn setImage:[BundleTool imageNamed:@"setBlue"] forState:UIControlStateNormal];
+        [self.filterBtn setImage:[UIImage imageNamed:@"setBlue"] forState:UIControlStateNormal];
         
     }else{
         _filterLabel.text = [NSString stringWithFormat:@"投资案例%@个",self.organizeItem.tzcount];
-        [self.filterBtn setImage:[BundleTool imageNamed:@"setgray2"] forState:UIControlStateNormal];
+        [self.filterBtn setImage:[UIImage imageNamed:@"setgray2"] forState:UIControlStateNormal];
     }
     
     [self.tableView reloadData];
@@ -698,7 +698,7 @@
 -(JigouTZCaseCell *)caseCell{
     
     if (!_caseCell) {
-        _caseCell = [[BundleTool commonBundle]loadNibNamed:@"JigouTZCaseCell" owner:nil options:nil].lastObject;
+        _caseCell = [nilloadNibNamed:@"JigouTZCaseCell" owner:nil options:nil].lastObject;
     }
     return _caseCell;
 }

@@ -40,7 +40,7 @@
     self.tableView.backgroundColor = TABLEVIEW_COLOR;
     
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"ProductValueActivityCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"ProductValueActivityCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"ProductValueActivityCell" bundle:nil] forCellReuseIdentifier:@"ProductValueActivityCellID"];
     [self.view addSubview:self.tableView];
     
     self.tableView.showsVerticalScrollIndicator = NO;

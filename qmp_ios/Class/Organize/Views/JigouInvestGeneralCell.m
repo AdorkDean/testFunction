@@ -71,7 +71,7 @@
 
         if (i == count-1){ //最后一个
             self.preferenceImgV = [[UIImageView alloc]initWithFrame:roundView.bounds];
-            self.preferenceImgV.image = [BundleTool imageNamed:@"jigou_fenbu"];
+            self.preferenceImgV.image = [UIImage imageNamed:@"jigou_fenbu"];
             self.preferenceImgV.contentMode = UIViewContentModeCenter;
             [roundView addSubview:self.preferenceImgV];
          }else{

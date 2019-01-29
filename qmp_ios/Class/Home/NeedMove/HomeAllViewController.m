@@ -84,9 +84,9 @@ NSString *const DiquTableName = @"FilterDiquTableName";
     self.tableView.layer.masksToBounds = NO;
     self.tableView.mj_header = self.mjHeader;
     self.tableView.mj_footer = self.mjFooter;
-    [self.tableView registerNib:[UINib nibWithNibName:@"EventCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"EventCellID"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"HomeProductCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"HomeProductCellID"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"ProductHomeCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"ProductHomeCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"EventCell" bundle:nil] forCellReuseIdentifier:@"EventCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"HomeProductCell" bundle:nil] forCellReuseIdentifier:@"HomeProductCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"ProductHomeCell" bundle:nil] forCellReuseIdentifier:@"ProductHomeCellID"];
     [self.view addSubview:self.tableView];
     self.tableView.contentInset = UIEdgeInsetsMake(self.filterHeaderView.height, 0, self.filterHeaderView.height, 0);
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -595,7 +595,7 @@ NSString *const DiquTableName = @"FilterDiquTableName";
 #pragma mark --懒加载--
 - (UIBarButtonItem *)proCreateItem {
     if (!_proCreateItem) {
-        UIImage *image = [BundleTool imageNamed:@"product_create"];
+        UIImage *image = [UIImage imageNamed:@"product_create"];
         image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         _proCreateItem = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(createProductClick)];
     }
@@ -603,7 +603,7 @@ NSString *const DiquTableName = @"FilterDiquTableName";
 }
 - (UIBarButtonItem *)searchItem {
     if (!_searchItem) {
-        UIImage *image = [BundleTool imageNamed:@"nav_search_icon"];
+        UIImage *image = [UIImage imageNamed:@"nav_search_icon"];
         image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         _searchItem = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(searchItemClick)];
         _searchItem.imageInsets = UIEdgeInsetsMake(0, 16, 0, -16);

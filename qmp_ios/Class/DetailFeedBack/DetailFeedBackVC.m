@@ -501,7 +501,7 @@
         titleLab.tag = 1000;
         
         UIButton *cancelBtn = [[UIButton alloc]initWithFrame:CGRectMake(SCREENW - 17 - 50, 0, 50, 44)];
-        [cancelBtn setImage:[BundleTool imageNamed:@"feedback_cancel"] forState:UIControlStateNormal];
+        [cancelBtn setImage:[UIImage imageNamed:@"feedback_cancel"] forState:UIControlStateNormal];
         [cancelBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
         [_firstHeaderView addSubview:cancelBtn];
         [cancelBtn addTarget:self action:@selector(cancelBtnClick) forControlEvents:UIControlEventTouchUpInside];

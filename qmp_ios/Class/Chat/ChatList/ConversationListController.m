@@ -78,7 +78,7 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
     
     //tableheaderView 互动提醒
-    PushHeaderView *headerView =  (PushHeaderView*)[[BundleTool commonBundle] loadNibNamed:@"PushHeaderView" owner:nil options:nil].lastObject;
+    PushHeaderView *headerView =  (PushHeaderView*)[nil loadNibNamed:@"PushHeaderView" owner:nil options:nil].lastObject;
     headerView.height = 78*2;
     self.tableView.tableHeaderView = headerView;
     
@@ -116,7 +116,7 @@
     
     //通讯录
     UIButton *contactBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 35, 44)];
-    [contactBtn setImage:[BundleTool imageNamed:@"contact_nabar"] forState:UIControlStateNormal];
+    [contactBtn setImage:[UIImage imageNamed:@"contact_nabar"] forState:UIControlStateNormal];
     [contactBtn setContentEdgeInsets:UIEdgeInsetsMake(0, 10, 0, -10)];
     [contactBtn addTarget:self action:@selector(gotoContact) forControlEvents:UIControlEventTouchUpInside];
     

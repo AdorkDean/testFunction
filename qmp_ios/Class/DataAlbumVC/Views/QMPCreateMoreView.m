@@ -43,7 +43,7 @@ const CGFloat QMPCreateMoreViewItemHeight = 50;
         button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         [button setTitle:dict[@"title"] forState:UIControlStateNormal];
         [button setTitleColor:COLOR737782 forState:UIControlStateNormal];
-        [button setImage:[BundleTool imageNamed:dict[@"icon"]] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:dict[@"icon"]] forState:UIControlStateNormal];
         
         button.imageEdgeInsets = UIEdgeInsetsMake(0, 30, 0, -30);
         button.titleEdgeInsets = UIEdgeInsetsMake(0, 48, 0, -48);

@@ -12,7 +12,7 @@
 + (RelateCompanyCell *)cellWithTableView:(UITableView *)tableView {
     RelateCompanyCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RelateCompanyCellID"];
     if (cell == nil) {
-        cell = (RelateCompanyCell *)[[[BundleTool commonBundle] loadNibNamed:@"RelateCompanyCell" owner:self options:nil] lastObject];
+        cell = (RelateCompanyCell *)[[nil loadNibNamed:@"RelateCompanyCell" owner:self options:nil] lastObject];
     }
     return cell;
 }

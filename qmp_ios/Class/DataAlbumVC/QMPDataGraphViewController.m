@@ -115,7 +115,7 @@
         iconView.tag = 789;
         [cell.contentView addSubview:iconView];
     }
-    iconView.image = [BundleTool imageNamed:flag?@"tag_down":@"tag_up"];
+    iconView.image = [UIImage imageNamed:flag?@"tag_down":@"tag_up"];
     iconView.left = rateLabel.right + 3;
     iconView.centerY = rateLabel.centerY;
     

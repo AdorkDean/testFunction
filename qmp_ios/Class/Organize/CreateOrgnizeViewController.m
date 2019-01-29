@@ -60,7 +60,7 @@
         [leftButton setTitle:title forState:UIControlStateNormal];
     } else {
         leftButton.frame = LEFTBUTTONFRAME;
-        [leftButton setImage:[BundleTool imageNamed:@"left-arrow"] forState:UIControlStateNormal];
+        [leftButton setImage:[UIImage imageNamed:@"left-arrow"] forState:UIControlStateNormal];
     }
     [leftButton addTarget:self action:@selector(navBackButtonClick) forControlEvents:UIControlEventTouchUpInside];
     
@@ -82,7 +82,7 @@
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREENW, SCREENH - kScreenTopHeight) style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    [self.tableView registerNib:[UINib nibWithNibName:@"MyInfoTableViewCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"MyInfoTableViewCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"MyInfoTableViewCell" bundle:nil] forCellReuseIdentifier:@"MyInfoTableViewCellID"];
     [self.tableView registerClass:[EditCell class] forCellReuseIdentifier:@"EditCellID"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCellID"];
     [self.tableView registerClass:[TextViewTableViewCell class] forCellReuseIdentifier:@"TextViewTableViewCellID"];
@@ -422,7 +422,7 @@
         UIImageView *logoView = [[UIImageView alloc] init];
         logoView.frame = CGRectMake(17, (headerViewHeigth-headerIconHeight)/2.0, headerIconHeight, headerIconHeight);
         logoView.layer.masksToBounds = YES;
-        logoView.image = [BundleTool imageNamed:PROICON_DEFAULT];
+        logoView.image = [UIImage imageNamed:PROICON_DEFAULT];
         logoView.layer.cornerRadius = 5;
         logoView.layer.borderWidth = 0.5;
         logoView.layer.borderColor = BORDER_LINE_COLOR.CGColor;

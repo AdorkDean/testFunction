@@ -27,7 +27,7 @@
 + (instancetype)cellWithTableView:(UITableView*)tableView{
     AlbumMultiRowListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AlbumMultiRowListCellID"];
     if (!cell) {
-        cell = [[BundleTool commonBundle]loadNibNamed:@"AlbumMultiRowListCell" owner:nil options:nil].lastObject;
+        cell = [nilloadNibNamed:@"AlbumMultiRowListCell" owner:nil options:nil].lastObject;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     return cell;

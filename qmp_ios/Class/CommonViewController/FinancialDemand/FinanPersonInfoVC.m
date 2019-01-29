@@ -74,7 +74,7 @@ TZImagePickerControllerDelegate, PickPhotosViewDelegate, FormEditTableViewCellDe
 - (NSArray*)createBackButton{
     
     UIButton *leftButton = [[UIButton alloc] initWithFrame:LEFTBUTTONFRAME];
-    [leftButton setImage:[BundleTool imageNamed:@"left-arrow"] forState:UIControlStateNormal];
+    [leftButton setImage:[UIImage imageNamed:@"left-arrow"] forState:UIControlStateNormal];
     [leftButton addTarget:self action:@selector(popSelf) forControlEvents:UIControlEventTouchUpInside];
     
     UIBarButtonItem *leftButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];

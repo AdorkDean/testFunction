@@ -13,7 +13,7 @@
 + (instancetype)productValueActivityCellWithTableView:(UITableView *)tableView {
     ProductValueActivityCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ProductValueActivityCellID"];
     if (!cell) {
-        cell = [[[BundleTool commonBundle] loadNibNamed:@"ProductValueActivityCell" owner:nil options:nil] firstObject];
+        cell = [[nil loadNibNamed:@"ProductValueActivityCell" owner:nil options:nil] firstObject];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     return cell;

@@ -93,7 +93,7 @@
 //    UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
 //    negativeSpacer.width = -50;
 //    UIButton * moreBtn = [[UIButton alloc] initWithFrame:RIGHTBARBTNFRAME];
-//    [moreBtn setImage:[BundleTool imageNamed:@"activity_detail_more"] forState:UIControlStateNormal];
+//    [moreBtn setImage:[UIImage imageNamed:@"activity_detail_more"] forState:UIControlStateNormal];
 //    [moreBtn addTarget:self action:@selector(moreOptions) forControlEvents:UIControlEventTouchUpInside];
 //    moreBtn.imageEdgeInsets = UIEdgeInsetsMake(0, 6, 0, -6);
 //    UIBarButtonItem * moreItem = [[UIBarButtonItem alloc]initWithCustomView:moreBtn];

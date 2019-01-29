@@ -71,7 +71,7 @@
         CGFloat left = SCREENW - 55;
         CGRect shadeFrame = CGRectMake(left, kScreenTopHeight - 45, 45, 45);
         NSArray *titleFrame = @[NSStringFromCGRect(CGRectMake(0, kScreenTopHeight+20+200, SCREENW, 20)),NSStringFromCGRect(CGRectMake(0, kScreenTopHeight+20+230, SCREENW, 20)),NSStringFromCGRect(CGRectMake(0, kScreenTopHeight+20+260, SCREENW, 20))];
-        NewUserLeadView *leaderV = [[NewUserLeadView alloc]initWithshadeFrame:shadeFrame shadeImage:[BundleTool imageNamed:@"newusr_leadCircle"] arrowImageFrame:CGRectMake(SCREENW/2.0 - 80, kScreenTopHeight, 220, 200) arrowImage:[BundleTool imageNamed:@"newusr_leadArrow"] titleArr:@[@"3步上传文件教程",@"教你快速上传报告和BP",@"试试看吧～～"] titleFrameArr:titleFrame clickBtnFrame:CGRectMake(0, kScreenTopHeight+20+300, 110, 35) leaderKey:key];
+        NewUserLeadView *leaderV = [[NewUserLeadView alloc]initWithshadeFrame:shadeFrame shadeImage:[UIImage imageNamed:@"newusr_leadCircle"] arrowImageFrame:CGRectMake(SCREENW/2.0 - 80, kScreenTopHeight, 220, 200) arrowImage:[UIImage imageNamed:@"newusr_leadArrow"] titleArr:@[@"3步上传文件教程",@"教你快速上传报告和BP",@"试试看吧～～"] titleFrameArr:titleFrame clickBtnFrame:CGRectMake(0, kScreenTopHeight+20+300, 110, 35) leaderKey:key];
     }
 }
 
@@ -104,9 +104,9 @@
         
     }else if (_selectIndex == 1){
         
-        UIImage *img = [BundleTool imageNamed:@"bar_setgray"];
+        UIImage *img = [UIImage imageNamed:@"bar_setgray"];
         if (self.selectedProvinceArr.count || self.selectedMArr.count || self.selectedFlagArr.count) {
-            img = [BundleTool imageNamed:@"bar_setBlue"];
+            img = [UIImage imageNamed:@"bar_setBlue"];
         }
         
         UIButton *noteBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 80, 53)];

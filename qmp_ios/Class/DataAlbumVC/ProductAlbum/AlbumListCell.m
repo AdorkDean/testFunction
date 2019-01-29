@@ -58,7 +58,7 @@
     }
     
     _hotFlagV = [[UIImageView alloc]initWithFrame:CGRectMake(_imgView.right+15, 15, 18, 18)];
-    _hotFlagV.image = [BundleTool imageNamed:@"hot"];
+    _hotFlagV.image = [UIImage imageNamed:@"hot"];
     [self.contentView addSubview:_hotFlagV];
     
     
@@ -106,7 +106,7 @@
             }
             view.hidden = NO;
             NSDictionary *dict = groupM.product[i];
-            [view sd_setImageWithURL:[NSURL URLWithString:dict[@"icon"]] placeholderImage:[BundleTool imageNamed:@"share_user_holder"]];
+            [view sd_setImageWithURL:[NSURL URLWithString:dict[@"icon"]] placeholderImage:[UIImage imageNamed:@"share_user_holder"]];
             i++;
         }
     }
@@ -162,7 +162,7 @@
 }
 
 - (NSMutableAttributedString *)hotAttrImage {
-    UIImage *image = [BundleTool imageNamed:@"hot"];
+    UIImage *image = [UIImage imageNamed:@"hot"];
     image = [UIImage new];
     NSMutableAttributedString *attr = [NSMutableAttributedString yy_attachmentStringWithContent:image contentMode:UIViewContentModeCenter attachmentSize:CGSizeMake(18, 18) alignToFont:[UIFont systemFontOfSize:15] alignment:YYTextVerticalAlignmentBottom];
     return attr;

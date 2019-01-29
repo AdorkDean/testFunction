@@ -73,7 +73,7 @@
     self.collectionView.decelerationRate = 0.1;
     self.collectionView.alwaysBounceHorizontal = YES;
     self.collectionView.scrollEnabled = NO;
-    [self.collectionView registerNib:[UINib nibWithNibName:@"CommonShowMoreItemCell" bundle:[BundleTool commonBundle]] forCellWithReuseIdentifier:@"CommonShowMoreItemCellID"];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"CommonShowMoreItemCell" bundle:nil] forCellWithReuseIdentifier:@"CommonShowMoreItemCellID"];
     [self.contentView addSubview:self.collectionView];
 }
 

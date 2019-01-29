@@ -20,7 +20,7 @@
 - (void)imageWithUsername:(NSString *)username placeholderImage:(UIImage*)placeholderImage
 {
     if (placeholderImage == nil) {
-        placeholderImage = [BundleTool imageNamed:@"chatListCellHead"];
+        placeholderImage = [UIImage imageNamed:@"chatListCellHead"];
     }
 //    UserProfileEntity *profileEntity = [[UserProfileManager sharedInstance] getUserProfileByUsername:username];
 //    if (profileEntity) {

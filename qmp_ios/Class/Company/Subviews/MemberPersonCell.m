@@ -81,7 +81,7 @@
         self.statusLabel.text = @"";
     }
     
-    [_headerIcon sd_setImageWithURL:[NSURL URLWithString:manager.icon] placeholderImage:[BundleTool imageNamed:@"heading"]];
+    [_headerIcon sd_setImageWithURL:[NSURL URLWithString:manager.icon] placeholderImage:[UIImage imageNamed:@"heading"]];
     
     _nameLab.text = [PublicTool isNull:manager.name]?([PublicTool isNull:manager.ename]?@"-":manager.ename):manager.name;
     _zhiwuLab.text = manager.zhiwu;

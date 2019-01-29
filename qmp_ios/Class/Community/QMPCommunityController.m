@@ -185,7 +185,7 @@
         self.pageMenu.centerX = SCREENW/2.0;
         
         UIButton *searchBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, kStatusBarHeight, 46, 44)];
-        [searchBtn setImage:[BundleTool imageNamed:@"community_search"] forState:UIControlStateNormal];
+        [searchBtn setImage:[UIImage imageNamed:@"community_search"] forState:UIControlStateNormal];
         [searchBtn addTarget:self action:@selector(searchBtnClick) forControlEvents:UIControlEventTouchUpInside];
         [_navSearchBar addSubview:searchBtn];
         

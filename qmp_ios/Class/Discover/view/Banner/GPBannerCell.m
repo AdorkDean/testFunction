@@ -48,7 +48,7 @@
     }else if ([imageName containsString:@"http"]) {
         [self.imageView sd_setImageWithURL:[NSURL URLWithString:imageName] placeholderImage:[UIImage imageFromColor:TABLEVIEW_COLOR andSize:self.imageView.size]];
     }else{
-        self.imageView.image = [BundleTool imageNamed:imageName];
+        self.imageView.image = [UIImage imageNamed:imageName];
     }
 }
 

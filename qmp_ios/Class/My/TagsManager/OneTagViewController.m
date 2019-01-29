@@ -90,7 +90,7 @@
     [_bottomView addSubview:line];
     
     UIButton *leadBtn = [[UIButton alloc]initWithFrame:CGRectMake(64*ratioWidth, 0, 110, 44)];
-    [leadBtn setImage:[BundleTool imageNamed:@"leadToAlbumIcon"] forState:UIControlStateNormal];
+    [leadBtn setImage:[UIImage imageNamed:@"leadToAlbumIcon"] forState:UIControlStateNormal];
     [leadBtn setTitle:@"导入到专辑" forState:UIControlStateNormal];
     [leadBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:7];
     [leadBtn setTitleColor:H5COLOR forState:UIControlStateNormal];
@@ -101,7 +101,7 @@
     
     UIButton *delBtn = [[UIButton alloc]initWithFrame:CGRectMake(SCREENW-64*ratioWidth - 70, 0, 70, 44)];
     [delBtn setTitle:@"删除" forState:UIControlStateNormal];
-    [delBtn setImage:[BundleTool imageNamed:@"workFlowDel"] forState:UIControlStateNormal];
+    [delBtn setImage:[UIImage imageNamed:@"workFlowDel"] forState:UIControlStateNormal];
     [delBtn setTitleColor:H5COLOR forState:UIControlStateNormal];
     delBtn.titleLabel.font = [UIFont systemFontOfSize:14];
     [delBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:7];
@@ -222,8 +222,8 @@
         if (self.companysModelMArr.count > 0) {
             
             UIButton *allChooseBtn = [[UIButton alloc] initWithFrame:CGRectMake(17, 0.f, 67, 45)];
-            [allChooseBtn setImage:[BundleTool imageNamed:@"select_workFlow"] forState:UIControlStateSelected];
-            [allChooseBtn setImage:[BundleTool imageNamed:@"noselect_workFlow"] forState:UIControlStateNormal];
+            [allChooseBtn setImage:[UIImage imageNamed:@"select_workFlow"] forState:UIControlStateSelected];
+            [allChooseBtn setImage:[UIImage imageNamed:@"noselect_workFlow"] forState:UIControlStateNormal];
             [allChooseBtn setTitle:@"全选" forState:UIControlStateNormal];
             [allChooseBtn setTitleColor:NV_TITLE_COLOR forState:UIControlStateNormal];
             [allChooseBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:15];
@@ -485,7 +485,7 @@
     
     UIButton * moreBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     moreBtn.frame = RIGHTBARBTNFRAME; //x坐标没有作用
-    [moreBtn setImage:[BundleTool imageNamed:@"moreOptions"] forState:UIControlStateNormal];
+    [moreBtn setImage:[UIImage imageNamed:@"moreOptions"] forState:UIControlStateNormal];
     [moreBtn addTarget:self action:@selector(pressMoreOptions:) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem * moreItem = [[UIBarButtonItem alloc]initWithCustomView:moreBtn];
     UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
@@ -526,7 +526,7 @@
     NSString *detailStr = @"商业信息服务平台";
     
     NSString *url = [NSString stringWithFormat:@"http://wx.qimingpian.com/zuhe/filesshare.html?tag_uuid=%@",self.tagItem.tag_uuid];
-    UIImage *image = [BundleTool imageNamed:@"share_group.jpg"];
+    UIImage *image = [UIImage imageNamed:@"share_group.jpg"];
     
     [self.shareTool shareToOtherApp:detailStr aTitleSessionStr:titleStr aTitleTimelineStr:titleStr aIcon:image aOpenUrl:url onViewController:self shareResult:^(BOOL shareSuccess) {
         if (shareSuccess) {
@@ -560,7 +560,7 @@
     [addBtn setTitle:@"添加" forState:UIControlStateNormal];
     [addBtn setTitleColor:H5COLOR forState:UIControlStateNormal];
     addBtn.titleLabel.font = [UIFont systemFontOfSize:14];
-    [addBtn setImage:[BundleTool imageNamed:@"add-yellow"] forState:UIControlStateNormal];
+    [addBtn setImage:[UIImage imageNamed:@"add-yellow"] forState:UIControlStateNormal];
     [addBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:5];
     [addBtn addTarget:self action:@selector(pressAddProductBtn) forControlEvents:UIControlEventTouchUpInside];
     [_headerView addSubview:addBtn];
@@ -800,7 +800,7 @@
         
         CGFloat btnW = 60;
         UIButton *addBtn = [[UIButton alloc] initWithFrame:CGRectMake(SCREENW - btnW*2 - 35.f, 0.f, btnW, 45)];
-        [addBtn setImage:[BundleTool imageNamed:@"onework_add"] forState:UIControlStateNormal];
+        [addBtn setImage:[UIImage imageNamed:@"onework_add"] forState:UIControlStateNormal];
         [addBtn setTitle:@"添加" forState:UIControlStateNormal];
         [addBtn setTitleColor:NV_TITLE_COLOR forState:UIControlStateNormal];
         [addBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:5];
@@ -815,7 +815,7 @@
         editBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         [editBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:5];
         
-        UIImage *img = [BundleTool imageNamed:@"edit_card"];
+        UIImage *img = [UIImage imageNamed:@"edit_card"];
         [editBtn setImage:img forState:UIControlStateNormal];
         [editBtn setTitle:@"编辑" forState:UIControlStateNormal];
         

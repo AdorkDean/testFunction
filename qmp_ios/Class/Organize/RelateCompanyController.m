@@ -51,7 +51,7 @@
     self.tableView.estimatedSectionHeaderHeight = 0;
     self.tableView.estimatedSectionFooterHeight = 0;
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"RelateCompanyCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"RelateCompanyCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"RelateCompanyCell" bundle:nil] forCellReuseIdentifier:@"RelateCompanyCellID"];
 }
 
 

@@ -33,7 +33,7 @@
         }
         CGFloat trueW = trueH * width / height;
         self.delIcon = [[UIImageView alloc]initWithFrame:CGRectMake(self.frame.size.width-trueW, 0, trueW, trueH)];
-        self.delIcon.image = [BundleTool imageNamed:@"filter_delIcon"];
+        self.delIcon.image = [UIImage imageNamed:@"filter_delIcon"];
         [self.contentView addSubview:self.delIcon];
         self.delIcon.hidden = YES;
         self.delIcon.tag = 10009;

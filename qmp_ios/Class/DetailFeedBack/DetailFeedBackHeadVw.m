@@ -14,14 +14,14 @@
 @implementation DetailFeedBackHeadVw
 
 + (instancetype)initLoadViewNibFrame:(CGRect)frame{
-    DetailFeedBackHeadVw * headVw = [[BundleTool commonBundle] loadNibNamed:@"DetailFeedBackHeadVw" owner:self options:nil].lastObject;
+    DetailFeedBackHeadVw * headVw = [nil loadNibNamed:@"DetailFeedBackHeadVw" owner:self options:nil].lastObject;
     headVw.frame = frame;
     headVw.iconImgVw.layer.cornerRadius = 4;
     headVw.iconImgVw.clipsToBounds = YES;
     return headVw;
 }
 + (instancetype)initLoadViewNibFrame:(CGRect)frame type:(NSInteger)type{
-    DetailFeedBackHeadVw * headVw = [[BundleTool commonBundle] loadNibNamed:@"DetailFeedBackHeadVw" owner:self options:nil].lastObject;
+    DetailFeedBackHeadVw * headVw = [nil loadNibNamed:@"DetailFeedBackHeadVw" owner:self options:nil].lastObject;
     headVw.frame = frame;
     if (type == 0) {
         headVw.iconImgVw.layer.cornerRadius = (frame.size.height - 18 * 2) / 2;
@@ -33,7 +33,7 @@
 }
 - (void)setImgUrlStr:(NSString *)imgUrlStr{
     _imgUrlStr = imgUrlStr;
-    [self.iconImgVw sd_setImageWithURL:[NSURL URLWithString:_imgUrlStr] placeholderImage:[BundleTool imageNamed:@""]];
+    [self.iconImgVw sd_setImageWithURL:[NSURL URLWithString:_imgUrlStr] placeholderImage:[UIImage imageNamed:@""]];
 }
 - (void)setDetailNameStr:(NSString *)detailNameStr{
     _detailNameStr = detailNameStr;

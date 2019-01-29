@@ -102,8 +102,8 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"MySearchPersonCellByXib" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"MySearchPersonCellByXibID"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"SearchPersonNoDataCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"SearchPersonNoDataCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"MySearchPersonCellByXib" bundle:nil] forCellReuseIdentifier:@"MySearchPersonCellByXibID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"SearchPersonNoDataCell" bundle:nil] forCellReuseIdentifier:@"SearchPersonNoDataCellID"];
     self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
     
     CGFloat height = 44;
@@ -117,7 +117,7 @@
     
     //设置背景色
     [_mySearchBar setBackgroundColor:TABLEVIEW_COLOR];
-    [_mySearchBar setSearchFieldBackgroundImage:[BundleTool imageNamed:@"search_borderTab"] forState:UIControlStateNormal];
+    [_mySearchBar setSearchFieldBackgroundImage:[UIImage imageNamed:@"search_borderTab"] forState:UIControlStateNormal];
     [_mySearchBar setSearchTextPositionAdjustment:UIOffsetMake(10, 0)];
     UITextField *tf = [_mySearchBar valueForKey:@"_searchField"];
     NSString * str = @"搜索人物名称、机构";

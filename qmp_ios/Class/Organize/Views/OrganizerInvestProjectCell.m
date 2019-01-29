@@ -165,7 +165,7 @@
 
     _investmentModel = investmentModel;
    
-    [_iconImageV sd_setImageWithURL:[NSURL URLWithString:investmentModel.icon] placeholderImage:[BundleTool imageNamed:@"product_default"]];
+    [_iconImageV sd_setImageWithURL:[NSURL URLWithString:investmentModel.icon] placeholderImage:[UIImage imageNamed:@"product_default"]];
     
 //    [_iconImageV sd_setImageWithURL:[NSURL URLWithString:investmentModel.icon] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
 //        _iconImageV.image = [PublicTool OriginImage:image scaleToSize:CGSizeMake(80, 80)];

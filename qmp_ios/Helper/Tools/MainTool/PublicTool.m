@@ -338,7 +338,7 @@ static PublicTool *gSharedInstance = nil;
     hud.mode = MBProgressHUDModeCustomView;
     // Set an image view with a checkmark.
     NSString *imgName = success ? @"mb_right" : @"mb_error";
-    UIImage *image = [[BundleTool imageNamed:imgName] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    UIImage *image = [[UIImage imageNamed:imgName] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     hud.customView = [[UIImageView alloc] initWithImage:image];
     // Looks a bit nicer if we make it square.
     hud.square = YES;
@@ -1698,9 +1698,9 @@ static PublicTool *gSharedInstance = nil;
 
 + (UIImage *)imageWithName:(NSString *)imageName
 {
-    UIImage *image = [BundleTool imageNamed:imageName];
+    UIImage *image = [UIImage imageNamed:imageName];
     if (iPhone6) {
-        UIImage *imageIphone6 = [BundleTool imageNamed:[NSString stringWithFormat:@"%@-iphone6",imageName]];
+        UIImage *imageIphone6 = [UIImage imageNamed:[NSString stringWithFormat:@"%@-iphone6",imageName]];
         if (imageIphone6) {
             image = imageIphone6;
         }
@@ -2410,7 +2410,7 @@ static PublicTool *gSharedInstance = nil;
 //获取截长图
 + (UIImage*)getLongCaptureImage:(UIScrollView*)scrollView{
 
-    UIImage *image2 = [BundleTool imageNamed:@"QuickMark"];
+    UIImage *image2 = [UIImage imageNamed:@"QuickMark"];
     CGFloat imgH = scrollView.contentSize.width/1125 *591;
     UIImageView *imgV = [[UIImageView alloc]initWithImage:image2];
     imgV.frame = CGRectMake(0, scrollView.contentSize.height, scrollView.width, imgH);
@@ -2445,7 +2445,7 @@ static PublicTool *gSharedInstance = nil;
     [screenWindow.layer renderInContext:UIGraphicsGetCurrentContext()];
     image1 = UIGraphicsGetImageFromCurrentImageContext();
     
-    UIImage *image2 = [BundleTool imageNamed:@"QuickMark"];
+    UIImage *image2 = [UIImage imageNamed:@"QuickMark"];
     [image2 drawInRect:CGRectMake(0, SCREENH, SCREENW, imgH)];//100
     UIImage *togetherImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

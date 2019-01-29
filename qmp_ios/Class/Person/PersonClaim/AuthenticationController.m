@@ -79,7 +79,7 @@
     [self.tableView registerClass:[EditCell class] forCellReuseIdentifier:@"EditCellID"];
     
     [self.tableView registerClass:[TextViewCell class] forCellReuseIdentifier:@"TextViewCellID"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"MyInfoTableViewCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"MyInfoTableViewCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"MyInfoTableViewCell" bundle:nil] forCellReuseIdentifier:@"MyInfoTableViewCellID"];
     
     if (@available(iOS 11.0, *)) {
         self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
@@ -91,7 +91,7 @@
     
     if (self.person) {
         
-        AuthenticaHeaderView *headerV = [[BundleTool commonBundle]loadNibNamed:@"AuthenticaHeaderView" owner:nil options:nil].lastObject;
+        AuthenticaHeaderView *headerV = [nilloadNibNamed:@"AuthenticaHeaderView" owner:nil options:nil].lastObject;
         headerV.height = 90;
         headerV.person = self.person;
         self.tableView.tableHeaderView = headerV;
@@ -112,7 +112,7 @@
 - (NSArray*)createBackButton{
     
     UIButton *leftButton = [[UIButton alloc] initWithFrame:LEFTBUTTONFRAME];
-    [leftButton setImage:[BundleTool imageNamed:@"left-arrow"] forState:UIControlStateNormal];
+    [leftButton setImage:[UIImage imageNamed:@"left-arrow"] forState:UIControlStateNormal];
     //    [leftButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
     [leftButton addTarget:self action:@selector(popSelf) forControlEvents:UIControlEventTouchUpInside];
     
@@ -596,7 +596,7 @@
         static NSString *imgCellIdentifier = @"MyCardTableViewCell";
         MyCardTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:imgCellIdentifier];
         if (!cell) {
-            cell = [[[BundleTool commonBundle] loadNibNamed:@"MyCardTableViewCell" owner:nil options:nil] lastObject];
+            cell = [[nil loadNibNamed:@"MyCardTableViewCell" owner:nil options:nil] lastObject];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
         if (_cardImg) {

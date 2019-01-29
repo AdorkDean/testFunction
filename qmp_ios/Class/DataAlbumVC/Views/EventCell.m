@@ -43,7 +43,7 @@
 //        _iconImgV.image = [PublicTool OriginImage:image scaleToSize:CGSizeMake(80, 80)];
 //    }];
     
-    [_iconImgV sd_setImageWithURL:[NSURL URLWithString:newsModel.icon] placeholderImage:[BundleTool imageNamed:PROICON_DEFAULT]];
+    [_iconImgV sd_setImageWithURL:[NSURL URLWithString:newsModel.icon] placeholderImage:[UIImage imageNamed:PROICON_DEFAULT]];
     
     _productName.text = newsModel.product;
 //    NSString *time = newsModel.time;

@@ -14,7 +14,7 @@
 + (instancetype)searchProductCellWithTableView:(UITableView *)tableView {
     SearchProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SearchProductCellID"];
     if (!cell) {
-        cell = [[[BundleTool commonBundle] loadNibNamed:@"SearchProductCell" owner:nil options:nil] firstObject];
+        cell = [[nil loadNibNamed:@"SearchProductCell" owner:nil options:nil] firstObject];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     return cell;
@@ -47,7 +47,7 @@
 - (void)setProduct:(SearchProduct *)product {
     _product = product;
     
-    [self.iconView sd_setImageWithURL:[NSURL URLWithString:product.icon] placeholderImage:[BundleTool imageNamed:@"product_default"]];
+    [self.iconView sd_setImageWithURL:[NSURL URLWithString:product.icon] placeholderImage:[UIImage imageNamed:@"product_default"]];
     
     
     // 产品

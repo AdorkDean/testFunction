@@ -43,7 +43,7 @@
 
 - (void)setCompanyM:(SearchCompanyModel *)companyM{
     _companyM = companyM;
-    [_iconImgV sd_setImageWithURL:[NSURL URLWithString:companyM.icon] placeholderImage:[BundleTool imageNamed:PROICON_DEFAULT]];
+    [_iconImgV sd_setImageWithURL:[NSURL URLWithString:companyM.icon] placeholderImage:[UIImage imageNamed:PROICON_DEFAULT]];
     
     _productName.text = companyM.product;
     
@@ -88,7 +88,7 @@
 -(void)setNewsModel:(RZNewsModel *)newsModel{
     _newsModel = newsModel;
 
-    [_iconImgV sd_setImageWithURL:[NSURL URLWithString:newsModel.icon] placeholderImage:[BundleTool imageNamed:PROICON_DEFAULT]];
+    [_iconImgV sd_setImageWithURL:[NSURL URLWithString:newsModel.icon] placeholderImage:[UIImage imageNamed:PROICON_DEFAULT]];
     
     _productName.text = newsModel.product;
 

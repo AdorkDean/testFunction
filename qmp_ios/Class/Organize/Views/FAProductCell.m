@@ -25,7 +25,7 @@
 + (FAProductCell *)cellWithTableView:(UITableView *)tableView {
     FAProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FAProductCellID"];
     if (cell == nil) {
-        cell = (FAProductCell *)[[[BundleTool commonBundle] loadNibNamed:@"FAProductCell" owner:self options:nil] lastObject];
+        cell = (FAProductCell *)[[nil loadNibNamed:@"FAProductCell" owner:self options:nil] lastObject];
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
@@ -50,7 +50,7 @@
 
     _faProductM = faProductM;
     
-    [_iconImgV sd_setImageWithURL:[NSURL URLWithString:faProductM.icon] placeholderImage:[BundleTool imageNamed:PROICON_DEFAULT]];
+    [_iconImgV sd_setImageWithURL:[NSURL URLWithString:faProductM.icon] placeholderImage:[UIImage imageNamed:PROICON_DEFAULT]];
     _nameLab.text = faProductM.product;
     _hangyeLab.text = faProductM.hangye1;
     _yewuLab.text = faProductM.yewu;

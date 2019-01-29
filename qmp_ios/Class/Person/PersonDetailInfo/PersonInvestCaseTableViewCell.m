@@ -74,7 +74,7 @@
         _collectionView.showsHorizontalScrollIndicator = NO;
         _collectionView.decelerationRate = UIScrollViewDecelerationRateFast;
         _collectionView.alwaysBounceHorizontal = YES;
-        [_collectionView registerNib:[UINib nibWithNibName:@"PersonInvestCaseCollectionViewCell" bundle:[BundleTool commonBundle]] forCellWithReuseIdentifier:@"PersonInvestCaseCollectionViewCellID"];
+        [_collectionView registerNib:[UINib nibWithNibName:@"PersonInvestCaseCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"PersonInvestCaseCollectionViewCellID"];
         _collectionView.scrollEnabled =NO;
         
     }

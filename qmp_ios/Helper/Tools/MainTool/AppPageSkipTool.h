@@ -8,53 +8,23 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
-@protocol AppPageSkipProtocol
-
-@optional
-#pragma mark ---登录相关
-/** 去登录 */
-- (void)appPageSkipToLogin;
-- (void)appPageSkipToPhoneLogin;
-
-/** 去绑定手机 */
-- (void)appPageSkipToBindPhone;
-- (void)appPageSkipToBindPhoneFinish:(void(^)(NSString* bindPhone))bindFinish;
-/** 去初始化关注 */
-- (void)appPageSkipToInitFocus;
-
-/* 刷新用户信息 */
-- (void)refreshUserInfo;
-
-- (void)setRootController;
-
-#pragma mark ---人物相关
-- (void)appPageSkipToPersonDetail:(NSString*)personId;
-- (void)appPageSkipToPersonDetail:(NSString*)personId fromClaimReq:(BOOL)fromClaim;
-
-- (void)appPageSkipToUserDetail:(NSString*)unionid;
-
-#pragma mark ---项目相关
-- (void)appPageSkipToProductDetail:(NSDictionary*)productParam;
-
-#pragma mark ---机构相关
-- (void)appPageSkipToJigouDetail:(NSDictionary*)jigouParam;
-
-#pragma mark --动态相关
-- (void)appPageSkipToActivitySquare;
-- (void)appPageSkipToActivityHotOrAnonymous:(BOOL)hot;
-
-//跳转到动态指定tag
-- (void)appPageSkipToActivityTag:(NSString*)tagName activityID:(NSString*)activityID;
-
-@end
-
 
 
 @interface AppPageSkipTool : NSObject
 
 + (instancetype)shared;
+#pragma mark --账户
+-(void)appPageSkipToPhoneLogin;
+-(void)appPageSkipToBindPhone;
+-(void)appPageSkipToBindPhoneFinish:(void (^)(NSString * _Nonnull))bindFinish;
+-(void)appPageSkipToLogin;
+- (void)refreshUserInfo;
+- (void)setRootController;
+- (void)appPageSkipToActivitySquare;
+- (void)appPageSkipToActivityHotOrAnonymous:(BOOL)hot;
+-(void)appPageSkipToActivityTag:(NSString *)tagName activityID:(NSString *)activityID;
+
+#pragma mark --用户人物
 
 -(void)appPageSkipToPersonDetail:(NSString *)personId;
 -(void)appPageSkipToPersonDetail:(NSString *)personId nameLabBgColor:(UIColor*)nameLabColor; //无header的背景色

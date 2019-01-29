@@ -51,7 +51,7 @@
     
     _yewuModel = yewuModel;
     _model = yewuModel;
-    [self.iconImgV sd_setImageWithURL:[NSURL URLWithString:yewuModel.icon] placeholderImage:[BundleTool imageNamed:PROICON_DEFAULT]];
+    [self.iconImgV sd_setImageWithURL:[NSURL URLWithString:yewuModel.icon] placeholderImage:[UIImage imageNamed:PROICON_DEFAULT]];
     self.nameLab.text = yewuModel.product;
     self.subtitleLab.text = yewuModel.yewu;
    
@@ -72,7 +72,7 @@
     _model = touziM;
     _touziM = touziM;
     
-    [self.iconImgV sd_setImageWithURL:[NSURL URLWithString:touziM.icon] placeholderImage:[BundleTool imageNamed:PROICON_DEFAULT]];
+    [self.iconImgV sd_setImageWithURL:[NSURL URLWithString:touziM.icon] placeholderImage:[UIImage imageNamed:PROICON_DEFAULT]];
     self.nameLab.text = touziM.product;
     self.hangyeLab.hidden = NO;
     self.subtitleLab.text = touziM.yewu;

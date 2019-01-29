@@ -13,7 +13,7 @@
 - (void)buttonWithTitle:(NSString*)title image:(NSString*)imageName{
     [self setTitle:title forState:UIControlStateNormal];
     if (imageName && imageName.length) {
-        [self setImage:[BundleTool imageNamed:imageName] forState:UIControlStateNormal];
+        [self setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
 
     }
 }

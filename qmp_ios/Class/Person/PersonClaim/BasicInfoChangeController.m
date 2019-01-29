@@ -121,7 +121,7 @@
         static NSString *imgCellIdentifier = @"ImgInfoTableViewCell";
         ImgInfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:imgCellIdentifier];
         if (!cell) {
-            cell = [[[BundleTool commonBundle] loadNibNamed:@"ImgInfoTableViewCell" owner:nil options:nil] lastObject];
+            cell = [[nil loadNibNamed:@"ImgInfoTableViewCell" owner:nil options:nil] lastObject];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
         
@@ -135,7 +135,7 @@
         static NSString *infoCellIdentifier = @"MyInfoTableViewCell";
         MyInfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:infoCellIdentifier];
         if (!cell) {
-            cell = [[[BundleTool commonBundle] loadNibNamed:@"MyInfoTableViewCell" owner:nil options:nil] lastObject];
+            cell = [[nil loadNibNamed:@"MyInfoTableViewCell" owner:nil options:nil] lastObject];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
         
@@ -302,7 +302,7 @@
     
     if ([key isEqualToString:@"headimgurl"] || [key isEqualToString:@"nickname"]) {
         
-        [_headIcon sd_setImageWithURL:[NSURL URLWithString:value] placeholderImage:[BundleTool imageNamed:@"heading"]];
+        [_headIcon sd_setImageWithURL:[NSURL URLWithString:value] placeholderImage:[UIImage imageNamed:@"heading"]];
     }
 }
 

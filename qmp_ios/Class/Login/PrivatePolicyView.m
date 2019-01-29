@@ -40,11 +40,11 @@
     _webView.navigationDelegate = self;
     _webView.backgroundColor = [UIColor whiteColor];
     [self addSubview:_webView];
-    NSString *urlStr = [BundleTool isQMP] ? @"http://wx.qimingpian.com/policyqmp.html?f=qmpapp":@"http://wx.qimingpian.com/policy.html?f=qmpapp";
+    NSString *urlStr = @"http://wx.qimingpian.com/policyqmp.html?f=qmpapp";
     [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlStr]]];
     
     UIButton *closeBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, _webView.bottom+53, 45, 45)];
-    [closeBtn setImage:[BundleTool imageNamed:@"close_whitebg"] forState:UIControlStateNormal];
+    [closeBtn setImage:[UIImage imageNamed:@"close_whitebg"] forState:UIControlStateNormal];
     [self addSubview:closeBtn];
     closeBtn.centerX = SCREENW/2.0;
     [closeBtn addTarget:self action:@selector(removeFromSuperview) forControlEvents:UIControlEventTouchUpInside];

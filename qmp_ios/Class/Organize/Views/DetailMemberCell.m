@@ -45,7 +45,7 @@
 //    }else{
 //    }
     
-    [self.avatarView sd_setImageWithURL:[NSURL URLWithString:user.icon] placeholderImage:[BundleTool imageNamed:@"heading"]];
+    [self.avatarView sd_setImageWithURL:[NSURL URLWithString:user.icon] placeholderImage:[UIImage imageNamed:@"heading"]];
     self.nameLabel.text = user.name;
     self.positionLabel.text = user.zhiwu;
     

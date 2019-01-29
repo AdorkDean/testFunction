@@ -72,7 +72,7 @@
     
     //展开按钮
     self.showAllBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, self.frame.size.height-50, self.width, 50)];
-    [self.showAllBtn setImage:[BundleTool imageNamed:@"company_arrow_down"] forState:UIControlStateNormal];
+    [self.showAllBtn setImage:[UIImage imageNamed:@"company_arrow_down"] forState:UIControlStateNormal];
     [self.showAllBtn setTitleColor:NV_TITLE_COLOR forState:UIControlStateNormal];
     self.showAllBtn.titleLabel.font = [UIFont systemFontOfSize:14];
     [self.showAllBtn setTitle:@"展开" forState:UIControlStateNormal];

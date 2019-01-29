@@ -48,7 +48,7 @@
     
     CGFloat imgW = 40.f;
     UIImageView *imgV = [[UIImageView alloc] initWithFrame:CGRectMake(17.f, 0.f, imgW, imgW)];
-    [imgV setImage:[BundleTool imageNamed:@"person"]];
+    [imgV setImage:[UIImage imageNamed:@"person"]];
     imgV.layer.cornerRadius = 5;
     imgV.layer.masksToBounds = YES;
     imgV.layer.borderWidth = 0.5;

@@ -143,7 +143,7 @@
     if (!_rightButton) {
         _rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _rightButton.frame = CGRectMake(SCREENW-38-7, 3, 38, 38);
-        [_rightButton setImage:[BundleTool imageNamed:@"activity_delete"] forState:UIControlStateNormal];
+        [_rightButton setImage:[UIImage imageNamed:@"activity_delete"] forState:UIControlStateNormal];
         [_rightButton addTarget:self action:@selector(rightButtonClick:) forControlEvents:UIControlEventTouchUpInside];
         
     }

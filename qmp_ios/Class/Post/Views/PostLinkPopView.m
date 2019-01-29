@@ -55,7 +55,7 @@
     self.rv.frame = CGRectMake(self.width/2.0, 0, self.width/2.0, self.height);
 }
 - (UIImage *)fixLinkPopImage:(NSString *)name {
-    UIImage *im = [BundleTool imageNamed:name];
+    UIImage *im = [UIImage imageNamed:name];
     return [im resizableImageWithCapInsets:UIEdgeInsetsMake(im.size.height*0.5-1, im.size.width * 0.5f-1, im.size.height*0.5+1, im.size.width * 0.5f+1) resizingMode:UIImageResizingModeTile];
 }
 @end

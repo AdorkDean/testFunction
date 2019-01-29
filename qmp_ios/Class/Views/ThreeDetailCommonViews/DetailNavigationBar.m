@@ -96,8 +96,8 @@
     if (!_backBtn) {
         
         UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(15, kStatusBarHeight, 50, kNavigationBarHeight)];
-        [leftButton setImage:[BundleTool imageNamed:@"detail_leftArrow"] forState:UIControlStateNormal];
-        [leftButton setImage:[BundleTool imageNamed:@"detail_leftArrow"] forState:UIControlStateHighlighted];
+        [leftButton setImage:[UIImage imageNamed:@"detail_leftArrow"] forState:UIControlStateNormal];
+        [leftButton setImage:[UIImage imageNamed:@"detail_leftArrow"] forState:UIControlStateHighlighted];
         [leftButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
         [leftButton addTarget:self action:@selector(popSelf) forControlEvents:UIControlEventTouchUpInside];
 
@@ -110,8 +110,8 @@
     if (!_shareBtn) {
         
         UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(SCREENW - 100, kStatusBarHeight, 50, kNavigationBarHeight)];
-        [leftButton setImage:[BundleTool imageNamed:@"detail_shareIcon"] forState:UIControlStateNormal];
-        [leftButton setImage:[BundleTool imageNamed:@"detail_shareIcon"] forState:UIControlStateHighlighted];
+        [leftButton setImage:[UIImage imageNamed:@"detail_shareIcon"] forState:UIControlStateNormal];
+        [leftButton setImage:[UIImage imageNamed:@"detail_shareIcon"] forState:UIControlStateHighlighted];
         [leftButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
         [leftButton addTarget:self action:@selector(shareBtnClick) forControlEvents:UIControlEventTouchUpInside];
         
@@ -125,8 +125,8 @@
     if (!_moreBtn) {
         
         UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(SCREENW - 51, kStatusBarHeight, 50, kNavigationBarHeight)];
-        [leftButton setImage:[BundleTool imageNamed:@"detail_moreIcon_white"] forState:UIControlStateNormal];
-        [leftButton setImage:[BundleTool imageNamed:@"detail_moreIcon_white"] forState:UIControlStateHighlighted];
+        [leftButton setImage:[UIImage imageNamed:@"detail_moreIcon_white"] forState:UIControlStateNormal];
+        [leftButton setImage:[UIImage imageNamed:@"detail_moreIcon_white"] forState:UIControlStateHighlighted];
         [leftButton addTarget:self action:@selector(moreBtnClick) forControlEvents:UIControlEventTouchUpInside];
         
         _moreBtn = leftButton;
@@ -165,15 +165,15 @@
     if (isWhite) {
         _isWhite = YES;
         self.backgroundColor = [UIColor whiteColor];
-        [self.backBtn setImage:[BundleTool imageNamed:@"left-arrow"] forState:UIControlStateNormal];
-        [self.backBtn setImage:[BundleTool imageNamed:@"left-arrow"] forState:UIControlStateHighlighted];
+        [self.backBtn setImage:[UIImage imageNamed:@"left-arrow"] forState:UIControlStateNormal];
+        [self.backBtn setImage:[UIImage imageNamed:@"left-arrow"] forState:UIControlStateHighlighted];
         if (self.moreBtn) {
-            [self.moreBtn setImage:[BundleTool imageNamed:@"detail_moreIcon"] forState:UIControlStateNormal];
-            [self.moreBtn setImage:[BundleTool imageNamed:@"detail_moreIcon"] forState:UIControlStateHighlighted];
+            [self.moreBtn setImage:[UIImage imageNamed:@"detail_moreIcon"] forState:UIControlStateNormal];
+            [self.moreBtn setImage:[UIImage imageNamed:@"detail_moreIcon"] forState:UIControlStateHighlighted];
         }
         if (self.shareBtn) {
-            [self.shareBtn setImage:[BundleTool imageNamed:@"detail_share"] forState:UIControlStateNormal];
-            [self.shareBtn setImage:[BundleTool imageNamed:@"detail_share"] forState:UIControlStateHighlighted];
+            [self.shareBtn setImage:[UIImage imageNamed:@"detail_share"] forState:UIControlStateNormal];
+            [self.shareBtn setImage:[UIImage imageNamed:@"detail_share"] forState:UIControlStateHighlighted];
         }
         self.titleLabel.textColor = NV_TITLE_COLOR;
 
@@ -182,15 +182,15 @@
         
         _isWhite = NO;
         self.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0];
-        [self.backBtn setImage:[BundleTool imageNamed:@"detail_leftArrow"] forState:UIControlStateNormal];
-        [self.backBtn setImage:[BundleTool imageNamed:@"detail_leftArrow"] forState:UIControlStateHighlighted];
+        [self.backBtn setImage:[UIImage imageNamed:@"detail_leftArrow"] forState:UIControlStateNormal];
+        [self.backBtn setImage:[UIImage imageNamed:@"detail_leftArrow"] forState:UIControlStateHighlighted];
         if (self.moreBtn) {
-            [self.moreBtn setImage:[BundleTool imageNamed:@"detail_moreIcon_white"] forState:UIControlStateNormal];
-            [self.moreBtn setImage:[BundleTool imageNamed:@"detail_moreIcon_white"] forState:UIControlStateHighlighted];
+            [self.moreBtn setImage:[UIImage imageNamed:@"detail_moreIcon_white"] forState:UIControlStateNormal];
+            [self.moreBtn setImage:[UIImage imageNamed:@"detail_moreIcon_white"] forState:UIControlStateHighlighted];
         }
         if (self.shareBtn) {
-            [self.shareBtn setImage:[BundleTool imageNamed:@"detail_shareIcon"] forState:UIControlStateNormal];
-            [self.shareBtn setImage:[BundleTool imageNamed:@"detail_shareIcon"] forState:UIControlStateHighlighted];
+            [self.shareBtn setImage:[UIImage imageNamed:@"detail_shareIcon"] forState:UIControlStateNormal];
+            [self.shareBtn setImage:[UIImage imageNamed:@"detail_shareIcon"] forState:UIControlStateHighlighted];
 
         }
         self.titleLabel.textColor = [UIColor clearColor];

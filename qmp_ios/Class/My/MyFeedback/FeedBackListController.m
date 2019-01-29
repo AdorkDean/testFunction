@@ -39,7 +39,7 @@
     self.tableView.mj_header = self.mjHeader;
     self.tableView.mj_footer = self.mjFooter;
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"FeedbackListCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"FeedbackListCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"FeedbackListCell" bundle:nil] forCellReuseIdentifier:@"FeedbackListCellID"];
 }
 
 

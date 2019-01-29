@@ -916,10 +916,10 @@ ManagerAlertDelegate>
     
     _mySearchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(7, 0, SCREENW-14, height)];
     [_mySearchBar setBackgroundImage:[UIImage imageFromColor:TABLEVIEW_COLOR andSize:_mySearchBar.size]];
-    //    _mySearchBar.backgroundImage = [BundleTool imageNamed:@"nav-lightgray"];
+    //    _mySearchBar.backgroundImage = [UIImage imageNamed:@"nav-lightgray"];
     //设置背景色
     [_mySearchBar setBackgroundColor:TABLEVIEW_COLOR];
-    [_mySearchBar setSearchFieldBackgroundImage:[BundleTool imageNamed:@"search_borderTab"] forState:UIControlStateNormal];
+    [_mySearchBar setSearchFieldBackgroundImage:[UIImage imageNamed:@"search_borderTab"] forState:UIControlStateNormal];
     [_mySearchBar setSearchTextPositionAdjustment:UIOffsetMake(10, 0)];
     UITextField *tf = [_mySearchBar valueForKey:@"_searchField"];
     tf.font = [UIFont systemFontOfSize:14];
@@ -1369,7 +1369,7 @@ ManagerAlertDelegate>
         _bpStatusBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         _bpStatusBtn.frame = CGRectMake(60, 0, SCREENW - 120, 49);
         [_bpStatusBtn setTitle:@"BP投递记录" forState:UIControlStateNormal];
-        [_bpStatusBtn setImage:[BundleTool imageNamed:@"my_bp_deliverStatus"] forState:UIControlStateNormal];
+        [_bpStatusBtn setImage:[UIImage imageNamed:@"my_bp_deliverStatus"] forState:UIControlStateNormal];
         _bpStatusBtn.titleLabel.font = [UIFont systemFontOfSize:15];
         [_bpStatusBtn setTitleColor:BLUE_TITLE_COLOR forState:UIControlStateNormal];
         [_bpStatusBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:5];

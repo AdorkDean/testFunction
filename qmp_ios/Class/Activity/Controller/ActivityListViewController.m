@@ -89,7 +89,7 @@
 
     if (self.type == ActivityListViewControllerTypeOrgnize || self.type == ActivityListViewControllerTypeProduct) {        
         UIButton *noteBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 53, 53)];
-        [noteBtn setImage:[BundleTool imageNamed:@"me_activityEdit"] forState:UIControlStateNormal];
+        [noteBtn setImage:[UIImage imageNamed:@"me_activityEdit"] forState:UIControlStateNormal];
         [noteBtn addTarget:self action:@selector(postDynamic) forControlEvents:UIControlEventTouchUpInside];
         //    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:noteBtn];
         

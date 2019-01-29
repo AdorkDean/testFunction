@@ -39,7 +39,7 @@
     UIButton *titleBtn = [[UIButton alloc]initWithFrame:CGRectMake(5, 218, 120, 20)];
     [titleBtn setTitleColor:H6COLOR forState:UIControlStateNormal];
     titleBtn.titleLabel.font = [UIFont systemFontOfSize:14];
-    [titleBtn setImage:[BundleTool imageNamed:@"set_tip"] forState:UIControlStateNormal];
+    [titleBtn setImage:[UIImage imageNamed:@"set_tip"] forState:UIControlStateNormal];
     [titleBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:4];
     [titleBtn setTitle:@"花名编辑说明" forState:UIControlStateNormal];
     [self.view addSubview:titleBtn];

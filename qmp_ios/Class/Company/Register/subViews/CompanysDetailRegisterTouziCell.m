@@ -83,10 +83,10 @@
     
     if (![PublicTool isNull:icon]) {
         
-        [_iconImg sd_setImageWithURL:[NSURL URLWithString:icon] placeholderImage:[BundleTool imageNamed:@"logo_default"]];
+        [_iconImg sd_setImageWithURL:[NSURL URLWithString:icon] placeholderImage:[UIImage imageNamed:@"logo_default"]];
   
     }else{
-        [_iconImg setImage:[BundleTool imageNamed:@"logo_default"]];
+        [_iconImg setImage:[UIImage imageNamed:@"logo_default"]];
     }
 //    
 //    if (![PublicTool isNull:detail]){

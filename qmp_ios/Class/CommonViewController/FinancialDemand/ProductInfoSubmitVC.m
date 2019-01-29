@@ -84,7 +84,7 @@
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREENW, SCREENH - kScreenTopHeight) style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    [self.tableView registerNib:[UINib nibWithNibName:@"MyInfoTableViewCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"MyInfoTableViewCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"MyInfoTableViewCell" bundle:nil] forCellReuseIdentifier:@"MyInfoTableViewCellID"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCellID"];
     [self.tableView registerClass:[EditCell class] forCellReuseIdentifier:@"EditCellID"];
     [self.tableView registerClass:[TextViewTableViewCell class] forCellReuseIdentifier:@"TextViewTableViewCellID"];
@@ -99,7 +99,7 @@
     imgV.layer.borderWidth = 0.5;
     imgV.layer.borderColor = BORDER_LINE_COLOR.CGColor;
     [headerV addSubview:imgV];
-    imgV.image = [BundleTool imageNamed:PROICON_DEFAULT];
+    imgV.image = [UIImage imageNamed:PROICON_DEFAULT];
     
     UILabel *lab = [[UILabel alloc]initWithFrame:CGRectMake(imgV.right+12, (80-14)/2.0, SCREENW, 14)];
     [lab labelWithFontSize:12 textColor:H5COLOR];
@@ -249,7 +249,7 @@
         cell.keyLbl.attributedText = attText;
         cell.valueLbl.text = self.cellValueDic[key];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        [cell.rightImgV setImage:[BundleTool imageNamed:@"leftarrow_gray"]];
+        [cell.rightImgV setImage:[UIImage imageNamed:@"leftarrow_gray"]];
         return cell;
         
     } else if ([cellClass isEqualToString:@"EditCell"]) {
@@ -377,7 +377,7 @@
 - (NSMutableArray *)provinces{
     if (!_provinces) {
         _provinces = [NSMutableArray array];
-        NSArray *provinceArr = [NSArray arrayWithContentsOfFile:[[BundleTool commonBundle]pathForResource:@"ProvinceFilter" ofType:@"plist"]];
+        NSArray *provinceArr = [NSArray arrayWithContentsOfFile:[nilpathForResource:@"ProvinceFilter" ofType:@"plist"]];
         for (NSDictionary *dic in provinceArr) {
             [_provinces addObject:dic[@"name"]];
         }

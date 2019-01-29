@@ -153,7 +153,7 @@
         self.lineChart.valueLabelPattern = kPopoverLabelPatternBlank;
         self.lineChart.lineStyle = kLineStyleRealLine;
         self.lineChart.unitColor = ZFWhite;
-        self.lineChart.xAxisColor = [UIColor colorWithPatternImage:[BundleTool imageNamed:@"chart_dash_line"]];
+        self.lineChart.xAxisColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"chart_dash_line"]];
         self.lineChart.separateLineDashPattern = @[@(4),@(4)];
         self.lineChart.yAxisColor = ZFWhite;
         self.lineChart.axisLineValueFont = [UIFont systemFontOfSize:13];

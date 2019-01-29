@@ -595,7 +595,7 @@
                 NSArray *lunciArr = [resultData objectForKey:@"lunci"];
                 lunciArr = @[@{@"name":@"未标记",@"selected":@"0"},@{@"name":@"感兴趣",@"selected":@"0"},@{@"name":@"不感兴趣",@"selected":@"0"}];
                 //省份
-                eventArr = [NSArray arrayWithContentsOfFile:[[BundleTool commonBundle]pathForResource:@"ProvinceFilter" ofType:@"plist"]];
+                eventArr = [NSArray arrayWithContentsOfFile:[nilpathForResource:@"ProvinceFilter" ofType:@"plist"]];
                 
                 NSMutableArray *retMArr = [self handelArr:dataArr ToArr:self.selectedMArr ofTableName:_tableName];
                 NSMutableArray *retEventMArr = [self handelArr:eventArr ToArr:self.selectedEventMArr ofTableName:_eventTableName];

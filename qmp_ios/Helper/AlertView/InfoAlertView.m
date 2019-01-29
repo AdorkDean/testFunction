@@ -103,7 +103,7 @@
     closeBtn.layer.masksToBounds = YES;
     closeBtn.layer.cornerRadius = 15.f;
     [closeBtn setBackgroundColor:[UIColor whiteColor]];
-    [closeBtn setBackgroundImage:[BundleTool imageNamed:@"group-close"] forState:UIControlStateNormal];
+    [closeBtn setBackgroundImage:[UIImage imageNamed:@"group-close"] forState:UIControlStateNormal];
     [closeBtn addTarget:self action:@selector(pressCloseBtn:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:closeBtn];
     

@@ -53,7 +53,7 @@
     }
     self.tableView.frame = CGRectMake(0, 0, SCREENW, height);
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"SearchPersonCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"SearchPersonCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"SearchPersonCell" bundle:nil] forCellReuseIdentifier:@"SearchPersonCellID"];
     
 //    self.tableView.tableFooterView = self.tableFooterView;
 }
@@ -248,7 +248,7 @@
     
     SearchPersonCell *cell =  [tableView dequeueReusableCellWithIdentifier:ID2];
     if (!cell) {
-        cell = (SearchPersonCell*)[[BundleTool commonBundle]loadNibNamed:@"SearchPersonCell" owner:nil options:nil].lastObject;
+        cell = (SearchPersonCell*)[nilloadNibNamed:@"SearchPersonCell" owner:nil options:nil].lastObject;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     SearchPerson *person = self.dataArr[indexPath.row];

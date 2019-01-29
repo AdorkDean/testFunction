@@ -14,7 +14,7 @@
 
 @implementation OnlyContentController
 -(instancetype)init{
-    OnlyContentController *vc = [[OnlyContentController alloc]initWithNibName:@"OnlyContentController" bundle:[BundleTool commonBundle]];
+    OnlyContentController *vc = [[OnlyContentController alloc]initWithNibName:@"OnlyContentController" bundle:nil];
     return vc;
 }
 

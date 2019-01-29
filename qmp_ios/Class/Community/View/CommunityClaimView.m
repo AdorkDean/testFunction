@@ -15,7 +15,7 @@
 @implementation CommunityClaimView
 
 + (void)showClaimView{
-    CommunityClaimView *claimV = [[BundleTool commonBundle]loadNibNamed:@"CommunityClaimView" owner:nil options:nil].lastObject;
+    CommunityClaimView *claimV = [nilloadNibNamed:@"CommunityClaimView" owner:nil options:nil].lastObject;
     claimV.frame = KEYWindow.bounds;
     [KEYWindow addSubview:claimV];
 }

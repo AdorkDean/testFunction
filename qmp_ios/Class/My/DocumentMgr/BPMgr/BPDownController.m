@@ -492,7 +492,7 @@
         [deleteBtn setTitleColor:NV_TITLE_COLOR forState:UIControlStateNormal];
         [deleteBtn setTitle:@"清空BP" forState:UIControlStateNormal];
         deleteBtn.titleLabel.font = [UIFont systemFontOfSize:15];
-        [deleteBtn setImage:[BundleTool imageNamed:@"del_downIcon"] forState:UIControlStateNormal];
+        [deleteBtn setImage:[UIImage imageNamed:@"del_downIcon"] forState:UIControlStateNormal];
         [deleteBtn layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:5];
         [_bottomView addSubview:deleteBtn];
         [deleteBtn addTarget:self action:@selector(deleteBtnClick) forControlEvents:UIControlEventTouchUpInside];

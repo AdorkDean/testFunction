@@ -132,7 +132,7 @@
 - (void)buildLeftBarButtonItem{
     
     UIButton *leftButton = [[UIButton alloc] initWithFrame:LEFTBUTTONFRAME];
-    [leftButton setImage:[BundleTool imageNamed:@"left-arrow"] forState:UIControlStateNormal];
+    [leftButton setImage:[UIImage imageNamed:@"left-arrow"] forState:UIControlStateNormal];
     [leftButton addTarget:self action:@selector(pressLeftButtonItem:) forControlEvents:UIControlEventTouchUpInside];
     
     UIBarButtonItem *leftButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
@@ -174,7 +174,7 @@
 - (void)buildRightBarButtonItem{
     
     UIButton * moreBtn = [[UIButton alloc] initWithFrame:RIGHTBARBTNFRAME];
-    [moreBtn setImage:[BundleTool imageNamed:@"moreOptions"] forState:UIControlStateNormal];
+    [moreBtn setImage:[UIImage imageNamed:@"moreOptions"] forState:UIControlStateNormal];
     [moreBtn addTarget:self action:@selector(moreOptions:) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem * moreItem = [[UIBarButtonItem alloc]initWithCustomView:moreBtn];
     UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
@@ -374,7 +374,7 @@
     
     NSString *detailStr = @"看文件就用@企名片";
     
-    [self.shareToTool shareToOtherApp:detailStr aTitleSessionStr:titleStr aTitleTimelineStr:titleStr aIcon:[BundleTool imageNamed:@"share_news"] aOpenUrl:self.fileItem.fileUrl onViewController:self shareResult:^(BOOL shareSuccess) {
+    [self.shareToTool shareToOtherApp:detailStr aTitleSessionStr:titleStr aTitleTimelineStr:titleStr aIcon:[UIImage imageNamed:@"share_news"] aOpenUrl:self.fileItem.fileUrl onViewController:self shareResult:^(BOOL shareSuccess) {
         if (shareSuccess) {
         }
     }];

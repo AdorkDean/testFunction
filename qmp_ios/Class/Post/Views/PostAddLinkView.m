@@ -107,7 +107,7 @@
         
         UIButton *button = [[UIButton alloc] init];
         button.frame = CGRectMake(0, 0, 30, 30);
-        [button setImage:[BundleTool imageNamed:@"add_link_delete"] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:@"add_link_delete"] forState:UIControlStateNormal];
         [button addTarget:self action:@selector(textFieldClear) forControlEvents:UIControlEventTouchUpInside];
         _textField.rightView = button;
         _textField.rightViewMode = UITextFieldViewModeWhileEditing;

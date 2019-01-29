@@ -123,7 +123,7 @@
         [callView addSubview:emailBtn];
 
         UIButton *sendEmailBtn = [[UIButton alloc] initWithFrame:CGRectMake(callVW - callW, callH,callW, callW)];
-        [sendEmailBtn setImage:[BundleTool imageNamed:@"feedback_email"] forState:UIControlStateNormal];
+        [sendEmailBtn setImage:[UIImage imageNamed:@"feedback_email"] forState:UIControlStateNormal];
         [sendEmailBtn addTarget:self action:@selector(sendEmail) forControlEvents:UIControlEventTouchUpInside];
 //        [callView addSubview:sendEmailBtn];
 
@@ -149,7 +149,7 @@
 //        teleBtn.userInteractionEnabled = YES;
 //        [teleBtn addGestureRecognizer:longPress];
 //        UIButton *callBtn = [[UIButton alloc] initWithFrame:CGRectMake(callVW - callW, callH,callW, callW)];
-//        [callBtn setImage:[BundleTool imageNamed:@"feedback_call"] forState:UIControlStateNormal];
+//        [callBtn setImage:[UIImage imageNamed:@"feedback_call"] forState:UIControlStateNormal];
 //        [callBtn addTarget:self action:@selector(makeACall) forControlEvents:UIControlEventTouchUpInside];
 //        [callView addSubview:callBtn];
         

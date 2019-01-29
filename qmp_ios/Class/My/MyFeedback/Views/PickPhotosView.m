@@ -58,7 +58,7 @@
         _deleteButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _deleteButton.bounds = CGRectMake(0, 0, 20, 20);
         _deleteButton.tag = 10086;
-        [_deleteButton setImage:[BundleTool imageNamed:@"post_photo_delete"] forState:UIControlStateNormal];
+        [_deleteButton setImage:[UIImage imageNamed:@"post_photo_delete"] forState:UIControlStateNormal];
         _deleteButton.hidden = YES;
         [_deleteButton addTarget:self action:@selector(deleteButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }

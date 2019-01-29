@@ -19,7 +19,7 @@
 + (instancetype)cellWithTableView:(UITableView*)tableView{
     MeProductListCellByXib *cell = [tableView dequeueReusableCellWithIdentifier:@"MeProductListCellByXibID"];
     if (!cell) {
-        cell = [[BundleTool commonBundle] loadNibNamed:@"MeProductListCellByXib" owner:nil options:nil].lastObject;
+        cell = [nil loadNibNamed:@"MeProductListCellByXib" owner:nil options:nil].lastObject;
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
@@ -43,9 +43,9 @@
 - (void)setModel:(MeTopItemModel *)model{
     _model = model;
     if (_type == fromMeJiGouTyp) {
-        [self.iconImgVw sd_setImageWithURL:[NSURL URLWithString:_model.icon] placeholderImage:[BundleTool imageNamed:@"jigou_default.png"]];
+        [self.iconImgVw sd_setImageWithURL:[NSURL URLWithString:_model.icon] placeholderImage:[UIImage imageNamed:@"jigou_default.png"]];
     }else if (_type == fromMeProductType){
-        [self.iconImgVw sd_setImageWithURL:[NSURL URLWithString:_model.icon] placeholderImage:[BundleTool imageNamed:@"product_default.png"]];
+        [self.iconImgVw sd_setImageWithURL:[NSURL URLWithString:_model.icon] placeholderImage:[UIImage imageNamed:@"product_default.png"]];
     }else{
         
     }

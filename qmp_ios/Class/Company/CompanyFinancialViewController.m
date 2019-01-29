@@ -145,7 +145,7 @@
 }
 - (CompanyFinancialHeaderView *)headerView {
     if (!_headerView) {
-        CompanyFinancialHeaderView *view = [[BundleTool commonBundle] loadNibNamed:@"CompanyFinancialHeaderView" owner:nil options:nil].lastObject;
+        CompanyFinancialHeaderView *view = [nil loadNibNamed:@"CompanyFinancialHeaderView" owner:nil options:nil].lastObject;
         _headerView = view;
     }
     return _headerView;

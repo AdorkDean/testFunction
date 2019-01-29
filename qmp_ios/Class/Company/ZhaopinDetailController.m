@@ -36,7 +36,7 @@
     self.tableView.dataSource = self;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cellID"];
     [self.view addSubview:self.tableView];
-    [self.tableView registerNib:[UINib nibWithNibName:@"ZhaopinHeaderView" bundle:[BundleTool commonBundle]] forHeaderFooterViewReuseIdentifier:@"ZhaopinHeaderViewID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"ZhaopinHeaderView" bundle:nil] forHeaderFooterViewReuseIdentifier:@"ZhaopinHeaderViewID"];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.mj_header = nil;
 }

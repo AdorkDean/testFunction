@@ -104,11 +104,11 @@
     _companyLab.userInteractionEnabled = NO;
 
     NSString *phone = [PublicTool isNull:_cardItem.phone] ? _cardItem.telephone:_cardItem.phone;
-    [_phoneBtn setImage:[PublicTool isNull:phone] ? [BundleTool imageNamed:@"card_phone_disabled"]:[BundleTool imageNamed:@"card_phone_enabled"] forState:UIControlStateNormal];
-    [_wechatBtn setImage:[PublicTool isNull:_cardItem.wechat] ? [BundleTool imageNamed:@"card_wechat_disabled"]:[BundleTool imageNamed:@"card_wechat_enabled"] forState:UIControlStateNormal];
-    [_emailBtn setImage:[PublicTool isNull:_cardItem.email] ? [BundleTool imageNamed:@"card_email_disabled"]:[BundleTool imageNamed:@"card_email_enabled"] forState:UIControlStateNormal];
+    [_phoneBtn setImage:[PublicTool isNull:phone] ? [UIImage imageNamed:@"card_phone_disabled"]:[UIImage imageNamed:@"card_phone_enabled"] forState:UIControlStateNormal];
+    [_wechatBtn setImage:[PublicTool isNull:_cardItem.wechat] ? [UIImage imageNamed:@"card_wechat_disabled"]:[UIImage imageNamed:@"card_wechat_enabled"] forState:UIControlStateNormal];
+    [_emailBtn setImage:[PublicTool isNull:_cardItem.email] ? [UIImage imageNamed:@"card_email_disabled"]:[UIImage imageNamed:@"card_email_enabled"] forState:UIControlStateNormal];
     NSString *icon = [PublicTool isNull:_cardItem.icon] ? _cardItem.imgUrl:_cardItem.icon;
-    [_cardIcon sd_setImageWithURL:[NSURL URLWithString:icon] placeholderImage:[BundleTool imageNamed:@"heading"]];
+    [_cardIcon sd_setImageWithURL:[NSURL URLWithString:icon] placeholderImage:[UIImage imageNamed:@"heading"]];
     
     NSString *name = [PublicTool isNull:_cardItem.cardName] ? _cardItem.contacts:_cardItem.cardName;
     name = [PublicTool nilStringReturn:name];
@@ -157,11 +157,11 @@
     
     _nickName = _friendM.nickname;
 
-    [_phoneBtn setImage:(_friendM.type.integerValue == 1||_friendM.type.integerValue == 3) ? [BundleTool imageNamed:@"card_phone_enabled"]:[BundleTool imageNamed:@"card_phone_disabled"] forState:UIControlStateNormal];
-    [_wechatBtn setImage:(_friendM.type.integerValue == 2||_friendM.type.integerValue == 3) ? [BundleTool imageNamed:@"card_wechat_enabled"]:[BundleTool imageNamed:@"card_wechat_disabled"] forState:UIControlStateNormal];
-    [_emailBtn setImage:[PublicTool isNull:_friendM.email] ? [BundleTool imageNamed:@"card_email_disabled"]:[BundleTool imageNamed:@"card_email_enabled"] forState:UIControlStateNormal];
+    [_phoneBtn setImage:(_friendM.type.integerValue == 1||_friendM.type.integerValue == 3) ? [UIImage imageNamed:@"card_phone_enabled"]:[UIImage imageNamed:@"card_phone_disabled"] forState:UIControlStateNormal];
+    [_wechatBtn setImage:(_friendM.type.integerValue == 2||_friendM.type.integerValue == 3) ? [UIImage imageNamed:@"card_wechat_enabled"]:[UIImage imageNamed:@"card_wechat_disabled"] forState:UIControlStateNormal];
+    [_emailBtn setImage:[PublicTool isNull:_friendM.email] ? [UIImage imageNamed:@"card_email_disabled"]:[UIImage imageNamed:@"card_email_enabled"] forState:UIControlStateNormal];
     
-    [_cardIcon sd_setImageWithURL:[NSURL URLWithString:_friendM.icon] placeholderImage:[BundleTool imageNamed:@"heading"]];
+    [_cardIcon sd_setImageWithURL:[NSURL URLWithString:_friendM.icon] placeholderImage:[UIImage imageNamed:@"heading"]];
     
     NSString *name = [PublicTool isNull:_friendM.nickname] ? @"-":_friendM.nickname;
     _nameLab.text = name;

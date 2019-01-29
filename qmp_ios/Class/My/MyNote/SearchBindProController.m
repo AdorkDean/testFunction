@@ -139,7 +139,7 @@
             [headerView addSubview:headerLabel];
             headerLabel.text = @"历史记录";
             UIButton *delBtn = [[UIButton alloc] initWithFrame:CGRectMake(SCREENW - 50, 5, 35, 35)];
-            [delBtn setImage:[BundleTool imageNamed:@"searchDelhistory"] forState:UIControlStateNormal];
+            [delBtn setImage:[UIImage imageNamed:@"searchDelhistory"] forState:UIControlStateNormal];
             [delBtn setContentMode:UIViewContentModeCenter];
             [delBtn addTarget:self action:@selector(pressDelBtn:) forControlEvents:UIControlEventTouchUpInside];
             [delBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
@@ -424,7 +424,7 @@
     _searchTf = [[UITextField alloc]initWithFrame:CGRectMake(0, 0, view.width, 29)];
     _searchTf.backgroundColor = HTColorFromRGB(0xf5f5f5);
     UIImageView *leftImg = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 35, _searchTf.frame.size.height)];
-    leftImg.image = [BundleTool imageNamed:@"search"];
+    leftImg.image = [UIImage imageNamed:@"search"];
     leftImg.contentMode = UIViewContentModeCenter;
     _searchTf.returnKeyType = UIReturnKeySearch;
     _searchTf.leftView = leftImg;

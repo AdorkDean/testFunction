@@ -248,7 +248,7 @@
 }
 #pragma mark - Utils
 - (NSMutableAttributedString *)linkAttrImage {
-    UIImage *image = [BundleTool imageNamed:@"activity_cell_textlink"];
+    UIImage *image = [UIImage imageNamed:@"activity_cell_textlink"];
     NSMutableAttributedString *attr = [NSMutableAttributedString yy_attachmentStringWithContent:image
                                                                                     contentMode:UIViewContentModeCenter
                                                                                  attachmentSize:image.size

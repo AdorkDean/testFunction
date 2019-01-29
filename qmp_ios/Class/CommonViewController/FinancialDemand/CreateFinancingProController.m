@@ -68,7 +68,7 @@
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREENW, SCREENH - kScreenTopHeight) style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    [self.tableView registerNib:[UINib nibWithNibName:@"MyInfoTableViewCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"MyInfoTableViewCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"MyInfoTableViewCell" bundle:nil] forCellReuseIdentifier:@"MyInfoTableViewCellID"];
     [self.tableView registerClass:[EditCell class] forCellReuseIdentifier:@"EditCellID"];
     [self.tableView registerClass:[TextViewTableViewCell class] forCellReuseIdentifier:@"TextViewTableViewCellID"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCellID"];
@@ -113,7 +113,7 @@
         self.nameLabel.text = @"";
         self.descLabel.text = @"";
         self.hangye1Label.text = @"";
-        self.logoView.image = [BundleTool imageNamed:PROICON_DEFAULT];
+        self.logoView.image = [UIImage imageNamed:PROICON_DEFAULT];
         self.arrawView.hidden = YES;
         if (self.isNewProject) {
             self.headerView.height = 80;
@@ -431,15 +431,15 @@
         MyInfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyInfoTableViewCellID" forIndexPath:indexPath];
         cell.keyLbl.attributedText = attText;
         cell.valueLbl.text = self.cellValueDic[config[@"key"]];
-        [cell.rightImgV setImage:[BundleTool imageNamed:@"leftarrow_gray"]];
+        [cell.rightImgV setImage:[UIImage imageNamed:@"leftarrow_gray"]];
 
         if ([config[@"key"] isEqualToString:@"fan_bp"]) {
             if (self.report) {
-                [cell.rightImgV setImage:[BundleTool imageNamed:@"cha_icon"]];
+                [cell.rightImgV setImage:[UIImage imageNamed:@"cha_icon"]];
                 cell.valueLbl.text = self.report.name;
                 cell.rightImgV.userInteractionEnabled = YES;
             } else {
-                [cell.rightImgV setImage:[BundleTool imageNamed:@"leftarrow_gray"]];
+                [cell.rightImgV setImage:[UIImage imageNamed:@"leftarrow_gray"]];
                 cell.valueLbl.text = @"仅自己可见和投递使用";
                 cell.rightImgV.userInteractionEnabled = NO;
             }
@@ -691,7 +691,7 @@
 - (NSMutableArray *)provinces{
     if (!_provinces) {
         _provinces = [NSMutableArray array];
-        NSArray *provinceArr = [NSArray arrayWithContentsOfFile:[[BundleTool commonBundle]pathForResource:@"ProvinceFilter" ofType:@"plist"]];
+        NSArray *provinceArr = [NSArray arrayWithContentsOfFile:[nilpathForResource:@"ProvinceFilter" ofType:@"plist"]];
         for (NSDictionary *dic in provinceArr) {
             [_provinces addObject:dic[@"name"]];
         }
@@ -710,7 +710,7 @@
         // 按照项目存在布局
         UIImageView *imgV = [[UIImageView alloc]initWithFrame:CGRectMake(15, 17, 44, 44)];
         imgV.layer.masksToBounds = YES;
-        imgV.image = [BundleTool imageNamed:PROICON_DEFAULT];
+        imgV.image = [UIImage imageNamed:PROICON_DEFAULT];
         imgV.layer.cornerRadius = 5;
         imgV.layer.borderWidth = 0.5;
         imgV.layer.borderColor = BORDER_LINE_COLOR.CGColor;
@@ -730,7 +730,7 @@
         
         UIImageView *arrawView1 = [[UIImageView alloc] init];
         arrawView1.frame = CGRectMake(SCREENW-15-8, (100-14)/2.0, 8, 14);
-        arrawView1.image = [BundleTool imageNamed:@"black_arraw"];
+        arrawView1.image = [UIImage imageNamed:@"black_arraw"];
         [headerV addSubview:arrawView1];
         self.arrawView = arrawView1;
         
@@ -771,7 +771,7 @@
         
         UIImageView *arrawView = [[UIImageView alloc] init];
         arrawView.frame = CGRectMake(SCREENW-15-8, (100-14)/2.0, 8, 14);
-        arrawView.image = [BundleTool imageNamed:@"black_arraw"];
+        arrawView.image = [UIImage imageNamed:@"black_arraw"];
         [selectProjectView addSubview:arrawView];
         
         UITapGestureRecognizer *tapGest = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(searchProject)];

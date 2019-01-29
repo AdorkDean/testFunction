@@ -295,14 +295,14 @@
     if (!_gifHeader) {
         NSMutableArray *images = [NSMutableArray array];
         for (int i = 1; i <= 65; i++) {
-            [images addObject:[BundleTool imageNamed:[NSString stringWithFormat:@"loading%d",i]]];
+            [images addObject:[UIImage imageNamed:[NSString stringWithFormat:@"loading%d",i]]];
         }
         _gifHeader = [[MJRefreshGifHeader alloc] init];
         _gifHeader.lastUpdatedTimeLabel.hidden = YES;
         _gifHeader.stateLabel.hidden=YES;
         
-        [_gifHeader setImages:@[[BundleTool imageNamed:@"loading1"]] duration:1 forState:MJRefreshStateIdle];
-        [_gifHeader setImages:@[[BundleTool imageNamed:@"loading1"]] duration:1 forState:MJRefreshStatePulling];
+        [_gifHeader setImages:@[[UIImage imageNamed:@"loading1"]] duration:1 forState:MJRefreshStateIdle];
+        [_gifHeader setImages:@[[UIImage imageNamed:@"loading1"]] duration:1 forState:MJRefreshStatePulling];
         [_gifHeader setImages:images duration:0.8 forState:MJRefreshStateRefreshing];
     }
     return _gifHeader;
@@ -335,7 +335,7 @@
     if (!_createButton) {
         _createButton = [[UIButton alloc] init];
         _createButton.frame = CGRectMake(SCREENW-38, 2, 38, 38);
-        [_createButton setImage:[BundleTool imageNamed:@"data_create"] forState:UIControlStateNormal];
+        [_createButton setImage:[UIImage imageNamed:@"data_create"] forState:UIControlStateNormal];
         [_createButton addTarget:self action:@selector(haha) forControlEvents:UIControlEventTouchUpInside];
         _createButton.imageEdgeInsets = UIEdgeInsetsMake(0, -6, 0, 6);
     }

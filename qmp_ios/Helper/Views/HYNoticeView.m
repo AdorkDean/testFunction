@@ -154,7 +154,7 @@ static NSMutableArray *noticeArray;
         
         //关闭按钮
         UIButton *closeButton = [[UIButton alloc] init];
-        [closeButton setImage:[BundleTool imageNamed:@"chacha"] forState:UIControlStateNormal];
+        [closeButton setImage:[UIImage imageNamed:@"chacha"] forState:UIControlStateNormal];
         [closeButton addTarget:self action:@selector(clickClose:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:closeButton];
         _closeButton = closeButton;
@@ -228,7 +228,7 @@ static NSMutableArray *noticeArray;
         
         //关闭按钮
         UIButton *closeButton = [[UIButton alloc] init];
-        [closeButton setImage:[BundleTool imageNamed:@"chacha"] forState:UIControlStateNormal];
+        [closeButton setImage:[UIImage imageNamed:@"chacha"] forState:UIControlStateNormal];
         [closeButton addTarget:self action:@selector(clickClose:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:closeButton];
         _closeButton = closeButton;

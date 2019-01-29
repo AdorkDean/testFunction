@@ -119,7 +119,7 @@
     UIImageView *imgV = [cell.contentView viewWithTag:1001];
     if (!imgV) {
         imgV = [[UIImageView alloc]initWithFrame:CGRectMake(7, 0, 15, cell.contentView.height)];
-        imgV.image =[BundleTool imageNamed:@"search_hot"];
+        imgV.image =[UIImage imageNamed:@"search_hot"];
         imgV.contentMode = UIViewContentModeCenter;
         [cell.contentView addSubview:imgV];
         imgV.tag = 1001;

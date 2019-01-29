@@ -123,7 +123,7 @@
         NSString *groupCellIdentifier = @"AlbumsTableViewCell";
         AlbumsListCell *cell = [tableView dequeueReusableCellWithIdentifier:groupCellIdentifier];
         if (!cell) {
-            cell = [[[BundleTool commonBundle] loadNibNamed:@"AlbumsListCell" owner:nil options:nil] lastObject];
+            cell = [[nil loadNibNamed:@"AlbumsListCell" owner:nil options:nil] lastObject];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
         
@@ -496,7 +496,7 @@
     UIButton *addBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     addBtn.frame = RIGHTBARBTNFRAME;
     [addBtn addTarget:self action:@selector(pressRightButtonItem:) forControlEvents:UIControlEventTouchUpInside];
-    [addBtn setImage:[BundleTool imageNamed:@"add-manager"] forState:UIControlStateNormal];
+    [addBtn setImage:[UIImage imageNamed:@"add-manager"] forState:UIControlStateNormal];
     UIBarButtonItem * barItem = [[UIBarButtonItem alloc] initWithCustomView:addBtn];
     
     UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
@@ -625,7 +625,7 @@
     [tableHeaderView addSubview:titleView];
     
     UIImageView *imgV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 20.f, 20.f)];
-    [imgV setImage:[BundleTool imageNamed:@"search-bar"]];
+    [imgV setImage:[UIImage imageNamed:@"search-bar"]];
     [titleView addSubview:imgV];
     UILabel *titleLbl = [[UILabel alloc] initWithFrame:CGRectMake(imgV.frame.size.width, 0, titleView.frame.size.width - imgV.frame.size.width, 20.f)];
     titleLbl.textColor = [UIColor lightGrayColor];
@@ -695,7 +695,7 @@
         [_searchBar setBackgroundImage:[UIImage imageFromColor:TABLEVIEW_COLOR andSize:_searchBar.bounds.size]];
         //设置背景色
         [_searchBar setBackgroundColor:TABLEVIEW_COLOR];
-        [_searchBar setSearchFieldBackgroundImage:[BundleTool imageNamed:@"search_borderBg"] forState:UIControlStateNormal];
+        [_searchBar setSearchFieldBackgroundImage:[UIImage imageNamed:@"search_borderBg"] forState:UIControlStateNormal];
         [_searchBar setSearchTextPositionAdjustment:UIOffsetMake(10, 0)];
         UITextField *tf = [_searchBar valueForKey:@"_searchField"];
         NSString *str = @"搜索专辑关键字";

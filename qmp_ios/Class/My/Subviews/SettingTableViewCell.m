@@ -43,7 +43,7 @@
     
     _rightImageV = [[UIImageView alloc]initWithFrame:CGRectMake(SCREENW - 44, (self.frame.size.height-44)/2, 44, 44)];
     [self.contentView addSubview:_rightImageV];
-    _rightImageV.image = [BundleTool imageNamed:@"me_headRightArrow"];
+    _rightImageV.image = [UIImage imageNamed:@"me_headRightArrow"];
     _rightImageV.contentMode = UIViewContentModeCenter;
     
     CGFloat wdith = 20.f;
@@ -138,7 +138,7 @@
         _hotView = [[UIImageView alloc] init];
         _hotView.frame = CGRectMake(0, 0, 14, 14);
         _hotView.hidden = YES;
-        _hotView.image = [BundleTool imageNamed:@"hot_text_icon"];
+        _hotView.image = [UIImage imageNamed:@"hot_text_icon"];
     }
     return _hotView;
 }

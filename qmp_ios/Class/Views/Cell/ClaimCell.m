@@ -35,7 +35,7 @@
    
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         
-        UIImage *img = [BundleTool imageNamed:@"company_investorclaimbg"];
+        UIImage *img = [UIImage imageNamed:@"company_investorclaimbg"];
         UIImageView *bgImgV = [[UIImageView alloc]initWithFrame:CGRectMake(16, 15, img.size.width*180/img.size.height, 180)];
         bgImgV.image = img;
         bgImgV.tag = 1000;

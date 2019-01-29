@@ -228,7 +228,7 @@
                 headerLabel.centerY = headerView.height/2.0+1;
                 headerLabel.text = @"历史记录";
                 UIButton *delBtn = [[UIButton alloc] initWithFrame:CGRectMake(SCREENW - 50, 0, 35, 35)];
-                [delBtn setImage:[BundleTool imageNamed:@"searchDelhistory"] forState:UIControlStateNormal];
+                [delBtn setImage:[UIImage imageNamed:@"searchDelhistory"] forState:UIControlStateNormal];
                 [delBtn setContentMode:UIViewContentModeCenter];
                 [delBtn addTarget:self action:@selector(pressDelBtn:) forControlEvents:UIControlEventTouchUpInside];
                 [delBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
@@ -656,7 +656,7 @@
     self.searchTf = [[UITextField alloc]initWithFrame:CGRectMake(0, 6, view.width, 32)];
     self.searchTf.backgroundColor = H568COLOR;
     UIImageView *leftImg = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 35, self.searchTf.frame.size.height)];
-    leftImg.image = [BundleTool imageNamed:@"search"];
+    leftImg.image = [UIImage imageNamed:@"search"];
     leftImg.contentMode = UIViewContentModeCenter;
     _searchTf.returnKeyType = UIReturnKeySearch;
     _searchTf.leftView = leftImg;
@@ -722,7 +722,7 @@
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.tableFooterView = [[UIView alloc]init];
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"SearchRegistCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"SearchRegistCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"SearchRegistCell" bundle:nil] forCellReuseIdentifier:@"SearchRegistCellID"];
     
     self.resultContorller = [[MainResultController alloc]init];
     self.resultContorller.view.frame = CGRectMake(0, 0, SCREENW, SCREENH - kScreenTopHeight);

@@ -101,7 +101,7 @@
     _model = item;
     
     _iconImg.contentMode = UIViewContentModeScaleAspectFit;
-    [_iconImg sd_setImageWithURL:[NSURL URLWithString:item.icon] placeholderImage:[BundleTool imageNamed:@"product_default"]];
+    [_iconImg sd_setImageWithURL:[NSURL URLWithString:item.icon] placeholderImage:[UIImage imageNamed:@"product_default"]];
     _countLbl.text = item.count;
     _nameLbl.text = item.name;
     

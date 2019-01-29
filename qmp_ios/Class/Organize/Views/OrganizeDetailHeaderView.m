@@ -59,7 +59,7 @@
         self.avatarLabel.backgroundColor = RANDOM_COLORARR[arc4random()%5];
         self.avatarLabel.hidden = NO;
     } else {
-        [self.avatarView sd_setImageWithURL:[NSURL URLWithString:organize.icon] placeholderImage:[BundleTool imageNamed:@"product_default"]];
+        [self.avatarView sd_setImageWithURL:[NSURL URLWithString:organize.icon] placeholderImage:[UIImage imageNamed:@"product_default"]];
     }
     
     self.nameLabel.text = organize.name;
@@ -236,7 +236,7 @@
     if (!_phoneView) {
         _phoneView = [[UIImageView alloc] init];
         _phoneView.frame = CGRectMake(16, self.avatarView.bottom+14, 14, 14);
-        _phoneView.image = [BundleTool imageNamed:@"contactInfo_phone"];
+        _phoneView.image = [UIImage imageNamed:@"contactInfo_phone"];
     }
     return _phoneView;
 }
@@ -257,7 +257,7 @@
     if (!_emailView) {
         _emailView = [[UIImageView alloc] init];
         _emailView.frame = CGRectMake(16, self.phoneView.bottom+8, 14, 14);
-        _emailView.image = [BundleTool imageNamed:@"contactInfo_email"];
+        _emailView.image = [UIImage imageNamed:@"contactInfo_email"];
     }
     return _emailView;
 }
@@ -278,7 +278,7 @@
     if (!_addressView) {
         _addressView = [[UIImageView alloc] init];
         _addressView.frame = CGRectMake(15, self.emailView.bottom+7, 16, 16);
-        _addressView.image = [BundleTool imageNamed:@"contactInfo_address"];
+        _addressView.image = [UIImage imageNamed:@"contactInfo_address"];
         _addressView.contentMode = UIViewContentModeScaleAspectFit;
     }
     return _addressView;
@@ -303,7 +303,7 @@
     if (!_placeholderImgV) {
         _placeholderImgV = [[UIImageView alloc] init];
         _placeholderImgV.frame = self.contentCardView.bounds;
-        _placeholderImgV.image = [BundleTool imageNamed:@"detail_placeholder_card"];
+        _placeholderImgV.image = [UIImage imageNamed:@"detail_placeholder_card"];
         _placeholderImgV.backgroundColor = [UIColor whiteColor];
     }
     return _placeholderImgV;

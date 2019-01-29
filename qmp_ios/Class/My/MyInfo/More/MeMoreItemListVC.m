@@ -51,7 +51,7 @@
     
     cell.titleLab.text = rowDict[@"title"];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.leftImageV.image = [BundleTool imageNamed:rowDict[@"icon"]];
+    cell.leftImageV.image = [UIImage imageNamed:rowDict[@"icon"]];
     cell.lineView.hidden = (indexPath.row+1 == self.dataSourceArr.count);
     cell.redPointView.hidden = YES;
     cell.keyRedView.hidden = YES;

@@ -27,7 +27,7 @@
 + (instancetype)cellWithTableView:(UITableView*)tableView{
     JobExpriencesCell *cell = [tableView dequeueReusableCellWithIdentifier:@"JobExpriencesCellID"];
     if (!cell) {
-        cell = [[BundleTool commonBundle]loadNibNamed:@"JobExpriencesCell" owner:nil options:nil].lastObject;
+        cell = [nilloadNibNamed:@"JobExpriencesCell" owner:nil options:nil].lastObject;
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
@@ -58,7 +58,7 @@
 - (void)setExprienceM:(ZhiWeiModel *)exprienceM{
     _exprienceM = exprienceM;
     xueliLabel.hidden = YES;
-    [_iconimgV sd_setImageWithURL:[NSURL URLWithString:exprienceM.icon] placeholderImage:[BundleTool imageNamed:PROICON_DEFAULT]];
+    [_iconimgV sd_setImageWithURL:[NSURL URLWithString:exprienceM.icon] placeholderImage:[UIImage imageNamed:PROICON_DEFAULT]];
     _nameLab.text = [PublicTool nilStringReturn:exprienceM.name];
     _zaizhiLab.hidden = NO;
     _zhiweiLab.text = @"";
@@ -106,7 +106,7 @@
 - (void)setWinExprienceM:(WinExperienceModel *)winExprienceM{
     _winExprienceM = winExprienceM;
     xueliLabel.hidden = YES;
-    _iconimgV.image = [BundleTool imageNamed:@"person_win"];
+    _iconimgV.image = [UIImage imageNamed:@"person_win"];
     _iconLabel.hidden = YES;
     _nameLab.text = winExprienceM.winning;
     _zhiweiLab.text = @"";
@@ -130,7 +130,7 @@
 
     _proOrgPrizeM = proOrgPrizeM;
     xueliLabel.hidden = YES;
-    _iconimgV.image = [BundleTool imageNamed:@"person_win"];
+    _iconimgV.image = [UIImage imageNamed:@"person_win"];
     _iconLabel.hidden = YES;
     _nameLab.text = proOrgPrizeM.prize_name;
     _zaizhiLab.hidden = YES;

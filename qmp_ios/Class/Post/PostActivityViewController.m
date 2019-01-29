@@ -253,7 +253,7 @@ const NSInteger ShowTZImagePickerTag = 101;
 - (NSArray*)createBackButton {
     
     UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 60, 44)];
-    [leftButton setImage:[BundleTool imageNamed:@"postact_close"] forState:UIControlStateNormal];
+    [leftButton setImage:[UIImage imageNamed:@"postact_close"] forState:UIControlStateNormal];
     [leftButton addTarget:self action:@selector(popSelf) forControlEvents:UIControlEventTouchUpInside];
     
     UIBarButtonItem *leftButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
@@ -560,7 +560,7 @@ const NSInteger ShowTZImagePickerTag = 101;
             imageView.hidden = NO;
             btn.hidden = YES;
             imageView.tag = ShowTZImagePickerTag;
-            [imageView.photoView setImage:[BundleTool imageNamed:@"pick_photos"]];
+            [imageView.photoView setImage:[UIImage imageNamed:@"pick_photos"]];
             height = imageView.bottom;
         } else {
             imageView.hidden = NO;
@@ -680,7 +680,7 @@ const NSInteger ShowTZImagePickerTag = 101;
             if (i == 0) {
                 imageView.hidden = NO;
                 imageView.tag = ShowTZImagePickerTag;
-                [imageView.photoView setImage:[BundleTool imageNamed:@"pick_photos"]];
+                [imageView.photoView setImage:[UIImage imageNamed:@"pick_photos"]];
             }
         }
     }
@@ -704,7 +704,7 @@ const NSInteger ShowTZImagePickerTag = 101;
         
         UIImageView *linkImageView = [[UIImageView alloc] init];
         linkImageView.frame = CGRectMake(8, 8, 54, 54);
-        linkImageView.image = [BundleTool imageNamed:@"post_link_placeholder"];
+        linkImageView.image = [UIImage imageNamed:@"post_link_placeholder"];
         [_linkShowView addSubview:linkImageView];
         self.linkImageView = linkImageView;
         
@@ -718,7 +718,7 @@ const NSInteger ShowTZImagePickerTag = 101;
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.frame = CGRectMake(SCREENW-34-40, 15, 40, 40);
-        [button setImage:[BundleTool imageNamed:@"post_link_show_delete"] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:@"post_link_show_delete"] forState:UIControlStateNormal];
         [button addTarget:self action:@selector(linkShowViewHide) forControlEvents:UIControlEventTouchUpInside];
         [_linkShowView addSubview:button];
     }
@@ -820,7 +820,7 @@ const NSInteger ShowTZImagePickerTag = 101;
             [self.linkImageView sd_setImageWithURL:[NSURL URLWithString:urlResurlt] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
             }];
         } else {
-            self.linkImageView.image = [BundleTool imageNamed:@"post_link_placeholder"];
+            self.linkImageView.image = [UIImage imageNamed:@"post_link_placeholder"];
         }
     }];
 }
@@ -866,36 +866,36 @@ const NSInteger ShowTZImagePickerTag = 101;
 - (void)fixBarButton {
     if (!self.linkShowView.hidden) {
         self.barView2.addLinkButton.enabled = NO;
-//        [self.barView2.addImageButton setImage:[BundleTool imageNamed:@"post_bar_add_photo_n"] forState:UIControlStateNormal];
+//        [self.barView2.addImageButton setImage:[UIImage imageNamed:@"post_bar_add_photo_n"] forState:UIControlStateNormal];
 //        [self.barView2.addImageButton setTitleColor:HTColorFromRGB(0xCCCCCC) forState:UIControlStateNormal];
     } else {
         self.barView2.addLinkButton.enabled = YES;
-//        [self.barView2.addImageButton setImage:[BundleTool imageNamed:@"post_bar_add_photo"] forState:UIControlStateNormal];
+//        [self.barView2.addImageButton setImage:[UIImage imageNamed:@"post_bar_add_photo"] forState:UIControlStateNormal];
 //        [self.barView2.addImageButton setTitleColor:HTColorFromRGB(0x197CD8) forState:UIControlStateNormal];
     }
 }
 - (void)fixBarRelateButton {
     if (self.relateViewModel.relateObjects.count >= 5) {
-        [self.barView2.addRelateButton setImage:[BundleTool imageNamed:@"post_bar_add_relate_n"] forState:UIControlStateNormal];
+        [self.barView2.addRelateButton setImage:[UIImage imageNamed:@"post_bar_add_relate_n"] forState:UIControlStateNormal];
         [self.barView2.addRelateButton setTitleColor:HTColorFromRGB(0xCCCCCC) forState:UIControlStateNormal];
     } else {
-        [self.barView2.addRelateButton setImage:[BundleTool imageNamed:@"post_bar_add_relate"] forState:UIControlStateNormal];
+        [self.barView2.addRelateButton setImage:[UIImage imageNamed:@"post_bar_add_relate"] forState:UIControlStateNormal];
         [self.barView2.addRelateButton setTitleColor:HTColorFromRGB(0x197CD8) forState:UIControlStateNormal];
     }
 }
 - (void)fixBarPhotoButton {
     if (self.photos.count >= 9) {
-        [self.barView2.addImageButton setImage:[BundleTool imageNamed:@"post_bar_add_photo_n"] forState:UIControlStateNormal];
+        [self.barView2.addImageButton setImage:[UIImage imageNamed:@"post_bar_add_photo_n"] forState:UIControlStateNormal];
         [self.barView2.addImageButton setTitleColor:HTColorFromRGB(0xCCCCCC) forState:UIControlStateNormal];
     } else {
-        [self.barView2.addImageButton setImage:[BundleTool imageNamed:@"post_bar_add_photo"] forState:UIControlStateNormal];
+        [self.barView2.addImageButton setImage:[UIImage imageNamed:@"post_bar_add_photo"] forState:UIControlStateNormal];
         [self.barView2.addImageButton setTitleColor:HTColorFromRGB(0x197CD8) forState:UIControlStateNormal];
     }
 //    if (self.photos.count > 0) {
-//        [self.barView2.addLinkButton setImage:[BundleTool imageNamed:@"post_bar_add_link_n"] forState:UIControlStateNormal];
+//        [self.barView2.addLinkButton setImage:[UIImage imageNamed:@"post_bar_add_link_n"] forState:UIControlStateNormal];
 //        [self.barView2.addLinkButton setTitleColor:HTColorFromRGB(0xCCCCCC) forState:UIControlStateNormal];
 //    } else {
-//        [self.barView2.addLinkButton setImage:[BundleTool imageNamed:@"post_bar_add_link"] forState:UIControlStateNormal];
+//        [self.barView2.addLinkButton setImage:[UIImage imageNamed:@"post_bar_add_link"] forState:UIControlStateNormal];
 //        [self.barView2.addLinkButton setTitleColor:HTColorFromRGB(0x197CD8) forState:UIControlStateNormal];
 //    }
 }

@@ -12,17 +12,21 @@
 #import <UserNotifications/UserNotifications.h>
 
 #import <JPUSHService.h>
-#import <CommonLibrary/AppDelegateTool.h>
-#import <CommonLibrary/UserActionStatistics.h>
+#import "AppDelegateTool.h"
+#import "UserActionStatistics.h"
 #import "QMPTabbarController.h"
-#import <CommonLibrary/MainNavViewController.h>
-#import <CommonLibrary/ChatHelper.h>
-#import <CommonLibrary/NotificationHandle.h>
-#import <CommonLibrary/UpgradeVersionView.h>
+#import "MainNavViewController.h"
+#import "ChatHelper.h"
+#import "NotificationHandle.h"
+#import "UpgradeVersionView.h"
 #import "QMPLoginController.h"
 #import "QMPPhoneBindController.h"
-#import <CommonLibrary/ThirdConfigTool.h>
-#import <CommonLibrary/UploadView.h>
+#import "ThirdConfigTool.h"
+#import "UploadView.h"
+#import "InfoAlertView.h"
+#import "InfoWithoutConfirmAlertView.h"
+
+
 
 @interface AppDelegate ()<AlertViewDelegate, InfoWithoutConfirmAlertViewDelegate,UploadViewDelegate, UNUserNotificationCenterDelegate, JPUSHRegisterDelegate, UITabBarControllerDelegate>{
     BOOL _isInBackground; // 是否在后台，pdf用
@@ -51,12 +55,6 @@
     
 //    [self checkoutAppVersion]; // 强制更新
     [ThirdConfigTool initThirdInfo:launchOptions applications:application]; // 配置第三方数据
-
-//    [self setWebViewUseAgent]; // 设置浏览器的UA
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-       
-        [ToLogin shared].delegate = [QMPPageSkipTools shared];
-    });
     [self checkAppStoreReviewStatus]; // 判断有没有审核通过
 
     [self updateUserInfo];
@@ -514,7 +512,7 @@
             
             //判断用户是否绑定手机号
             if (![WechatUserInfo shared].bind_flag || [WechatUserInfo shared].bind_flag.integerValue == 0) {
-                [[QMPPageSkipTools shared] appPageSkipToBindPhone];
+                [[AppDelegateTool shared] appPageSkipToBindPhone];
             }else{
                 //退出登录页面
                 [[PublicTool topViewController].navigationController popToRootViewControllerAnimated:YES];

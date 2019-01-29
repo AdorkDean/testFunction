@@ -30,32 +30,32 @@
 - (void)initData:(NSString *)imgName placeImg:(UIImage*)img  withBack:(NSString *)backImgName placeBackImg:(UIImage*)backimg{
 
     if (![PublicTool isNull:imgName]) {
-        [self.imgBtn sd_setImageWithURL:[NSURL URLWithString:imgName] forState:UIControlStateNormal placeholderImage:(img?img:[BundleTool imageNamed:@"card_zheng"])];
+        [self.imgBtn sd_setImageWithURL:[NSURL URLWithString:imgName] forState:UIControlStateNormal placeholderImage:(img?img:[UIImage imageNamed:@"card_zheng"])];
     }else{
-        [self.imgBtn setImage:[BundleTool imageNamed:@"card_zheng"] forState:UIControlStateNormal];
+        [self.imgBtn setImage:[UIImage imageNamed:@"card_zheng"] forState:UIControlStateNormal];
     }
     
     if (![PublicTool isNull:backImgName]) {
-        [self.backImgBtn sd_setImageWithURL:[NSURL URLWithString:backImgName] forState:UIControlStateNormal placeholderImage:backimg?backimg:[BundleTool imageNamed:@"card_back"]];
+        [self.backImgBtn sd_setImageWithURL:[NSURL URLWithString:backImgName] forState:UIControlStateNormal placeholderImage:backimg?backimg:[UIImage imageNamed:@"card_back"]];
         
     }else{
-        [self.backImgBtn setImage:[BundleTool imageNamed:@"card_back"] forState:UIControlStateNormal];
+        [self.backImgBtn setImage:[UIImage imageNamed:@"card_back"] forState:UIControlStateNormal];
     }
 }
 
 - (void)initData:(NSString *)imgName withBack:(NSString *)backImgName{
     
     if (![PublicTool isNull:imgName]) {
-        [self.imgBtn sd_setImageWithURL:[NSURL URLWithString:imgName] forState:UIControlStateNormal placeholderImage:[BundleTool imageNamed:@"card_zheng"]];
+        [self.imgBtn sd_setImageWithURL:[NSURL URLWithString:imgName] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"card_zheng"]];
     }else{
-        [self.imgBtn setImage:[BundleTool imageNamed:@"card_zheng"] forState:UIControlStateNormal];
+        [self.imgBtn setImage:[UIImage imageNamed:@"card_zheng"] forState:UIControlStateNormal];
     }
     
     if (![PublicTool isNull:backImgName]) {
-        [self.backImgBtn sd_setImageWithURL:[NSURL URLWithString:backImgName] forState:UIControlStateNormal placeholderImage:[BundleTool imageNamed:@"card_back"]];
+        [self.backImgBtn sd_setImageWithURL:[NSURL URLWithString:backImgName] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"card_back"]];
         
     }else{
-        [self.backImgBtn setImage:[BundleTool imageNamed:@"card_back"] forState:UIControlStateNormal];
+        [self.backImgBtn setImage:[UIImage imageNamed:@"card_back"] forState:UIControlStateNormal];
     }
 }
 

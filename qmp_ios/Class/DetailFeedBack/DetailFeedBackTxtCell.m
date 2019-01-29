@@ -26,7 +26,7 @@
 + (instancetype)initTableViewCell:(UITableView *)tableView{
     DetailFeedBackTxtCell * txtCell = [tableView dequeueReusableCellWithIdentifier:@"DetailFeedBackTxtCellID"];
     if (txtCell == nil) {
-        txtCell = [[BundleTool commonBundle] loadNibNamed:@"DetailFeedBackTxtCell" owner:self options:nil].lastObject;
+        txtCell = [nil loadNibNamed:@"DetailFeedBackTxtCell" owner:self options:nil].lastObject;
         [txtCell addInputTextViewOnContentView];
     }
     return txtCell;

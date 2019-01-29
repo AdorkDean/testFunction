@@ -21,7 +21,7 @@
 -(void)setOrganize:(OrganizeItem *)organize{
     _organize = organize;
     
-    [self.iconImgV sd_setImageWithURL:[NSURL URLWithString:organize.icon] placeholderImage:[BundleTool imageNamed:PROICON_DEFAULT]];
+    [self.iconImgV sd_setImageWithURL:[NSURL URLWithString:organize.icon] placeholderImage:[UIImage imageNamed:PROICON_DEFAULT]];
 //    [self.iconImgV sd_setImageWithURL:[NSURL URLWithString:organize.icon] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
 //        self.iconImgV.image = [PublicTool OriginImage:image scaleToSize:CGSizeMake(80, 80)];
 //    }];

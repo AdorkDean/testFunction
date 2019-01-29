@@ -58,7 +58,7 @@
 - (void)addView{
     
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREENW, SCREENH-kScreenTopHeight) style:UITableViewStyleGrouped];
-    [self.tableView registerNib:[UINib nibWithNibName:@"PushListCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"PushListCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"PushListCell" bundle:nil] forCellReuseIdentifier:@"PushListCellID"];
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -68,7 +68,7 @@
     
     [self.view addSubview:self.tableView];
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"FriendApplyCell" bundle:[BundleTool commonBundle]] forCellReuseIdentifier:@"FriendApplyCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"FriendApplyCell" bundle:nil] forCellReuseIdentifier:@"FriendApplyCellID"];
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 

@@ -31,7 +31,7 @@
 + (instancetype)cellWithTableView:(UITableView *)tableView{
     ProInvestorCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ProInvestorCellID"];
     if (!cell) {
-        cell = [[BundleTool commonBundle]loadNibNamed:@"ProInvestorCell" owner:nil options:nil].lastObject;
+        cell = [nilloadNibNamed:@"ProInvestorCell" owner:nil options:nil].lastObject;
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
@@ -57,7 +57,7 @@
 - (void)setPerson:(PersonModel *)person{
     _person = person;
     
-    [_imgV sd_setImageWithURL:[NSURL URLWithString:person.icon] placeholderImage:[BundleTool imageNamed:@"heading"]];
+    [_imgV sd_setImageWithURL:[NSURL URLWithString:person.icon] placeholderImage:[UIImage imageNamed:@"heading"]];
     NSString *name = [PublicTool isNull:person.name] ? person.person_name:person.name;
     if ([PublicTool isNull:name] && ![PublicTool isNull:person.ename]) {
         name = person.ename;

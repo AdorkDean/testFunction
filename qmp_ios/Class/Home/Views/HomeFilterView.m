@@ -278,8 +278,8 @@
             button.titleLabel.font = [UIFont systemFontOfSize:14];
             [button setTitle:@"展开" forState:UIControlStateNormal];
             [button setTitle:@"收起" forState:UIControlStateSelected];
-            [button setImage:[BundleTool imageNamed:@"filter_view_arrow_down"] forState:UIControlStateNormal];
-            [button setImage:[BundleTool imageNamed:@"filter_view_arrow_up"] forState:UIControlStateSelected];
+            [button setImage:[UIImage imageNamed:@"filter_view_arrow_down"] forState:UIControlStateNormal];
+            [button setImage:[UIImage imageNamed:@"filter_view_arrow_up"] forState:UIControlStateSelected];
             [button setTitleColor:H9COLOR forState:UIControlStateNormal];
             [button addTarget:self action:@selector(sectionButtonClick:) forControlEvents:UIControlEventTouchUpInside];
             [headerView addSubview:button];
@@ -724,8 +724,8 @@
         [button setTitle:self.titles[i] forState:UIControlStateNormal];
         [button setTitleColor:COLOR2D343A forState:UIControlStateNormal];
         [button setTitleColor:BLUE_TITLE_COLOR forState:UIControlStateSelected];
-        [button setImage:[BundleTool imageNamed:@"tmp_filter_arrow"] forState:UIControlStateNormal];
-        [button setImage:[BundleTool imageNamed:@"tmp_filter_arrow_up"] forState:UIControlStateSelected];
+        [button setImage:[UIImage imageNamed:@"tmp_filter_arrow"] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:@"tmp_filter_arrow_up"] forState:UIControlStateSelected];
         [button addTarget:self action:@selector(itemButtonClick:) forControlEvents:UIControlEventTouchUpInside];
         button.titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
         
