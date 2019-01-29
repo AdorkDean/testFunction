@@ -834,7 +834,6 @@
 		ADC77521218FFFB700C856DF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC7751F218FFFB700C856DF /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		ADC77522218FFFB700C856DF /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC77520218FFFB700C856DF /* Messages.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		ADCB9CA221A65C280021D553 /* HomeIPOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCB9CA121A65C280021D553 /* HomeIPOViewController.m */; };
-		ADCB9CEA21AF84CF0021D553 /* MJPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ADCB9CE921AF84CF0021D553 /* MJPhotoBrowser.bundle */; };
 		ADD9FDC8218C3BEB00434AC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9FDC7218C3BEB00434AC6 /* AppDelegate.m */; };
 		ADD9FDD1218C3BEB00434AC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD9FDCF218C3BEB00434AC6 /* Main.storyboard */; };
 		ADD9FDD6218C3BEC00434AC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD9FDD4218C3BEC00434AC6 /* LaunchScreen.storyboard */; };
@@ -2395,7 +2394,6 @@
 		ADC77520218FFFB700C856DF /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
 		ADCB9CA021A65C280021D553 /* HomeIPOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeIPOViewController.h; sourceTree = "<group>"; };
 		ADCB9CA121A65C280021D553 /* HomeIPOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeIPOViewController.m; sourceTree = "<group>"; };
-		ADCB9CE921AF84CF0021D553 /* MJPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJPhotoBrowser.bundle; sourceTree = "<group>"; };
 		ADD9FDC3218C3BEB00434AC6 /* qmp_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qmp_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD9FDC6218C3BEB00434AC6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ADD9FDC7218C3BEB00434AC6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -2507,7 +2505,6 @@
 		AD41248D21916DF300DA1372 /* BundleFile */ = {
 			isa = PBXGroup;
 			children = (
-				ADCB9CE921AF84CF0021D553 /* MJPhotoBrowser.bundle */,
 				AD41248B21916DA800DA1372 /* EaseUIResource.bundle */,
 				ADBEEB36219136B6009BB127 /* QMPimgBundle.bundle */,
 			);
@@ -5825,7 +5822,6 @@
 				AD802F8C21FF22E1004911F9 /* AlbumMultiRowListCell.xib in Resources */,
 				AD80327C21FF2324004911F9 /* XYCameraViewController.xib in Resources */,
 				AD802FE121FF22E1004911F9 /* ProInvestorCell.xib in Resources */,
-				ADCB9CEA21AF84CF0021D553 /* MJPhotoBrowser.bundle in Resources */,
 				AD802E1C21FF22E0004911F9 /* CardEditingTableViewCell.xib in Resources */,
 				AD80320D21FF2324004911F9 /* MJPhotoBrowser.bundle in Resources */,
 				AD802E4421FF22E0004911F9 /* WalletCoinListCell.xib in Resources */,
