@@ -1,0 +1,132 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Bugly (2.5.0)
+  - DACircularProgress (2.3.1)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - HyphenateLite (3.5.3)
+  - IQKeyboardManager (6.2.0)
+  - JCore (1.2.6)
+  - JPush (3.1.2):
+    - JCore (~> 1.2.6)
+  - JSONModel (1.8.0)
+  - Masonry (1.1.0)
+  - MBProgressHUD (0.9.2)
+  - MJRefresh (3.1.15.7)
+  - MuPDF (1.10)
+  - MWPhotoBrowser (2.1.2):
+    - DACircularProgress (~> 2.3)
+    - MBProgressHUD (~> 0.9)
+    - "SDWebImage (!= 3.7.2, ~> 3.7)"
+  - pop (1.0.12)
+  - ReactiveObjC (3.1.0)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - TFHpple (2.0.0)
+  - TTTAttributedLabel (2.0.0)
+  - TZImagePickerController (3.1.9)
+  - UICollectionViewLeftAlignedLayout (1.0.2)
+  - "UITableView+FDTemplateLayoutCell (1.6)"
+  - UMengAnalytics (4.2.4)
+  - WMPageController (2.5.2)
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - Bugly
+  - FMDB
+  - HyphenateLite
+  - IQKeyboardManager
+  - JPush
+  - JSONModel
+  - Masonry
+  - MBProgressHUD
+  - MJRefresh (~> 3.1.0)
+  - MuPDF
+  - MWPhotoBrowser
+  - pop
+  - ReactiveObjC
+  - SDWebImage
+  - TFHpple
+  - TTTAttributedLabel
+  - TZImagePickerController
+  - UICollectionViewLeftAlignedLayout
+  - "UITableView+FDTemplateLayoutCell"
+  - UMengAnalytics
+  - WMPageController
+  - YYText
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - Bugly
+    - DACircularProgress
+    - FMDB
+    - HyphenateLite
+    - IQKeyboardManager
+    - JCore
+    - JPush
+    - JSONModel
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - MuPDF
+    - MWPhotoBrowser
+    - pop
+    - ReactiveObjC
+    - SDWebImage
+    - TFHpple
+    - TTTAttributedLabel
+    - TZImagePickerController
+    - UICollectionViewLeftAlignedLayout
+    - "UITableView+FDTemplateLayoutCell"
+    - UMengAnalytics
+    - WMPageController
+    - YYText
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  HyphenateLite: 97b4c880eadba99e6ac4dc90d900273853cc0178
+  IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
+  JCore: cae516dd2bf1a73b578ce6e1065abd49e709e0f7
+  JPush: d0cead70ba223a6a3b52749899ebda830dfbc49a
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  MuPDF: 303264f90d7751bc2f16fd7c30b787e873235da3
+  MWPhotoBrowser: 5836d7aa041dc05a13de380c246826578adc5ea5
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  TFHpple: a916fe0799eb30aa29b2670d14d5868cdd3a5b81
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  TZImagePickerController: c3f7c505d23281e21e98df6dbeae372946caa28f
+  UICollectionViewLeftAlignedLayout: 830bf6fa5bab9f9b464f62e3384f9d2e00b3c0f6
+  "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
+  UMengAnalytics: ef8d45f94c0e5771dc364cf6a5731d9d3b101da2
+  WMPageController: 0c7624d2b48e4f1ab92371688cf6744ed701575d
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: ce4ce04f20a79fe0f77ddef58a051f543bed7b9b
+
+COCOAPODS: 1.5.3
