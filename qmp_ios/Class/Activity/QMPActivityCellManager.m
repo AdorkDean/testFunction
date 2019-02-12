@@ -24,6 +24,8 @@
 #import "SearchPerson.h"
 #import "QMPCommunityActivityCell.h"
 #import "QMPActivityCellModel.h"
+#import "PersonModel.h"
+
 @interface QMPActivityCellManager () <QMPActivityCellDelegate, QMPActivityCellMenuViewDelegate>
 @property (nonatomic, strong) QMPActivityCellMenuView *menuView;
 @property (nonatomic, weak) UITableViewCell *currentCell;

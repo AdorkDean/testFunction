@@ -20,7 +20,7 @@
 #import "SearchCompanyModel.h"
 #import "URLModel.h"
 #import "SearchProRegisterModel.h"
-
+#import "AlertInfo.h"
 
 #import "GetMd5Str.h"
 #import <IQKeyboardManager.h>

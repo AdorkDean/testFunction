@@ -130,7 +130,7 @@
         static NSString *imgCellIdentifier = @"ImgInfoTableViewCell";
         ImgInfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:imgCellIdentifier];
         if (!cell) {
-            cell = [[nil loadNibNamed:@"ImgInfoTableViewCell" owner:nil options:nil] lastObject];
+            cell = [[[NSBundle mainBundle] loadNibNamed:@"ImgInfoTableViewCell" owner:nil options:nil] lastObject];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
         
@@ -144,7 +144,7 @@
         static NSString *imgCellIdentifier = @"MyCardTableViewCell";
         MyCardTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:imgCellIdentifier];
         if (!cell) {
-            cell = [[nil loadNibNamed:@"MyCardTableViewCell" owner:nil options:nil] lastObject];
+            cell = [[[NSBundle mainBundle] loadNibNamed:@"MyCardTableViewCell" owner:nil options:nil] lastObject];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
         if (self.personInfo) {
@@ -166,7 +166,7 @@
         static NSString *infoCellIdentifier = @"MyInfoTableViewCell";
         MyInfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:infoCellIdentifier];
         if (!cell) {
-            cell = [[nil loadNibNamed:@"MyInfoTableViewCell" owner:nil options:nil] lastObject];
+            cell = [[[NSBundle mainBundle] loadNibNamed:@"MyInfoTableViewCell" owner:nil options:nil] lastObject];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
         

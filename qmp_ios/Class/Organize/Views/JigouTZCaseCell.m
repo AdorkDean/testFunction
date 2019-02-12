@@ -37,7 +37,7 @@
 + (JigouTZCaseCell *)cellWithTableView:(UITableView *)tableView {
     JigouTZCaseCell *cell = [tableView dequeueReusableCellWithIdentifier:@"JigouTZCaseCellID"];
     if (cell == nil) {
-        cell = (JigouTZCaseCell *)[[nil loadNibNamed:@"JigouTZCaseCell" owner:self options:nil] lastObject];
+        cell = (JigouTZCaseCell *)[[[NSBundle mainBundle] loadNibNamed:@"JigouTZCaseCell" owner:self options:nil] lastObject];
     }
     return cell;
 }

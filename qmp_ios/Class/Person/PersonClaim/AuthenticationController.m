@@ -91,7 +91,7 @@
     
     if (self.person) {
         
-        AuthenticaHeaderView *headerV = [nilloadNibNamed:@"AuthenticaHeaderView" owner:nil options:nil].lastObject;
+        AuthenticaHeaderView *headerV = [[NSBundle mainBundle] loadNibNamed:@"AuthenticaHeaderView" owner:nil options:nil].lastObject;
         headerV.height = 90;
         headerV.person = self.person;
         self.tableView.tableHeaderView = headerV;
@@ -596,7 +596,7 @@
         static NSString *imgCellIdentifier = @"MyCardTableViewCell";
         MyCardTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:imgCellIdentifier];
         if (!cell) {
-            cell = [[nil loadNibNamed:@"MyCardTableViewCell" owner:nil options:nil] lastObject];
+            cell = [[[NSBundle mainBundle] loadNibNamed:@"MyCardTableViewCell" owner:nil options:nil] lastObject];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
         if (_cardImg) {

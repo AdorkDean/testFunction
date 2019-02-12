@@ -25,7 +25,7 @@
 + (FAProductCell *)cellWithTableView:(UITableView *)tableView {
     FAProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FAProductCellID"];
     if (cell == nil) {
-        cell = (FAProductCell *)[[nil loadNibNamed:@"FAProductCell" owner:self options:nil] lastObject];
+        cell = (FAProductCell *)[[[NSBundle mainBundle] loadNibNamed:@"FAProductCell" owner:self options:nil] lastObject];
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;

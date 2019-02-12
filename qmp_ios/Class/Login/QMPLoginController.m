@@ -10,7 +10,7 @@
 #import "AppDelegate.h"
 #import "QMPPhoneLoginController.h"
 #import "PrivatePolicyView.h"
-
+#import "FactoryUI.h"
 @interface QMPLoginController ()<UITextFieldDelegate>
 {
     AppDelegate *_appDelegate;

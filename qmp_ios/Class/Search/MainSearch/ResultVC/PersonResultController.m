@@ -248,7 +248,7 @@
     
     SearchPersonCell *cell =  [tableView dequeueReusableCellWithIdentifier:ID2];
     if (!cell) {
-        cell = (SearchPersonCell*)[nilloadNibNamed:@"SearchPersonCell" owner:nil options:nil].lastObject;
+        cell = (SearchPersonCell*)[[NSBundle mainBundle] loadNibNamed:@"SearchPersonCell" owner:nil options:nil].lastObject;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     SearchPerson *person = self.dataArr[indexPath.row];

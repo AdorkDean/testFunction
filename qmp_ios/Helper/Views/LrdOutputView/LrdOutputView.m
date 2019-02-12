@@ -203,7 +203,7 @@
         MoreTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MoreTableViewCell"];
         
         if (!cell) {
-            cell = [[nil loadNibNamed:@"MoreTableViewCell" owner:nil options:nil] lastObject];
+            cell = [[[NSBundle mainBundle] loadNibNamed:@"MoreTableViewCell" owner:nil options:nil] lastObject];
         }
         cell.txtLbl.textColor = HTColorFromRGB(0x555555);
         cell.txtLbl.font = [UIFont systemFontOfSize:15];

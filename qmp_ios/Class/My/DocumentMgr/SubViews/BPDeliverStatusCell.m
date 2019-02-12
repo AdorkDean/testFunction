@@ -36,7 +36,7 @@
 + (instancetype)defaultInitCellWithTableView:(UITableView *)tableview{
     BPDeliverStatusCell * cell =  [tableview dequeueReusableCellWithIdentifier:@"BPDeliverStatusCellID"];
     if (cell == nil) {
-        cell = [nil loadNibNamed:@"BPDeliverStatusCell" owner:self options:nil].lastObject;
+        cell = [[NSBundle mainBundle] loadNibNamed:@"BPDeliverStatusCell" owner:self options:nil].lastObject;
     }
     return cell;
 }

@@ -46,7 +46,7 @@
 
 - (instancetype)initWithCompanyDetailModel:(CompanyDetailModel*)detailM  financeNeedModel:(FinanicalNeedModel*)needModel{
     
-    ProductTableHeadView *headerV = [nilloadNibNamed:@"ProductTableHeadView" owner:nil options:nil].lastObject;
+    ProductTableHeadView *headerV = [[NSBundle mainBundle] loadNibNamed:@"ProductTableHeadView" owner:nil options:nil].lastObject;
     headerV.height = 150;
     [headerV addView];
     [headerV addCopyGesture];

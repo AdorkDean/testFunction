@@ -38,7 +38,7 @@
 
 + (void)showUpgradView:(NSString*)content showClose:(BOOL)showClose version:(NSString*)version{
     
-    UpgradeVersionView *view = [nilloadNibNamed:@"UpgradeVersionView" owner:nil options:nil].lastObject;
+    UpgradeVersionView *view = [[NSBundle mainBundle] loadNibNamed:@"UpgradeVersionView" owner:nil options:nil].lastObject;
     view.frame = KEYWindow.bounds;
     NSMutableParagraphStyle *paraStyle = [[NSMutableParagraphStyle alloc]init];
     paraStyle.alignment = NSTextAlignmentCenter;

@@ -28,9 +28,9 @@
 
 @implementation AppPageSkipTool
 
+static AppPageSkipTool *tool = nil;
+static dispatch_once_t onceToken;
 + (instancetype)shared{
-    static AppPageSkipTool *tool = nil;
-    static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         tool = [[AppPageSkipTool alloc]init];
     });

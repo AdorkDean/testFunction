@@ -50,7 +50,7 @@
 + (DiscoverListCell*)cellWithTableView:(UITableView*)tableView recommendType:(AttentType)recommendType dataDic:(NSDictionary*)dataDic{
     DiscoverListCell *cell = [tableView dequeueReusableCellWithIdentifier:[NSString stringWithFormat:@"RecommendCell_%ld",recommendType]];
     if (!cell) {
-        cell = [nilloadNibNamed:@"DiscoverListCell" owner:nil options:nil].lastObject;
+        cell = [[NSBundle mainBundle] loadNibNamed:@"DiscoverListCell" owner:nil options:nil].lastObject;
     }
 
     cell.iconV.hidden = NO;
@@ -105,7 +105,7 @@
 + (DiscoverListCell*)cellWithTableView:(UITableView*)tableView recommendType:(AttentType)recommendType attentionModel:(MeTopItemModel*)attentionM{
     DiscoverListCell *cell = [tableView dequeueReusableCellWithIdentifier:[NSString stringWithFormat:@"RecommendCell_%ld",recommendType]];
     if (!cell) {
-        cell = [nilloadNibNamed:@"DiscoverListCell" owner:nil options:nil].lastObject;
+        cell = [[NSBundle mainBundle] loadNibNamed:@"DiscoverListCell" owner:nil options:nil].lastObject;
     }
     
     cell.iconV.hidden = NO;

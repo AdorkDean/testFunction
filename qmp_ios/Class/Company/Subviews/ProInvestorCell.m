@@ -31,7 +31,7 @@
 + (instancetype)cellWithTableView:(UITableView *)tableView{
     ProInvestorCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ProInvestorCellID"];
     if (!cell) {
-        cell = [nilloadNibNamed:@"ProInvestorCell" owner:nil options:nil].lastObject;
+        cell = [[NSBundle mainBundle] loadNibNamed:@"ProInvestorCell" owner:nil options:nil].lastObject;
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;

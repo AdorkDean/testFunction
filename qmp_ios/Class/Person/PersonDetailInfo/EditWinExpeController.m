@@ -214,7 +214,7 @@
         static NSString *infoCellIdentifier = @"MyInfoTableViewCell";
         MyInfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:infoCellIdentifier];
         if (!cell) {
-            cell = [[nil loadNibNamed:@"MyInfoTableViewCell" owner:nil options:nil] lastObject];
+            cell = [[[NSBundle mainBundle] loadNibNamed:@"MyInfoTableViewCell" owner:nil options:nil] lastObject];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
         cell.rightImgV.hidden = NO;

@@ -73,7 +73,7 @@
             if (![PublicTool isNull:uuid]) {
                 WechatUserInfo *userModel = [WechatUserInfo shared];
                 userModel.unionid = unionid;
-                [[ToLogin shared].delegate refreshUserInfo];
+                [[AppPageSkipTool shared] refreshUserInfo];
                 
             }else{
                 //getToken status=0 但是uuid有问题

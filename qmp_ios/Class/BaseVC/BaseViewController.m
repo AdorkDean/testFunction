@@ -254,7 +254,7 @@
 - (HomeInfoTableViewCell*)nodataCellWithInfo:(NSString*)title subInfo:(NSString*)subTitle tableView:(UITableView*)tableview{
     HomeInfoTableViewCell *infoCell = [tableview dequeueReusableCellWithIdentifier:@"HomeInfoTableViewCellID"];
     if (!infoCell) {
-        infoCell = [[nil loadNibNamed:@"HomeInfoTableViewCell" owner:nil options:nil] lastObject];
+        infoCell = [[[NSBundle mainBundle] loadNibNamed:@"HomeInfoTableViewCell" owner:nil options:nil] lastObject];
         infoCell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
@@ -271,7 +271,7 @@
     
     HomeInfoTableViewCell *infoCell = [tableview dequeueReusableCellWithIdentifier:@"HomeInfoTableViewCellID"];
     if (!infoCell) {
-        infoCell = [[nil loadNibNamed:@"HomeInfoTableViewCell" owner:nil options:nil] lastObject];
+        infoCell = [[[NSBundle mainBundle] loadNibNamed:@"HomeInfoTableViewCell" owner:nil options:nil] lastObject];
     }
     
     [infoCell.iconImgView setImage:[UIImage imageNamed:IMAGE_DATA_NULL]];

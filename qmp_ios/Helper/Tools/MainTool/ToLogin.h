@@ -11,7 +11,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ToLogin : NSObject
-@property(nonatomic,assign) id<AppPageSkipProtocol>delegate;
 
 + (instancetype)shared;
 

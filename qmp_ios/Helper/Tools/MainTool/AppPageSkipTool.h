@@ -8,11 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-
-
 @interface AppPageSkipTool : NSObject
 
 + (instancetype)shared;
+
 #pragma mark --账户
 -(void)appPageSkipToPhoneLogin;
 -(void)appPageSkipToBindPhone;
@@ -56,4 +55,3 @@
 
 @end
 
-NS_ASSUME_NONNULL_END

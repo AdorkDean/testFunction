@@ -13,7 +13,7 @@
 + (instancetype)cellWithTableView:(UITableView*)tableView{
     PersonBusinessRoleCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PersonBusinessRoleCellID"];
     if (!cell) {
-        cell = [nil loadNibNamed:@"PersonBusinessRoleCell" owner:nil options:nil].lastObject;
+        cell = [[NSBundle mainBundle] loadNibNamed:@"PersonBusinessRoleCell" owner:nil options:nil].lastObject;
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;

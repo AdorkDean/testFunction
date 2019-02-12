@@ -12,6 +12,7 @@
 #import "ActivityModel.h"
 #import "ActivityLayout.h"
 #import "ActivityDetailViewController.h"
+#import "NewsWebViewController.h"
 
 @interface ProductValuelistController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)NSMutableArray *valueDynamicArr;

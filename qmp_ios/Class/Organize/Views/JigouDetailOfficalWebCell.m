@@ -19,7 +19,7 @@
 + (JigouDetailOfficalWebCell *)cellWithTableView:(UITableView *)tableView {
     JigouDetailOfficalWebCell *cell = [tableView dequeueReusableCellWithIdentifier:@"JigouDetailOfficalWebCellID"];
     if (cell == nil) {
-        cell = (JigouDetailOfficalWebCell *)[[nil loadNibNamed:@"JigouDetailOfficalWebCell" owner:self options:nil] lastObject];
+        cell = (JigouDetailOfficalWebCell *)[[[NSBundle mainBundle] loadNibNamed:@"JigouDetailOfficalWebCell" owner:self options:nil] lastObject];
     }
     return cell;
 }

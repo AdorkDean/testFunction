@@ -10,161 +10,133 @@
 #import <QuartzCore/QuartzCore.h>
 
 @implementation UIView (Positioning)
-
-- (void)centerInRect:(CGRect)rect;
-{
-    [self setCenter:CGPointMake(float(CGRectGetMidX(rect)) + ((int)float([self width]) % 2 ? .5 : 0) , float(CGRectGetMidY(rect)) + ((int)float([self height]) % 2 ? .5 : 0))];
-}
-
-- (void)centerVerticallyInRect:(CGRect)rect;
-{
-    [self setCenter:CGPointMake([self center].x, float(CGRectGetMidY(rect)) + ((int)float([self height]) % 2 ? .5 : 0))];
-}
-
-- (void)centerHorizontallyInRect:(CGRect)rect;
-{
-    [self setCenter:CGPointMake(float(CGRectGetMidX(rect)) + ((int)float([self width]) % 2 ? .5 : 0), [self center].y)];
-}
-
-- (void)centerInSuperView;
-{
-    [self centerInRect:[[self superview] bounds]];
-}
-- (void)centerVerticallyInSuperView;
-{
-    [self centerVerticallyInRect:[[self superview] bounds]];
-}
-- (void)centerHorizontallyInSuperView;
-{
-    [self centerHorizontallyInRect:[[self superview] bounds]];
-}
-
-- (void)centerHorizontallyBelow:(UIView *)view padding:(CGFloat)padding;
-{
-    // for now, could use screen relative positions.
-    NSAssert([self superview] == [view superview], @"views must have the same parent");
-    
-    [self setCenter:CGPointMake([view center].x,
-                                float(padding + CGRectGetMaxY([view frame]) + ([self height] / 2)))];
-}
-
-- (void)centerHorizontallyBelow:(UIView *)view;
-{
-    [self centerHorizontallyBelow:view padding:0];
-}
+//
+//- (void)centerInRect:(CGRect)rect{
+//    [self setCenter:CGPointMake(float(CGRectGetMidX(rect)) + ((int)float([self width]) % 2 ? .5 : 0) , float(CGRectGetMidY(rect)) + ((int)float([self height]) % 2 ? .5 : 0))];
+//}
+//
+//- (void)centerVerticallyInRect:(CGRect)rect{
+//    [self setCenter:CGPointMake([self center].x, float(CGRectGetMidY(rect)) + ((int)float([self height]) % 2 ? .5 : 0))];
+//}
+//
+//- (void)centerHorizontallyInRect:(CGRect)rect{
+//    [self setCenter:CGPointMake(float(CGRectGetMidX(rect)) + ((int)float([self width]) % 2 ? .5 : 0), [self center].y)];
+//}
+//
+//- (void)centerInSuperView{
+//    [self centerInRect:[[self superview] bounds]];
+//}
+//- (void)centerVerticallyInSuperView{
+//    [self centerVerticallyInRect:[[self superview] bounds]];
+//}
+//- (void)centerHorizontallyInSuperView{
+//    [self centerHorizontallyInRect:[[self superview] bounds]];
+//}
+//
+//- (void)centerHorizontallyBelow:(UIView *)view padding:(CGFloat)padding{
+//    // for now, could use screen relative positions.
+//    NSAssert([self superview] == [view superview], @"views must have the same parent");
+//    
+//    [self setCenter:CGPointMake([view center].x,float(padding + CGRectGetMaxY([view frame]) + ([self height] / 2)))];
+//}
+//
+//- (void)centerHorizontallyBelow:(UIView *)view{
+//    [self centerHorizontallyBelow:view padding:0];
+//}
 
 @end
 
 @implementation UIView (Size)
 
 
-- (CGPoint)rightTopPoint
-{
+- (CGPoint)rightTopPoint{
 	return CGPointMake(self.width, 0);
 }
 
-- (void)setSize:(CGSize)size;
-{
+- (void)setSize:(CGSize)size{
     CGPoint origin = [self frame].origin;
     
     [self setFrame:CGRectMake(origin.x, origin.y, size.width, size.height)];
 }
 
-- (CGSize)size;
-{
+- (CGSize)size{
     return [self frame].size;
 }
 
-- (CGFloat)left;
-{
+- (CGFloat)left{
     return CGRectGetMinX([self frame]);
 }
 
-- (void)setLeft:(CGFloat)x;
-{
+- (void)setLeft:(CGFloat)x{
     CGRect frame = [self frame];
     frame.origin.x = x;
     [self setFrame:frame];
 }
 
-- (CGFloat)top;
-{
+- (CGFloat)top{
     return CGRectGetMinY([self frame]);
 }
 
-- (void)setTop:(CGFloat)y;
-{
+- (void)setTop:(CGFloat)y{
     CGRect frame = [self frame];
     frame.origin.y = y;
     [self setFrame:frame];
 }
 
-- (CGFloat)right;
-{
+- (CGFloat)right{
     return CGRectGetMaxX([self frame]);
 }
 
-- (void)setRight:(CGFloat)right;
-{
+- (void)setRight:(CGFloat)right{
     CGRect frame = [self frame];
     frame.origin.x = right - frame.size.width;
     
     [self setFrame:frame];
 }
 
-- (CGFloat)bottom;
-{
+- (CGFloat)bottom{
     return CGRectGetMaxY([self frame]);
 }
 
-- (void)setBottom:(CGFloat)bottom;
-{
+- (void)setBottom:(CGFloat)bottom{
     CGRect frame = [self frame];
     frame.origin.y = bottom - frame.size.height;
     
     [self setFrame:frame];
 }
 
-- (CGFloat)centerX;
-{
+- (CGFloat)centerX{
     return [self center].x;
 }
 
-- (void)setCenterX:(CGFloat)centerX;
-{
+- (void)setCenterX:(CGFloat)centerX{
     [self setCenter:CGPointMake(centerX, self.center.y)];
 }
 
-- (CGFloat)centerY;
-{
+- (CGFloat)centerY{
     return [self center].y;
 }
 
-- (void)setCenterY:(CGFloat)centerY;
-{
+- (void)setCenterY:(CGFloat)centerY{
     [self setCenter:CGPointMake(self.center.x, centerY)];
 }
 
-- (CGFloat)width;
-{
+- (CGFloat)width{
     return CGRectGetWidth([self frame]);
 }
 
-- (void)setWidth:(CGFloat)width;
-{
+- (void)setWidth:(CGFloat)width{
     CGRect frame = [self frame];
     frame.size.width = width;
     
     [self setFrame:CGRectStandardize(frame)];
 }
 
-- (CGFloat)height;
-{
+- (CGFloat)height{
     return CGRectGetHeight([self frame]);
 }
 
-- (void)setHeight:(CGFloat)height;
-{
+- (void)setHeight:(CGFloat)height{
     CGRect frame = [self frame];
     frame.size.height = height;
 	

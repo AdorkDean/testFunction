@@ -53,7 +53,7 @@ static dispatch_once_t onceToken = 0;
     self.totalCardNum = cardImgs.count;
     self.finishCardNum = 0;
     
-    self.progressView = [nil loadNibNamed:@"CardLeadProgressView" owner:nil options:nil].lastObject;
+    self.progressView = [[NSBundle mainBundle] loadNibNamed:@"CardLeadProgressView" owner:nil options:nil].lastObject;
     self.progressView.frame = CGRectMake(0, 0, SCREENW, 200);
     self.progressView.backgroundColor = [UIColor clearColor];
     self.progressView.titleLab.text = [NSString stringWithFormat:@"本次上传人脉信息共%ld条",cardImgs.count];

@@ -14,7 +14,7 @@
 + (instancetype)searchProductCellWithTableView:(UITableView *)tableView {
     SearchProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SearchProductCellID"];
     if (!cell) {
-        cell = [[nil loadNibNamed:@"SearchProductCell" owner:nil options:nil] firstObject];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"SearchProductCell" owner:nil options:nil] firstObject];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     return cell;

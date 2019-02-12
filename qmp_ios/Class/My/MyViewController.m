@@ -696,7 +696,7 @@ SetTableViewControllerDelegate, AllFeedbackViewDelegate> {
 #pragma  mark - 懒加载
 - (MyTabHeaderView *)headerView{
     if (_headerView == nil) {
-        _headerView = [[nilloadNibNamed:@"MyTabHeaderView" owner:nil options:nil] lastObject];
+        _headerView = [[[NSBundle mainBundle] loadNibNamed:@"MyTabHeaderView" owner:nil options:nil] lastObject];
         _headerView.backgroundColor = [UIColor whiteColor];
         _headerView.frame = CGRectMake(0, 12, SCREENW, 92);
         _headerView.iconButton.layer.cornerRadius = 30.0f;
@@ -710,7 +710,7 @@ SetTableViewControllerDelegate, AllFeedbackViewDelegate> {
 }
 - (MYHeaderItemVwbyXib *)belowItemVw{
     if (_belowItemVw == nil) {
-        _belowItemVw = [[nil loadNibNamed:@"MYHeaderItemVwbyXib" owner:self options:nil] lastObject];
+        _belowItemVw = [[[NSBundle mainBundle] loadNibNamed:@"MYHeaderItemVwbyXib" owner:self options:nil] lastObject];
         _belowItemVw.frame = CGRectMake(0, 116, SCREENW, 74);
         _belowItemVw.backgroundColor = [UIColor whiteColor];
         [_belowItemVw.personBtn addTarget:self action:@selector(eterPersonListVc) forControlEvents:UIControlEventTouchUpInside];

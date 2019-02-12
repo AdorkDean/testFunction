@@ -16,7 +16,7 @@
 #import "FriendApplyListController.h"
 #import "EaseSDKHelper.h"
 #import "ProductContactsController.h"
-
+#import "PersonModel.h"
 
 @interface PushListController ()<UITableViewDelegate,UITableViewDataSource>
 {

@@ -145,7 +145,7 @@
         
     }
     
-    PersonHeaderView *headerView = [nilloadNibNamed:@"PersonHeaderView" owner:nil options:nil].lastObject;
+    PersonHeaderView *headerView = [[NSBundle mainBundle] loadNibNamed:@"PersonHeaderView" owner:nil options:nil].lastObject;
     headerView.height = 222;
     headerView.person = self.person;
     headerView.editBtn.hidden = YES;

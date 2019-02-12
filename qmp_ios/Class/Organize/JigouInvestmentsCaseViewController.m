@@ -698,7 +698,7 @@
 -(JigouTZCaseCell *)caseCell{
     
     if (!_caseCell) {
-        _caseCell = [nilloadNibNamed:@"JigouTZCaseCell" owner:nil options:nil].lastObject;
+        _caseCell = [[NSBundle mainBundle] loadNibNamed:@"JigouTZCaseCell" owner:nil options:nil].lastObject;
     }
     return _caseCell;
 }

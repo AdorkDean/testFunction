@@ -31,7 +31,7 @@
 + (instancetype)cellWithTableView:(UITableView *)tableView{
     InvestorListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InvestorListCellID"];
     if (!cell) {
-        cell = [nilloadNibNamed:@"InvestorListCell" owner:nil options:nil].lastObject;
+        cell = [[NSBundle mainBundle] loadNibNamed:@"InvestorListCell" owner:nil options:nil].lastObject;
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;

@@ -50,7 +50,7 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     
-    WalletHeaderView *headerV = [nilloadNibNamed:@"WalletHeaderView" owner:nil options:nil].lastObject;
+    WalletHeaderView *headerV = [[NSBundle mainBundle] loadNibNamed:@"WalletHeaderView" owner:nil options:nil].lastObject;
     headerV.height = isiPhoneX ? 230:210;
     [headerV.backBtn addTarget:self action:@selector(popViewControllerAnimated:) forControlEvents:UIControlEventTouchUpInside];
     self.tableView.tableHeaderView = headerV;

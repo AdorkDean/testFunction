@@ -112,7 +112,7 @@
 
 +(ScreenShareView*)showShareViewWithImage:(UIImage*)shareImg didTapPlatform:(SelectedPlatform)selectPlayform{
 
-    ScreenShareView *shareVC = [nilloadNibNamed:@"ScreenShareView" owner:nil options:nil].lastObject;
+    ScreenShareView *shareVC = [[NSBundle mainBundle] loadNibNamed:@"ScreenShareView" owner:nil options:nil].lastObject;
     shareVC.frame = [UIScreen mainScreen].bounds;
     shareVC.image = shareImg;
     shareVC.selectedPlatform = selectPlayform;

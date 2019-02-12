@@ -123,7 +123,7 @@
         NSString *groupCellIdentifier = @"AlbumsTableViewCell";
         AlbumsListCell *cell = [tableView dequeueReusableCellWithIdentifier:groupCellIdentifier];
         if (!cell) {
-            cell = [[nil loadNibNamed:@"AlbumsListCell" owner:nil options:nil] lastObject];
+            cell = [[[NSBundle mainBundle] loadNibNamed:@"AlbumsListCell" owner:nil options:nil] lastObject];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
         

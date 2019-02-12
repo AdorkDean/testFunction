@@ -19,7 +19,7 @@
 + (instancetype)cellWithTableView:(UITableView*)tableView{
     MeProductListCellByXib *cell = [tableView dequeueReusableCellWithIdentifier:@"MeProductListCellByXibID"];
     if (!cell) {
-        cell = [nil loadNibNamed:@"MeProductListCellByXib" owner:nil options:nil].lastObject;
+        cell = [[NSBundle mainBundle] loadNibNamed:@"MeProductListCellByXib" owner:nil options:nil].lastObject;
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;

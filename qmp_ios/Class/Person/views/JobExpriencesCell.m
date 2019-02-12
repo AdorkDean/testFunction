@@ -27,7 +27,7 @@
 + (instancetype)cellWithTableView:(UITableView*)tableView{
     JobExpriencesCell *cell = [tableView dequeueReusableCellWithIdentifier:@"JobExpriencesCellID"];
     if (!cell) {
-        cell = [nilloadNibNamed:@"JobExpriencesCell" owner:nil options:nil].lastObject;
+        cell = [[NSBundle mainBundle] loadNibNamed:@"JobExpriencesCell" owner:nil options:nil].lastObject;
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;

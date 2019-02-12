@@ -20,7 +20,7 @@
 
     WalletCoinListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"WalletCoinListCellID"];
     if (!cell) {
-        cell = [nilloadNibNamed:@"WalletCoinListCell" owner:nil options:nil].lastObject;
+        cell = [[NSBundle mainBundle] loadNibNamed:@"WalletCoinListCell" owner:nil options:nil].lastObject;
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;

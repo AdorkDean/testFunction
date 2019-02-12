@@ -384,7 +384,7 @@
     } sureAction:^{
         
         //        [PublicTool showHudWithView:KEYWindow];
-        _progressView = (CardLeadProgressView*)[nilloadNibNamed:@"CardLeadProgressView" owner:nil options:nil].lastObject;
+        _progressView = (CardLeadProgressView*)[[NSBundle mainBundle] loadNibNamed:@"CardLeadProgressView" owner:nil options:nil].lastObject;
         _progressView.frame = [UIScreen mainScreen].bounds;
         _progressView.titleLab.text = [NSString stringWithFormat:@"本次企名片共为您导出%ld条人脉名片到手机通讯录(会去重)",leadAdd.count];
         _progressView.progressLab.text = @"0%";

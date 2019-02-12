@@ -16,6 +16,8 @@
 #import "JKEncrypt.h"
 #import "RzEventFilterView.h"
 #import "IndustryItem.h"
+#import "DataHandle.h"
+
 #define CellReuserId @"ReportListCell"
 @interface ReportController ()<UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate,OpenDocumentDelegate,DownloadViewDelegate,DataHandleDelegate,changeNoPdfCollectionStatusDelegate, RzEventFilterViewDelegate>{
     

@@ -78,7 +78,7 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
     
     //tableheaderView 互动提醒
-    PushHeaderView *headerView =  (PushHeaderView*)[nil loadNibNamed:@"PushHeaderView" owner:nil options:nil].lastObject;
+    PushHeaderView *headerView =  (PushHeaderView*)[[NSBundle mainBundle] loadNibNamed:@"PushHeaderView" owner:nil options:nil].lastObject;
     headerView.height = 78*2;
     self.tableView.tableHeaderView = headerView;
     

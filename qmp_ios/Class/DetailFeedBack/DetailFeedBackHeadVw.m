@@ -14,14 +14,14 @@
 @implementation DetailFeedBackHeadVw
 
 + (instancetype)initLoadViewNibFrame:(CGRect)frame{
-    DetailFeedBackHeadVw * headVw = [nil loadNibNamed:@"DetailFeedBackHeadVw" owner:self options:nil].lastObject;
+    DetailFeedBackHeadVw * headVw = [[NSBundle mainBundle] loadNibNamed:@"DetailFeedBackHeadVw" owner:self options:nil].lastObject;
     headVw.frame = frame;
     headVw.iconImgVw.layer.cornerRadius = 4;
     headVw.iconImgVw.clipsToBounds = YES;
     return headVw;
 }
 + (instancetype)initLoadViewNibFrame:(CGRect)frame type:(NSInteger)type{
-    DetailFeedBackHeadVw * headVw = [nil loadNibNamed:@"DetailFeedBackHeadVw" owner:self options:nil].lastObject;
+    DetailFeedBackHeadVw * headVw = [[NSBundle mainBundle] loadNibNamed:@"DetailFeedBackHeadVw" owner:self options:nil].lastObject;
     headVw.frame = frame;
     if (type == 0) {
         headVw.iconImgVw.layer.cornerRadius = (frame.size.height - 18 * 2) / 2;

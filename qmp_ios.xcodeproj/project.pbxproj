@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2FFE2961F9E11FB7F0489883 /* libPods-qmp_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B36B21CD2C28CCA07691315 /* libPods-qmp_ios.a */; };
+		AD36864E221267EE0049EE23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC77490218C56C200C856DF /* UIKit.framework */; };
+		AD36864F221267F60049EE23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC77493218C56C700C856DF /* Foundation.framework */; };
 		AD41248C21916DA800DA1372 /* EaseUIResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AD41248B21916DA800DA1372 /* EaseUIResource.bundle */; };
 		AD50CD1D21BFDEEA0055B03F /* NewerBindPhoneController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD50CD1C21BFDEEA0055B03F /* NewerBindPhoneController.m */; };
 		AD56314621E61C2A00808A70 /* HomeRZProCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD56314321E61C2900808A70 /* HomeRZProCell.m */; };
@@ -680,7 +682,6 @@
 		AD80328521FF2324004911F9 /* NotificationHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80315F21FF2318004911F9 /* NotificationHandle.m */; };
 		AD80328621FF2324004911F9 /* ToLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80316121FF2318004911F9 /* ToLogin.m */; };
 		AD80328721FF2324004911F9 /* ThirdConfigTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80316221FF2318004911F9 /* ThirdConfigTool.m */; };
-		AD80328821FF2324004911F9 /* BundleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80316321FF2318004911F9 /* BundleTool.m */; };
 		AD80328921FF2324004911F9 /* PublicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80316421FF2318004911F9 /* PublicTool.m */; };
 		AD80328A21FF2324004911F9 /* AppPageSkipTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80316821FF2318004911F9 /* AppPageSkipTool.m */; };
 		AD80328B21FF2324004911F9 /* ShowInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80316921FF2318004911F9 /* ShowInfo.m */; };
@@ -803,7 +804,6 @@
 		AD80589F2192C6BB0020634B /* logol.png in Resources */ = {isa = PBXBuildFile; fileRef = AD80586A2192C6BB0020634B /* logol.png */; };
 		AD8058C82192C6BB0020634B /* testIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD8058942192C6BB0020634B /* testIcon@3x.png */; };
 		AD8058CF2192C6BB0020634B /* updateBgView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD80589B2192C6BB0020634B /* updateBgView@2x.png */; };
-		AD82A2112192B3DE00CBDE02 /* QMPPageSkipTools.m in Sources */ = {isa = PBXBuildFile; fileRef = AD82A2102192B3DE00CBDE02 /* QMPPageSkipTools.m */; };
 		AD87236921A549D3006DD1FC /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = AD87236821A549D3006DD1FC /* NullSafe.m */; };
 		ADAE850421991B9800AEAFDD /* QMPRecentEventCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAE850321991B9800AEAFDD /* QMPRecentEventCell2.m */; };
 		ADBEEB37219136B6009BB127 /* QMPimgBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ADBEEB36219136B6009BB127 /* QMPimgBundle.bundle */; };
@@ -2114,13 +2114,11 @@
 		AD80315921FF2318004911F9 /* NSString+urlToFileName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+urlToFileName.m"; sourceTree = "<group>"; };
 		AD80315A21FF2318004911F9 /* ManagerHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerHud.m; sourceTree = "<group>"; };
 		AD80315B21FF2318004911F9 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		AD80315D21FF2318004911F9 /* BundleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BundleTool.h; sourceTree = "<group>"; };
 		AD80315E21FF2318004911F9 /* PublicTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicTool.h; sourceTree = "<group>"; };
 		AD80315F21FF2318004911F9 /* NotificationHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationHandle.m; sourceTree = "<group>"; };
 		AD80316021FF2318004911F9 /* AppPageSkipTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppPageSkipTool.h; sourceTree = "<group>"; };
 		AD80316121FF2318004911F9 /* ToLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToLogin.m; sourceTree = "<group>"; };
 		AD80316221FF2318004911F9 /* ThirdConfigTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdConfigTool.m; sourceTree = "<group>"; };
-		AD80316321FF2318004911F9 /* BundleTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BundleTool.m; sourceTree = "<group>"; };
 		AD80316421FF2318004911F9 /* PublicTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicTool.m; sourceTree = "<group>"; };
 		AD80316521FF2318004911F9 /* NotificationHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationHandle.h; sourceTree = "<group>"; };
 		AD80316621FF2318004911F9 /* ThirdConfigTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdConfigTool.h; sourceTree = "<group>"; };
@@ -2351,8 +2349,6 @@
 		AD80586A2192C6BB0020634B /* logol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logol.png; sourceTree = "<group>"; };
 		AD8058942192C6BB0020634B /* testIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testIcon@3x.png"; sourceTree = "<group>"; };
 		AD80589B2192C6BB0020634B /* updateBgView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "updateBgView@2x.png"; sourceTree = "<group>"; };
-		AD82A20F2192B3DE00CBDE02 /* QMPPageSkipTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QMPPageSkipTools.h; sourceTree = "<group>"; };
-		AD82A2102192B3DE00CBDE02 /* QMPPageSkipTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QMPPageSkipTools.m; sourceTree = "<group>"; };
 		AD87236821A549D3006DD1FC /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
 		ADAE850221991B9800AEAFDD /* QMPRecentEventCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMPRecentEventCell2.h; sourceTree = "<group>"; };
 		ADAE850321991B9800AEAFDD /* QMPRecentEventCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMPRecentEventCell2.m; sourceTree = "<group>"; };
@@ -2423,6 +2419,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD36864F221267F60049EE23 /* Foundation.framework in Frameworks */,
+				AD36864E221267EE0049EE23 /* UIKit.framework in Frameworks */,
 				ADC77521218FFFB700C856DF /* MessageUI.framework in Frameworks */,
 				ADC77522218FFFB700C856DF /* Messages.framework in Frameworks */,
 				ADC7751E218FFECB00C856DF /* WebKit.framework in Frameworks */,
@@ -3088,28 +3086,28 @@
 		AD802AA221FF22B9004911F9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AD802AA321FF22B9004911F9 /* IndustryItem.h */,
-				AD802AA421FF22B9004911F9 /* URLModel.h */,
+				AD802B2921FF22B9004911F9 /* 专辑图谱 */,
+				AD802B2421FF22B9004911F9 /* Attenttion */,
 				AD802AA521FF22B9004911F9 /* CountAndStatusModel.h */,
-				AD802AA621FF22B9004911F9 /* WechatUserInfo.m */,
-				AD802AA721FF22B9004911F9 /* InvoiceItem.h */,
+				AD802AF321FF22B9004911F9 /* CountAndStatusModel.m */,
+				AD802B3221FF22B9004911F9 /* FeedbackModel.h */,
+				AD802AE121FF22B9004911F9 /* FeedbackModel.m */,
 				AD802AA821FF22B9004911F9 /* File */,
+				AD802AA321FF22B9004911F9 /* IndustryItem.h */,
+				AD802B0F21FF22B9004911F9 /* IndustryItem.m */,
+				AD802AA721FF22B9004911F9 /* InvoiceItem.h */,
+				AD802AE221FF22B9004911F9 /* InvoiceItem.m */,
+				AD802AFB21FF22B9004911F9 /* JiGou */,
+				AD802B1B21FF22B9004911F9 /* Me */,
+				AD802B1021FF22B9004911F9 /* News */,
 				AD802AAD21FF22B9004911F9 /* Person */,
 				AD802AC221FF22B9004911F9 /* Product */,
-				AD802AE121FF22B9004911F9 /* FeedbackModel.m */,
-				AD802AE221FF22B9004911F9 /* InvoiceItem.m */,
-				AD802AE321FF22B9004911F9 /* WechatUserInfo.h */,
 				AD802AE421FF22B9004911F9 /* Search */,
-				AD802AF321FF22B9004911F9 /* CountAndStatusModel.m */,
 				AD802AF421FF22B9004911F9 /* SecondaryMarket */,
-				AD802AFB21FF22B9004911F9 /* JiGou */,
+				AD802AA421FF22B9004911F9 /* URLModel.h */,
 				AD802B0E21FF22B9004911F9 /* URLModel.m */,
-				AD802B0F21FF22B9004911F9 /* IndustryItem.m */,
-				AD802B1021FF22B9004911F9 /* News */,
-				AD802B1B21FF22B9004911F9 /* Me */,
-				AD802B2421FF22B9004911F9 /* Attenttion */,
-				AD802B2921FF22B9004911F9 /* 专辑图谱 */,
-				AD802B3221FF22B9004911F9 /* FeedbackModel.h */,
+				AD802AE321FF22B9004911F9 /* WechatUserInfo.h */,
+				AD802AA621FF22B9004911F9 /* WechatUserInfo.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -3251,16 +3249,16 @@
 		AD802B1021FF22B9004911F9 /* News */ = {
 			isa = PBXGroup;
 			children = (
-				AD802B1121FF22B9004911F9 /* RZNewsModel.m */,
-				AD802B1221FF22B9004911F9 /* RecommendModel.m */,
 				AD802B1321FF22B9004911F9 /* FlashNewsModel.h */,
-				AD802B1421FF22B9004911F9 /* NewsModel.m */,
-				AD802B1521FF22B9004911F9 /* InvestorCommentModel.h */,
-				AD802B1621FF22B9004911F9 /* RZNewsModel.h */,
-				AD802B1721FF22B9004911F9 /* NewsModel.h */,
 				AD802B1821FF22B9004911F9 /* FlashNewsModel.m */,
-				AD802B1921FF22B9004911F9 /* RecommendModel.h */,
+				AD802B1521FF22B9004911F9 /* InvestorCommentModel.h */,
 				AD802B1A21FF22B9004911F9 /* InvestorCommentModel.m */,
+				AD802B1721FF22B9004911F9 /* NewsModel.h */,
+				AD802B1421FF22B9004911F9 /* NewsModel.m */,
+				AD802B1921FF22B9004911F9 /* RecommendModel.h */,
+				AD802B1221FF22B9004911F9 /* RecommendModel.m */,
+				AD802B1621FF22B9004911F9 /* RZNewsModel.h */,
+				AD802B1121FF22B9004911F9 /* RZNewsModel.m */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -3566,16 +3564,16 @@
 		AD802BE521FF22CA004911F9 /* NetworkEngine */ = {
 			isa = PBXGroup;
 			children = (
-				AD802BE621FF22CA004911F9 /* QMPWechatEvent.h */,
-				AD802BE721FF22CA004911F9 /* NetworkManager.h */,
-				AD802BE821FF22CA004911F9 /* NetConst.m */,
-				AD802BE921FF22CA004911F9 /* UserActionStatistics.m */,
-				AD802BEA21FF22CA004911F9 /* AppNetRequest.m */,
-				AD802BEB21FF22CA004911F9 /* QMPWechatEvent.m */,
-				AD802BEC21FF22CA004911F9 /* NetConst.h */,
-				AD802BED21FF22CA004911F9 /* NetworkManager.m */,
 				AD802BEE21FF22CA004911F9 /* AppNetRequest.h */,
+				AD802BEA21FF22CA004911F9 /* AppNetRequest.m */,
+				AD802BEC21FF22CA004911F9 /* NetConst.h */,
+				AD802BE821FF22CA004911F9 /* NetConst.m */,
+				AD802BE721FF22CA004911F9 /* NetworkManager.h */,
+				AD802BED21FF22CA004911F9 /* NetworkManager.m */,
+				AD802BE621FF22CA004911F9 /* QMPWechatEvent.h */,
+				AD802BEB21FF22CA004911F9 /* QMPWechatEvent.m */,
 				AD802BEF21FF22CA004911F9 /* UserActionStatistics.h */,
+				AD802BE921FF22CA004911F9 /* UserActionStatistics.m */,
 			);
 			path = NetworkEngine;
 			sourceTree = "<group>";
@@ -3648,32 +3646,32 @@
 		AD802C1721FF22CF004911F9 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
-				AD802C1821FF22CF004911F9 /* SearchRegistCell.m */,
-				AD802C1921FF22CF004911F9 /* SearchJgAndCNotFoundTableViewCell.h */,
-				AD802C1A21FF22CF004911F9 /* SearchhistoryCell.h */,
-				AD802C1B21FF22CF004911F9 /* ProductListTableViewCell.m */,
-				AD802C1C21FF22CF004911F9 /* SearchCompanyTableViewCell.h */,
-				AD802C1D21FF22CF004911F9 /* SearchRegistCell.xib */,
-				AD802C1E21FF22CF004911F9 /* SearchJigouCell.m */,
-				AD802C1F21FF22CF004911F9 /* SearchNewsCell.m */,
-				AD802C2021FF22CF004911F9 /* SearchPersonCell.h */,
-				AD802C2121FF22CF004911F9 /* SearchOrganizeCell.h */,
-				AD802C2221FF22CF004911F9 /* SearchProductCell.h */,
+				AD802C2D21FF22CF004911F9 /* AddSearchJigouCell.h */,
 				AD802C2321FF22CF004911F9 /* AddSearchJigouCell.m */,
 				AD802C2421FF22CF004911F9 /* ProductListTableViewCell.h */,
-				AD802C2521FF22CF004911F9 /* SearchhistoryCell.m */,
-				AD802C2621FF22CF004911F9 /* SearchJgAndCNotFoundTableViewCell.m */,
-				AD802C2721FF22CF004911F9 /* SearchRegistCell.h */,
-				AD802C2821FF22CF004911F9 /* SearchJigouCell.h */,
-				AD802C2921FF22CF004911F9 /* SearchPersonCell.xib */,
+				AD802C1B21FF22CF004911F9 /* ProductListTableViewCell.m */,
+				AD802C1C21FF22CF004911F9 /* SearchCompanyTableViewCell.h */,
 				AD802C2A21FF22CF004911F9 /* SearchCompanyTableViewCell.m */,
-				AD802C2B21FF22CF004911F9 /* SearchProductCell.xib */,
+				AD802C1A21FF22CF004911F9 /* SearchhistoryCell.h */,
+				AD802C2521FF22CF004911F9 /* SearchhistoryCell.m */,
+				AD802C1921FF22CF004911F9 /* SearchJgAndCNotFoundTableViewCell.h */,
+				AD802C2621FF22CF004911F9 /* SearchJgAndCNotFoundTableViewCell.m */,
+				AD802C2821FF22CF004911F9 /* SearchJigouCell.h */,
+				AD802C1E21FF22CF004911F9 /* SearchJigouCell.m */,
 				AD802C2C21FF22CF004911F9 /* SearchNewsCell.h */,
-				AD802C2D21FF22CF004911F9 /* AddSearchJigouCell.h */,
-				AD802C2E21FF22CF004911F9 /* SearchProductCell.m */,
+				AD802C1F21FF22CF004911F9 /* SearchNewsCell.m */,
+				AD802C2121FF22CF004911F9 /* SearchOrganizeCell.h */,
 				AD802C2F21FF22CF004911F9 /* SearchOrganizeCell.m */,
-				AD802C3021FF22CF004911F9 /* SearchPersonCell.m */,
 				AD802C3121FF22CF004911F9 /* SearchOrganizeCell.xib */,
+				AD802C2021FF22CF004911F9 /* SearchPersonCell.h */,
+				AD802C3021FF22CF004911F9 /* SearchPersonCell.m */,
+				AD802C2921FF22CF004911F9 /* SearchPersonCell.xib */,
+				AD802C2221FF22CF004911F9 /* SearchProductCell.h */,
+				AD802C2E21FF22CF004911F9 /* SearchProductCell.m */,
+				AD802C2B21FF22CF004911F9 /* SearchProductCell.xib */,
+				AD802C2721FF22CF004911F9 /* SearchRegistCell.h */,
+				AD802C1821FF22CF004911F9 /* SearchRegistCell.m */,
+				AD802C1D21FF22CF004911F9 /* SearchRegistCell.xib */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -3786,11 +3784,11 @@
 		AD802CE221FF22D6004911F9 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				AD802CE321FF22D6004911F9 /* ChatView */,
 				AD802CE821FF22D6004911F9 /* ChatHelper.h */,
-				AD802CE921FF22D6004911F9 /* ChatList */,
-				AD802CEF21FF22D6004911F9 /* Robot */,
 				AD802CF821FF22D6004911F9 /* ChatHelper.m */,
+				AD802CE921FF22D6004911F9 /* ChatList */,
+				AD802CE321FF22D6004911F9 /* ChatView */,
+				AD802CEF21FF22D6004911F9 /* Robot */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -4554,16 +4552,16 @@
 		AD80307321FF2314004911F9 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				AD80307421FF2314004911F9 /* UIViewController+DismissKeyboard.h */,
-				AD80307521FF2314004911F9 /* UIViewController+HUD.m */,
-				AD80307621FF2314004911F9 /* NSDate+Category.m */,
-				AD80307721FF2314004911F9 /* NSString+Valid.m */,
-				AD80307821FF2314004911F9 /* NSDateFormatter+Category.h */,
 				AD80307921FF2314004911F9 /* NSDate+Category.h */,
-				AD80307A21FF2314004911F9 /* NSString+Valid.h */,
-				AD80307B21FF2314004911F9 /* UIViewController+HUD.h */,
-				AD80307C21FF2314004911F9 /* UIViewController+DismissKeyboard.m */,
+				AD80307621FF2314004911F9 /* NSDate+Category.m */,
+				AD80307821FF2314004911F9 /* NSDateFormatter+Category.h */,
 				AD80307D21FF2314004911F9 /* NSDateFormatter+Category.m */,
+				AD80307A21FF2314004911F9 /* NSString+Valid.h */,
+				AD80307721FF2314004911F9 /* NSString+Valid.m */,
+				AD80307421FF2314004911F9 /* UIViewController+DismissKeyboard.h */,
+				AD80307C21FF2314004911F9 /* UIViewController+DismissKeyboard.m */,
+				AD80307B21FF2314004911F9 /* UIViewController+HUD.h */,
+				AD80307521FF2314004911F9 /* UIViewController+HUD.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -5002,18 +5000,16 @@
 		AD80315C21FF2318004911F9 /* MainTool */ = {
 			isa = PBXGroup;
 			children = (
-				AD80315D21FF2318004911F9 /* BundleTool.h */,
-				AD80315E21FF2318004911F9 /* PublicTool.h */,
-				AD80315F21FF2318004911F9 /* NotificationHandle.m */,
 				AD80316021FF2318004911F9 /* AppPageSkipTool.h */,
-				AD80316121FF2318004911F9 /* ToLogin.m */,
-				AD80316221FF2318004911F9 /* ThirdConfigTool.m */,
-				AD80316321FF2318004911F9 /* BundleTool.m */,
-				AD80316421FF2318004911F9 /* PublicTool.m */,
-				AD80316521FF2318004911F9 /* NotificationHandle.h */,
-				AD80316621FF2318004911F9 /* ThirdConfigTool.h */,
-				AD80316721FF2318004911F9 /* ToLogin.h */,
 				AD80316821FF2318004911F9 /* AppPageSkipTool.m */,
+				AD80316521FF2318004911F9 /* NotificationHandle.h */,
+				AD80315F21FF2318004911F9 /* NotificationHandle.m */,
+				AD80315E21FF2318004911F9 /* PublicTool.h */,
+				AD80316421FF2318004911F9 /* PublicTool.m */,
+				AD80316621FF2318004911F9 /* ThirdConfigTool.h */,
+				AD80316221FF2318004911F9 /* ThirdConfigTool.m */,
+				AD80316721FF2318004911F9 /* ToLogin.h */,
+				AD80316121FF2318004911F9 /* ToLogin.m */,
 			);
 			path = MainTool;
 			sourceTree = "<group>";
@@ -5032,26 +5028,26 @@
 		AD80317B21FF231B004911F9 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				AD80317C21FF231B004911F9 /* UIViewController+captureImg.h */,
-				AD80317D21FF231B004911F9 /* NSString+AttributedString.h */,
-				AD80317E21FF231B004911F9 /* UIImageView+HeadImage.m */,
-				AD80317F21FF231B004911F9 /* NSDate+HY.m */,
-				AD80318021FF231B004911F9 /* UIView+BSHelper.h */,
-				AD80318121FF231B004911F9 /* NSDictionary+NilSafe.m */,
-				AD80318221FF231B004911F9 /* UIButton+Extension.h */,
-				AD80318321FF231B004911F9 /* UIImage+Rotate.h */,
-				AD80318421FF231B004911F9 /* UIButton+Indicator.h */,
-				AD80318521FF231B004911F9 /* UILabel+Style.m */,
-				AD80318621FF231B004911F9 /* UIImageView+HeadImage.h */,
-				AD80318721FF231B004911F9 /* NSString+AttributedString.m */,
-				AD80318821FF231B004911F9 /* UIViewController+captureImg.m */,
-				AD80318921FF231B004911F9 /* NSDictionary+NilSafe.h */,
-				AD80318A21FF231B004911F9 /* UIView+BSHelper.m */,
 				AD80318B21FF231B004911F9 /* NSDate+HY.h */,
-				AD80318C21FF231B004911F9 /* UIButton+Indicator.m */,
-				AD80318D21FF231B004911F9 /* UIImage+Rotate.m */,
+				AD80317F21FF231B004911F9 /* NSDate+HY.m */,
+				AD80318921FF231B004911F9 /* NSDictionary+NilSafe.h */,
+				AD80318121FF231B004911F9 /* NSDictionary+NilSafe.m */,
+				AD80317D21FF231B004911F9 /* NSString+AttributedString.h */,
+				AD80318721FF231B004911F9 /* NSString+AttributedString.m */,
+				AD80318221FF231B004911F9 /* UIButton+Extension.h */,
 				AD80318E21FF231B004911F9 /* UIButton+Extension.m */,
+				AD80318421FF231B004911F9 /* UIButton+Indicator.h */,
+				AD80318C21FF231B004911F9 /* UIButton+Indicator.m */,
+				AD80318321FF231B004911F9 /* UIImage+Rotate.h */,
+				AD80318D21FF231B004911F9 /* UIImage+Rotate.m */,
+				AD80318621FF231B004911F9 /* UIImageView+HeadImage.h */,
+				AD80317E21FF231B004911F9 /* UIImageView+HeadImage.m */,
 				AD80318F21FF231B004911F9 /* UILabel+Style.h */,
+				AD80318521FF231B004911F9 /* UILabel+Style.m */,
+				AD80318021FF231B004911F9 /* UIView+BSHelper.h */,
+				AD80318A21FF231B004911F9 /* UIView+BSHelper.m */,
+				AD80317C21FF231B004911F9 /* UIViewController+captureImg.h */,
+				AD80318821FF231B004911F9 /* UIViewController+captureImg.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -5450,18 +5446,8 @@
 				AD80300321FF2310004911F9 /* Other */,
 				AD80313221FF2318004911F9 /* Tools */,
 				AD80319B21FF2323004911F9 /* Views */,
-				AD82A20E2192B3C500CBDE02 /* Tool */,
 			);
 			path = Helper;
-			sourceTree = "<group>";
-		};
-		AD82A20E2192B3C500CBDE02 /* Tool */ = {
-			isa = PBXGroup;
-			children = (
-				AD82A20F2192B3DE00CBDE02 /* QMPPageSkipTools.h */,
-				AD82A2102192B3DE00CBDE02 /* QMPPageSkipTools.m */,
-			);
-			path = Tool;
 			sourceTree = "<group>";
 		};
 		ADBEEB3821913A53009BB127 /* Class */ = {
@@ -6558,7 +6544,6 @@
 				AD802F2921FF22E0004911F9 /* QMPActivityCellModel.m in Sources */,
 				AD802E0721FF22DF004911F9 /* MyCardTableViewCell.m in Sources */,
 				AD802FF521FF22E1004911F9 /* CompanysDetailRegisterPeoplesCell.m in Sources */,
-				AD82A2112192B3DE00CBDE02 /* QMPPageSkipTools.m in Sources */,
 				AD80295E21FF2244004911F9 /* UITabBar+badge.m in Sources */,
 				AD80327D21FF2324004911F9 /* TKImageView.m in Sources */,
 				AD8032C721FFEEDB004911F9 /* PrivatePolicyView.m in Sources */,
@@ -6644,7 +6629,6 @@
 				AD802F9521FF22E1004911F9 /* AlbumListCell.m in Sources */,
 				AD802E4121FF22E0004911F9 /* MyActivitiesViewController.m in Sources */,
 				AD802FC921FF22E1004911F9 /* IpoInfoCell.m in Sources */,
-				AD80328821FF2324004911F9 /* BundleTool.m in Sources */,
 				AD802FFC21FF22E1004911F9 /* CompanyIcpListViewController.m in Sources */,
 				AD802FD321FF22E1004911F9 /* CompanyInfoView.m in Sources */,
 				AD802E3321FF22E0004911F9 /* DocumentDownedController.m in Sources */,
