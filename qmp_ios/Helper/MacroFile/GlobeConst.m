@@ -31,7 +31,7 @@ NSString * const APPKEY = @"2584608c485b84117618154c17cb5a28"; //版本>=2.2.3�
 #pragma mark --第三方配置参数
 
 //全局的宏定义
-NSString * const kWXAPP_ID = @"wxdc126215fc09c859"
+NSString * const kWXAPP_ID = @"wxdc126215fc09c859";
 NSString * const BUGLY_APP_ID = @"i1400015713";//腾讯bugly
 
 

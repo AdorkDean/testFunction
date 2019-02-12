@@ -146,7 +146,7 @@
             if ([KEYWindow.rootViewController isKindOfClass:[UITabBarController class]]) {
                 [[PublicTool topViewController].navigationController popToRootViewControllerAnimated:YES];
             }else{
-                [[ToLogin shared].delegate setRootController];
+                [[AppPageSkipTool shared] setRootController];
             }
             
         }
@@ -325,7 +325,7 @@
 
 
 - (void)phoneLoginBtnClick:(UIButton *)button {
-    [[ToLogin shared].delegate appPageSkipToBindPhone];
+    [[AppPageSkipTool shared] appPageSkipToBindPhone];
 }
 
 - (void)cancelWechatLogin:(id)sender {

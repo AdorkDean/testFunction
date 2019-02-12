@@ -8,24 +8,20 @@
 
 #import "AllResultController.h"
 #import "RegisterInfoViewController.h"
-
+#import "NewsWebViewController.h"
 #import "SearchJigouCell.h"
 #import "IPOCompanyCell.h"
 #import "SearchPersonCell.h"
 #import "SearchRegistCell.h"
-
 #import "SearchJigouModel.h"
 #import "SearchCompanyModel.h"
 #import "SearchProRegisterModel.h"
 #import "PersonModel.h"
 #import "CompanyInvestorsController.h"
-
 #import "GetMd5Str.h"
 #import <objc/runtime.h>
 #import "CreateProController.h"
-
 #import "CustomAlertView.h"
-
 #import "SearchProduct.h"
 #import "SearchProductCell.h"
 #import "SearchOrganize.h"
@@ -54,8 +50,6 @@
 @property (nonatomic, strong) NSMutableArray *newsModelMArr;   //工商model
 
 @property (strong, nonatomic) NSURLSessionDataTask *task;//当前页面只有一个搜索请求在进行
-@property (strong, nonatomic) AlertInfo *alertTool;
-@property (strong, nonatomic) AlertInfo *alertInfoTool;
 @property (strong, nonatomic) UIView *tableHeaderView;
 
 @end

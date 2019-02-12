@@ -29,6 +29,7 @@
 #import "CardExchangeListController.h"
 #import "ProductContactsController.h"
 #import "PersonDetailsController.h"
+#import "PersonModel.h"
 
 static NSString *const APPGroupId = @"group.mofang.Qimingpian";
 
@@ -77,7 +78,7 @@ SetTableViewControllerDelegate, AllFeedbackViewDelegate> {
             [userModel save];
             
             if ((claim_type != 2) && ([resultData[@"claim_type"] integerValue] == 2)) {
-                [[ToLogin shared].delegate refreshUserInfo];
+                [[AppPageSkipTool shared] refreshUserInfo];
                 [self showbindPhone];
             }
             [self showheadTxtSytle];

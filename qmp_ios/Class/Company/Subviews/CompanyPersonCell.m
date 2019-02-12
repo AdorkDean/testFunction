@@ -8,6 +8,7 @@
 
 #import "CompanyPersonCell.h"
 #import "InsetsLabel.h"
+#import "ZhiWeiModel.h"
 
 @interface CompanyPersonCell()
 {

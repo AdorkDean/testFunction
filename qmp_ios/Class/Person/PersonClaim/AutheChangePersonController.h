@@ -7,6 +7,7 @@
 //认证 修改
 
 #import "BaseViewController.h"
+#import "PersonModel.h"
 
 @interface AutheChangePersonController : BaseViewController
 

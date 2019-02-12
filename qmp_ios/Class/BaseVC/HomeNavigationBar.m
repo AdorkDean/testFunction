@@ -298,7 +298,7 @@
 - (NSDictionary*)iconDict{
     
     if (!_iconDict) {
-        _iconDict = [NSDictionary dictionaryWithContentsOfFile:[nilpathForResource:@"HomeMenuFile" ofType:@"plist"]];
+        _iconDict = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"HomeMenuFile" ofType:@"plist"]];
     }
     return _iconDict;
 }

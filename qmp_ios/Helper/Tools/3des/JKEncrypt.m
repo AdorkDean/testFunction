@@ -36,7 +36,7 @@
     size_t movedBytes = 0;
     
     bufferPtrSize = (plainTextBufferSize + kCCBlockSize3DES) & ~(kCCBlockSize3DES - 1);
-    bufferPtr = static_cast<uint8_t *>(malloc( bufferPtrSize * sizeof(uint8_t)));
+    bufferPtr = malloc(bufferPtrSize * sizeof(uint8_t));
     memset((void *)bufferPtr, 0x0, bufferPtrSize);
     
     const void *vkey = (const void *) [gkey UTF8String];
@@ -80,7 +80,7 @@
     size_t dataOutMoved = 0;
     
     dataOutAvailable = (dataInLength + kCCBlockSizeDES) & ~(kCCBlockSizeDES - 1);
-    dataOut = static_cast<uint8_t *>(malloc( dataOutAvailable * sizeof(uint8_t)));
+    dataOut = malloc(dataOutAvailable * sizeof(uint8_t));
     memset((void *)dataOut, 0x0, dataOutAvailable);//将已开辟内存空间buffer的首 1 个字节的值设为值 0
     
     const void *vkey = (const void *) [gkey UTF8String];
@@ -131,7 +131,7 @@
     size_t movedBytes = 0;
     
     bufferPtrSize = (plainTextBufferSize + kCCBlockSize3DES) & ~(kCCBlockSize3DES - 1);
-    bufferPtr = static_cast<uint8_t *>(malloc( bufferPtrSize * sizeof(uint8_t)));
+    bufferPtr = malloc( bufferPtrSize * sizeof(uint8_t));
     memset((void *)bufferPtr, 0x0, bufferPtrSize);
     
     const void *vkey = (const void *) [gkey UTF8String];
@@ -173,7 +173,7 @@
     
     //十六进制转NSData
     long len = [encryptStr length] / 2;
-    unsigned char *buf = static_cast<uint8_t *>(malloc(len));
+    unsigned char *buf = malloc(len);
     unsigned char *whole_byte = buf;
     char byte_chars[3] = {'\0','\0','\0'};
     
@@ -196,7 +196,7 @@
     size_t movedBytes = 0;
     
     bufferPtrSize = (plainTextBufferSize + kCCBlockSize3DES) & ~(kCCBlockSize3DES - 1);
-    bufferPtr = static_cast<uint8_t *>(malloc( bufferPtrSize * sizeof(uint8_t)));
+    bufferPtr = malloc( bufferPtrSize * sizeof(uint8_t));
     memset((void *)bufferPtr, 0x0, bufferPtrSize);
     
     const void *vkey = (const void *) [gkey UTF8String];

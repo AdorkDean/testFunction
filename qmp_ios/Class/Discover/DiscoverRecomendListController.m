@@ -11,6 +11,7 @@
 #import "ActivityModel.h"
 #import "QMPThemeDetailViewController.h"
 #import "UIButton+Indicator.h"
+#import "PersonModel.h"
 
 @interface DiscoverRecomendListController ()<UITableViewDelegate,UITableViewDataSource>
 {

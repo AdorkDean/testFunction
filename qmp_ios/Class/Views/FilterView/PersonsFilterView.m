@@ -593,7 +593,7 @@
                 
                 //国内外   测试
                 roleArr = @[@{@"name":@"投资人",@"selected":@"0"},@{@"name":@"FA",@"selected":@"0"}];
-                provinceArr = [NSArray arrayWithContentsOfFile:[nilpathForResource:@"ProvinceFilter" ofType:@"plist"]];
+                provinceArr = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"ProvinceFilter" ofType:@"plist"]];
                 
                 NSMutableArray *retMArr = [self handelArr:dataArr ToArr:self.selectedMArr ofTableName:_tableName];
                 NSMutableArray *retEventMArr = [self handelArr:roleArr ToArr:self.selectedRoleMArr ofTableName:_roleTableName];

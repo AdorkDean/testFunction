@@ -8,6 +8,7 @@
 
 #import "ProductAppDataViewController.h"
 #import "ZFChart.h"
+
 @interface ProductAppDataViewController () <ZFLineChartDelegate, ZFGenericChartDataSource, ZFBarChartDelegate>
 @property (nonatomic, strong) UIScrollView *contentView;
 @property (nonatomic, strong) UILabel *rankLabel;

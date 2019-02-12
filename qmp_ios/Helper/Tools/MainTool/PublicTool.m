@@ -30,7 +30,7 @@
 #import "ActivityModel.h"
 #import "CardItem.h"
 #import "ActivityListViewController.h"
-
+#import "NewsWebViewController.h"
 
 @interface PublicTool()<CNContactViewControllerDelegate,ABNewPersonViewControllerDelegate>
 

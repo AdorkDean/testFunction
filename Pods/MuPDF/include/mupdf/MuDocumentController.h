@@ -37,4 +37,8 @@ enum
 - (void) onTap: (UITapGestureRecognizer*)sender;
 - (void) showNavigationBar;
 - (void) hideNavigationBar;
+
+//子类可用fz_document *doc, int number, char *needle, fz_cookie *cookie)
+- (int)search_pages:(fz_document*)doc num:(int)number needle:(char*)needle cookie:(fz_cookie*)cookie;
+
 @end

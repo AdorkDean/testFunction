@@ -11,19 +11,30 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>qmp_ios.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
 		<key>qmp_ios.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<true/>
 			<key>orderHint</key>
 			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>ADD9FDC2218C3BEB00434AC6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ADD9FDDD218C3BEC00434AC6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ADD9FDE8218C3BEC00434AC6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

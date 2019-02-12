@@ -511,7 +511,7 @@
             
             //判断用户是否绑定手机号
             if (![WechatUserInfo shared].bind_flag || [WechatUserInfo shared].bind_flag.integerValue == 0) {
-                [[AppDelegateTool shared] appPageSkipToBindPhone];
+                [[AppPageSkipTool shared] appPageSkipToBindPhone];
             }else{
                 //退出登录页面
                 [[PublicTool topViewController].navigationController popToRootViewControllerAnimated:YES];

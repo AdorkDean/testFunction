@@ -483,7 +483,7 @@ UITextViewDelegate, FormEditTableViewCellDelegate> {
 - (NSMutableArray *)provinces {
     if (!_provinces) {
         _provinces = [NSMutableArray array];
-        NSArray *provinceArr = [NSArray arrayWithContentsOfFile:[nilpathForResource:@"ProvinceFilter" ofType:@"plist"]];
+        NSArray *provinceArr = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"ProvinceFilter" ofType:@"plist"]];
         for (NSDictionary *dic in provinceArr) {
             [_provinces addObject:dic[@"name"]];
         }

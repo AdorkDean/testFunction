@@ -231,7 +231,7 @@
             
         } rightAction:^{
             __weak typeof(self) weakSelf = self;
-            [[ToLogin shared].delegate appPageSkipToBindPhoneFinish:^(NSString * _Nonnull bindPhone) {
+            [[AppPageSkipTool shared]appPageSkipToBindPhoneFinish:^(NSString * _Nonnull bindPhone) {
                 [weakSelf.personInfo setValue:bindPhone forKey:@"phone"];
                 [weakSelf.tableView reloadData];
             }];

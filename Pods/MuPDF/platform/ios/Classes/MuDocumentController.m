@@ -1179,4 +1179,8 @@ static void saveDoc(const char *current_path, fz_document *doc)
 	canvas.contentOffset = CGPointMake(current * width, 0);
 }
 
+- (int)search_pages:(fz_document*)doc num:(int)number needle:(char*)needle cookie:(fz_cookie*)cookie{
+    return search_page(doc, number, needle, cookie);
+}
+
 @end

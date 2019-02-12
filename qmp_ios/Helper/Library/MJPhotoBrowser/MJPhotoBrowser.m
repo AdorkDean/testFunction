@@ -172,8 +172,10 @@
     }
     
     CGRect visibleBounds = _photoScrollView.bounds;
-	int firstIndex = (int)float((CGRectGetMinX(visibleBounds)+kPadding*2) / CGRectGetWidth(visibleBounds));
-	int lastIndex  = (int)float((CGRectGetMaxX(visibleBounds)-kPadding*2-1) / CGRectGetWidth(visibleBounds));
+    int firstIndex = (int)(CGRectGetMinX(visibleBounds)+kPadding*2) / CGRectGetWidth(visibleBounds);
+    int lastIndex  = (int)(CGRectGetMaxX(visibleBounds)-kPadding*2-1) / CGRectGetWidth(visibleBounds);
+//    int firstIndex = 0;
+//    int lastIndex = 0;
     if (firstIndex < 0) firstIndex = 0;
     if (firstIndex >= _photos.count) firstIndex = (int)_photos.count - 1;
     if (lastIndex < 0) lastIndex = 0;

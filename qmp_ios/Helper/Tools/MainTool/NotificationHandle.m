@@ -77,12 +77,7 @@ static dispatch_once_t onceToken = 0;
             }else if (type.integerValue == 2 && ![PublicTool isNull:dic[@"detail"]]) {  //项目
                 [self enterCompanyDetail:dic];
                 [self setMessageReadedCount:@"HT_PUSH_MESSAGE_READED_COUNT"];
-            }
-//            else if (type.integerValue == 3 && ![PublicTool isNull:dic[@"activity_id"]]) {  //动态推送
-//                [[ToLogin shared].delegate appPageSkipToActivityTag:@"推送" activityID:dic[@"activity_id"]];
-//                [self setMessageReadedCount:@"HT_PUSH_MESSAGE_READED_COUNT"];
-//            }
-            else if (type.integerValue == 3 && ![PublicTool isNull:dic[@"url"]]) {  //url
+            }else if (type.integerValue == 3 && ![PublicTool isNull:dic[@"url"]]) {  //url
                 [self enterWebDetail:dic];
                 [self setMessageReadedCount:@"HT_PUSH_MESSAGE_READED_COUNT"];
             }else if (type.integerValue == 4 && ![PublicTool isNull:dic[@"name"]]) {  //专辑

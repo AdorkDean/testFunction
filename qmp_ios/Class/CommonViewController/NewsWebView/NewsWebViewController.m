@@ -10,12 +10,12 @@
 #import "LrdOutputView.h"
 #import "DownloadView.h"
 #import "InsetsLabel.h"
-
+#import "AlertInfo.h"
 #import "GetNowTime.h"
 #import "OpenDocument.h"
-
 #import "GetMd5Str.h"
 #import "NoInterestView.h"
+
 
 #define MainColor  UIColorFromRGB(0x1FB5EC)
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]

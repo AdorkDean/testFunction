@@ -20,7 +20,6 @@
 		AD80295A21FF2244004911F9 /* MainNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80294921FF2220004911F9 /* MainNavViewController.m */; };
 		AD80295B21FF2244004911F9 /* AppDelegateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80294B21FF2224004911F9 /* AppDelegateTool.m */; };
 		AD80295C21FF2244004911F9 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80294C21FF2227004911F9 /* BaseViewController.m */; };
-		AD80295D21FF2244004911F9 /* AppPageSkipTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80294F21FF2230004911F9 /* AppPageSkipTool.m */; };
 		AD80295E21FF2244004911F9 /* UITabBar+badge.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80295321FF2239004911F9 /* UITabBar+badge.m */; };
 		AD80295F21FF2244004911F9 /* HomeNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80295521FF223D004911F9 /* HomeNavigationBar.m */; };
 		AD80296021FF2244004911F9 /* BaseDissmissBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80295621FF2240004911F9 /* BaseDissmissBackViewController.m */; };
@@ -806,7 +805,6 @@
 		AD8058CF2192C6BB0020634B /* updateBgView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD80589B2192C6BB0020634B /* updateBgView@2x.png */; };
 		AD87236921A549D3006DD1FC /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = AD87236821A549D3006DD1FC /* NullSafe.m */; };
 		ADAE850421991B9800AEAFDD /* QMPRecentEventCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAE850321991B9800AEAFDD /* QMPRecentEventCell2.m */; };
-		ADBEEB37219136B6009BB127 /* QMPimgBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ADBEEB36219136B6009BB127 /* QMPimgBundle.bundle */; };
 		ADBEEB3C21913ADE009BB127 /* TabbarActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBEEB3A21913ADE009BB127 /* TabbarActivityViewController.m */; };
 		ADBEEB4021913D0F009BB127 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBEEB3E21913D0F009BB127 /* HomeViewController.m */; };
 		ADBEEB4921913E67009BB127 /* HomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBEEB4521913E67009BB127 /* HomeHeaderView.m */; };
@@ -887,7 +885,6 @@
 		AD80294C21FF2227004911F9 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		AD80294D21FF222A004911F9 /* UINavigationController+StatusBarStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+StatusBarStyle.h"; sourceTree = "<group>"; };
 		AD80294E21FF222D004911F9 /* UITabBar+badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+badge.h"; sourceTree = "<group>"; };
-		AD80294F21FF2230004911F9 /* AppPageSkipTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppPageSkipTool.m; sourceTree = "<group>"; };
 		AD80295021FF2232004911F9 /* HomeNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeNavigationBar.h; sourceTree = "<group>"; };
 		AD80295121FF2234004911F9 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		AD80295221FF2237004911F9 /* BaseDissmissBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDissmissBackViewController.h; sourceTree = "<group>"; };
@@ -2352,7 +2349,6 @@
 		AD87236821A549D3006DD1FC /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
 		ADAE850221991B9800AEAFDD /* QMPRecentEventCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMPRecentEventCell2.h; sourceTree = "<group>"; };
 		ADAE850321991B9800AEAFDD /* QMPRecentEventCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMPRecentEventCell2.m; sourceTree = "<group>"; };
-		ADBEEB36219136B6009BB127 /* QMPimgBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = QMPimgBundle.bundle; sourceTree = "<group>"; };
 		ADBEEB3A21913ADE009BB127 /* TabbarActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarActivityViewController.m; sourceTree = "<group>"; };
 		ADBEEB3B21913ADE009BB127 /* TabbarActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarActivityViewController.h; sourceTree = "<group>"; };
 		ADBEEB3E21913D0F009BB127 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
@@ -2504,7 +2500,6 @@
 			isa = PBXGroup;
 			children = (
 				AD41248B21916DA800DA1372 /* EaseUIResource.bundle */,
-				ADBEEB36219136B6009BB127 /* QMPimgBundle.bundle */,
 			);
 			path = BundleFile;
 			sourceTree = "<group>";
@@ -3061,24 +3056,24 @@
 		AD802A8D21FF22B6004911F9 /* ThreeDetailCommonViews */ = {
 			isa = PBXGroup;
 			children = (
-				AD802A8E21FF22B6004911F9 /* IntroduceCellLayout.h */,
-				AD802A8F21FF22B6004911F9 /* CommonIntroduceCell.m */,
-				AD802A9021FF22B6004911F9 /* DetailLayout.h */,
-				AD802A9121FF22B6004911F9 /* DetailTagsCell.m */,
-				AD802A9221FF22B6004911F9 /* CommonTableVwSecHeadVw.m */,
-				AD802A9321FF22B6004911F9 /* NoCommontInfoCell.h */,
-				AD802A9421FF22B6004911F9 /* DynamicRelateCell.h */,
-				AD802A9521FF22B6004911F9 /* NewsTableViewCell.h */,
-				AD802A9621FF22B6004911F9 /* DetailNavigationBar.h */,
-				AD802A9721FF22B6004911F9 /* DetailLayout.m */,
 				AD802A9821FF22B6004911F9 /* CommonIntroduceCell.h */,
-				AD802A9921FF22B6004911F9 /* IntroduceCellLayout.m */,
-				AD802A9A21FF22B6004911F9 /* DetailTagsCell.h */,
-				AD802A9B21FF22B6004911F9 /* NewsTableViewCell.m */,
-				AD802A9C21FF22B6004911F9 /* DynamicRelateCell.m */,
-				AD802A9D21FF22B6004911F9 /* NoCommontInfoCell.m */,
+				AD802A8F21FF22B6004911F9 /* CommonIntroduceCell.m */,
 				AD802A9E21FF22B6004911F9 /* CommonTableVwSecHeadVw.h */,
+				AD802A9221FF22B6004911F9 /* CommonTableVwSecHeadVw.m */,
+				AD802A9021FF22B6004911F9 /* DetailLayout.h */,
+				AD802A9721FF22B6004911F9 /* DetailLayout.m */,
+				AD802A9621FF22B6004911F9 /* DetailNavigationBar.h */,
 				AD802A9F21FF22B6004911F9 /* DetailNavigationBar.m */,
+				AD802A9A21FF22B6004911F9 /* DetailTagsCell.h */,
+				AD802A9121FF22B6004911F9 /* DetailTagsCell.m */,
+				AD802A9421FF22B6004911F9 /* DynamicRelateCell.h */,
+				AD802A9C21FF22B6004911F9 /* DynamicRelateCell.m */,
+				AD802A8E21FF22B6004911F9 /* IntroduceCellLayout.h */,
+				AD802A9921FF22B6004911F9 /* IntroduceCellLayout.m */,
+				AD802A9521FF22B6004911F9 /* NewsTableViewCell.h */,
+				AD802A9B21FF22B6004911F9 /* NewsTableViewCell.m */,
+				AD802A9321FF22B6004911F9 /* NoCommontInfoCell.h */,
+				AD802A9D21FF22B6004911F9 /* NoCommontInfoCell.m */,
 			);
 			path = ThreeDetailCommonViews;
 			sourceTree = "<group>";
@@ -3500,14 +3495,14 @@
 		AD802BC521FF22C3004911F9 /* PushList */ = {
 			isa = PBXGroup;
 			children = (
-				AD802BC621FF22C3004911F9 /* OnlyContentController.xib */,
-				AD802BC721FF22C3004911F9 /* PushListController.m */,
-				AD802BC821FF22C3004911F9 /* OnlyContentController.m */,
+				AD802BD221FF22C3004911F9 /* ActivityNotifiListController.h */,
 				AD802BC921FF22C3004911F9 /* ActivityNotifiListController.m */,
 				AD802BCA21FF22C3004911F9 /* OnlyContentController.h */,
+				AD802BC821FF22C3004911F9 /* OnlyContentController.m */,
+				AD802BC621FF22C3004911F9 /* OnlyContentController.xib */,
 				AD802BCB21FF22C3004911F9 /* PushListController.h */,
+				AD802BC721FF22C3004911F9 /* PushListController.m */,
 				AD802BCC21FF22C3004911F9 /* views */,
-				AD802BD221FF22C3004911F9 /* ActivityNotifiListController.h */,
 			);
 			path = PushList;
 			sourceTree = "<group>";
@@ -3515,11 +3510,11 @@
 		AD802BCC21FF22C3004911F9 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				AD802BCD21FF22C3004911F9 /* PushListCell.xib */,
 				AD802BCE21FF22C3004911F9 /* ActivityNotifiCell.h */,
-				AD802BCF21FF22C3004911F9 /* PushListCell.m */,
-				AD802BD021FF22C3004911F9 /* PushListCell.h */,
 				AD802BD121FF22C3004911F9 /* ActivityNotifiCell.m */,
+				AD802BD021FF22C3004911F9 /* PushListCell.h */,
+				AD802BCF21FF22C3004911F9 /* PushListCell.m */,
+				AD802BCD21FF22C3004911F9 /* PushListCell.xib */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -4090,37 +4085,37 @@
 		AD802D8421FF22DF004911F9 /* Company */ = {
 			isa = PBXGroup;
 			children = (
-				AD802D8521FF22DF004911F9 /* CompanyFinancialViewController.h */,
-				AD802D8621FF22DF004911F9 /* ViewModel */,
 				AD802D8921FF22DF004911F9 /* CompanyController.h */,
-				AD802D8A21FF22DF004911F9 /* ZhaopinDetailController.m */,
-				AD802D8B21FF22DF004911F9 /* GetProductsFromTagsViewController.h */,
-				AD802D8C21FF22DF004911F9 /* CompanyInvestorsController.m */,
-				AD802D8D21FF22DF004911F9 /* ProductAppListController.m */,
-				AD802D8E21FF22DF004911F9 /* CompanySimilarViewController.h */,
-				AD802D8F21FF22DF004911F9 /* MemberContactViewController.h */,
-				AD802D9021FF22DF004911F9 /* CompanyProductionViewController.m */,
-				AD802D9121FF22DF004911F9 /* CompanyZhaopinController.m */,
-				AD802D9221FF22DF004911F9 /* ProductDetailsController.m */,
-				AD802D9321FF22DF004911F9 /* ProductAppDataViewController.h */,
-				AD802D9421FF22DF004911F9 /* ProductValuelistController.m */,
-				AD802D9521FF22DF004911F9 /* Subviews */,
-				AD802DDE21FF22DF004911F9 /* CompanyReportListViewController.h */,
-				AD802DDF21FF22DF004911F9 /* CompanyInvestorsController.h */,
-				AD802DE021FF22DF004911F9 /* GetProductsFromTagsViewController.m */,
-				AD802DE121FF22DF004911F9 /* ZhaopinDetailController.h */,
 				AD802DE221FF22DF004911F9 /* CompanyController.m */,
-				AD802DE321FF22DF004911F9 /* Register */,
+				AD802D8521FF22DF004911F9 /* CompanyFinancialViewController.h */,
 				AD802DF921FF22DF004911F9 /* CompanyFinancialViewController.m */,
-				AD802DFA21FF22DF004911F9 /* MemberContactViewController.m */,
+				AD802DDF21FF22DF004911F9 /* CompanyInvestorsController.h */,
+				AD802D8C21FF22DF004911F9 /* CompanyInvestorsController.m */,
 				AD802DFB21FF22DF004911F9 /* CompanyProductionViewController.h */,
-				AD802DFC21FF22DF004911F9 /* CompanySimilarViewController.m */,
-				AD802DFD21FF22DF004911F9 /* ProductAppListController.h */,
-				AD802DFE21FF22DF004911F9 /* CompanyZhaopinController.h */,
+				AD802D9021FF22DF004911F9 /* CompanyProductionViewController.m */,
+				AD802DDE21FF22DF004911F9 /* CompanyReportListViewController.h */,
 				AD802DFF21FF22DF004911F9 /* CompanyReportListViewController.m */,
-				AD802E0021FF22DF004911F9 /* ProductValuelistController.h */,
+				AD802D8E21FF22DF004911F9 /* CompanySimilarViewController.h */,
+				AD802DFC21FF22DF004911F9 /* CompanySimilarViewController.m */,
+				AD802DFE21FF22DF004911F9 /* CompanyZhaopinController.h */,
+				AD802D9121FF22DF004911F9 /* CompanyZhaopinController.m */,
+				AD802D8B21FF22DF004911F9 /* GetProductsFromTagsViewController.h */,
+				AD802DE021FF22DF004911F9 /* GetProductsFromTagsViewController.m */,
+				AD802D8F21FF22DF004911F9 /* MemberContactViewController.h */,
+				AD802DFA21FF22DF004911F9 /* MemberContactViewController.m */,
+				AD802D9321FF22DF004911F9 /* ProductAppDataViewController.h */,
 				AD802E0121FF22DF004911F9 /* ProductAppDataViewController.m */,
+				AD802DFD21FF22DF004911F9 /* ProductAppListController.h */,
+				AD802D8D21FF22DF004911F9 /* ProductAppListController.m */,
 				AD802E0221FF22DF004911F9 /* ProductDetailsController.h */,
+				AD802D9221FF22DF004911F9 /* ProductDetailsController.m */,
+				AD802E0021FF22DF004911F9 /* ProductValuelistController.h */,
+				AD802D9421FF22DF004911F9 /* ProductValuelistController.m */,
+				AD802DE321FF22DF004911F9 /* Register */,
+				AD802D9521FF22DF004911F9 /* Subviews */,
+				AD802D8621FF22DF004911F9 /* ViewModel */,
+				AD802DE121FF22DF004911F9 /* ZhaopinDetailController.h */,
+				AD802D8A21FF22DF004911F9 /* ZhaopinDetailController.m */,
 			);
 			path = Company;
 			sourceTree = "<group>";
@@ -4137,64 +4132,64 @@
 		AD802D9521FF22DF004911F9 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
-				AD802D9621FF22DF004911F9 /* IpoInfoCell.m */,
-				AD802D9721FF22DF004911F9 /* CompanyFinancialHeaderView.xib */,
-				AD802D9821FF22DF004911F9 /* SimilarFilterCell.m */,
-				AD802D9921FF22DF004911F9 /* FormEditTableViewCell.h */,
-				AD802D9A21FF22DF004911F9 /* ProductValueActivityCell.m */,
-				AD802D9B21FF22DF004911F9 /* MemberPersonCell.m */,
-				AD802D9C21FF22DF004911F9 /* NoCommentCell.xib */,
-				AD802D9D21FF22DF004911F9 /* CompanyDetailTagsCell.h */,
-				AD802D9E21FF22DF004911F9 /* CompanyHeaderView.xib */,
-				AD802D9F21FF22DF004911F9 /* CompanyZhaopinCell.h */,
-				AD802DA021FF22DF004911F9 /* ContactInfoCell.h */,
-				AD802DA121FF22DF004911F9 /* ZhaopinHeaderView.h */,
-				AD802DA221FF22DF004911F9 /* CompanyHeaderView.h */,
-				AD802DA321FF22DF004911F9 /* ProInvestorCell.h */,
-				AD802DA421FF22DF004911F9 /* ProductAppListCell.h */,
-				AD802DA521FF22DF004911F9 /* CompanyReportTableViewCell.m */,
-				AD802DA621FF22DF004911F9 /* CompanyFinancialHeaderView.h */,
-				AD802DA721FF22DF004911F9 /* ProductValueActivityCell.xib */,
-				AD802DA821FF22DF004911F9 /* NoCommentCell.m */,
-				AD802DA921FF22DF004911F9 /* CompanyTagsCell.h */,
-				AD802DAA21FF22DF004911F9 /* CompanyInfoView.m */,
-				AD802DAB21FF22DF004911F9 /* CompanyProductTableViewCell.m */,
-				AD802DAC21FF22DF004911F9 /* CompanyDetailSimilarCell.h */,
-				AD802DAD21FF22DF004911F9 /* MemberPersonCell2.m */,
-				AD802DAE21FF22DF004911F9 /* ZhaopinHeaderView.xib */,
-				AD802DAF21FF22DF004911F9 /* CompanyPersonCell.m */,
-				AD802DB021FF22DF004911F9 /* ProductRongziCell.m */,
 				AD802DB121FF22DF004911F9 /* CompanyBasicInfoTableViewCell.h */,
-				AD802DB221FF22DF004911F9 /* CompanyHeaderView.m */,
-				AD802DB321FF22DF004911F9 /* ContactInfoCell.m */,
-				AD802DB421FF22DF004911F9 /* ZhaopinHeaderView.m */,
-				AD802DB521FF22DF004911F9 /* CompanyZhaopinCell.m */,
-				AD802DB621FF22DF004911F9 /* CompanyDetailTagsCell.m */,
-				AD802DB721FF22DF004911F9 /* MemberPersonCell.h */,
-				AD802DB821FF22DF004911F9 /* ProductValueActivityCell.h */,
-				AD802DB921FF22DF004911F9 /* FormEditTableViewCell.m */,
-				AD802DBA21FF22DF004911F9 /* SimilarFilterCell.h */,
-				AD802DBB21FF22DF004911F9 /* IpoInfoCell.h */,
-				AD802DBC21FF22DF004911F9 /* CompanyTagsCell.m */,
-				AD802DBD21FF22DF004911F9 /* MemberPersonCell.xib */,
-				AD802DBE21FF22DF004911F9 /* ProInvestorCell.xib */,
-				AD802DBF21FF22DF004911F9 /* NoCommentCell.h */,
-				AD802DC021FF22DF004911F9 /* CompanyFinancialHeaderView.m */,
-				AD802DC121FF22DF004911F9 /* CompanyReportTableViewCell.h */,
-				AD802DC221FF22DF004911F9 /* CompanyPersonCell.xib */,
-				AD802DC321FF22DF004911F9 /* ProductAppListCell.m */,
-				AD802DC421FF22DF004911F9 /* ProInvestorCell.m */,
-				AD802DC521FF22DF004911F9 /* MemberPersonCell2.h */,
-				AD802DC621FF22DF004911F9 /* CompanyDetailSimilarCell.m */,
-				AD802DC721FF22DF004911F9 /* MemberPersonCell2.xib */,
-				AD802DC821FF22DF004911F9 /* CompanyZhaopinCell.xib */,
-				AD802DC921FF22DF004911F9 /* CompanyProductTableViewCell.h */,
-				AD802DCA21FF22DF004911F9 /* CompanyInfoView.h */,
-				AD802DCB21FF22DF004911F9 /* TableHeaderView */,
 				AD802DD221FF22DF004911F9 /* CompanyBasicInfoTableViewCell.m */,
-				AD802DD321FF22DF004911F9 /* ProductRongziCell.h */,
+				AD802DAC21FF22DF004911F9 /* CompanyDetailSimilarCell.h */,
+				AD802DC621FF22DF004911F9 /* CompanyDetailSimilarCell.m */,
+				AD802D9D21FF22DF004911F9 /* CompanyDetailTagsCell.h */,
+				AD802DB621FF22DF004911F9 /* CompanyDetailTagsCell.m */,
+				AD802DA621FF22DF004911F9 /* CompanyFinancialHeaderView.h */,
+				AD802DC021FF22DF004911F9 /* CompanyFinancialHeaderView.m */,
+				AD802D9721FF22DF004911F9 /* CompanyFinancialHeaderView.xib */,
+				AD802DA221FF22DF004911F9 /* CompanyHeaderView.h */,
+				AD802DB221FF22DF004911F9 /* CompanyHeaderView.m */,
+				AD802D9E21FF22DF004911F9 /* CompanyHeaderView.xib */,
+				AD802DCA21FF22DF004911F9 /* CompanyInfoView.h */,
+				AD802DAA21FF22DF004911F9 /* CompanyInfoView.m */,
 				AD802DD421FF22DF004911F9 /* CompanyPersonCell.h */,
+				AD802DAF21FF22DF004911F9 /* CompanyPersonCell.m */,
+				AD802DC221FF22DF004911F9 /* CompanyPersonCell.xib */,
+				AD802DC921FF22DF004911F9 /* CompanyProductTableViewCell.h */,
+				AD802DAB21FF22DF004911F9 /* CompanyProductTableViewCell.m */,
+				AD802DC121FF22DF004911F9 /* CompanyReportTableViewCell.h */,
+				AD802DA521FF22DF004911F9 /* CompanyReportTableViewCell.m */,
+				AD802DA921FF22DF004911F9 /* CompanyTagsCell.h */,
+				AD802DBC21FF22DF004911F9 /* CompanyTagsCell.m */,
+				AD802D9F21FF22DF004911F9 /* CompanyZhaopinCell.h */,
+				AD802DB521FF22DF004911F9 /* CompanyZhaopinCell.m */,
+				AD802DC821FF22DF004911F9 /* CompanyZhaopinCell.xib */,
+				AD802DA021FF22DF004911F9 /* ContactInfoCell.h */,
+				AD802DB321FF22DF004911F9 /* ContactInfoCell.m */,
+				AD802D9921FF22DF004911F9 /* FormEditTableViewCell.h */,
+				AD802DB921FF22DF004911F9 /* FormEditTableViewCell.m */,
+				AD802DBB21FF22DF004911F9 /* IpoInfoCell.h */,
+				AD802D9621FF22DF004911F9 /* IpoInfoCell.m */,
+				AD802DB721FF22DF004911F9 /* MemberPersonCell.h */,
+				AD802D9B21FF22DF004911F9 /* MemberPersonCell.m */,
+				AD802DBD21FF22DF004911F9 /* MemberPersonCell.xib */,
+				AD802DC521FF22DF004911F9 /* MemberPersonCell2.h */,
+				AD802DAD21FF22DF004911F9 /* MemberPersonCell2.m */,
+				AD802DC721FF22DF004911F9 /* MemberPersonCell2.xib */,
 				AD802DD521FF22DF004911F9 /* NewSubViews */,
+				AD802DBF21FF22DF004911F9 /* NoCommentCell.h */,
+				AD802DA821FF22DF004911F9 /* NoCommentCell.m */,
+				AD802D9C21FF22DF004911F9 /* NoCommentCell.xib */,
+				AD802DA421FF22DF004911F9 /* ProductAppListCell.h */,
+				AD802DC321FF22DF004911F9 /* ProductAppListCell.m */,
+				AD802DD321FF22DF004911F9 /* ProductRongziCell.h */,
+				AD802DB021FF22DF004911F9 /* ProductRongziCell.m */,
+				AD802DB821FF22DF004911F9 /* ProductValueActivityCell.h */,
+				AD802D9A21FF22DF004911F9 /* ProductValueActivityCell.m */,
+				AD802DA721FF22DF004911F9 /* ProductValueActivityCell.xib */,
+				AD802DA321FF22DF004911F9 /* ProInvestorCell.h */,
+				AD802DC421FF22DF004911F9 /* ProInvestorCell.m */,
+				AD802DBE21FF22DF004911F9 /* ProInvestorCell.xib */,
+				AD802DBA21FF22DF004911F9 /* SimilarFilterCell.h */,
+				AD802D9821FF22DF004911F9 /* SimilarFilterCell.m */,
+				AD802DCB21FF22DF004911F9 /* TableHeaderView */,
+				AD802DA121FF22DF004911F9 /* ZhaopinHeaderView.h */,
+				AD802DB421FF22DF004911F9 /* ZhaopinHeaderView.m */,
+				AD802DAE21FF22DF004911F9 /* ZhaopinHeaderView.xib */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -4292,10 +4287,10 @@
 		AD80300A21FF2314004911F9 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				AD80300B21FF2314004911F9 /* ZFChart */,
-				AD80305E21FF2314004911F9 /* MJPhotoBrowser */,
 				AD80306E21FF2314004911F9 /* EaseUI */,
+				AD80305E21FF2314004911F9 /* MJPhotoBrowser */,
 				AD80312C21FF2315004911F9 /* WxLoginSDK1.6.2 */,
+				AD80300B21FF2314004911F9 /* ZFChart */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -4490,21 +4485,21 @@
 		AD80305E21FF2314004911F9 /* MJPhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				AD80305F21FF2314004911F9 /* MJPhotoLoadingView.m */,
-				AD80306021FF2314004911F9 /* MJPhotoToolbar.h */,
-				AD80306121FF2314004911F9 /* MJPhotoView.m */,
-				AD80306221FF2314004911F9 /* MJPhotoProgressView.h */,
-				AD80306321FF2314004911F9 /* MJPhotoBrowser.bundle */,
-				AD80306421FF2314004911F9 /* MJPhoto.m */,
-				AD80306521FF2314004911F9 /* MJPhotoBrowser.h */,
-				AD80306621FF2314004911F9 /* SDWebImageManager+MJ.h */,
-				AD80306721FF2314004911F9 /* MJPhotoLoadingView.h */,
-				AD80306821FF2314004911F9 /* MJPhotoView.h */,
-				AD80306921FF2314004911F9 /* MJPhotoToolbar.m */,
 				AD80306A21FF2314004911F9 /* MJPhoto.h */,
-				AD80306B21FF2314004911F9 /* MJPhotoProgressView.m */,
-				AD80306C21FF2314004911F9 /* SDWebImageManager+MJ.m */,
+				AD80306421FF2314004911F9 /* MJPhoto.m */,
+				AD80306321FF2314004911F9 /* MJPhotoBrowser.bundle */,
+				AD80306521FF2314004911F9 /* MJPhotoBrowser.h */,
 				AD80306D21FF2314004911F9 /* MJPhotoBrowser.m */,
+				AD80306721FF2314004911F9 /* MJPhotoLoadingView.h */,
+				AD80305F21FF2314004911F9 /* MJPhotoLoadingView.m */,
+				AD80306221FF2314004911F9 /* MJPhotoProgressView.h */,
+				AD80306B21FF2314004911F9 /* MJPhotoProgressView.m */,
+				AD80306021FF2314004911F9 /* MJPhotoToolbar.h */,
+				AD80306921FF2314004911F9 /* MJPhotoToolbar.m */,
+				AD80306821FF2314004911F9 /* MJPhotoView.h */,
+				AD80306121FF2314004911F9 /* MJPhotoView.m */,
+				AD80306621FF2314004911F9 /* SDWebImageManager+MJ.h */,
+				AD80306C21FF2314004911F9 /* SDWebImageManager+MJ.m */,
 			);
 			path = MJPhotoBrowser;
 			sourceTree = "<group>";
@@ -4909,42 +4904,42 @@
 		AD80313221FF2318004911F9 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				AD80313321FF2318004911F9 /* ShowInfo.h */,
-				AD80313421FF2318004911F9 /* Reachability.m */,
-				AD80313521FF2318004911F9 /* ManagerHud.h */,
 				AD80313621FF2318004911F9 /* 3des */,
-				AD80313C21FF2318004911F9 /* ExceptionHandle */,
-				AD80313E21FF2318004911F9 /* AlertInfo.m */,
-				AD80313F21FF2318004911F9 /* GetMd5Str.m */,
-				AD80314021FF2318004911F9 /* TestNetWorkReached.m */,
-				AD80314121FF2318004911F9 /* DataHandle.h */,
-				AD80314221FF2318004911F9 /* TagsFrame.m */,
-				AD80314321FF2318004911F9 /* GetNowTime.m */,
-				AD80314421FF2318004911F9 /* ShareTo.h */,
-				AD80314521FF2318004911F9 /* DBHelper.m */,
-				AD80314621FF2318004911F9 /* TKImageView */,
-				AD80314F21FF2318004911F9 /* TakeImageTool.m */,
-				AD80315021FF2318004911F9 /* ProgressHUD.h */,
-				AD80315121FF2318004911F9 /* UIViewAdditions.h */,
-				AD80315221FF2318004911F9 /* GetSizeWithText.m */,
-				AD80315321FF2318004911F9 /* DownloadTool */,
-				AD80315A21FF2318004911F9 /* ManagerHud.m */,
-				AD80315B21FF2318004911F9 /* Reachability.h */,
-				AD80315C21FF2318004911F9 /* MainTool */,
-				AD80316921FF2318004911F9 /* ShowInfo.m */,
-				AD80316A21FF2318004911F9 /* TestNetWorkReached.h */,
 				AD80316B21FF2318004911F9 /* AlertInfo.h */,
-				AD80316C21FF2318004911F9 /* GetMd5Str.h */,
-				AD80316D21FF2318004911F9 /* OpenDocument */,
+				AD80313E21FF2318004911F9 /* AlertInfo.m */,
+				AD80314121FF2318004911F9 /* DataHandle.h */,
 				AD80317221FF2318004911F9 /* DataHandle.m */,
-				AD80317321FF2318004911F9 /* GetSizeWithText.h */,
-				AD80317421FF2318004911F9 /* UIViewAdditions.m */,
-				AD80317521FF2318004911F9 /* ProgressHUD.m */,
-				AD80317621FF2318004911F9 /* TakeImageTool.h */,
 				AD80317721FF2318004911F9 /* DBHelper.h */,
-				AD80317821FF2318004911F9 /* ShareTo.m */,
-				AD80317921FF2318004911F9 /* TagsFrame.h */,
+				AD80314521FF2318004911F9 /* DBHelper.m */,
+				AD80315321FF2318004911F9 /* DownloadTool */,
+				AD80313C21FF2318004911F9 /* ExceptionHandle */,
+				AD80316C21FF2318004911F9 /* GetMd5Str.h */,
+				AD80313F21FF2318004911F9 /* GetMd5Str.m */,
 				AD80317A21FF2318004911F9 /* GetNowTime.h */,
+				AD80314321FF2318004911F9 /* GetNowTime.m */,
+				AD80317321FF2318004911F9 /* GetSizeWithText.h */,
+				AD80315221FF2318004911F9 /* GetSizeWithText.m */,
+				AD80315C21FF2318004911F9 /* MainTool */,
+				AD80313521FF2318004911F9 /* ManagerHud.h */,
+				AD80315A21FF2318004911F9 /* ManagerHud.m */,
+				AD80316D21FF2318004911F9 /* OpenDocument */,
+				AD80315021FF2318004911F9 /* ProgressHUD.h */,
+				AD80317521FF2318004911F9 /* ProgressHUD.m */,
+				AD80315B21FF2318004911F9 /* Reachability.h */,
+				AD80313421FF2318004911F9 /* Reachability.m */,
+				AD80314421FF2318004911F9 /* ShareTo.h */,
+				AD80317821FF2318004911F9 /* ShareTo.m */,
+				AD80313321FF2318004911F9 /* ShowInfo.h */,
+				AD80316921FF2318004911F9 /* ShowInfo.m */,
+				AD80317921FF2318004911F9 /* TagsFrame.h */,
+				AD80314221FF2318004911F9 /* TagsFrame.m */,
+				AD80317621FF2318004911F9 /* TakeImageTool.h */,
+				AD80314F21FF2318004911F9 /* TakeImageTool.m */,
+				AD80316A21FF2318004911F9 /* TestNetWorkReached.h */,
+				AD80314021FF2318004911F9 /* TestNetWorkReached.m */,
+				AD80314621FF2318004911F9 /* TKImageView */,
+				AD80315121FF2318004911F9 /* UIViewAdditions.h */,
+				AD80317421FF2318004911F9 /* UIViewAdditions.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -4952,11 +4947,11 @@
 		AD80313621FF2318004911F9 /* 3des */ = {
 			isa = PBXGroup;
 			children = (
-				AD80313721FF2318004911F9 /* JKEncrypt.m */,
 				AD80313821FF2318004911F9 /* GTMBase64.h */,
-				AD80313921FF2318004911F9 /* JKEncrypt.h */,
-				AD80313A21FF2318004911F9 /* GTMDefines.h */,
 				AD80313B21FF2318004911F9 /* GTMBase64.m */,
+				AD80313A21FF2318004911F9 /* GTMDefines.h */,
+				AD80313921FF2318004911F9 /* JKEncrypt.h */,
+				AD80313721FF2318004911F9 /* JKEncrypt.m */,
 			);
 			path = 3des;
 			sourceTree = "<group>";
@@ -5330,34 +5325,34 @@
 		AD80330621FFEF04004911F9 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				AD80330721FFEF04004911F9 /* TextViewCell.m */,
-				AD80330821FFEF04004911F9 /* SearchPersonNoDataCell.h */,
-				AD80330921FFEF04004911F9 /* InvestorListCell.m */,
-				AD80330A21FFEF04004911F9 /* BPSelectCell.h */,
-				AD80330B21FFEF04004911F9 /* JobExpriencesCell.xib */,
-				AD80330C21FFEF04004911F9 /* AuthenticaHeaderView.xib */,
-				AD80330D21FFEF04004911F9 /* InvestorTzCaseCell.h */,
-				AD80330E21FFEF04004911F9 /* NewSubView */,
-				AD80331121FFEF04004911F9 /* EditCell.m */,
-				AD80331221FFEF04004911F9 /* JobExpriencesCell.m */,
-				AD80331321FFEF04004911F9 /* PersonHeadView.h */,
 				AD80331421FFEF04004911F9 /* AuthenticaHeaderView.h */,
-				AD80331521FFEF04004911F9 /* EducationCell.m */,
-				AD80331621FFEF04004911F9 /* NoInfoCell.h */,
-				AD80331721FFEF04004911F9 /* InvestorListCell.h */,
-				AD80331821FFEF04004911F9 /* TextViewCell.h */,
-				AD80331921FFEF04004911F9 /* SearchPersonNoDataCell.m */,
-				AD80331A21FFEF04004911F9 /* BPSelectCell.m */,
-				AD80331B21FFEF04004911F9 /* SearchPersonNoDataCell.xib */,
-				AD80331C21FFEF04004911F9 /* InvestorTzCaseCell.xib */,
-				AD80331D21FFEF04004911F9 /* InvestorTzCaseCell.m */,
-				AD80331E21FFEF04004911F9 /* NoInfoCell.m */,
-				AD80331F21FFEF04004911F9 /* EducationCell.h */,
 				AD80332021FFEF04004911F9 /* AuthenticaHeaderView.m */,
-				AD80332121FFEF04004911F9 /* InvestorListCell.xib */,
-				AD80332221FFEF04004911F9 /* JobExpriencesCell.h */,
-				AD80332321FFEF04004911F9 /* PersonHeadView.m */,
+				AD80330C21FFEF04004911F9 /* AuthenticaHeaderView.xib */,
+				AD80330A21FFEF04004911F9 /* BPSelectCell.h */,
+				AD80331A21FFEF04004911F9 /* BPSelectCell.m */,
 				AD80332421FFEF04004911F9 /* EditCell.h */,
+				AD80331121FFEF04004911F9 /* EditCell.m */,
+				AD80331F21FFEF04004911F9 /* EducationCell.h */,
+				AD80331521FFEF04004911F9 /* EducationCell.m */,
+				AD80331721FFEF04004911F9 /* InvestorListCell.h */,
+				AD80330921FFEF04004911F9 /* InvestorListCell.m */,
+				AD80332121FFEF04004911F9 /* InvestorListCell.xib */,
+				AD80330D21FFEF04004911F9 /* InvestorTzCaseCell.h */,
+				AD80331D21FFEF04004911F9 /* InvestorTzCaseCell.m */,
+				AD80331C21FFEF04004911F9 /* InvestorTzCaseCell.xib */,
+				AD80332221FFEF04004911F9 /* JobExpriencesCell.h */,
+				AD80331221FFEF04004911F9 /* JobExpriencesCell.m */,
+				AD80330B21FFEF04004911F9 /* JobExpriencesCell.xib */,
+				AD80330E21FFEF04004911F9 /* NewSubView */,
+				AD80331621FFEF04004911F9 /* NoInfoCell.h */,
+				AD80331E21FFEF04004911F9 /* NoInfoCell.m */,
+				AD80331321FFEF04004911F9 /* PersonHeadView.h */,
+				AD80332321FFEF04004911F9 /* PersonHeadView.m */,
+				AD80330821FFEF04004911F9 /* SearchPersonNoDataCell.h */,
+				AD80331921FFEF04004911F9 /* SearchPersonNoDataCell.m */,
+				AD80331B21FFEF04004911F9 /* SearchPersonNoDataCell.xib */,
+				AD80331821FFEF04004911F9 /* TextViewCell.h */,
+				AD80330721FFEF04004911F9 /* TextViewCell.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -5524,7 +5519,6 @@
 			children = (
 				AD80294A21FF2222004911F9 /* AppDelegateTool.h */,
 				AD80294B21FF2224004911F9 /* AppDelegateTool.m */,
-				AD80294F21FF2230004911F9 /* AppPageSkipTool.m */,
 				AD80295221FF2237004911F9 /* BaseDissmissBackViewController.h */,
 				AD80295621FF2240004911F9 /* BaseDissmissBackViewController.m */,
 				AD80295121FF2234004911F9 /* BaseViewController.h */,
@@ -5535,14 +5529,14 @@
 				AD80295721FF2242004911F9 /* LoadingAnimator.m */,
 				AD80294621FF2219004911F9 /* MainNavViewController.h */,
 				AD80294921FF2220004911F9 /* MainNavViewController.m */,
+				ADC32A09219028AD0032569A /* QMPTabbarController.h */,
+				ADC32A0A219028AD0032569A /* QMPTabbarController.m */,
 				AD80294D21FF222A004911F9 /* UINavigationController+StatusBarStyle.h */,
 				AD80295821FF2244004911F9 /* UINavigationController+StatusBarStyle.m */,
 				AD80294E21FF222D004911F9 /* UITabBar+badge.h */,
 				AD80295321FF2239004911F9 /* UITabBar+badge.m */,
 				AD80294721FF221B004911F9 /* VSTabBarFix.h */,
 				AD80294821FF221D004911F9 /* VSTabBarFix.m */,
-				ADC32A09219028AD0032569A /* QMPTabbarController.h */,
-				ADC32A0A219028AD0032569A /* QMPTabbarController.m */,
 			);
 			path = BaseVC;
 			sourceTree = "<group>";
@@ -5804,7 +5798,6 @@
 				AD802FAC21FF22E1004911F9 /* HotJigouListCell.xib in Resources */,
 				AD802EFF21FF22E0004911F9 /* DetailFeedBackTxtCell.xib in Resources */,
 				AD802FF021FF22E1004911F9 /* SimilarCell.xib in Resources */,
-				ADBEEB37219136B6009BB127 /* QMPimgBundle.bundle in Resources */,
 				AD802F8C21FF22E1004911F9 /* AlbumMultiRowListCell.xib in Resources */,
 				AD80327C21FF2324004911F9 /* XYCameraViewController.xib in Resources */,
 				AD802FE121FF22E1004911F9 /* ProInvestorCell.xib in Resources */,
@@ -6534,7 +6527,6 @@
 				AD802F0B21FF22E0004911F9 /* ProductResultController.m in Sources */,
 				AD802E1D21FF22E0004911F9 /* LeadCardCell.m in Sources */,
 				AD80298121FF2293004911F9 /* StarProductsTableViewCell.m in Sources */,
-				AD80295D21FF2244004911F9 /* AppPageSkipTool.m in Sources */,
 				AD802F9C21FF22E1004911F9 /* HapMapCell.m in Sources */,
 				AD80323021FF2324004911F9 /* EaseUsersListViewController.m in Sources */,
 				AD802EB721FF22E0004911F9 /* OrgFaProductModel.m in Sources */,
@@ -6860,8 +6852,7 @@
 					"-l\"WMPageController\"",
 					"-l\"YYText\"",
 					"-l\"c++\"",
-					"-l\"jcore-ios-1.2.0\"",
-					"-l\"jpush-ios-3.0.9\"",
+					"-l\"jpush-ios-3.1.2\"",
 					"-l\"pop\"",
 					"-l\"resolv\"",
 					"-l\"sqlite3\"",
@@ -6903,13 +6894,14 @@
 					"\"Photos\"",
 					"-weak_framework",
 					"\"UserNotifications\"",
+					"-l\"jcore-ios-1.2.6\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mofang.QiMingPian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = TestMoFang;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(inherited)";
-				VALID_ARCHS = "armv7s arm64";
+				VALID_ARCHS = "armv7s arm64 arm64e armv7";
 			};
 			name = Debug;
 		};
@@ -6964,8 +6956,7 @@
 					"-l\"WMPageController\"",
 					"-l\"YYText\"",
 					"-l\"c++\"",
-					"-l\"jcore-ios-1.2.0\"",
-					"-l\"jpush-ios-3.0.9\"",
+					"-l\"jpush-ios-3.1.2\"",
 					"-l\"pop\"",
 					"-l\"resolv\"",
 					"-l\"sqlite3\"",
@@ -7007,13 +6998,14 @@
 					"\"Photos\"",
 					"-weak_framework",
 					"\"UserNotifications\"",
+					"-l\"jcore-ios-1.2.6\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mofang.QiMingPian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = ADHOC_20180319;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(inherited)";
-				VALID_ARCHS = "armv7s arm64";
+				VALID_ARCHS = "armv7s arm64 arm64e armv7";
 			};
 			name = Release;
 		};

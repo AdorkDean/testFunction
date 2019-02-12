@@ -20,9 +20,14 @@
 #import "QMPActivityCategoryViewController.h"
 #import "ActivityDetailViewController.h"
 #import "QMPCommunityController.h"
-#import "QMPCommunityController.h"
+#import "QMPPhoneBindController.h"
+#import "QMPPhoneLoginController.h"
+#import "NewerBindPhoneController.h"
+#import "QMPLoginController.h"
+#import "AppDelegate.h"
+#import "TabbarActivityViewController.h"
 
-@interface AppPageSkipTool()<AppPageSkipProtocol>
+@interface AppPageSkipTool()
 
 @end
 

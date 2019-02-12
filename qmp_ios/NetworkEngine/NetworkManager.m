@@ -9,6 +9,7 @@
 #import "NetworkManager.h"
 #import "JKEncrypt.h"
 #import <AdSupport/AdSupport.h>
+#import "DataHandle.h"
 
 // 服务器
 NSString *const TestBaseUrl = @"http://test.api.qimingpian.com/";

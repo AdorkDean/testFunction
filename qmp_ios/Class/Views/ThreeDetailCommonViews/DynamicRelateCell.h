@@ -7,6 +7,8 @@
 //  项目、机构、人的用户分享
 
 #import <UIKit/UIKit.h>
+#import "PersonModel.h"
+
 typedef NS_ENUM(NSInteger, DynamicRelateCellType) {
     DynamicRelateCellTypePerson = 0,    ///< 人物
     DynamicRelateCellTypeUser,          ///< 用户(unionid)

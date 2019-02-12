@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "EducationExpModel.h"
+#import "ZhiWeiModel.h"
 
 @interface EducationCell : UITableViewCell
 @property(nonatomic,strong) UIButton *editBtn;

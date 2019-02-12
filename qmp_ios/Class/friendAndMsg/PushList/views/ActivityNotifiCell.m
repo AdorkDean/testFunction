@@ -6,10 +6,9 @@
 //  Copyright © 2018年 Molly. All rights reserved.
 //
 
-
-
 #import "ActivityNotifiCell.h"
 #import "InsetsLabel.h"
+#import "PersonModel.h"
 
 @implementation  ActivityNotifiModel
 
